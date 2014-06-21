@@ -1,0 +1,307 @@
+day,home_team,away_team,home_score,away_score
+1,Olympique de Marseille,SR Colmar,7 , 2
+1,FC Metz,Stade Rennais FC,1 , 6
+1,FC Sochaux-Montbéliard,Toulouse FC,3 , 0
+1,RC Strasbourg,FC Nancy,4 , 2
+1,AS Saint-Etienne,Stade de Reims,2 , 3
+1,CO Roubaix-Tourcoing,SO Montpellier,2 , 3
+1,AS Cannes,RC Paris,2 , 1
+1,FC Sète 34,LOSC Lille,1 , 0
+1,AS Red Star 93,OGC Nice,1 , 1
+2,Olympique de Marseille,CO Roubaix-Tourcoing,4 , 2
+2,RC Strasbourg,FC Sochaux-Montbéliard,0 , 3
+2,OGC Nice,FC Metz,5 , 2
+2,SR Colmar,Stade de Reims,3 , 3
+2,AS Red Star 93,FC Sète 34,2 , 2
+2,Toulouse FC,Stade Rennais FC,2 , 1
+2,LOSC Lille,AS Saint-Etienne,5 , 0
+2,SO Montpellier,RC Paris,0 , 4
+2,FC Nancy,AS Cannes,1 , 0
+3,RC Paris,Olympique de Marseille,5 , 4
+3,Stade Rennais FC,RC Strasbourg,1 , 1
+3,AS Saint-Etienne,AS Red Star 93,2 , 2
+3,FC Sochaux-Montbéliard,AS Cannes,4 , 0
+3,OGC Nice,Toulouse FC,2 , 1
+3,Stade de Reims,LOSC Lille,2 , 4
+3,FC Sète 34,FC Metz,1 , 1
+3,FC Nancy,SO Montpellier,1 , 0
+3,CO Roubaix-Tourcoing,SR Colmar,3 , 2
+4,SO Montpellier,FC Sochaux-Montbéliard,2 , 1
+4,Olympique de Marseille,FC Nancy,3 , 1
+4,Toulouse FC,FC Sète 34,0 , 2
+4,SR Colmar,LOSC Lille,2 , 2
+4,CO Roubaix-Tourcoing,RC Paris,2 , 2
+4,RC Strasbourg,OGC Nice,3 , 1
+4,AS Red Star 93,Stade de Reims,3 , 5
+4,AS Cannes,Stade Rennais FC,1 , 1
+4,FC Metz,AS Saint-Etienne,2 , 0
+5,FC Sochaux-Montbéliard,Olympique de Marseille,1 , 1
+5,LOSC Lille,AS Red Star 93,2 , 1
+5,Stade de Reims,FC Metz,6 , 1
+5,OGC Nice,AS Cannes,2 , 0
+5,FC Sète 34,RC Strasbourg,0 , 1
+5,Stade Rennais FC,SO Montpellier,3 , 0
+5,RC Paris,SR Colmar,3 , 3
+5,FC Nancy,CO Roubaix-Tourcoing,1 , 2
+5,AS Saint-Etienne,Toulouse FC,4 , 2
+6,AS Red Star 93,FC Metz,2 , 6
+6,OGC Nice,Olympique de Marseille,0 , 5
+6,Stade de Reims,RC Strasbourg,3 , 0
+6,Stade Rennais FC,CO Roubaix-Tourcoing,3 , 1
+6,LOSC Lille,Toulouse FC,1 , 1
+6,FC Sochaux-Montbéliard,RC Paris,1 , 2
+6,FC Sète 34,SO Montpellier,2 , 1
+6,AS Saint-Etienne,AS Cannes,3 , 1
+6,FC Nancy,SR Colmar,1 , 2
+7,Olympique de Marseille,Stade Rennais FC,1 , 3
+7,RC Paris,FC Nancy,5 , 1
+7,AS Cannes,FC Sète 34,0 , 2
+7,Toulouse FC,Stade de Reims,2 , 0
+7,FC Metz,LOSC Lille,3 , 1
+7,SO Montpellier,OGC Nice,1 , 1
+7,CO Roubaix-Tourcoing,FC Sochaux-Montbéliard,5 , 1
+7,SR Colmar,AS Red Star 93,3 , 0
+7,RC Strasbourg,AS Saint-Etienne,1 , 2
+8,RC Paris,Stade Rennais FC,2 , 3
+8,AS Cannes,Stade de Reims,1 , 3
+8,RC Strasbourg,LOSC Lille,0 , 6
+8,SR Colmar,FC Metz,5 , 1
+8,CO Roubaix-Tourcoing,OGC Nice,2 , 1
+8,Olympique de Marseille,FC Sète 34,3 , 1
+8,FC Nancy,FC Sochaux-Montbéliard,2 , 2
+8,SO Montpellier,AS Saint-Etienne,2 , 2
+8,Toulouse FC,AS Red Star 93,4 , 1
+9,Stade Rennais FC,FC Nancy,4 , 0
+9,Stade de Reims,SO Montpellier,6 , 4
+9,LOSC Lille,AS Cannes,2 , 0
+9,AS Saint-Etienne,Olympique de Marseille,4 , 1
+9,FC Sète 34,CO Roubaix-Tourcoing,0 , 0
+9,FC Sochaux-Montbéliard,SR Colmar,2 , 0
+9,OGC Nice,RC Paris,3 , 0
+9,FC Metz,Toulouse FC,2 , 1
+9,AS Red Star 93,RC Strasbourg,1 , 1
+10,FC Nancy,LOSC Lille,0 , 1
+10,Olympique de Marseille,Toulouse FC,4 , 0
+10,FC Sochaux-Montbéliard,Stade de Reims,3 , 0
+10,RC Paris,AS Red Star 93,4 , 0
+10,OGC Nice,FC Sète 34,4 , 1
+10,CO Roubaix-Tourcoing,FC Metz,2 , 2
+10,SR Colmar,AS Cannes,1 , 1
+10,SO Montpellier,RC Strasbourg,2 , 0
+10,Stade Rennais FC,AS Saint-Etienne,1 , 3
+11,LOSC Lille,FC Sochaux-Montbéliard,3 , 1
+11,RC Strasbourg,Olympique de Marseille,1 , 2
+11,Stade de Reims,Stade Rennais FC,4 , 2
+11,FC Metz,RC Paris,1 , 2
+11,AS Saint-Etienne,OGC Nice,2 , 0
+11,FC Sète 34,SR Colmar,3 , 4
+11,Toulouse FC,CO Roubaix-Tourcoing,2 , 0
+11,AS Cannes,SO Montpellier,3 , 0
+11,AS Red Star 93,FC Nancy,3 , 3
+12,LOSC Lille,Olympique de Marseille,2 , 2
+12,Stade de Reims,CO Roubaix-Tourcoing,1 , 0
+12,Stade Rennais FC,SR Colmar,2 , 0
+12,AS Saint-Etienne,RC Paris,3 , 3
+12,OGC Nice,FC Sochaux-Montbéliard,5 , 4
+12,FC Sète 34,FC Nancy,1 , 0
+12,FC Metz,AS Cannes,2 , 1
+12,Toulouse FC,RC Strasbourg,5 , 1
+12,AS Red Star 93,SO Montpellier,3 , 0
+13,Olympique de Marseille,Stade de Reims,3 , 4
+13,SO Montpellier,LOSC Lille,2 , 1
+13,RC Paris,FC Sète 34,5 , 1
+13,FC Sochaux-Montbéliard,Stade Rennais FC,3 , 1
+13,CO Roubaix-Tourcoing,AS Saint-Etienne,2 , 2
+13,FC Nancy,OGC Nice,1 , 1
+13,SR Colmar,Toulouse FC,2 , 0
+13,RC Strasbourg,FC Metz,2 , 1
+13,AS Cannes,AS Red Star 93,4 , 1
+14,Stade de Reims,FC Nancy,3 , 3
+14,LOSC Lille,RC Paris,2 , 3
+14,FC Metz,Olympique de Marseille,1 , 4
+14,FC Sète 34,Stade Rennais FC,0 , 0
+14,OGC Nice,SR Colmar,2 , 0
+14,AS Saint-Etienne,FC Sochaux-Montbéliard,1 , 1
+14,Toulouse FC,SO Montpellier,4 , 1
+14,AS Red Star 93,CO Roubaix-Tourcoing,1 , 1
+14,RC Strasbourg,AS Cannes,1 , 0
+15,RC Paris,Stade de Reims,3 , 1
+15,Olympique de Marseille,AS Red Star 93,1 , 1
+15,CO Roubaix-Tourcoing,LOSC Lille,1 , 4
+15,Stade Rennais FC,OGC Nice,2 , 0
+15,FC Nancy,AS Saint-Etienne,4 , 2
+15,FC Sochaux-Montbéliard,FC Sète 34,7 , 0
+15,SR Colmar,RC Strasbourg,2 , 1
+15,AS Cannes,Toulouse FC,2 , 1
+15,SO Montpellier,FC Metz,4 , 1
+16,CO Roubaix-Tourcoing,RC Strasbourg,1 , 0
+16,FC Sète 34,AS Saint-Etienne,1 , 1
+16,RC Paris,Toulouse FC,5 , 0
+16,Olympique de Marseille,AS Cannes,1 , 0
+16,OGC Nice,Stade de Reims,2 , 2
+16,Stade Rennais FC,LOSC Lille,1 , 1
+16,FC Sochaux-Montbéliard,AS Red Star 93,0 , 2
+16,SR Colmar,SO Montpellier,1 , 3
+16,FC Nancy,FC Metz,2 , 1
+17,RC Strasbourg,RC Paris,3 , 1
+17,SO Montpellier,Olympique de Marseille,1 , 2
+17,Stade de Reims,FC Sète 34,2 , 0
+17,LOSC Lille,OGC Nice,4 , 1
+17,AS Red Star 93,Stade Rennais FC,0 , 0
+17,AS Saint-Etienne,SR Colmar,5 , 2
+17,FC Metz,FC Sochaux-Montbéliard,4 , 1
+17,Toulouse FC,FC Nancy,2 , 1
+17,AS Cannes,CO Roubaix-Tourcoing,3 , 0
+18,RC Paris,AS Cannes,3 , 0
+18,LOSC Lille,FC Sète 34,6 , 1
+18,SR Colmar,Olympique de Marseille,1 , 1
+18,Stade Rennais FC,FC Metz,4 , 3
+18,Stade de Reims,AS Saint-Etienne,2 , 3
+18,OGC Nice,AS Red Star 93,2 , 2
+18,Toulouse FC,FC Sochaux-Montbéliard,3 , 0
+18,SO Montpellier,CO Roubaix-Tourcoing,4 , 1
+18,FC Nancy,RC Strasbourg,3 , 3
+19,CO Roubaix-Tourcoing,Olympique de Marseille,2 , 10
+19,RC Paris,SO Montpellier,1 , 1
+19,AS Saint-Etienne,LOSC Lille,2 , 2
+19,Stade Rennais FC,Toulouse FC,2 , 0
+19,Stade de Reims,SR Colmar,1 , 2
+19,FC Metz,OGC Nice,2 , 2
+19,FC Sochaux-Montbéliard,RC Strasbourg,3 , 0
+19,FC Sète 34,AS Red Star 93,1 , 0
+19,AS Cannes,FC Nancy,4 , 1
+20,AS Red Star 93,AS Saint-Etienne,4 , 1
+20,Olympique de Marseille,RC Paris,3 , 0
+20,LOSC Lille,Stade de Reims,2 , 1
+20,RC Strasbourg,Stade Rennais FC,3 , 0
+20,SR Colmar,CO Roubaix-Tourcoing,5 , 0
+20,AS Cannes,FC Sochaux-Montbéliard,1 , 1
+20,Toulouse FC,OGC Nice,3 , 0
+20,FC Metz,FC Sète 34,0 , 2
+20,SO Montpellier,FC Nancy,3 , 4
+21,LOSC Lille,SR Colmar,8 , 0
+21,FC Nancy,Olympique de Marseille,3 , 2
+21,RC Paris,CO Roubaix-Tourcoing,1 , 1
+21,Stade Rennais FC,AS Cannes,1 , 0
+21,Stade de Reims,AS Red Star 93,4 , 0
+21,FC Sochaux-Montbéliard,SO Montpellier,4 , 2
+21,AS Saint-Etienne,FC Metz,3 , 1
+21,OGC Nice,RC Strasbourg,1 , 0
+21,FC Sète 34,Toulouse FC,0 , 0
+22,Olympique de Marseille,FC Sochaux-Montbéliard,3 , 1
+22,AS Red Star 93,LOSC Lille,1 , 0
+22,FC Metz,Stade de Reims,2 , 3
+22,SO Montpellier,Stade Rennais FC,2 , 1
+22,Toulouse FC,AS Saint-Etienne,5 , 1
+22,AS Cannes,OGC Nice,1 , 2
+22,RC Strasbourg,FC Sète 34,0 , 0
+22,CO Roubaix-Tourcoing,FC Nancy,3 , 1
+22,SR Colmar,RC Paris,3 , 0
+23,LOSC Lille,FC Metz,5 , 0
+23,Stade Rennais FC,Olympique de Marseille,6 , 1
+23,Stade de Reims,Toulouse FC,2 , 0
+23,FC Nancy,RC Paris,3 , 1
+23,AS Saint-Etienne,RC Strasbourg,5 , 1
+23,OGC Nice,SO Montpellier,0 , 0
+23,AS Red Star 93,SR Colmar,5 , 2
+23,FC Sète 34,AS Cannes,1 , 0
+23,FC Sochaux-Montbéliard,CO Roubaix-Tourcoing,5 , 1
+24,Toulouse FC,LOSC Lille,1 , 4
+24,Olympique de Marseille,OGC Nice,2 , 2
+24,RC Strasbourg,Stade de Reims,1 , 4
+24,CO Roubaix-Tourcoing,Stade Rennais FC,3 , 2
+24,RC Paris,FC Sochaux-Montbéliard,0 , 1
+24,AS Cannes,AS Saint-Etienne,1 , 0
+24,SR Colmar,FC Nancy,0 , 2
+24,SO Montpellier,FC Sète 34,1 , 0
+24,FC Metz,AS Red Star 93,2 , 3
+25,LOSC Lille,RC Strasbourg,1 , 2
+25,Stade de Reims,AS Cannes,5 , 2
+25,FC Sète 34,Olympique de Marseille,1 , 1
+25,Stade Rennais FC,RC Paris,0 , 0
+25,OGC Nice,CO Roubaix-Tourcoing,4 , 2
+25,AS Saint-Etienne,SO Montpellier,0 , 4
+25,FC Sochaux-Montbéliard,FC Nancy,3 , 2
+25,AS Red Star 93,Toulouse FC,3 , 1
+25,FC Metz,SR Colmar,2 , 0
+26,RC Paris,OGC Nice,1 , 1
+26,SR Colmar,FC Sochaux-Montbéliard,0 , 3
+26,Toulouse FC,FC Metz,1 , 0
+26,CO Roubaix-Tourcoing,FC Sète 34,2 , 1
+26,RC Strasbourg,AS Red Star 93,3 , 2
+26,AS Cannes,LOSC Lille,1 , 6
+26,SO Montpellier,Stade de Reims,0 , 1
+26,Olympique de Marseille,AS Saint-Etienne,6 , 1
+26,FC Nancy,Stade Rennais FC,1 , 2
+27,LOSC Lille,SO Montpellier,5 , 0
+27,Stade de Reims,Olympique de Marseille,2 , 0
+27,Stade Rennais FC,FC Sochaux-Montbéliard,1 , 0
+27,FC Sète 34,RC Paris,0 , 2
+27,OGC Nice,FC Nancy,0 , 0
+27,Toulouse FC,SR Colmar,7 , 0
+27,AS Red Star 93,AS Cannes,6 , 3
+27,FC Metz,RC Strasbourg,3 , 0
+27,AS Saint-Etienne,CO Roubaix-Tourcoing,6 , 0
+28,CO Roubaix-Tourcoing,Stade de Reims,1 , 5
+28,Olympique de Marseille,LOSC Lille,2 , 1
+28,SR Colmar,Stade Rennais FC,2 , 2
+28,FC Sochaux-Montbéliard,OGC Nice,2 , 0
+28,RC Paris,AS Saint-Etienne,1 , 2
+28,RC Strasbourg,Toulouse FC,0 , 1
+28,SO Montpellier,AS Red Star 93,6 , 1
+28,FC Nancy,FC Sète 34,3 , 0
+28,AS Cannes,FC Metz,1 , 1
+29,Stade de Reims,RC Paris,1 , 0
+29,LOSC Lille,CO Roubaix-Tourcoing,6 , 2
+29,AS Red Star 93,Olympique de Marseille,1 , 0
+29,OGC Nice,Stade Rennais FC,8 , 0
+29,AS Saint-Etienne,FC Nancy,4 , 1
+29,FC Sète 34,FC Sochaux-Montbéliard,3 , 0
+29,Toulouse FC,AS Cannes,1 , 0
+29,FC Metz,SO Montpellier,2 , 2
+29,RC Strasbourg,SR Colmar,0 , 0
+30,Stade Rennais FC,FC Sète 34,3 , 1
+30,FC Nancy,Stade de Reims,0 , 1
+30,RC Paris,LOSC Lille,4 , 3
+30,Olympique de Marseille,FC Metz,4 , 2
+30,AS Cannes,RC Strasbourg,1 , 1
+30,FC Sochaux-Montbéliard,AS Saint-Etienne,6 , 0
+30,SR Colmar,OGC Nice,1 , 2
+30,SO Montpellier,Toulouse FC,2 , 1
+30,CO Roubaix-Tourcoing,AS Red Star 93,2 , 2
+31,Stade de Reims,FC Sochaux-Montbéliard,2 , 2
+31,LOSC Lille,FC Nancy,4 , 0
+31,Toulouse FC,Olympique de Marseille,2 , 1
+31,AS Saint-Etienne,Stade Rennais FC,1 , 1
+31,FC Sète 34,OGC Nice,3 , 2
+31,AS Red Star 93,RC Paris,1 , 0
+31,RC Strasbourg,SO Montpellier,3 , 0
+31,AS Cannes,SR Colmar,4 , 2
+31,FC Metz,CO Roubaix-Tourcoing,3 , 0
+32,FC Sochaux-Montbéliard,LOSC Lille,1 , 3
+32,Stade Rennais FC,Stade de Reims,1 , 0
+32,Olympique de Marseille,RC Strasbourg,5 , 0
+32,OGC Nice,AS Saint-Etienne,1 , 0
+32,RC Paris,FC Metz,2 , 2
+32,CO Roubaix-Tourcoing,Toulouse FC,3 , 1
+32,FC Nancy,AS Red Star 93,3 , 1
+32,SO Montpellier,AS Cannes,1 , 3
+32,SR Colmar,FC Sète 34,5 , 1
+33,AS Red Star 93,FC Sochaux-Montbéliard,2 , 2
+33,Stade de Reims,OGC Nice,6 , 1
+33,LOSC Lille,Stade Rennais FC,3 , 0
+33,AS Cannes,Olympique de Marseille,1 , 0
+33,AS Saint-Etienne,FC Sète 34,0 , 0
+33,Toulouse FC,RC Paris,2 , 1
+33,SO Montpellier,SR Colmar,0 , 1
+33,RC Strasbourg,CO Roubaix-Tourcoing,1 , 2
+33,FC Metz,FC Nancy,2 , 0
+34,OGC Nice,LOSC Lille,1 , 2
+34,Olympique de Marseille,SO Montpellier,6 , 3
+34,Stade Rennais FC,AS Red Star 93,1 , 1
+34,FC Sochaux-Montbéliard,FC Metz,2 , 1
+34,RC Paris,RC Strasbourg,4 , 2
+34,SR Colmar,AS Saint-Etienne,3 , 1
+34,FC Nancy,Toulouse FC,2 , 0
+34,CO Roubaix-Tourcoing,AS Cannes,4 , 0
+34,FC Sète 34,Stade de Reims,1 , 2

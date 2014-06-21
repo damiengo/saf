@@ -1,0 +1,241 @@
+day,home_team,away_team,home_score,away_score
+1,FC Sochaux-Montbéliard,EAC Roubaix,0 , 2
+1,Olympique Lillois,AS Cannes,0 , 0
+1,FC Mulhouse,SC Nîmois,6 , 0
+1,FC Antibes,SC Fives,2 , 3
+1,Olympique d'Alès,Olympique de Marseille,1 , 0
+1,AS Red Star 93,Stade Rennais FC,2 , 1
+1,RC Strasbourg,FC Sète 34,5 , 2
+1,SO Montpellier,RC Paris,3 , 3
+2,FC Sochaux-Montbéliard,Stade Rennais FC,2 , 1
+2,FC Mulhouse,Olympique de Marseille,3 , 4
+2,Olympique Lillois,FC Sète 34,2 , 0
+2,FC Antibes,AS Red Star 93,1 , 1
+2,RC Paris,EAC Roubaix,3 , 1
+2,Olympique d'Alès,SC Nîmois,2 , 4
+2,RC Strasbourg,AS Cannes,1 , 1
+2,SO Montpellier,SC Fives,2 , 0
+3,EAC Roubaix,RC Strasbourg,1 , 2
+3,RC Paris,Olympique d'Alès,6 , 3
+3,FC Sète 34,AS Red Star 93,2 , 2
+3,SC Nîmois,SO Montpellier,4 , 5
+3,AS Cannes,FC Sochaux-Montbéliard,0 , 2
+3,SC Fives,FC Mulhouse,0 , 2
+3,Stade Rennais FC,Olympique Lillois,4 , 0
+3,Olympique de Marseille,FC Antibes,7 , 2
+4,SC Nîmois,FC Antibes,3 , 1
+4,Olympique de Marseille,SO Montpellier,4 , 1
+4,Stade Rennais FC,RC Strasbourg,0 , 2
+4,SC Fives,Olympique d'Alès,1 , 0
+4,AS Cannes,AS Red Star 93,6 , 2
+4,EAC Roubaix,Olympique Lillois,2 , 1
+4,RC Paris,FC Mulhouse,2 , 3
+4,FC Sète 34,FC Sochaux-Montbéliard,1 , 1
+5,FC Sochaux-Montbéliard,SC Fives,2 , 1
+5,FC Mulhouse,Stade Rennais FC,2 , 2
+5,Olympique Lillois,Olympique de Marseille,5 , 0
+5,FC Antibes,FC Sète 34,1 , 0
+5,AS Red Star 93,RC Paris,1 , 2
+5,Olympique d'Alès,EAC Roubaix,0 , 3
+5,RC Strasbourg,SC Nîmois,3 , 0
+5,SO Montpellier,AS Cannes,2 , 3
+6,FC Sochaux-Montbéliard,SC Nîmois,1 , 0
+6,Olympique d'Alès,FC Sète 34,3 , 0
+6,RC Paris,RC Strasbourg,2 , 2
+6,SO Montpellier,EAC Roubaix,0 , 2
+6,AS Cannes,FC Mulhouse,5 , 0
+6,SC Fives,Olympique Lillois,2 , 1
+6,Stade Rennais FC,FC Antibes,4 , 1
+6,Olympique de Marseille,AS Red Star 93,4 , 3
+7,FC Sochaux-Montbéliard,AS Red Star 93,4 , 3
+7,FC Mulhouse,Olympique d'Alès,2 , 0
+7,Olympique Lillois,RC Strasbourg,2 , 1
+7,FC Antibes,SO Montpellier,4 , 0
+7,Stade Rennais FC,EAC Roubaix,0 , 1
+7,SC Nîmois,Olympique de Marseille,1 , 1
+7,FC Sète 34,AS Cannes,1 , 1
+7,RC Paris,SC Fives,7 , 0
+8,SO Montpellier,FC Sochaux-Montbéliard,0 , 4
+8,AS Red Star 93,FC Mulhouse,3 , 1
+8,Olympique d'Alès,Olympique Lillois,3 , 1
+8,RC Strasbourg,FC Antibes,6 , 1
+8,SC Fives,Stade Rennais FC,4 , 1
+8,EAC Roubaix,Olympique de Marseille,0 , 3
+8,SC Nîmois,FC Sète 34,1 , 3
+8,AS Cannes,RC Paris,0 , 2
+9,FC Sochaux-Montbéliard,RC Paris,3 , 1
+9,EAC Roubaix,FC Mulhouse,1 , 2
+9,Olympique Lillois,SC Nîmois,3 , 1
+9,AS Cannes,FC Antibes,3 , 1
+9,AS Red Star 93,SC Fives,5 , 2
+9,Stade Rennais FC,Olympique d'Alès,6 , 0
+9,Olympique de Marseille,RC Strasbourg,1 , 1
+9,SO Montpellier,FC Sète 34,0 , 2
+10,FC Sochaux-Montbéliard,RC Strasbourg,2 , 3
+10,Olympique Lillois,AS Red Star 93,0 , 4
+10,Stade Rennais FC,AS Cannes,3 , 0
+10,FC Sète 34,EAC Roubaix,2 , 2
+10,FC Mulhouse,SO Montpellier,4 , 1
+10,FC Antibes,Olympique d'Alès,1 , 0
+10,Olympique de Marseille,SC Fives,5 , 1
+10,RC Paris,SC Nîmois,2 , 0
+11,RC Strasbourg,FC Mulhouse,4 , 2
+11,Olympique d'Alès,FC Sochaux-Montbéliard,0 , 5
+11,SO Montpellier,Olympique Lillois,1 , 3
+11,RC Paris,FC Antibes,5 , 1
+11,SC Nîmois,Stade Rennais FC,1 , 2
+11,AS Cannes,Olympique de Marseille,3 , 0
+11,SC Fives,FC Sète 34,1 , 2
+11,EAC Roubaix,AS Red Star 93,2 , 0
+12,FC Sochaux-Montbéliard,FC Mulhouse,8 , 0
+12,Olympique Lillois,FC Antibes,10 , 0
+12,AS Red Star 93,Olympique d'Alès,3 , 1
+12,RC Strasbourg,SO Montpellier,2 , 1
+12,AS Cannes,SC Fives,2 , 0
+12,SC Nîmois,EAC Roubaix,1 , 1
+12,Stade Rennais FC,Olympique de Marseille,1 , 1
+12,FC Sète 34,RC Paris,2 , 2
+13,FC Antibes,FC Sochaux-Montbéliard,1 , 1
+13,FC Mulhouse,Olympique Lillois,1 , 0
+13,SO Montpellier,AS Red Star 93,0 , 3
+13,Olympique d'Alès,RC Strasbourg,1 , 5
+13,SC Fives,EAC Roubaix,0 , 0
+13,SC Nîmois,AS Cannes,1 , 2
+13,RC Paris,Stade Rennais FC,2 , 1
+13,Olympique de Marseille,FC Sète 34,1 , 1
+14,FC Sochaux-Montbéliard,Olympique Lillois,5 , 2
+14,FC Antibes,FC Mulhouse,1 , 1
+14,RC Strasbourg,AS Red Star 93,5 , 2
+14,EAC Roubaix,AS Cannes,2 , 0
+14,FC Sète 34,Stade Rennais FC,2 , 0
+14,RC Paris,Olympique de Marseille,5 , 1
+14,SC Fives,SC Nîmois,3 , 1
+14,Olympique d'Alès,SO Montpellier,1 , 1
+15,Olympique d'Alès,AS Cannes,5 , 1
+15,AS Red Star 93,SC Nîmois,2 , 2
+15,SO Montpellier,Stade Rennais FC,4 , 1
+15,RC Strasbourg,SC Fives,2 , 1
+15,FC Antibes,EAC Roubaix,4 , 2
+15,Olympique Lillois,RC Paris,0 , 0
+15,FC Mulhouse,FC Sète 34,1 , 1
+15,Olympique de Marseille,FC Sochaux-Montbéliard,1 , 3
+16,EAC Roubaix,FC Sochaux-Montbéliard,0 , 1
+16,AS Cannes,Olympique Lillois,1 , 2
+16,SC Nîmois,FC Mulhouse,3 , 2
+16,SC Fives,FC Antibes,2 , 1
+16,Olympique de Marseille,Olympique d'Alès,3 , 2
+16,Stade Rennais FC,AS Red Star 93,3 , 1
+16,FC Sète 34,RC Strasbourg,1 , 0
+16,RC Paris,SO Montpellier,1 , 0
+17,Stade Rennais FC,FC Sochaux-Montbéliard,3 , 3
+17,Olympique de Marseille,FC Mulhouse,8 , 3
+17,FC Sète 34,Olympique Lillois,3 , 1
+17,AS Red Star 93,FC Antibes,2 , 2
+17,EAC Roubaix,RC Paris,5 , 3
+17,SC Nîmois,Olympique d'Alès,1 , 1
+17,AS Cannes,RC Strasbourg,0 , 1
+17,SC Fives,SO Montpellier,1 , 0
+18,RC Strasbourg,EAC Roubaix,1 , 1
+18,Olympique d'Alès,RC Paris,7 , 2
+18,AS Red Star 93,FC Sète 34,3 , 4
+18,SO Montpellier,SC Nîmois,0 , 3
+18,FC Sochaux-Montbéliard,AS Cannes,4 , 2
+18,FC Mulhouse,SC Fives,1 , 0
+18,Olympique Lillois,Stade Rennais FC,3 , 1
+18,FC Antibes,Olympique de Marseille,1 , 7
+19,FC Antibes,SC Nîmois,4 , 1
+19,SO Montpellier,Olympique de Marseille,3 , 2
+19,RC Strasbourg,Stade Rennais FC,2 , 1
+19,Olympique d'Alès,SC Fives,2 , 1
+19,AS Red Star 93,AS Cannes,2 , 1
+19,FC Mulhouse,RC Paris,3 , 1
+19,FC Sochaux-Montbéliard,FC Sète 34,0 , 0
+19,Olympique Lillois,EAC Roubaix,4 , 0
+20,SC Fives,FC Sochaux-Montbéliard,0 , 3
+20,Stade Rennais FC,FC Mulhouse,6 , 2
+20,Olympique de Marseille,Olympique Lillois,3 , 1
+20,FC Sète 34,FC Antibes,1 , 1
+20,RC Paris,AS Red Star 93,2 , 2
+20,EAC Roubaix,Olympique d'Alès,2 , 0
+20,SC Nîmois,RC Strasbourg,0 , 1
+20,AS Cannes,SO Montpellier,7 , 2
+21,SC Nîmois,FC Sochaux-Montbéliard,0 , 2
+21,FC Sète 34,Olympique d'Alès,1 , 0
+21,RC Strasbourg,RC Paris,6 , 0
+21,EAC Roubaix,SO Montpellier,6 , 1
+21,FC Mulhouse,AS Cannes,4 , 0
+21,Olympique Lillois,SC Fives,3 , 0
+21,FC Antibes,Stade Rennais FC,0 , 0
+21,AS Red Star 93,Olympique de Marseille,4 , 1
+22,AS Red Star 93,FC Sochaux-Montbéliard,2 , 7
+22,Olympique d'Alès,FC Mulhouse,2 , 2
+22,RC Strasbourg,Olympique Lillois,4 , 1
+22,SO Montpellier,FC Antibes,2 , 0
+22,EAC Roubaix,Stade Rennais FC,0 , 0
+22,Olympique de Marseille,SC Nîmois,2 , 1
+22,AS Cannes,FC Sète 34,2 , 0
+22,SC Fives,RC Paris,2 , 1
+23,FC Sochaux-Montbéliard,SO Montpellier,9 , 0
+23,FC Mulhouse,AS Red Star 93,0 , 0
+23,Olympique Lillois,Olympique d'Alès,2 , 1
+23,FC Antibes,RC Strasbourg,1 , 3
+23,Stade Rennais FC,SC Fives,3 , 1
+23,Olympique de Marseille,EAC Roubaix,2 , 4
+23,FC Sète 34,SC Nîmois,2 , 2
+23,RC Paris,AS Cannes,3 , 2
+24,RC Paris,FC Sochaux-Montbéliard,1 , 2
+24,FC Mulhouse,EAC Roubaix,6 , 1
+24,SC Nîmois,Olympique Lillois,1 , 2
+24,FC Antibes,AS Cannes,1 , 1
+24,SC Fives,AS Red Star 93,6 , 0
+24,Olympique d'Alès,Stade Rennais FC,3 , 2
+24,RC Strasbourg,Olympique de Marseille,1 , 0
+24,FC Sète 34,SO Montpellier,3 , 0
+25,RC Strasbourg,FC Sochaux-Montbéliard,0 , 1
+25,AS Red Star 93,Olympique Lillois,1 , 1
+25,AS Cannes,Stade Rennais FC,3 , 0
+25,EAC Roubaix,FC Sète 34,0 , 1
+25,SO Montpellier,FC Mulhouse,5 , 3
+25,Olympique d'Alès,FC Antibes,2 , 1
+25,SC Fives,Olympique de Marseille,6 , 3
+25,SC Nîmois,RC Paris,0 , 2
+26,FC Mulhouse,RC Strasbourg,4 , 1
+26,FC Sochaux-Montbéliard,Olympique d'Alès,6 , 2
+26,Olympique Lillois,SO Montpellier,4 , 1
+26,FC Antibes,RC Paris,2 , 5
+26,Stade Rennais FC,SC Nîmois,2 , 0
+26,Olympique de Marseille,AS Cannes,2 , 2
+26,FC Sète 34,SC Fives,4 , 0
+26,AS Red Star 93,EAC Roubaix,1 , 3
+27,FC Mulhouse,FC Sochaux-Montbéliard,1 , 5
+27,FC Antibes,Olympique Lillois,1 , 0
+27,Olympique d'Alès,AS Red Star 93,3 , 2
+27,SO Montpellier,RC Strasbourg,0 , 0
+27,SC Fives,AS Cannes,1 , 2
+27,EAC Roubaix,SC Nîmois,4 , 0
+27,Olympique de Marseille,Stade Rennais FC,4 , 1
+27,RC Paris,FC Sète 34,6 , 2
+28,FC Sochaux-Montbéliard,FC Antibes,3 , 7
+28,Olympique Lillois,FC Mulhouse,0 , 1
+28,AS Red Star 93,SO Montpellier,0 , 1
+28,RC Strasbourg,Olympique d'Alès,3 , 2
+28,EAC Roubaix,SC Fives,0 , 1
+28,AS Cannes,SC Nîmois,1 , 0
+28,Stade Rennais FC,RC Paris,0 , 1
+28,FC Sète 34,Olympique de Marseille,6 , 3
+29,Olympique Lillois,FC Sochaux-Montbéliard,2 , 1
+29,FC Mulhouse,FC Antibes,4 , 1
+29,AS Red Star 93,RC Strasbourg,1 , 3
+29,AS Cannes,EAC Roubaix,5 , 2
+29,Stade Rennais FC,FC Sète 34,4 , 1
+29,Olympique de Marseille,RC Paris,3 , 2
+29,SC Nîmois,SC Fives,1 , 4
+29,SO Montpellier,Olympique d'Alès,0 , 3
+30,AS Cannes,Olympique d'Alès,6 , 2
+30,SC Nîmois,AS Red Star 93,2 , 1
+30,Stade Rennais FC,SO Montpellier,4 , 1
+30,SC Fives,RC Strasbourg,1 , 3
+30,EAC Roubaix,FC Antibes,1 , 4
+30,RC Paris,Olympique Lillois,3 , 0
+30,FC Sète 34,FC Mulhouse,2 , 0
+30,FC Sochaux-Montbéliard,Olympique de Marseille,4 , 0
