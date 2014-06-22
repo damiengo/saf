@@ -1,0 +1,307 @@
+day,home_team,away_team,home_score,away_score
+1,OGC Nice,Toulouse FC,2 , 4
+1,RC Strasbourg,Girondins de Bordeaux,3 , 1
+1,RC Lens,Olympique Lyonnais,1 , 2
+1,AS Monaco FC,FC Rouen 1899,2 , 1
+1,FC Nantes,CS Sedan,2 , 2
+1,Stade Français,Angers SCO,2 , 2
+1,Stade Rennais FC,RC Paris,2 , 2
+1,AS Saint-Etienne,Valenciennes FC,1 , 1
+1,Stade de Reims,Nîmes Olympique,0 , 0
+2,Toulouse FC,AS Saint-Etienne,4 , 0
+2,Nîmes Olympique,Stade Français,3 , 0
+2,CS Sedan,RC Strasbourg,2 , 1
+2,AS Monaco FC,OGC Nice,0 , 0
+2,Girondins de Bordeaux,Stade de Reims,4 , 2
+2,Olympique Lyonnais,FC Rouen 1899,0 , 1
+2,Valenciennes FC,Stade Rennais FC,0 , 0
+2,RC Paris,FC Nantes,3 , 0
+2,Angers SCO,RC Lens,1 , 2
+3,RC Strasbourg,RC Paris,2 , 1
+3,OGC Nice,Olympique Lyonnais,1 , 2
+3,FC Rouen 1899,Angers SCO,0 , 0
+3,FC Nantes,Valenciennes FC,3 , 1
+3,AS Saint-Etienne,AS Monaco FC,4 , 1
+3,Stade Rennais FC,Toulouse FC,4 , 2
+3,CS Sedan,Girondins de Bordeaux,2 , 4
+3,RC Lens,Nîmes Olympique,4 , 2
+3,Stade Français,Stade de Reims,0 , 2
+4,Toulouse FC,FC Nantes,1 , 0
+4,Nîmes Olympique,FC Rouen 1899,0 , 2
+4,Stade de Reims,RC Lens,1 , 0
+4,RC Paris,CS Sedan,2 , 2
+4,Valenciennes FC,RC Strasbourg,1 , 0
+4,Angers SCO,OGC Nice,0 , 3
+4,Girondins de Bordeaux,Stade Français,4 , 1
+4,Olympique Lyonnais,AS Saint-Etienne,4 , 5
+4,AS Monaco FC,Stade Rennais FC,3 , 2
+5,RC Strasbourg,Toulouse FC,1 , 1
+5,FC Rouen 1899,Stade de Reims,3 , 4
+5,FC Nantes,AS Monaco FC,1 , 3
+5,RC Paris,Girondins de Bordeaux,3 , 1
+5,RC Lens,Stade Français,3 , 0
+5,Stade Rennais FC,Olympique Lyonnais,2 , 3
+5,CS Sedan,Valenciennes FC,0 , 2
+5,AS Saint-Etienne,Angers SCO,2 , 2
+5,OGC Nice,Nîmes Olympique,3 , 2
+6,Toulouse FC,CS Sedan,2 , 0
+6,FC Nantes,Olympique Lyonnais,3 , 1
+6,AS Monaco FC,RC Strasbourg,4 , 2
+6,Valenciennes FC,RC Paris,1 , 3
+6,Nîmes Olympique,AS Saint-Etienne,0 , 2
+6,Girondins de Bordeaux,RC Lens,1 , 1
+6,Angers SCO,Stade Rennais FC,1 , 1
+6,Stade Français,FC Rouen 1899,5 , 2
+6,Stade de Reims,OGC Nice,2 , 0
+7,FC Rouen 1899,RC Lens,3 , 0
+7,FC Nantes,Angers SCO,1 , 0
+7,RC Paris,Toulouse FC,1 , 1
+7,AS Saint-Etienne,Stade de Reims,1 , 1
+7,CS Sedan,AS Monaco FC,4 , 0
+7,Valenciennes FC,Girondins de Bordeaux,1 , 0
+7,RC Strasbourg,Olympique Lyonnais,5 , 0
+7,OGC Nice,Stade Français,3 , 1
+7,Stade Rennais FC,Nîmes Olympique,3 , 1
+8,Toulouse FC,Valenciennes FC,2 , 1
+8,AS Monaco FC,RC Paris,5 , 3
+8,RC Lens,OGC Nice,2 , 1
+8,Stade de Reims,Stade Rennais FC,3 , 3
+8,Olympique Lyonnais,CS Sedan,2 , 0
+8,Stade Français,AS Saint-Etienne,1 , 3
+8,Girondins de Bordeaux,FC Rouen 1899,2 , 0
+8,Angers SCO,RC Strasbourg,1 , 1
+8,Nîmes Olympique,FC Nantes,3 , 0
+9,AS Saint-Etienne,RC Lens,1 , 0
+9,Toulouse FC,Girondins de Bordeaux,0 , 1
+9,Valenciennes FC,AS Monaco FC,0 , 0
+9,RC Strasbourg,Nîmes Olympique,3 , 0
+9,Stade Rennais FC,Stade Français,4 , 3
+9,FC Nantes,Stade de Reims,0 , 0
+9,RC Paris,Olympique Lyonnais,1 , 3
+9,OGC Nice,FC Rouen 1899,2 , 0
+9,CS Sedan,Angers SCO,2 , 1
+10,Girondins de Bordeaux,OGC Nice,6 , 2
+10,Stade de Reims,RC Strasbourg,0 , 0
+10,Angers SCO,RC Paris,2 , 1
+10,RC Lens,Stade Rennais FC,5 , 0
+10,Olympique Lyonnais,Valenciennes FC,1 , 1
+10,Nîmes Olympique,CS Sedan,4 , 2
+10,Stade Français,FC Nantes,4 , 0
+10,AS Monaco FC,Toulouse FC,5 , 0
+10,FC Rouen 1899,AS Saint-Etienne,0 , 0
+11,AS Saint-Etienne,OGC Nice,2 , 2
+11,Toulouse FC,Olympique Lyonnais,1 , 0
+11,RC Strasbourg,Stade Français,1 , 1
+11,Stade Rennais FC,FC Rouen 1899,2 , 1
+11,RC Paris,Nîmes Olympique,5 , 0
+11,FC Nantes,RC Lens,2 , 1
+11,CS Sedan,Stade de Reims,2 , 0
+11,Valenciennes FC,Angers SCO,1 , 3
+11,AS Monaco FC,Girondins de Bordeaux,2 , 0
+12,Girondins de Bordeaux,AS Saint-Etienne,2 , 3
+12,Olympique Lyonnais,AS Monaco FC,5 , 1
+12,Angers SCO,Toulouse FC,4 , 3
+12,OGC Nice,Stade Rennais FC,0 , 2
+12,Stade de Reims,RC Paris,1 , 4
+12,RC Lens,RC Strasbourg,2 , 1
+12,Stade Français,CS Sedan,3 , 2
+12,Nîmes Olympique,Valenciennes FC,2 , 0
+12,FC Rouen 1899,FC Nantes,5 , 2
+13,Stade Rennais FC,AS Saint-Etienne,1 , 1
+13,AS Monaco FC,Angers SCO,0 , 1
+13,RC Paris,Stade Français,3 , 2
+13,CS Sedan,RC Lens,2 , 3
+13,Olympique Lyonnais,Girondins de Bordeaux,3 , 1
+13,Toulouse FC,Nîmes Olympique,1 , 1
+13,RC Strasbourg,FC Rouen 1899,1 , 0
+13,Valenciennes FC,Stade de Reims,2 , 1
+13,FC Nantes,OGC Nice,3 , 0
+14,Girondins de Bordeaux,Stade Rennais FC,3 , 1
+14,AS Saint-Etienne,FC Nantes,6 , 1
+14,RC Lens,RC Paris,10 , 2
+14,Stade de Reims,Toulouse FC,1 , 3
+14,Angers SCO,Olympique Lyonnais,1 , 1
+14,Nîmes Olympique,AS Monaco FC,1 , 0
+14,OGC Nice,RC Strasbourg,1 , 1
+14,Stade Français,Valenciennes FC,0 , 2
+14,FC Rouen 1899,CS Sedan,2 , 2
+15,Toulouse FC,Stade Français,0 , 2
+15,RC Strasbourg,AS Saint-Etienne,2 , 0
+15,Valenciennes FC,RC Lens,0 , 0
+15,Olympique Lyonnais,Nîmes Olympique,2 , 1
+15,AS Monaco FC,Stade de Reims,1 , 0
+15,Angers SCO,Girondins de Bordeaux,1 , 1
+15,RC Paris,FC Rouen 1899,2 , 2
+15,FC Nantes,Stade Rennais FC,2 , 1
+15,CS Sedan,OGC Nice,8 , 1
+16,RC Lens,Toulouse FC,2 , 1
+16,Stade Rennais FC,RC Strasbourg,0 , 0
+16,Girondins de Bordeaux,FC Nantes,2 , 0
+16,Stade Français,AS Monaco FC,1 , 0
+16,OGC Nice,RC Paris,1 , 1
+16,FC Rouen 1899,Valenciennes FC,0 , 4
+16,Nîmes Olympique,Angers SCO,2 , 0
+16,AS Saint-Etienne,CS Sedan,2 , 1
+16,Stade de Reims,Olympique Lyonnais,2 , 2
+17,RC Paris,AS Saint-Etienne,1 , 3
+17,AS Monaco FC,RC Lens,5 , 0
+17,Olympique Lyonnais,Stade Français,2 , 0
+17,RC Strasbourg,FC Nantes,0 , 0
+17,Nîmes Olympique,Girondins de Bordeaux,0 , 0
+17,Valenciennes FC,OGC Nice,7 , 2
+17,Toulouse FC,FC Rouen 1899,2 , 2
+17,Angers SCO,Stade de Reims,3 , 1
+17,CS Sedan,Stade Rennais FC,5 , 0
+18,AS Saint-Etienne,RC Paris,2 , 1
+18,Stade Français,Olympique Lyonnais,1 , 2
+18,RC Lens,AS Monaco FC,0 , 0
+18,OGC Nice,Valenciennes FC,1 , 3
+18,Girondins de Bordeaux,Nîmes Olympique,2 , 2
+18,FC Nantes,RC Strasbourg,2 , 1
+18,FC Rouen 1899,Toulouse FC,2 , 1
+18,Stade de Reims,Angers SCO,1 , 1
+18,Stade Rennais FC,CS Sedan,1 , 0
+19,Valenciennes FC,AS Saint-Etienne,1 , 2
+19,Girondins de Bordeaux,RC Strasbourg,2 , 0
+19,Olympique Lyonnais,RC Lens,1 , 1
+19,FC Rouen 1899,AS Monaco FC,4 , 0
+19,Toulouse FC,OGC Nice,2 , 1
+19,RC Paris,Stade Rennais FC,0 , 2
+19,Nîmes Olympique,Stade de Reims,4 , 0
+19,Angers SCO,Stade Français,1 , 3
+19,CS Sedan,FC Nantes,2 , 0
+20,AS Saint-Etienne,Toulouse FC,7 , 1
+20,RC Lens,Angers SCO,4 , 0
+20,FC Rouen 1899,Olympique Lyonnais,2 , 2
+20,OGC Nice,AS Monaco FC,0 , 2
+20,Stade de Reims,Girondins de Bordeaux,1 , 0
+20,Stade Rennais FC,Valenciennes FC,2 , 1
+20,Stade Français,Nîmes Olympique,0 , 0
+20,FC Nantes,RC Paris,1 , 0
+20,RC Strasbourg,CS Sedan,2 , 0
+21,AS Monaco FC,AS Saint-Etienne,2 , 1
+21,Nîmes Olympique,RC Lens,1 , 1
+21,Olympique Lyonnais,OGC Nice,0 , 0
+21,Girondins de Bordeaux,CS Sedan,3 , 2
+21,Toulouse FC,Stade Rennais FC,1 , 1
+21,Valenciennes FC,FC Nantes,0 , 0
+21,Angers SCO,FC Rouen 1899,3 , 0
+21,RC Paris,RC Strasbourg,3 , 0
+21,Stade de Reims,Stade Français,0 , 3
+22,AS Saint-Etienne,Olympique Lyonnais,2 , 1
+22,RC Lens,Stade de Reims,2 , 1
+22,Stade Rennais FC,AS Monaco FC,2 , 1
+22,Stade Français,Girondins de Bordeaux,2 , 0
+22,RC Strasbourg,Valenciennes FC,1 , 0
+22,FC Nantes,Toulouse FC,2 , 2
+22,FC Rouen 1899,Nîmes Olympique,1 , 0
+22,OGC Nice,Angers SCO,3 , 1
+22,CS Sedan,RC Paris,1 , 0
+23,Angers SCO,AS Saint-Etienne,3 , 1
+23,Stade Français,RC Lens,1 , 0
+23,Olympique Lyonnais,Stade Rennais FC,4 , 1
+23,AS Monaco FC,FC Nantes,3 , 1
+23,Girondins de Bordeaux,RC Paris,2 , 2
+23,Valenciennes FC,CS Sedan,2 , 0
+23,Toulouse FC,RC Strasbourg,3 , 2
+23,Nîmes Olympique,OGC Nice,0 , 0
+23,Stade de Reims,FC Rouen 1899,0 , 0
+24,AS Saint-Etienne,Nîmes Olympique,3 , 0
+24,RC Lens,Girondins de Bordeaux,8 , 1
+24,Olympique Lyonnais,FC Nantes,1 , 1
+24,RC Strasbourg,AS Monaco FC,1 , 1
+24,RC Paris,Valenciennes FC,1 , 3
+24,CS Sedan,Toulouse FC,1 , 1
+24,Stade Rennais FC,Angers SCO,2 , 4
+24,FC Rouen 1899,Stade Français,2 , 0
+24,OGC Nice,Stade de Reims,1 , 1
+25,Olympique Lyonnais,RC Strasbourg,1 , 1
+25,Girondins de Bordeaux,Valenciennes FC,0 , 3
+25,Stade de Reims,AS Saint-Etienne,3 , 1
+25,AS Monaco FC,CS Sedan,3 , 1
+25,RC Lens,FC Rouen 1899,0 , 2
+25,Toulouse FC,RC Paris,2 , 2
+25,Angers SCO,FC Nantes,3 , 3
+25,Nîmes Olympique,Stade Rennais FC,3 , 1
+25,Stade Français,OGC Nice,2 , 2
+26,RC Paris,AS Monaco FC,1 , 5
+26,Valenciennes FC,Toulouse FC,2 , 3
+26,RC Strasbourg,Angers SCO,2 , 1
+26,AS Saint-Etienne,Stade Français,0 , 1
+26,Stade Rennais FC,Stade de Reims,2 , 0
+26,FC Nantes,Nîmes Olympique,2 , 1
+26,CS Sedan,Olympique Lyonnais,2 , 0
+26,OGC Nice,RC Lens,3 , 2
+26,FC Rouen 1899,Girondins de Bordeaux,0 , 0
+27,OGC Nice,AS Saint-Etienne,1 , 1
+27,Girondins de Bordeaux,AS Monaco FC,0 , 0
+27,RC Lens,FC Nantes,2 , 0
+27,Olympique Lyonnais,Toulouse FC,1 , 2
+27,Angers SCO,Valenciennes FC,3 , 2
+27,FC Rouen 1899,Stade Rennais FC,3 , 1
+27,Stade Français,RC Strasbourg,1 , 0
+27,Stade de Reims,CS Sedan,1 , 0
+27,Nîmes Olympique,RC Paris,3 , 1
+28,Girondins de Bordeaux,Toulouse FC,2 , 1
+28,Stade de Reims,FC Nantes,1 , 1
+28,RC Lens,AS Saint-Etienne,4 , 2
+28,AS Monaco FC,Valenciennes FC,3 , 0
+28,FC Rouen 1899,OGC Nice,3 , 0
+28,Angers SCO,CS Sedan,1 , 0
+28,Stade Français,Stade Rennais FC,4 , 2
+28,Nîmes Olympique,RC Strasbourg,1 , 1
+28,Olympique Lyonnais,RC Paris,5 , 1
+29,CS Sedan,Nîmes Olympique,3 , 1
+29,FC Nantes,Stade Français,3 , 1
+29,AS Saint-Etienne,FC Rouen 1899,1 , 0
+29,Toulouse FC,AS Monaco FC,1 , 1
+29,Stade Rennais FC,RC Lens,0 , 0
+29,Valenciennes FC,Olympique Lyonnais,0 , 1
+29,RC Paris,Angers SCO,3 , 4
+29,OGC Nice,Girondins de Bordeaux,2 , 0
+29,RC Strasbourg,Stade de Reims,1 , 2
+30,AS Saint-Etienne,Girondins de Bordeaux,4 , 0
+30,AS Monaco FC,Olympique Lyonnais,0 , 1
+30,FC Nantes,FC Rouen 1899,7 , 1
+30,RC Paris,Stade de Reims,2 , 1
+30,RC Strasbourg,RC Lens,1 , 2
+30,Toulouse FC,Angers SCO,4 , 0
+30,Valenciennes FC,Nîmes Olympique,1 , 0
+30,CS Sedan,Stade Français,2 , 0
+30,Stade Rennais FC,OGC Nice,3 , 1
+31,AS Saint-Etienne,Stade Rennais FC,3 , 0
+31,RC Lens,CS Sedan,3 , 1
+31,Angers SCO,AS Monaco FC,4 , 4
+31,Nîmes Olympique,Toulouse FC,1 , 0
+31,Stade de Reims,Valenciennes FC,1 , 4
+31,FC Rouen 1899,RC Strasbourg,3 , 0
+31,OGC Nice,FC Nantes,1 , 2
+31,Stade Français,RC Paris,2 , 3
+31,Girondins de Bordeaux,Olympique Lyonnais,4 , 0
+32,FC Nantes,AS Saint-Etienne,1 , 3
+32,AS Monaco FC,Nîmes Olympique,2 , 0
+32,RC Paris,RC Lens,3 , 2
+32,Olympique Lyonnais,Angers SCO,2 , 2
+32,Toulouse FC,Stade de Reims,0 , 0
+32,Valenciennes FC,Stade Français,0 , 0
+32,CS Sedan,FC Rouen 1899,2 , 1
+32,Stade Rennais FC,Girondins de Bordeaux,2 , 2
+32,RC Strasbourg,OGC Nice,2 , 1
+33,Valenciennes FC,FC Rouen 1899,2 , 1
+33,CS Sedan,AS Saint-Etienne,3 , 0
+33,AS Monaco FC,Stade Français,0 , 1
+33,Olympique Lyonnais,Stade de Reims,3 , 1
+33,Toulouse FC,RC Lens,4 , 2
+33,FC Nantes,Girondins de Bordeaux,4 , 1
+33,Angers SCO,Nîmes Olympique,0 , 1
+33,RC Strasbourg,Stade Rennais FC,2 , 1
+33,RC Paris,OGC Nice,3 , 2
+34,Stade de Reims,AS Monaco FC,2 , 3
+34,AS Saint-Etienne,RC Strasbourg,2 , 2
+34,RC Lens,Valenciennes FC,2 , 0
+34,Nîmes Olympique,Olympique Lyonnais,5 , 0
+34,Stade Français,Toulouse FC,0 , 0
+34,Girondins de Bordeaux,Angers SCO,3 , 0
+34,Stade Rennais FC,FC Nantes,3 , 1
+34,OGC Nice,CS Sedan,2 , 4
+34,FC Rouen 1899,RC Paris,1 , 2

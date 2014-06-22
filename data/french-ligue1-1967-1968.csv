@@ -1,0 +1,381 @@
+day,home_team,away_team,home_score,away_score
+1,Olympique de Marseille,FC Nantes,1 , 0
+1,Olympique Lyonnais,AC Ajaccio,2 , 1
+1,RC Strasbourg,AS Saint-Etienne,0 , 1
+1,LOSC Lille,AS Aixoise,2 , 1
+1,Angers SCO,FC Rouen 1899,3 , 0
+1,FC Sochaux-Montbéliard,OGC Nice,0 , 2
+1,Stade Rennais FC,RC Lens,1 , 0
+1,CS Sedan,Valenciennes FC,1 , 1
+1,FC Metz,AS Red Star 93,1 , 1
+1,AS Monaco FC,Girondins de Bordeaux,1 , 2
+2,LOSC Lille,Olympique Lyonnais,1 , 1
+2,AS Saint-Etienne,RC Lens,3 , 0
+2,OGC Nice,CS Sedan,1 , 0
+2,Girondins de Bordeaux,Olympique de Marseille,1 , 2
+2,AS Aixoise,Angers SCO,1 , 3
+2,Valenciennes FC,FC Metz,1 , 2
+2,FC Nantes,RC Strasbourg,3 , 0
+2,FC Rouen 1899,FC Sochaux-Montbéliard,1 , 0
+2,AC Ajaccio,Stade Rennais FC,2 , 0
+2,AS Red Star 93,AS Monaco FC,2 , 0
+3,Angers SCO,AC Ajaccio,3 , 0
+3,AS Saint-Etienne,Girondins de Bordeaux,1 , 0
+3,Olympique de Marseille,OGC Nice,0 , 2
+3,RC Lens,FC Nantes,1 , 3
+3,CS Sedan,LOSC Lille,1 , 1
+3,FC Metz,FC Rouen 1899,1 , 1
+3,Stade Rennais FC,Olympique Lyonnais,1 , 0
+3,RC Strasbourg,AS Red Star 93,2 , 1
+3,AS Monaco FC,Valenciennes FC,0 , 1
+3,FC Sochaux-Montbéliard,AS Aixoise,1 , 1
+4,FC Nantes,AS Saint-Etienne,1 , 1
+4,LOSC Lille,Stade Rennais FC,2 , 0
+4,Olympique Lyonnais,Angers SCO,8 , 0
+4,Girondins de Bordeaux,RC Lens,6 , 1
+4,Valenciennes FC,RC Strasbourg,0 , 1
+4,FC Rouen 1899,CS Sedan,0 , 0
+4,AS Aixoise,AS Monaco FC,0 , 0
+4,OGC Nice,FC Metz,4 , 1
+4,AS Red Star 93,Olympique de Marseille,2 , 0
+4,AC Ajaccio,FC Sochaux-Montbéliard,1 , 1
+5,AS Saint-Etienne,AS Red Star 93,1 , 1
+5,Olympique de Marseille,LOSC Lille,0 , 0
+5,RC Strasbourg,Girondins de Bordeaux,0 , 1
+5,FC Nantes,FC Rouen 1899,0 , 0
+5,FC Metz,AS Aixoise,3 , 1
+5,FC Sochaux-Montbéliard,Olympique Lyonnais,3 , 1
+5,CS Sedan,AC Ajaccio,2 , 0
+5,AS Monaco FC,OGC Nice,2 , 2
+5,Angers SCO,Stade Rennais FC,1 , 1
+5,RC Lens,Valenciennes FC,1 , 0
+6,LOSC Lille,Angers SCO,2 , 1
+6,Girondins de Bordeaux,FC Nantes,6 , 2
+6,FC Rouen 1899,Olympique de Marseille,1 , 2
+6,Stade Rennais FC,FC Sochaux-Montbéliard,1 , 1
+6,Olympique Lyonnais,AS Monaco FC,1 , 2
+6,OGC Nice,RC Strasbourg,2 , 0
+6,Valenciennes FC,AS Saint-Etienne,1 , 2
+6,AS Red Star 93,RC Lens,3 , 2
+6,AC Ajaccio,FC Metz,2 , 1
+6,AS Aixoise,CS Sedan,4 , 2
+7,RC Lens,OGC Nice,0 , 0
+7,AS Saint-Etienne,AS Aixoise,3 , 1
+7,Girondins de Bordeaux,LOSC Lille,2 , 1
+7,FC Nantes,AS Red Star 93,4 , 2
+7,FC Metz,Olympique Lyonnais,3 , 1
+7,CS Sedan,Stade Rennais FC,3 , 0
+7,FC Sochaux-Montbéliard,Angers SCO,2 , 0
+7,AS Monaco FC,AC Ajaccio,0 , 1
+7,Olympique de Marseille,Valenciennes FC,2 , 0
+7,RC Strasbourg,FC Rouen 1899,2 , 1
+8,AS Red Star 93,Girondins de Bordeaux,1 , 0
+8,AC Ajaccio,Olympique de Marseille,2 , 2
+8,LOSC Lille,FC Sochaux-Montbéliard,0 , 1
+8,Stade Rennais FC,FC Metz,0 , 0
+8,Angers SCO,AS Monaco FC,3 , 0
+8,Valenciennes FC,FC Nantes,2 , 1
+8,AS Aixoise,RC Strasbourg,0 , 3
+8,FC Rouen 1899,RC Lens,0 , 1
+8,Olympique Lyonnais,CS Sedan,0 , 2
+8,OGC Nice,AS Saint-Etienne,1 , 2
+9,FC Nantes,OGC Nice,0 , 0
+9,Olympique de Marseille,Olympique Lyonnais,2 , 1
+9,FC Metz,Angers SCO,1 , 1
+9,RC Strasbourg,Stade Rennais FC,1 , 1
+9,AS Saint-Etienne,FC Rouen 1899,3 , 0
+9,AS Red Star 93,AC Ajaccio,4 , 1
+9,Girondins de Bordeaux,Valenciennes FC,0 , 1
+9,CS Sedan,FC Sochaux-Montbéliard,2 , 0
+9,AS Monaco FC,LOSC Lille,3 , 1
+9,RC Lens,AS Aixoise,4 , 1
+10,LOSC Lille,RC Lens,0 , 1
+10,FC Sochaux-Montbéliard,FC Metz,3 , 2
+10,FC Rouen 1899,AS Monaco FC,2 , 1
+10,Olympique Lyonnais,AS Saint-Etienne,1 , 1
+10,OGC Nice,Girondins de Bordeaux,1 , 1
+10,AS Aixoise,Olympique de Marseille,1 , 2
+10,Valenciennes FC,AS Red Star 93,1 , 0
+10,Angers SCO,CS Sedan,2 , 3
+10,Stade Rennais FC,FC Nantes,1 , 1
+10,AC Ajaccio,RC Strasbourg,1 , 0
+11,FC Rouen 1899,AS Red Star 93,0 , 2
+11,Stade Rennais FC,Olympique de Marseille,3 , 1
+11,FC Sochaux-Montbéliard,FC Nantes,1 , 0
+11,LOSC Lille,FC Metz,0 , 0
+11,OGC Nice,Valenciennes FC,2 , 1
+11,Angers SCO,AS Saint-Etienne,1 , 0
+11,CS Sedan,AS Monaco FC,3 , 0
+11,AC Ajaccio,RC Lens,2 , 0
+11,AS Aixoise,Girondins de Bordeaux,5 , 1
+11,Olympique Lyonnais,RC Strasbourg,0 , 0
+12,OGC Nice,FC Rouen 1899,4 , 0
+12,AS Saint-Etienne,Stade Rennais FC,3 , 0
+12,AS Red Star 93,AS Aixoise,2 , 1
+12,Olympique de Marseille,CS Sedan,1 , 0
+12,RC Strasbourg,FC Sochaux-Montbéliard,1 , 4
+12,Girondins de Bordeaux,AC Ajaccio,3 , 0
+12,FC Nantes,Olympique Lyonnais,1 , 0
+12,RC Lens,Angers SCO,4 , 2
+12,Valenciennes FC,LOSC Lille,3 , 0
+12,AS Monaco FC,FC Metz,3 , 1
+13,AS Aixoise,OGC Nice,3 , 1
+13,CS Sedan,AS Saint-Etienne,5 , 2
+13,LOSC Lille,AS Red Star 93,1 , 1
+13,FC Sochaux-Montbéliard,RC Lens,4 , 1
+13,FC Metz,Olympique de Marseille,3 , 0
+13,Angers SCO,RC Strasbourg,1 , 0
+13,AC Ajaccio,FC Nantes,5 , 3
+13,Olympique Lyonnais,Girondins de Bordeaux,2 , 0
+13,FC Rouen 1899,Valenciennes FC,1 , 2
+13,Stade Rennais FC,AS Monaco FC,1 , 1
+14,AS Saint-Etienne,FC Sochaux-Montbéliard,2 , 0
+14,Olympique de Marseille,AS Monaco FC,2 , 1
+14,RC Lens,CS Sedan,3 , 0
+14,FC Nantes,Angers SCO,0 , 1
+14,RC Strasbourg,FC Metz,0 , 0
+14,OGC Nice,LOSC Lille,3 , 1
+14,AS Red Star 93,Olympique Lyonnais,1 , 1
+14,Girondins de Bordeaux,Stade Rennais FC,6 , 2
+14,Valenciennes FC,AS Aixoise,1 , 0
+14,FC Rouen 1899,AC Ajaccio,3 , 1
+15,FC Sochaux-Montbéliard,Olympique de Marseille,1 , 1
+15,AS Monaco FC,AS Saint-Etienne,0 , 3
+15,AC Ajaccio,OGC Nice,2 , 1
+15,CS Sedan,RC Strasbourg,3 , 1
+15,Stade Rennais FC,AS Red Star 93,3 , 0
+15,Angers SCO,Girondins de Bordeaux,0 , 0
+15,FC Metz,RC Lens,2 , 1
+15,Olympique Lyonnais,Valenciennes FC,0 , 0
+15,LOSC Lille,FC Nantes,2 , 0
+15,AS Aixoise,FC Rouen 1899,4 , 1
+16,AS Saint-Etienne,FC Metz,4 , 0
+16,FC Nantes,CS Sedan,1 , 1
+16,OGC Nice,Olympique Lyonnais,0 , 3
+16,AS Red Star 93,Angers SCO,3 , 3
+16,RC Strasbourg,Olympique de Marseille,1 , 0
+16,Girondins de Bordeaux,FC Sochaux-Montbéliard,3 , 0
+16,Valenciennes FC,AC Ajaccio,0 , 0
+16,AS Aixoise,Stade Rennais FC,2 , 3
+16,FC Rouen 1899,LOSC Lille,1 , 0
+16,RC Lens,AS Monaco FC,1 , 3
+17,AS Saint-Etienne,AC Ajaccio,4 , 0
+17,FC Metz,CS Sedan,1 , 5
+17,AS Red Star 93,OGC Nice,1 , 1
+17,Olympique de Marseille,Angers SCO,3 , 1
+17,Girondins de Bordeaux,FC Rouen 1899,1 , 0
+17,Valenciennes FC,Stade Rennais FC,2 , 1
+17,AS Monaco FC,FC Sochaux-Montbéliard,1 , 0
+17,FC Nantes,AS Aixoise,5 , 1
+17,RC Strasbourg,LOSC Lille,2 , 0
+17,RC Lens,Olympique Lyonnais,1 , 0
+18,FC Sochaux-Montbéliard,AS Red Star 93,1 , 0
+18,LOSC Lille,AS Saint-Etienne,2 , 2
+18,Olympique de Marseille,RC Lens,2 , 0
+18,CS Sedan,Girondins de Bordeaux,1 , 2
+18,Stade Rennais FC,OGC Nice,4 , 0
+18,AC Ajaccio,AS Aixoise,8 , 2
+18,FC Metz,FC Nantes,1 , 1
+18,Olympique Lyonnais,FC Rouen 1899,2 , 1
+18,AS Monaco FC,RC Strasbourg,2 , 1
+18,Angers SCO,Valenciennes FC,1 , 0
+19,AS Saint-Etienne,Olympique de Marseille,2 , 0
+19,Girondins de Bordeaux,FC Metz,1 , 0
+19,OGC Nice,Angers SCO,2 , 1
+19,AS Red Star 93,CS Sedan,3 , 0
+19,Valenciennes FC,FC Sochaux-Montbéliard,0 , 0
+19,AC Ajaccio,LOSC Lille,2 , 1
+19,FC Nantes,AS Monaco FC,0 , 0
+19,RC Lens,RC Strasbourg,1 , 0
+19,AS Aixoise,Olympique Lyonnais,2 , 0
+19,Stade Rennais FC,FC Rouen 1899,0 , 1
+20,Girondins de Bordeaux,AS Saint-Etienne,1 , 2
+20,OGC Nice,Olympique de Marseille,1 , 1
+20,AC Ajaccio,Angers SCO,4 , 0
+20,LOSC Lille,CS Sedan,2 , 0
+20,AS Red Star 93,RC Strasbourg,0 , 1
+20,AS Aixoise,FC Sochaux-Montbéliard,0 , 0
+20,FC Nantes,RC Lens,1 , 0
+20,Olympique Lyonnais,Stade Rennais FC,2 , 1
+20,FC Rouen 1899,FC Metz,0 , 0
+20,Valenciennes FC,AS Monaco FC,1 , 1
+21,AS Saint-Etienne,FC Nantes,1 , 2
+21,Olympique de Marseille,AS Red Star 93,2 , 0
+21,CS Sedan,FC Rouen 1899,2 , 0
+21,FC Sochaux-Montbéliard,AC Ajaccio,3 , 1
+21,RC Strasbourg,Valenciennes FC,0 , 1
+21,Stade Rennais FC,LOSC Lille,4 , 1
+21,Angers SCO,Olympique Lyonnais,3 , 1
+21,AS Monaco FC,AS Aixoise,1 , 1
+21,FC Metz,OGC Nice,1 , 2
+21,RC Lens,Girondins de Bordeaux,2 , 1
+22,AS Red Star 93,AS Saint-Etienne,1 , 1
+22,LOSC Lille,Olympique de Marseille,2 , 0
+22,Olympique Lyonnais,FC Sochaux-Montbéliard,2 , 2
+22,AC Ajaccio,CS Sedan,2 , 0
+22,Girondins de Bordeaux,RC Strasbourg,1 , 2
+22,OGC Nice,AS Monaco FC,0 , 2
+22,Valenciennes FC,RC Lens,1 , 1
+22,FC Rouen 1899,FC Nantes,1 , 2
+22,Stade Rennais FC,Angers SCO,1 , 1
+22,AS Aixoise,FC Metz,0 , 1
+23,FC Sochaux-Montbéliard,Stade Rennais FC,1 , 2
+23,AS Saint-Etienne,Valenciennes FC,3 , 0
+23,Olympique de Marseille,FC Rouen 1899,2 , 2
+23,CS Sedan,AS Aixoise,3 , 0
+23,FC Nantes,Girondins de Bordeaux,1 , 1
+23,RC Lens,AS Red Star 93,2 , 4
+23,RC Strasbourg,OGC Nice,0 , 0
+23,FC Metz,AC Ajaccio,3 , 0
+23,AS Monaco FC,Olympique Lyonnais,2 , 1
+23,Angers SCO,LOSC Lille,1 , 3
+24,AS Aixoise,AS Saint-Etienne,1 , 1
+24,LOSC Lille,Girondins de Bordeaux,1 , 2
+24,Stade Rennais FC,CS Sedan,1 , 1
+24,Valenciennes FC,Olympique de Marseille,1 , 0
+24,Angers SCO,FC Sochaux-Montbéliard,1 , 1
+24,Olympique Lyonnais,FC Metz,3 , 1
+24,OGC Nice,RC Lens,0 , 0
+24,AS Red Star 93,FC Nantes,0 , 1
+24,AC Ajaccio,AS Monaco FC,1 , 2
+24,FC Rouen 1899,RC Strasbourg,3 , 2
+25,FC Sochaux-Montbéliard,LOSC Lille,2 , 1
+25,AS Saint-Etienne,OGC Nice,3 , 1
+25,Girondins de Bordeaux,AS Red Star 93,1 , 0
+25,Olympique de Marseille,AC Ajaccio,2 , 0
+25,CS Sedan,Olympique Lyonnais,2 , 3
+25,FC Nantes,Valenciennes FC,0 , 2
+25,FC Metz,Stade Rennais FC,6 , 1
+25,AS Monaco FC,Angers SCO,5 , 0
+25,RC Strasbourg,AS Aixoise,1 , 0
+25,RC Lens,FC Rouen 1899,2 , 1
+26,Olympique Lyonnais,Olympique de Marseille,3 , 2
+26,FC Rouen 1899,AS Saint-Etienne,3 , 0
+26,FC Sochaux-Montbéliard,CS Sedan,3 , 0
+26,Valenciennes FC,Girondins de Bordeaux,2 , 0
+26,OGC Nice,FC Nantes,5 , 1
+26,AC Ajaccio,AS Red Star 93,0 , 0
+26,Stade Rennais FC,RC Strasbourg,2 , 1
+26,LOSC Lille,AS Monaco FC,0 , 1
+26,Angers SCO,FC Metz,0 , 0
+26,AS Aixoise,RC Lens,2 , 2
+27,FC Metz,FC Sochaux-Montbéliard,2 , 0
+27,CS Sedan,Angers SCO,3 , 1
+27,RC Strasbourg,AC Ajaccio,0 , 0
+27,Girondins de Bordeaux,OGC Nice,4 , 0
+27,AS Saint-Etienne,Olympique Lyonnais,1 , 1
+27,Olympique de Marseille,AS Aixoise,3 , 2
+27,AS Red Star 93,Valenciennes FC,1 , 0
+27,FC Nantes,Stade Rennais FC,2 , 0
+27,AS Monaco FC,FC Rouen 1899,1 , 3
+27,RC Lens,LOSC Lille,1 , 1
+28,LOSC Lille,RC Strasbourg,0 , 0
+28,Angers SCO,Olympique de Marseille,2 , 2
+28,FC Rouen 1899,Girondins de Bordeaux,3 , 0
+28,CS Sedan,FC Metz,3 , 0
+28,FC Sochaux-Montbéliard,AS Monaco FC,0 , 0
+28,Stade Rennais FC,Valenciennes FC,1 , 1
+28,AC Ajaccio,AS Saint-Etienne,1 , 1
+28,AS Aixoise,FC Nantes,2 , 6
+28,OGC Nice,AS Red Star 93,2 , 1
+28,Olympique Lyonnais,RC Lens,3 , 0
+29,FC Metz,LOSC Lille,1 , 0
+29,RC Lens,AC Ajaccio,1 , 2
+29,AS Red Star 93,FC Rouen 1899,0 , 2
+29,AS Saint-Etienne,Angers SCO,3 , 0
+29,Girondins de Bordeaux,AS Aixoise,3 , 0
+29,FC Nantes,FC Sochaux-Montbéliard,1 , 1
+29,Valenciennes FC,OGC Nice,0 , 1
+29,AS Monaco FC,CS Sedan,2 , 1
+29,RC Strasbourg,Olympique Lyonnais,0 , 1
+29,Olympique de Marseille,Stade Rennais FC,3 , 1
+30,Stade Rennais FC,AS Saint-Etienne,0 , 3
+30,Olympique Lyonnais,FC Nantes,0 , 3
+30,FC Sochaux-Montbéliard,RC Strasbourg,1 , 1
+30,FC Rouen 1899,OGC Nice,1 , 0
+30,LOSC Lille,Valenciennes FC,0 , 3
+30,CS Sedan,Olympique de Marseille,1 , 1
+30,FC Metz,AS Monaco FC,2 , 0
+30,AS Aixoise,AS Red Star 93,0 , 0
+30,Angers SCO,RC Lens,1 , 2
+30,AC Ajaccio,Girondins de Bordeaux,3 , 0
+31,Olympique de Marseille,FC Metz,2 , 0
+31,OGC Nice,AS Aixoise,1 , 0
+31,RC Strasbourg,Angers SCO,5 , 1
+31,AS Saint-Etienne,CS Sedan,2 , 1
+31,FC Nantes,AC Ajaccio,1 , 0
+31,RC Lens,FC Sochaux-Montbéliard,0 , 2
+31,Girondins de Bordeaux,Olympique Lyonnais,0 , 0
+31,Valenciennes FC,FC Rouen 1899,0 , 2
+31,AS Monaco FC,Stade Rennais FC,2 , 1
+31,AS Red Star 93,LOSC Lille,0 , 2
+32,LOSC Lille,OGC Nice,0 , 2
+32,Olympique Lyonnais,AS Red Star 93,0 , 0
+32,FC Sochaux-Montbéliard,AS Saint-Etienne,0 , 4
+32,AS Monaco FC,Olympique de Marseille,1 , 0
+32,Stade Rennais FC,Girondins de Bordeaux,1 , 0
+32,CS Sedan,RC Lens,1 , 1
+32,FC Metz,RC Strasbourg,1 , 0
+32,Angers SCO,FC Nantes,1 , 3
+32,AS Aixoise,Valenciennes FC,1 , 1
+32,AC Ajaccio,FC Rouen 1899,5 , 3
+33,AS Saint-Etienne,AS Monaco FC,1 , 0
+33,OGC Nice,AC Ajaccio,1 , 0
+33,RC Strasbourg,CS Sedan,0 , 2
+33,Girondins de Bordeaux,Angers SCO,1 , 2
+33,FC Rouen 1899,AS Aixoise,5 , 0
+33,FC Nantes,LOSC Lille,2 , 1
+33,Olympique de Marseille,FC Sochaux-Montbéliard,0 , 1
+33,Valenciennes FC,Olympique Lyonnais,2 , 0
+33,RC Lens,FC Metz,1 , 1
+33,AS Red Star 93,Stade Rennais FC,3 , 1
+34,FC Metz,AS Saint-Etienne,1 , 1
+34,CS Sedan,FC Nantes,1 , 0
+34,LOSC Lille,FC Rouen 1899,1 , 0
+34,Olympique Lyonnais,OGC Nice,1 , 1
+34,AC Ajaccio,Valenciennes FC,1 , 4
+34,Olympique de Marseille,RC Strasbourg,0 , 0
+34,FC Sochaux-Montbéliard,Girondins de Bordeaux,0 , 1
+34,AS Monaco FC,RC Lens,2 , 3
+34,Angers SCO,AS Red Star 93,2 , 2
+34,Stade Rennais FC,AS Aixoise,4 , 0
+35,AS Saint-Etienne,LOSC Lille,3 , 0
+35,FC Nantes,FC Metz,1 , 1
+35,Valenciennes FC,Angers SCO,2 , 1
+35,Girondins de Bordeaux,CS Sedan,2 , 0
+35,RC Lens,Olympique de Marseille,5 , 1
+35,AS Aixoise,AC Ajaccio,2 , 4
+35,RC Strasbourg,AS Monaco FC,2 , 0
+35,FC Rouen 1899,Olympique Lyonnais,3 , 1
+35,OGC Nice,Stade Rennais FC,0 , 3
+35,AS Red Star 93,FC Sochaux-Montbéliard,1 , 2
+36,Olympique de Marseille,AS Saint-Etienne,2 , 1
+36,AS Monaco FC,FC Nantes,3 , 0
+36,LOSC Lille,AC Ajaccio,1 , 2
+36,FC Rouen 1899,Stade Rennais FC,2 , 0
+36,Olympique Lyonnais,AS Aixoise,4 , 3
+36,Angers SCO,OGC Nice,1 , 1
+36,FC Metz,Girondins de Bordeaux,2 , 0
+36,CS Sedan,AS Red Star 93,0 , 0
+36,FC Sochaux-Montbéliard,Valenciennes FC,3 , 1
+36,RC Strasbourg,RC Lens,1 , 0
+37,AS Saint-Etienne,RC Strasbourg,4 , 0
+37,OGC Nice,FC Sochaux-Montbéliard,1 , 0
+37,Valenciennes FC,CS Sedan,3 , 1
+37,FC Nantes,Olympique de Marseille,1 , 1
+37,Girondins de Bordeaux,AS Monaco FC,3 , 0
+37,AS Red Star 93,FC Metz,0 , 1
+37,AC Ajaccio,Olympique Lyonnais,2 , 2
+37,FC Rouen 1899,Angers SCO,0 , 1
+37,RC Lens,Stade Rennais FC,1 , 1
+37,AS Aixoise,LOSC Lille,2 , 1
+38,CS Sedan,OGC Nice,0 , 1
+38,Olympique de Marseille,Girondins de Bordeaux,2 , 0
+38,RC Lens,AS Saint-Etienne,1 , 3
+38,FC Sochaux-Montbéliard,FC Rouen 1899,3 , 0
+38,FC Metz,Valenciennes FC,2 , 0
+38,RC Strasbourg,FC Nantes,3 , 1
+38,Stade Rennais FC,AC Ajaccio,1 , 0
+38,AS Monaco FC,AS Red Star 93,0 , 1
+38,Olympique Lyonnais,LOSC Lille,1 , 1
+38,Angers SCO,AS Aixoise,9 , 1

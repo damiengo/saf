@@ -1,0 +1,307 @@
+day,home_team,away_team,home_score,away_score
+1,OGC Nice,FC Metz,6 , 2
+1,RC Paris,FC Sochaux-Montbéliard,6 , 4
+1,RC Lens,Toulouse FC,3 , 1
+1,Olympique de Marseille,LOSC Lille,3 , 4
+1,CS Sedan,AS Monaco FC,2 , 1
+1,Olympique Lyonnais,Nîmes Olympique,1 , 0
+1,Olympique d'Alès,Valenciennes FC,0 , 1
+1,AS Béziers,AS Saint-Etienne,2 , 2
+1,Angers SCO,Stade de Reims,0 , 1
+2,Nîmes Olympique,RC Lens,2 , 3
+2,Valenciennes FC,CS Sedan,3 , 1
+2,Olympique Lyonnais,FC Metz,2 , 0
+2,Stade de Reims,OGC Nice,3 , 2
+2,Olympique de Marseille,RC Paris,1 , 1
+2,LOSC Lille,AS Saint-Etienne,1 , 2
+2,AS Monaco FC,FC Sochaux-Montbéliard,5 , 2
+2,AS Béziers,Angers SCO,4 , 4
+2,Toulouse FC,Olympique d'Alès,2 , 3
+3,RC Lens,Olympique Lyonnais,4 , 4
+3,Valenciennes FC,OGC Nice,1 , 1
+3,AS Monaco FC,Stade de Reims,3 , 0
+3,CS Sedan,Nîmes Olympique,3 , 1
+3,Olympique d'Alès,LOSC Lille,2 , 1
+3,AS Saint-Etienne,Toulouse FC,1 , 1
+3,RC Paris,Angers SCO,1 , 2
+3,FC Metz,Olympique de Marseille,1 , 2
+3,FC Sochaux-Montbéliard,AS Béziers,4 , 0
+4,FC Metz,RC Lens,1 , 4
+4,Stade de Reims,Olympique Lyonnais,4 , 0
+4,OGC Nice,CS Sedan,8 , 0
+4,LOSC Lille,RC Paris,1 , 3
+4,FC Sochaux-Montbéliard,Valenciennes FC,1 , 0
+4,Angers SCO,AS Monaco FC,3 , 2
+4,AS Saint-Etienne,Olympique d'Alès,2 , 2
+4,Toulouse FC,Olympique de Marseille,1 , 1
+4,Nîmes Olympique,AS Béziers,2 , 0
+5,RC Lens,OGC Nice,1 , 0
+5,RC Paris,Nîmes Olympique,3 , 1
+5,FC Metz,AS Saint-Etienne,0 , 2
+5,AS Béziers,AS Monaco FC,0 , 3
+5,FC Sochaux-Montbéliard,Toulouse FC,4 , 2
+5,Angers SCO,LOSC Lille,0 , 0
+5,Stade de Reims,Valenciennes FC,4 , 2
+5,Olympique d'Alès,CS Sedan,2 , 0
+5,Olympique de Marseille,Olympique Lyonnais,2 , 3
+6,AS Béziers,RC Lens,1 , 1
+6,Olympique Lyonnais,RC Paris,2 , 0
+6,Toulouse FC,Stade de Reims,1 , 0
+6,AS Saint-Etienne,FC Sochaux-Montbéliard,2 , 2
+6,OGC Nice,Olympique d'Alès,6 , 1
+6,LOSC Lille,AS Monaco FC,1 , 1
+6,Valenciennes FC,FC Metz,2 , 2
+6,Nîmes Olympique,Angers SCO,5 , 1
+6,CS Sedan,Olympique de Marseille,2 , 1
+7,Stade de Reims,AS Béziers,5 , 0
+7,Valenciennes FC,RC Lens,1 , 1
+7,Olympique de Marseille,FC Sochaux-Montbéliard,0 , 3
+7,Olympique d'Alès,RC Paris,1 , 3
+7,AS Saint-Etienne,OGC Nice,1 , 1
+7,Toulouse FC,Olympique Lyonnais,3 , 1
+7,AS Monaco FC,Nîmes Olympique,1 , 1
+7,FC Metz,Angers SCO,0 , 3
+7,LOSC Lille,CS Sedan,3 , 0
+8,RC Lens,Stade de Reims,0 , 1
+8,FC Sochaux-Montbéliard,Olympique d'Alès,3 , 1
+8,Olympique Lyonnais,LOSC Lille,2 , 0
+8,AS Monaco FC,Valenciennes FC,4 , 0
+8,RC Paris,AS Saint-Etienne,1 , 1
+8,Angers SCO,Olympique de Marseille,2 , 2
+8,Nîmes Olympique,OGC Nice,3 , 2
+8,CS Sedan,Toulouse FC,3 , 0
+8,AS Béziers,FC Metz,0 , 1
+9,Stade de Reims,LOSC Lille,3 , 1
+9,RC Paris,AS Monaco FC,2 , 3
+9,RC Lens,FC Sochaux-Montbéliard,1 , 1
+9,AS Saint-Etienne,Valenciennes FC,5 , 1
+9,Olympique d'Alès,Olympique Lyonnais,2 , 2
+9,OGC Nice,AS Béziers,6 , 1
+9,Olympique de Marseille,Nîmes Olympique,1 , 3
+9,Angers SCO,Toulouse FC,0 , 1
+9,FC Metz,CS Sedan,3 , 2
+10,FC Sochaux-Montbéliard,Stade de Reims,0 , 4
+10,AS Monaco FC,Olympique de Marseille,3 , 2
+10,CS Sedan,RC Lens,2 , 3
+10,Nîmes Olympique,AS Saint-Etienne,2 , 2
+10,Valenciennes FC,RC Paris,0 , 5
+10,Olympique Lyonnais,Angers SCO,2 , 3
+10,Toulouse FC,OGC Nice,2 , 1
+10,LOSC Lille,FC Metz,2 , 1
+10,AS Béziers,Olympique d'Alès,3 , 2
+11,Stade de Reims,CS Sedan,3 , 0
+11,OGC Nice,AS Monaco FC,0 , 1
+11,RC Lens,LOSC Lille,1 , 0
+11,AS Saint-Etienne,Olympique Lyonnais,1 , 1
+11,RC Paris,Toulouse FC,1 , 2
+11,FC Metz,FC Sochaux-Montbéliard,1 , 0
+11,Olympique d'Alès,Nîmes Olympique,1 , 1
+11,Angers SCO,Valenciennes FC,3 , 4
+11,Olympique de Marseille,AS Béziers,0 , 1
+12,Stade de Reims,FC Metz,5 , 1
+12,RC Lens,Angers SCO,2 , 1
+12,Olympique d'Alès,AS Monaco FC,1 , 1
+12,AS Saint-Etienne,Olympique de Marseille,1 , 1
+12,FC Sochaux-Montbéliard,Olympique Lyonnais,1 , 0
+12,Valenciennes FC,Nîmes Olympique,0 , 3
+12,OGC Nice,RC Paris,2 , 0
+12,Toulouse FC,LOSC Lille,1 , 2
+12,AS Béziers,CS Sedan,0 , 2
+13,Nîmes Olympique,Stade de Reims,3 , 0
+13,AS Monaco FC,AS Saint-Etienne,0 , 0
+13,RC Paris,RC Lens,5 , 0
+13,Olympique Lyonnais,AS Béziers,2 , 1
+13,CS Sedan,FC Sochaux-Montbéliard,4 , 1
+13,Toulouse FC,FC Metz,4 , 1
+13,Olympique de Marseille,OGC Nice,2 , 1
+13,Angers SCO,Olympique d'Alès,1 , 1
+13,LOSC Lille,Valenciennes FC,2 , 3
+14,Stade de Reims,Olympique d'Alès,4 , 2
+14,RC Lens,Olympique de Marseille,3 , 1
+14,Olympique Lyonnais,AS Monaco FC,2 , 0
+14,Nîmes Olympique,Toulouse FC,3 , 2
+14,CS Sedan,AS Saint-Etienne,1 , 1
+14,FC Metz,RC Paris,1 , 1
+14,FC Sochaux-Montbéliard,LOSC Lille,2 , 4
+14,OGC Nice,Angers SCO,0 , 0
+14,Valenciennes FC,AS Béziers,1 , 1
+15,AS Saint-Etienne,Stade de Reims,0 , 0
+15,AS Monaco FC,RC Lens,2 , 1
+15,OGC Nice,Olympique Lyonnais,2 , 2
+15,RC Paris,CS Sedan,4 , 2
+15,LOSC Lille,Nîmes Olympique,3 , 1
+15,Angers SCO,FC Sochaux-Montbéliard,5 , 1
+15,AS Béziers,Toulouse FC,2 , 0
+15,Olympique d'Alès,FC Metz,4 , 1
+15,Olympique de Marseille,Valenciennes FC,1 , 1
+16,Stade de Reims,RC Paris,4 , 1
+16,AS Monaco FC,Toulouse FC,0 , 2
+16,AS Saint-Etienne,RC Lens,3 , 1
+16,FC Metz,Nîmes Olympique,0 , 1
+16,Valenciennes FC,Olympique Lyonnais,2 , 0
+16,LOSC Lille,AS Béziers,10 , 1
+16,FC Sochaux-Montbéliard,OGC Nice,4 , 0
+16,CS Sedan,Angers SCO,1 , 0
+16,Olympique d'Alès,Olympique de Marseille,1 , 0
+17,Olympique de Marseille,Stade de Reims,3 , 3
+17,RC Lens,Olympique d'Alès,5 , 0
+17,Nîmes Olympique,FC Sochaux-Montbéliard,2 , 0
+17,FC Metz,AS Monaco FC,0 , 0
+17,Angers SCO,AS Saint-Etienne,2 , 2
+17,RC Paris,AS Béziers,1 , 0
+17,Toulouse FC,Valenciennes FC,3 , 2
+17,Olympique Lyonnais,CS Sedan,0 , 3
+17,OGC Nice,LOSC Lille,5 , 5
+18,Olympique Lyonnais,Stade de Reims,1 , 2
+18,AS Monaco FC,AS Béziers,2 , 0
+18,Toulouse FC,AS Saint-Etienne,2 , 3
+18,FC Sochaux-Montbéliard,RC Lens,1 , 0
+18,Nîmes Olympique,RC Paris,0 , 1
+18,LOSC Lille,Olympique d'Alès,1 , 0
+18,CS Sedan,Valenciennes FC,2 , 1
+18,Angers SCO,OGC Nice,2 , 1
+18,Olympique de Marseille,FC Metz,2 , 2
+19,Stade de Reims,Angers SCO,2 , 3
+19,Valenciennes FC,AS Monaco FC,0 , 0
+19,AS Saint-Etienne,CS Sedan,3 , 3
+19,RC Lens,Nîmes Olympique,1 , 1
+19,FC Metz,LOSC Lille,2 , 3
+19,RC Paris,Olympique Lyonnais,2 , 4
+19,Olympique d'Alès,Toulouse FC,2 , 0
+19,AS Béziers,FC Sochaux-Montbéliard,2 , 1
+19,OGC Nice,Olympique de Marseille,3 , 0
+20,LOSC Lille,Stade de Reims,2 , 1
+20,AS Monaco FC,Olympique d'Alès,3 , 1
+20,AS Saint-Etienne,FC Metz,2 , 2
+20,Nîmes Olympique,Olympique de Marseille,5 , 0
+20,Toulouse FC,RC Lens,3 , 2
+20,Angers SCO,Olympique Lyonnais,2 , 1
+20,CS Sedan,OGC Nice,3 , 2
+20,FC Sochaux-Montbéliard,RC Paris,5 , 0
+20,AS Béziers,Valenciennes FC,3 , 1
+21,Stade de Reims,AS Monaco FC,1 , 1
+21,Valenciennes FC,AS Saint-Etienne,0 , 0
+21,RC Paris,LOSC Lille,1 , 3
+21,OGC Nice,Nîmes Olympique,2 , 0
+21,Olympique de Marseille,Angers SCO,1 , 2
+21,RC Lens,CS Sedan,2 , 3
+21,Olympique Lyonnais,FC Sochaux-Montbéliard,1 , 1
+21,FC Metz,Toulouse FC,2 , 1
+21,Olympique d'Alès,AS Béziers,2 , 0
+22,Olympique d'Alès,Stade de Reims,2 , 0
+22,FC Sochaux-Montbéliard,AS Monaco FC,1 , 2
+22,LOSC Lille,Olympique Lyonnais,3 , 0
+22,AS Béziers,Nîmes Olympique,0 , 1
+22,AS Saint-Etienne,RC Paris,0 , 1
+22,Toulouse FC,Angers SCO,1 , 3
+22,CS Sedan,FC Metz,6 , 3
+22,OGC Nice,RC Lens,0 , 2
+22,Valenciennes FC,Olympique de Marseille,2 , 1
+23,RC Lens,AS Saint-Etienne,1 , 3
+23,Angers SCO,AS Béziers,3 , 1
+23,Nîmes Olympique,CS Sedan,2 , 2
+23,RC Paris,Valenciennes FC,2 , 2
+23,Olympique Lyonnais,Toulouse FC,3 , 1
+23,Olympique de Marseille,Olympique d'Alès,1 , 0
+23,Stade de Reims,FC Sochaux-Montbéliard,3 , 1
+23,AS Monaco FC,LOSC Lille,1 , 0
+23,FC Metz,OGC Nice,1 , 1
+24,RC Paris,Stade de Reims,1 , 5
+24,AS Monaco FC,FC Metz,2 , 1
+24,LOSC Lille,Angers SCO,2 , 3
+24,CS Sedan,AS Béziers,8 , 4
+24,FC Sochaux-Montbéliard,Nîmes Olympique,1 , 1
+24,Olympique de Marseille,AS Saint-Etienne,1 , 0
+24,Olympique d'Alès,RC Lens,0 , 1
+24,Olympique Lyonnais,OGC Nice,1 , 1
+24,Valenciennes FC,Toulouse FC,2 , 0
+25,Stade de Reims,Olympique de Marseille,4 , 1
+25,AS Saint-Etienne,AS Monaco FC,2 , 1
+25,Angers SCO,RC Paris,0 , 0
+25,Nîmes Olympique,LOSC Lille,2 , 0
+25,RC Lens,Valenciennes FC,2 , 0
+25,Toulouse FC,CS Sedan,2 , 1
+25,AS Béziers,Olympique Lyonnais,1 , 1
+25,FC Metz,Olympique d'Alès,0 , 1
+25,OGC Nice,FC Sochaux-Montbéliard,4 , 3
+26,OGC Nice,Stade de Reims,1 , 2
+26,Toulouse FC,AS Monaco FC,0 , 0
+26,Angers SCO,FC Metz,3 , 1
+26,Nîmes Olympique,Valenciennes FC,5 , 0
+26,CS Sedan,Olympique d'Alès,5 , 2
+26,FC Sochaux-Montbéliard,AS Saint-Etienne,4 , 1
+26,Olympique Lyonnais,RC Lens,3 , 1
+26,AS Béziers,RC Paris,1 , 0
+26,LOSC Lille,Olympique de Marseille,3 , 1
+27,Stade de Reims,Nîmes Olympique,2 , 1
+27,AS Monaco FC,CS Sedan,1 , 1
+27,Olympique d'Alès,Angers SCO,0 , 0
+27,AS Saint-Etienne,LOSC Lille,6 , 2
+27,RC Lens,AS Béziers,3 , 1
+27,RC Paris,OGC Nice,3 , 1
+27,FC Metz,Olympique Lyonnais,2 , 1
+27,Valenciennes FC,FC Sochaux-Montbéliard,1 , 1
+27,Olympique de Marseille,Toulouse FC,3 , 0
+28,CS Sedan,Stade de Reims,2 , 5
+28,AS Monaco FC,OGC Nice,1 , 1
+28,Nîmes Olympique,Olympique d'Alès,3 , 0
+28,Olympique Lyonnais,AS Saint-Etienne,0 , 2
+28,Valenciennes FC,Angers SCO,2 , 1
+28,LOSC Lille,RC Lens,4 , 1
+28,Toulouse FC,RC Paris,1 , 1
+28,FC Sochaux-Montbéliard,FC Metz,1 , 0
+28,AS Béziers,Olympique de Marseille,0 , 0
+29,FC Metz,Stade de Reims,3 , 1
+29,RC Lens,AS Monaco FC,0 , 1
+29,Angers SCO,Nîmes Olympique,1 , 2
+29,Olympique d'Alès,AS Saint-Etienne,0 , 2
+29,CS Sedan,RC Paris,2 , 0
+29,AS Béziers,LOSC Lille,2 , 0
+29,Toulouse FC,FC Sochaux-Montbéliard,0 , 0
+29,Olympique Lyonnais,Olympique de Marseille,1 , 1
+29,OGC Nice,Valenciennes FC,1 , 1
+30,Stade de Reims,Toulouse FC,2 , 2
+30,Nîmes Olympique,Olympique Lyonnais,2 , 0
+30,AS Monaco FC,Angers SCO,0 , 2
+30,AS Saint-Etienne,AS Béziers,1 , 2
+30,FC Sochaux-Montbéliard,CS Sedan,2 , 1
+30,LOSC Lille,OGC Nice,1 , 0
+30,Olympique de Marseille,RC Lens,3 , 2
+30,RC Paris,FC Metz,1 , 2
+30,Valenciennes FC,Olympique d'Alès,0 , 0
+31,Stade de Reims,RC Lens,5 , 0
+31,AS Saint-Etienne,Nîmes Olympique,1 , 1
+31,AS Monaco FC,Olympique Lyonnais,1 , 2
+31,Angers SCO,CS Sedan,1 , 1
+31,LOSC Lille,Toulouse FC,1 , 3
+31,Olympique d'Alès,FC Sochaux-Montbéliard,2 , 1
+31,RC Paris,Olympique de Marseille,4 , 3
+31,AS Béziers,OGC Nice,0 , 1
+31,FC Metz,Valenciennes FC,1 , 0
+32,Valenciennes FC,Stade de Reims,0 , 6
+32,Nîmes Olympique,FC Metz,1 , 1
+32,Olympique de Marseille,AS Monaco FC,2 , 1
+32,FC Sochaux-Montbéliard,Angers SCO,2 , 1
+32,OGC Nice,AS Saint-Etienne,6 , 1
+32,CS Sedan,LOSC Lille,3 , 2
+32,RC Lens,RC Paris,1 , 1
+32,Olympique Lyonnais,Olympique d'Alès,2 , 0
+32,Toulouse FC,AS Béziers,3 , 2
+33,AS Béziers,Stade de Reims,2 , 0
+33,Nîmes Olympique,AS Monaco FC,0 , 0
+33,AS Saint-Etienne,Angers SCO,0 , 3
+33,CS Sedan,Olympique Lyonnais,2 , 3
+33,Valenciennes FC,LOSC Lille,0 , 1
+33,RC Paris,Olympique d'Alès,3 , 2
+33,RC Lens,FC Metz,2 , 2
+33,FC Sochaux-Montbéliard,Olympique de Marseille,1 , 2
+33,OGC Nice,Toulouse FC,2 , 2
+34,Olympique d'Alès,OGC Nice,1 , 1
+34,Stade de Reims,AS Saint-Etienne,4 , 0
+34,Toulouse FC,Nîmes Olympique,4 , 0
+34,Angers SCO,RC Lens,5 , 0
+34,AS Monaco FC,RC Paris,3 , 2
+34,Olympique de Marseille,CS Sedan,1 , 1
+34,LOSC Lille,FC Sochaux-Montbéliard,3 , 2
+34,Olympique Lyonnais,Valenciennes FC,1 , 1
+34,FC Metz,AS Béziers,4 , 0

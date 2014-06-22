@@ -6,8 +6,8 @@ namespace :saf do
   desc "Parse LFP"
   task parse_lfp: :environment do
 
-    season_name = "1949-1950"
-    season_id = 18
+    season_name = "1969-1970"
+    season_id = 38
     page = 1
 
     CSV.open("data/french-ligue1-#{season_name}.csv", "wb") do |csv|

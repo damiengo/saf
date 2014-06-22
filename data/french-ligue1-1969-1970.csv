@@ -1,0 +1,307 @@
+day,home_team,away_team,home_score,away_score
+1,AS Saint-Etienne,AC Ajaccio,3 , 1
+1,Olympique de Marseille,FC Sochaux-Montbéliard,0 , 0
+1,SC Bastia,Olympique Lyonnais,2 , 4
+1,AS Red Star 93,Angers SCO,3 , 4
+1,RC Strasbourg,FC Rouen 1899,3 , 2
+1,FC Nantes,FC Metz,1 , 0
+1,Angoulême,Nîmes Olympique,1 , 0
+1,Stade Rennais FC,Valenciennes FC,1 , 1
+1,CS Sedan,Girondins de Bordeaux,1 , 1
+2,Olympique Lyonnais,CS Sedan,4 , 2
+2,AS Saint-Etienne,FC Metz,2 , 0
+2,Valenciennes FC,Angoulême,0 , 1
+2,Girondins de Bordeaux,RC Strasbourg,4 , 2
+2,FC Rouen 1899,Stade Rennais FC,4 , 0
+2,FC Sochaux-Montbéliard,AS Red Star 93,0 , 3
+2,AC Ajaccio,FC Nantes,2 , 1
+2,Nîmes Olympique,Olympique de Marseille,1 , 1
+2,Angers SCO,SC Bastia,5 , 0
+3,Olympique Lyonnais,Nîmes Olympique,3 , 0
+3,FC Nantes,AS Saint-Etienne,2 , 2
+3,Angoulême,FC Rouen 1899,1 , 1
+3,AS Red Star 93,FC Metz,3 , 1
+3,Olympique de Marseille,Girondins de Bordeaux,3 , 1
+3,RC Strasbourg,Valenciennes FC,4 , 2
+3,Stade Rennais FC,AC Ajaccio,0 , 1
+3,CS Sedan,Angers SCO,2 , 2
+3,SC Bastia,FC Sochaux-Montbéliard,2 , 0
+4,AS Saint-Etienne,Stade Rennais FC,8 , 2
+4,Angers SCO,Olympique Lyonnais,3 , 2
+4,Nîmes Olympique,AS Red Star 93,1 , 3
+4,Valenciennes FC,Olympique de Marseille,0 , 2
+4,AC Ajaccio,Angoulême,0 , 0
+4,FC Rouen 1899,FC Nantes,1 , 0
+4,FC Sochaux-Montbéliard,CS Sedan,1 , 0
+4,Girondins de Bordeaux,SC Bastia,1 , 0
+4,FC Metz,RC Strasbourg,2 , 2
+5,Olympique de Marseille,AS Saint-Etienne,2 , 3
+5,Olympique Lyonnais,FC Sochaux-Montbéliard,2 , 2
+5,SC Bastia,Nîmes Olympique,2 , 5
+5,Stade Rennais FC,FC Metz,2 , 0
+5,Angers SCO,Valenciennes FC,0 , 1
+5,RC Strasbourg,AC Ajaccio,2 , 0
+5,AS Red Star 93,Girondins de Bordeaux,1 , 1
+5,Angoulême,FC Nantes,2 , 2
+5,CS Sedan,FC Rouen 1899,1 , 0
+6,AS Saint-Etienne,RC Strasbourg,3 , 0
+6,FC Sochaux-Montbéliard,Angers SCO,1 , 1
+6,AC Ajaccio,AS Red Star 93,2 , 2
+6,Girondins de Bordeaux,Olympique Lyonnais,3 , 0
+6,FC Rouen 1899,Olympique de Marseille,1 , 1
+6,FC Metz,Angoulême,3 , 2
+6,FC Nantes,Stade Rennais FC,6 , 1
+6,Nîmes Olympique,CS Sedan,5 , 1
+6,Valenciennes FC,SC Bastia,2 , 0
+7,Olympique Lyonnais,FC Rouen 1899,3 , 0
+7,RC Strasbourg,FC Nantes,2 , 1
+7,Angers SCO,Girondins de Bordeaux,3 , 1
+7,Olympique de Marseille,AC Ajaccio,1 , 0
+7,Angoulême,Stade Rennais FC,3 , 0
+7,FC Sochaux-Montbéliard,Nîmes Olympique,2 , 2
+7,CS Sedan,Valenciennes FC,0 , 0
+7,SC Bastia,FC Metz,2 , 2
+7,AS Red Star 93,AS Saint-Etienne,1 , 5
+8,AS Saint-Etienne,Angoulême,1 , 1
+8,Girondins de Bordeaux,FC Sochaux-Montbéliard,3 , 0
+8,FC Metz,Olympique de Marseille,2 , 1
+8,FC Rouen 1899,SC Bastia,3 , 0
+8,AC Ajaccio,CS Sedan,0 , 1
+8,Nîmes Olympique,Angers SCO,1 , 1
+8,Stade Rennais FC,RC Strasbourg,4 , 5
+8,FC Nantes,Olympique Lyonnais,5 , 2
+8,Valenciennes FC,AS Red Star 93,2 , 0
+9,RC Strasbourg,Angoulême,3 , 1
+9,Girondins de Bordeaux,Nîmes Olympique,1 , 0
+9,Angers SCO,FC Nantes,0 , 3
+9,AS Red Star 93,FC Rouen 1899,2 , 0
+9,FC Sochaux-Montbéliard,Valenciennes FC,6 , 1
+9,CS Sedan,FC Metz,0 , 0
+9,Olympique Lyonnais,AS Saint-Etienne,1 , 7
+9,Olympique de Marseille,Stade Rennais FC,1 , 0
+9,SC Bastia,AC Ajaccio,2 , 0
+10,FC Nantes,SC Bastia,2 , 1
+10,FC Metz,Angers SCO,2 , 1
+10,Stade Rennais FC,AS Red Star 93,2 , 2
+10,FC Rouen 1899,FC Sochaux-Montbéliard,1 , 3
+10,AC Ajaccio,Olympique Lyonnais,2 , 0
+10,Valenciennes FC,Girondins de Bordeaux,1 , 4
+10,AS Saint-Etienne,CS Sedan,3 , 1
+10,Angoulême,Olympique de Marseille,1 , 3
+10,Nîmes Olympique,RC Strasbourg,3 , 2
+11,Olympique Lyonnais,Valenciennes FC,1 , 0
+11,FC Sochaux-Montbéliard,AS Saint-Etienne,3 , 3
+11,Girondins de Bordeaux,FC Rouen 1899,1 , 1
+11,Angers SCO,AC Ajaccio,3 , 2
+11,Olympique de Marseille,RC Strasbourg,2 , 0
+11,CS Sedan,FC Nantes,4 , 0
+11,AS Red Star 93,Angoulême,0 , 0
+11,Nîmes Olympique,FC Metz,2 , 1
+11,SC Bastia,Stade Rennais FC,4 , 0
+12,Valenciennes FC,Nîmes Olympique,0 , 2
+12,FC Metz,Girondins de Bordeaux,4 , 1
+12,Stade Rennais FC,CS Sedan,3 , 3
+12,AS Saint-Etienne,SC Bastia,4 , 2
+12,FC Nantes,Olympique de Marseille,2 , 1
+12,RC Strasbourg,AS Red Star 93,5 , 0
+12,FC Rouen 1899,Angers SCO,5 , 0
+12,Angoulême,Olympique Lyonnais,1 , 1
+12,AC Ajaccio,FC Sochaux-Montbéliard,1 , 0
+13,Olympique Lyonnais,Stade Rennais FC,4 , 4
+13,Girondins de Bordeaux,AC Ajaccio,2 , 1
+13,Nîmes Olympique,FC Rouen 1899,6 , 1
+13,SC Bastia,RC Strasbourg,2 , 1
+13,CS Sedan,Angoulême,2 , 0
+13,Valenciennes FC,FC Metz,0 , 0
+13,AS Red Star 93,Olympique de Marseille,1 , 6
+13,FC Sochaux-Montbéliard,FC Nantes,0 , 3
+13,Angers SCO,AS Saint-Etienne,0 , 0
+14,FC Nantes,AS Red Star 93,1 , 1
+14,FC Rouen 1899,Valenciennes FC,3 , 3
+14,AS Saint-Etienne,Girondins de Bordeaux,2 , 0
+14,Olympique de Marseille,Olympique Lyonnais,4 , 1
+14,AC Ajaccio,Nîmes Olympique,1 , 0
+14,RC Strasbourg,CS Sedan,2 , 3
+14,Angoulême,SC Bastia,5 , 1
+14,FC Metz,FC Sochaux-Montbéliard,1 , 2
+14,Stade Rennais FC,Angers SCO,1 , 0
+15,Nîmes Olympique,AS Saint-Etienne,1 , 3
+15,CS Sedan,Olympique de Marseille,0 , 0
+15,FC Sochaux-Montbéliard,Stade Rennais FC,2 , 2
+15,Girondins de Bordeaux,FC Nantes,3 , 0
+15,Olympique Lyonnais,RC Strasbourg,0 , 1
+15,Angers SCO,Angoulême,2 , 2
+15,FC Rouen 1899,FC Metz,1 , 1
+15,SC Bastia,AS Red Star 93,3 , 0
+15,Valenciennes FC,AC Ajaccio,2 , 1
+16,FC Nantes,Nîmes Olympique,1 , 0
+16,AS Saint-Etienne,Valenciennes FC,1 , 0
+16,Stade Rennais FC,Girondins de Bordeaux,0 , 0
+16,Olympique de Marseille,SC Bastia,3 , 3
+16,RC Strasbourg,Angers SCO,4 , 1
+16,AS Red Star 93,CS Sedan,0 , 2
+16,Angoulême,FC Sochaux-Montbéliard,4 , 0
+16,FC Metz,Olympique Lyonnais,4 , 0
+16,AC Ajaccio,FC Rouen 1899,1 , 0
+17,FC Rouen 1899,AS Saint-Etienne,0 , 2
+17,Girondins de Bordeaux,Angoulême,5 , 1
+17,Angers SCO,Olympique de Marseille,2 , 1
+17,FC Sochaux-Montbéliard,RC Strasbourg,2 , 0
+17,CS Sedan,SC Bastia,0 , 2
+17,Valenciennes FC,FC Nantes,2 , 1
+17,AC Ajaccio,FC Metz,0 , 0
+17,Nîmes Olympique,Stade Rennais FC,2 , 3
+17,Olympique Lyonnais,AS Red Star 93,2 , 0
+18,FC Sochaux-Montbéliard,SC Bastia,2 , 1
+18,Girondins de Bordeaux,Olympique de Marseille,2 , 2
+18,Angers SCO,CS Sedan,1 , 3
+18,Valenciennes FC,RC Strasbourg,2 , 0
+18,Nîmes Olympique,Olympique Lyonnais,5 , 2
+18,AC Ajaccio,Stade Rennais FC,4 , 2
+18,FC Rouen 1899,Angoulême,0 , 2
+18,FC Metz,AS Red Star 93,2 , 1
+18,AS Saint-Etienne,FC Nantes,2 , 3
+19,Stade Rennais FC,AS Saint-Etienne,1 , 0
+19,SC Bastia,Girondins de Bordeaux,2 , 2
+19,Olympique de Marseille,Valenciennes FC,3 , 1
+19,Angoulême,AC Ajaccio,2 , 1
+19,AS Red Star 93,Nîmes Olympique,3 , 0
+19,FC Nantes,FC Rouen 1899,0 , 2
+19,Olympique Lyonnais,Angers SCO,2 , 1
+19,CS Sedan,FC Sochaux-Montbéliard,3 , 0
+19,RC Strasbourg,FC Metz,2 , 0
+20,FC Metz,AS Saint-Etienne,1 , 2
+20,Olympique de Marseille,Nîmes Olympique,4 , 0
+20,Angoulême,Valenciennes FC,6 , 1
+20,CS Sedan,Olympique Lyonnais,1 , 0
+20,FC Nantes,AC Ajaccio,6 , 0
+20,AS Red Star 93,FC Sochaux-Montbéliard,1 , 0
+20,SC Bastia,Angers SCO,3 , 1
+20,Stade Rennais FC,FC Rouen 1899,1 , 1
+20,RC Strasbourg,Girondins de Bordeaux,3 , 1
+21,AS Saint-Etienne,Olympique de Marseille,2 , 1
+21,Girondins de Bordeaux,AS Red Star 93,0 , 1
+21,FC Nantes,Angoulême,1 , 1
+21,FC Rouen 1899,CS Sedan,0 , 0
+21,Nîmes Olympique,SC Bastia,4 , 1
+21,AC Ajaccio,RC Strasbourg,1 , 0
+21,Valenciennes FC,Angers SCO,0 , 2
+21,FC Sochaux-Montbéliard,Olympique Lyonnais,0 , 2
+21,FC Metz,Stade Rennais FC,2 , 0
+22,RC Strasbourg,AS Saint-Etienne,1 , 1
+22,Olympique de Marseille,FC Rouen 1899,2 , 0
+22,Olympique Lyonnais,Girondins de Bordeaux,1 , 3
+22,CS Sedan,Nîmes Olympique,1 , 0
+22,Stade Rennais FC,FC Nantes,1 , 2
+22,AS Red Star 93,AC Ajaccio,4 , 1
+22,Angers SCO,FC Sochaux-Montbéliard,2 , 2
+22,SC Bastia,Valenciennes FC,3 , 1
+22,Angoulême,FC Metz,2 , 1
+23,AS Saint-Etienne,AS Red Star 93,0 , 0
+23,AC Ajaccio,Olympique de Marseille,2 , 4
+23,Girondins de Bordeaux,Angers SCO,1 , 0
+23,Valenciennes FC,CS Sedan,1 , 3
+23,Stade Rennais FC,Angoulême,2 , 0
+23,FC Nantes,RC Strasbourg,0 , 1
+23,Nîmes Olympique,FC Sochaux-Montbéliard,2 , 0
+23,FC Metz,SC Bastia,3 , 0
+23,FC Rouen 1899,Olympique Lyonnais,1 , 0
+24,RC Strasbourg,Stade Rennais FC,1 , 1
+24,Angoulême,AS Saint-Etienne,0 , 1
+24,Olympique de Marseille,FC Metz,3 , 2
+24,Olympique Lyonnais,FC Nantes,2 , 5
+24,AS Red Star 93,Valenciennes FC,1 , 1
+24,Angers SCO,Nîmes Olympique,1 , 0
+24,SC Bastia,FC Rouen 1899,0 , 2
+24,FC Sochaux-Montbéliard,Girondins de Bordeaux,3 , 2
+24,CS Sedan,AC Ajaccio,2 , 0
+25,Nîmes Olympique,Girondins de Bordeaux,3 , 0
+25,FC Nantes,Angers SCO,1 , 0
+25,FC Rouen 1899,AS Red Star 93,2 , 0
+25,AS Saint-Etienne,Olympique Lyonnais,6 , 0
+25,Stade Rennais FC,Olympique de Marseille,1 , 1
+25,FC Metz,CS Sedan,0 , 2
+25,Angoulême,RC Strasbourg,1 , 1
+25,Valenciennes FC,FC Sochaux-Montbéliard,0 , 1
+25,AC Ajaccio,SC Bastia,2 , 0
+26,Olympique de Marseille,Angoulême,1 , 1
+26,Girondins de Bordeaux,Valenciennes FC,0 , 2
+26,SC Bastia,FC Nantes,3 , 2
+26,Angers SCO,FC Metz,0 , 0
+26,Olympique Lyonnais,AC Ajaccio,2 , 1
+26,FC Sochaux-Montbéliard,FC Rouen 1899,1 , 1
+26,AS Red Star 93,Stade Rennais FC,2 , 4
+26,RC Strasbourg,Nîmes Olympique,4 , 1
+26,CS Sedan,AS Saint-Etienne,1 , 2
+27,FC Metz,Nîmes Olympique,3 , 1
+27,AS Saint-Etienne,FC Sochaux-Montbéliard,2 , 0
+27,FC Nantes,CS Sedan,2 , 2
+27,FC Rouen 1899,Girondins de Bordeaux,0 , 0
+27,AC Ajaccio,Angers SCO,0 , 1
+27,Stade Rennais FC,SC Bastia,3 , 1
+27,Valenciennes FC,Olympique Lyonnais,1 , 1
+27,RC Strasbourg,Olympique de Marseille,2 , 3
+27,Angoulême,AS Red Star 93,1 , 1
+28,SC Bastia,AS Saint-Etienne,0 , 1
+28,Olympique de Marseille,FC Nantes,4 , 2
+28,CS Sedan,Stade Rennais FC,3 , 2
+28,Girondins de Bordeaux,FC Metz,1 , 0
+28,Olympique Lyonnais,Angoulême,1 , 2
+28,AS Red Star 93,RC Strasbourg,2 , 1
+28,Angers SCO,FC Rouen 1899,1 , 1
+28,Nîmes Olympique,Valenciennes FC,2 , 1
+28,FC Sochaux-Montbéliard,AC Ajaccio,0 , 2
+29,Girondins de Bordeaux,AS Saint-Etienne,1 , 4
+29,Angers SCO,Stade Rennais FC,1 , 0
+29,Olympique Lyonnais,Olympique de Marseille,1 , 0
+29,CS Sedan,RC Strasbourg,2 , 1
+29,SC Bastia,Angoulême,1 , 1
+29,Valenciennes FC,FC Rouen 1899,1 , 3
+29,AS Red Star 93,FC Nantes,3 , 0
+29,Nîmes Olympique,AC Ajaccio,2 , 0
+29,FC Sochaux-Montbéliard,FC Metz,4 , 1
+30,AS Saint-Etienne,Nîmes Olympique,2 , 1
+30,Olympique de Marseille,CS Sedan,2 , 0
+30,FC Nantes,Girondins de Bordeaux,1 , 1
+30,AS Red Star 93,SC Bastia,2 , 1
+30,Stade Rennais FC,FC Sochaux-Montbéliard,2 , 4
+30,AC Ajaccio,Valenciennes FC,3 , 1
+30,Angoulême,Angers SCO,1 , 1
+30,RC Strasbourg,Olympique Lyonnais,2 , 1
+30,FC Metz,FC Rouen 1899,2 , 0
+31,Valenciennes FC,AS Saint-Etienne,0 , 3
+31,SC Bastia,Olympique de Marseille,3 , 2
+31,Girondins de Bordeaux,Stade Rennais FC,1 , 1
+31,Angers SCO,RC Strasbourg,4 , 1
+31,FC Rouen 1899,AC Ajaccio,2 , 0
+31,Nîmes Olympique,FC Nantes,4 , 2
+31,Olympique Lyonnais,FC Metz,2 , 4
+31,CS Sedan,AS Red Star 93,3 , 0
+31,FC Sochaux-Montbéliard,Angoulême,1 , 0
+32,AS Saint-Etienne,FC Rouen 1899,5 , 0
+32,Olympique de Marseille,Angers SCO,5 , 2
+32,SC Bastia,CS Sedan,2 , 3
+32,RC Strasbourg,FC Sochaux-Montbéliard,2 , 2
+32,Stade Rennais FC,Nîmes Olympique,1 , 1
+32,AS Red Star 93,Olympique Lyonnais,1 , 5
+32,FC Nantes,Valenciennes FC,1 , 2
+32,Angoulême,Girondins de Bordeaux,3 , 2
+32,FC Metz,AC Ajaccio,1 , 0
+33,FC Rouen 1899,RC Strasbourg,1 , 1
+33,AC Ajaccio,AS Saint-Etienne,1 , 2
+33,Nîmes Olympique,Angoulême,2 , 2
+33,Angers SCO,AS Red Star 93,5 , 1
+33,FC Metz,FC Nantes,2 , 2
+33,Olympique Lyonnais,SC Bastia,2 , 1
+33,Valenciennes FC,Stade Rennais FC,0 , 1
+33,FC Sochaux-Montbéliard,Olympique de Marseille,2 , 2
+33,Girondins de Bordeaux,CS Sedan,4 , 1
+34,Olympique de Marseille,AS Red Star 93,4 , 0
+34,AS Saint-Etienne,Angers SCO,1 , 2
+34,RC Strasbourg,SC Bastia,4 , 0
+34,AC Ajaccio,Girondins de Bordeaux,1 , 1
+34,FC Nantes,FC Sochaux-Montbéliard,1 , 2
+34,FC Rouen 1899,Nîmes Olympique,1 , 1
+34,Stade Rennais FC,Olympique Lyonnais,4 , 3
+34,Angoulême,CS Sedan,2 , 1
+34,FC Metz,Valenciennes FC,3 , 0
