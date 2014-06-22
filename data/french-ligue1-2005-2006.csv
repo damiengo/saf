@@ -1,0 +1,386 @@
+day,home_team,away_team,home_score,away_score
+1,Paris Saint-Germain,FC Metz,4 , 1
+1,Olympique de Marseille,Girondins de Bordeaux,0 , 2
+1,LOSC Lille,Stade Rennais FC,1 , 0
+1,AS Nancy-Lorraine,AS Monaco FC,0 , 1
+1,FC Nantes,RC Lens,2 , 0
+1,OGC Nice,ESTAC Troyes,1 , 1
+1,AS Saint-Etienne,AC Ajaccio,0 , 0
+1,FC Sochaux-Montbéliard,Toulouse FC,0 , 1
+1,RC Strasbourg,AJ Auxerre,0 , 0
+1,Le Mans FC,Olympique Lyonnais,1 , 2
+2,RC Lens,Olympique de Marseille,2 , 0
+2,AC Ajaccio,LOSC Lille,3 , 3
+2,Girondins de Bordeaux,AS Nancy-Lorraine,1 , 0
+2,FC Metz,Le Mans FC,0 , 0
+2,AS Monaco FC,AJ Auxerre,0 , 2
+2,FC Sochaux-Montbéliard,Paris Saint-Germain,0 , 1
+2,Toulouse FC,OGC Nice,0 , 2
+2,ESTAC Troyes,AS Saint-Etienne,0 , 0
+2,Stade Rennais FC,FC Nantes,0 , 3
+2,Olympique Lyonnais,RC Strasbourg,1 , 0
+3,Paris Saint-Germain,Toulouse FC,2 , 0
+3,AJ Auxerre,Girondins de Bordeaux,1 , 0
+3,Le Mans FC,Stade Rennais FC,4 , 0
+3,LOSC Lille,ESTAC Troyes,1 , 2
+3,AS Nancy-Lorraine,RC Lens,1 , 2
+3,FC Nantes,AC Ajaccio,0 , 2
+3,OGC Nice,FC Sochaux-Montbéliard,1 , 2
+3,AS Saint-Etienne,FC Metz,2 , 0
+3,RC Strasbourg,AS Monaco FC,1 , 2
+3,Olympique de Marseille,Olympique Lyonnais,1 , 1
+4,Girondins de Bordeaux,AS Monaco FC,1 , 0
+4,AC Ajaccio,Le Mans FC,0 , 0
+4,RC Lens,AJ Auxerre,7 , 0
+4,Olympique Lyonnais,AS Nancy-Lorraine,1 , 0
+4,FC Metz,RC Strasbourg,0 , 0
+4,OGC Nice,FC Nantes,1 , 1
+4,Stade Rennais FC,Olympique de Marseille,3 , 2
+4,FC Sochaux-Montbéliard,LOSC Lille,0 , 0
+4,Toulouse FC,AS Saint-Etienne,1 , 1
+4,ESTAC Troyes,Paris Saint-Germain,1 , 1
+5,LOSC Lille,Toulouse FC,0 , 0
+5,Olympique de Marseille,AC Ajaccio,1 , 1
+5,Le Mans FC,ESTAC Troyes,1 , 0
+5,AS Nancy-Lorraine,Stade Rennais FC,6 , 0
+5,FC Nantes,FC Metz,0 , 0
+5,Paris Saint-Germain,OGC Nice,1 , 2
+5,AS Saint-Etienne,FC Sochaux-Montbéliard,0 , 0
+5,RC Strasbourg,Girondins de Bordeaux,0 , 0
+5,AS Monaco FC,RC Lens,0 , 0
+5,AJ Auxerre,Olympique Lyonnais,0 , 2
+6,Olympique Lyonnais,AS Monaco FC,2 , 1
+6,AC Ajaccio,AS Nancy-Lorraine,1 , 0
+6,FC Metz,LOSC Lille,0 , 2
+6,OGC Nice,AS Saint-Etienne,0 , 1
+6,Paris Saint-Germain,RC Strasbourg,1 , 0
+6,Stade Rennais FC,AJ Auxerre,3 , 1
+6,Toulouse FC,Le Mans FC,0 , 2
+6,ESTAC Troyes,FC Nantes,1 , 0
+6,RC Lens,Girondins de Bordeaux,1 , 1
+6,FC Sochaux-Montbéliard,Olympique de Marseille,0 , 1
+7,Girondins de Bordeaux,Olympique Lyonnais,1 , 1
+7,Le Mans FC,FC Sochaux-Montbéliard,2 , 1
+7,LOSC Lille,OGC Nice,4 , 0
+7,AS Nancy-Lorraine,FC Metz,1 , 1
+7,FC Nantes,Toulouse FC,2 , 0
+7,AJ Auxerre,AC Ajaccio,2 , 0
+7,Olympique de Marseille,ESTAC Troyes,2 , 1
+7,AS Monaco FC,Stade Rennais FC,0 , 2
+7,RC Strasbourg,RC Lens,1 , 1
+7,AS Saint-Etienne,Paris Saint-Germain,3 , 0
+8,Toulouse FC,Olympique de Marseille,1 , 0
+8,AC Ajaccio,RC Strasbourg,0 , 0
+8,FC Metz,AJ Auxerre,1 , 2
+8,OGC Nice,Le Mans FC,1 , 0
+8,Stade Rennais FC,Girondins de Bordeaux,2 , 2
+8,AS Saint-Etienne,AS Nancy-Lorraine,0 , 2
+8,FC Sochaux-Montbéliard,FC Nantes,1 , 0
+8,ESTAC Troyes,AS Monaco FC,1 , 2
+8,Paris Saint-Germain,LOSC Lille,2 , 1
+8,Olympique Lyonnais,RC Lens,1 , 1
+9,AS Monaco FC,OGC Nice,0 , 0
+9,AJ Auxerre,FC Sochaux-Montbéliard,3 , 0
+9,Girondins de Bordeaux,AC Ajaccio,1 , 0
+9,Le Mans FC,Paris Saint-Germain,0 , 0
+9,LOSC Lille,AS Saint-Etienne,2 , 0
+9,Olympique de Marseille,FC Metz,3 , 1
+9,AS Nancy-Lorraine,ESTAC Troyes,2 , 1
+9,RC Strasbourg,Toulouse FC,2 , 4
+9,FC Nantes,Olympique Lyonnais,0 , 1
+9,RC Lens,Stade Rennais FC,0 , 0
+10,Paris Saint-Germain,FC Nantes,2 , 0
+10,FC Metz,Girondins de Bordeaux,0 , 1
+10,AS Saint-Etienne,Le Mans FC,3 , 0
+10,FC Sochaux-Montbéliard,AS Nancy-Lorraine,0 , 2
+10,LOSC Lille,AS Monaco FC,0 , 1
+10,Stade Rennais FC,Olympique Lyonnais,1 , 3
+10,Toulouse FC,AJ Auxerre,2 , 0
+10,ESTAC Troyes,RC Strasbourg,1 , 1
+10,OGC Nice,Olympique de Marseille,0 , 1
+10,AC Ajaccio,RC Lens,0 , 0
+11,FC Nantes,AS Saint-Etienne,1 , 1
+11,AJ Auxerre,ESTAC Troyes,3 , 0
+11,Girondins de Bordeaux,FC Sochaux-Montbéliard,1 , 1
+11,Le Mans FC,LOSC Lille,1 , 1
+11,RC Lens,OGC Nice,2 , 2
+11,AS Monaco FC,FC Metz,3 , 0
+11,AS Nancy-Lorraine,Toulouse FC,2 , 0
+11,RC Strasbourg,Stade Rennais FC,0 , 1
+11,Olympique Lyonnais,AC Ajaccio,3 , 2
+11,Olympique de Marseille,Paris Saint-Germain,1 , 0
+12,FC Metz,Olympique Lyonnais,0 , 4
+12,LOSC Lille,FC Nantes,2 , 0
+12,OGC Nice,AJ Auxerre,1 , 0
+12,Paris Saint-Germain,AS Nancy-Lorraine,1 , 0
+12,Toulouse FC,Girondins de Bordeaux,1 , 1
+12,AC Ajaccio,Stade Rennais FC,0 , 1
+12,Le Mans FC,RC Strasbourg,2 , 0
+12,FC Sochaux-Montbéliard,AS Monaco FC,2 , 1
+12,ESTAC Troyes,RC Lens,1 , 1
+12,AS Saint-Etienne,Olympique de Marseille,2 , 1
+13,Olympique de Marseille,LOSC Lille,1 , 1
+13,Girondins de Bordeaux,ESTAC Troyes,2 , 0
+13,RC Lens,Toulouse FC,1 , 0
+13,Olympique Lyonnais,FC Sochaux-Montbéliard,1 , 0
+13,AS Monaco FC,AC Ajaccio,3 , 0
+13,FC Nantes,Le Mans FC,1 , 0
+13,Stade Rennais FC,FC Metz,2 , 1
+13,RC Strasbourg,AS Saint-Etienne,0 , 1
+13,AS Nancy-Lorraine,OGC Nice,0 , 0
+13,AJ Auxerre,Paris Saint-Germain,2 , 0
+14,Toulouse FC,Olympique Lyonnais,0 , 1
+14,Le Mans FC,Olympique de Marseille,3 , 0
+14,FC Metz,AC Ajaccio,2 , 0
+14,FC Nantes,AS Nancy-Lorraine,3 , 0
+14,OGC Nice,Girondins de Bordeaux,0 , 1
+14,AS Saint-Etienne,AJ Auxerre,1 , 1
+14,LOSC Lille,RC Strasbourg,2 , 0
+14,FC Sochaux-Montbéliard,RC Lens,1 , 1
+14,ESTAC Troyes,Stade Rennais FC,2 , 1
+14,Paris Saint-Germain,AS Monaco FC,0 , 0
+15,Olympique de Marseille,FC Nantes,2 , 1
+15,AS Monaco FC,AS Saint-Etienne,1 , 0
+15,AC Ajaccio,FC Sochaux-Montbéliard,0 , 1
+15,AJ Auxerre,LOSC Lille,3 , 2
+15,RC Lens,FC Metz,0 , 0
+15,Olympique Lyonnais,ESTAC Troyes,2 , 1
+15,AS Nancy-Lorraine,Le Mans FC,1 , 0
+15,RC Strasbourg,OGC Nice,0 , 0
+15,Stade Rennais FC,Toulouse FC,4 , 1
+15,Girondins de Bordeaux,Paris Saint-Germain,0 , 2
+16,Le Mans FC,AJ Auxerre,0 , 2
+16,AS Saint-Etienne,Girondins de Bordeaux,1 , 1
+16,LOSC Lille,AS Nancy-Lorraine,1 , 0
+16,OGC Nice,Olympique Lyonnais,1 , 1
+16,FC Sochaux-Montbéliard,Stade Rennais FC,1 , 0
+16,Toulouse FC,AC Ajaccio,3 , 0
+16,ESTAC Troyes,FC Metz,0 , 0
+16,FC Nantes,RC Strasbourg,4 , 3
+16,Paris Saint-Germain,RC Lens,3 , 4
+16,Olympique de Marseille,AS Monaco FC,2 , 1
+17,Olympique Lyonnais,Paris Saint-Germain,2 , 0
+17,AC Ajaccio,ESTAC Troyes,0 , 1
+17,AJ Auxerre,FC Nantes,4 , 0
+17,Girondins de Bordeaux,LOSC Lille,1 , 0
+17,FC Metz,Toulouse FC,2 , 2
+17,AS Monaco FC,Le Mans FC,2 , 0
+17,RC Strasbourg,FC Sochaux-Montbéliard,0 , 0
+17,AS Nancy-Lorraine,Olympique de Marseille,1 , 1
+17,Stade Rennais FC,OGC Nice,1 , 0
+17,RC Lens,AS Saint-Etienne,2 , 1
+18,LOSC Lille,RC Lens,0 , 0
+18,Le Mans FC,Girondins de Bordeaux,1 , 0
+18,Olympique de Marseille,AJ Auxerre,1 , 0
+18,AS Nancy-Lorraine,RC Strasbourg,1 , 2
+18,OGC Nice,AC Ajaccio,1 , 0
+18,Paris Saint-Germain,Stade Rennais FC,2 , 0
+18,FC Sochaux-Montbéliard,FC Metz,1 , 1
+18,Toulouse FC,ESTAC Troyes,2 , 1
+18,FC Nantes,AS Monaco FC,0 , 0
+18,AS Saint-Etienne,Olympique Lyonnais,0 , 0
+19,Olympique Lyonnais,LOSC Lille,1 , 3
+19,AC Ajaccio,Paris Saint-Germain,1 , 1
+19,AJ Auxerre,AS Nancy-Lorraine,0 , 1
+19,Girondins de Bordeaux,FC Nantes,0 , 0
+19,FC Metz,OGC Nice,1 , 0
+19,Stade Rennais FC,AS Saint-Etienne,0 , 1
+19,RC Strasbourg,Olympique de Marseille,0 , 1
+19,ESTAC Troyes,FC Sochaux-Montbéliard,2 , 1
+19,RC Lens,Le Mans FC,2 , 0
+19,AS Monaco FC,Toulouse FC,1 , 0
+20,RC Strasbourg,Olympique Lyonnais,0 , 4
+20,Le Mans FC,FC Metz,2 , 0
+20,LOSC Lille,AC Ajaccio,2 , 0
+20,AS Nancy-Lorraine,Girondins de Bordeaux,0 , 0
+20,FC Nantes,Stade Rennais FC,0 , 2
+20,OGC Nice,Toulouse FC,2 , 1
+20,Paris Saint-Germain,FC Sochaux-Montbéliard,3 , 1
+20,AS Saint-Etienne,ESTAC Troyes,1 , 1
+20,Olympique de Marseille,RC Lens,1 , 1
+20,AJ Auxerre,AS Monaco FC,2 , 1
+21,Girondins de Bordeaux,AJ Auxerre,1 , 0
+21,AC Ajaccio,FC Nantes,0 , 2
+21,RC Lens,AS Nancy-Lorraine,1 , 2
+21,FC Metz,AS Saint-Etienne,0 , 1
+21,AS Monaco FC,RC Strasbourg,1 , 1
+21,Stade Rennais FC,Le Mans FC,1 , 0
+21,FC Sochaux-Montbéliard,OGC Nice,1 , 1
+21,ESTAC Troyes,LOSC Lille,1 , 0
+21,Olympique Lyonnais,Olympique de Marseille,2 , 1
+21,Toulouse FC,Paris Saint-Germain,1 , 0
+22,AS Nancy-Lorraine,Olympique Lyonnais,0 , 2
+22,AJ Auxerre,RC Lens,1 , 0
+22,Le Mans FC,AC Ajaccio,1 , 0
+22,LOSC Lille,FC Sochaux-Montbéliard,3 , 0
+22,AS Monaco FC,Girondins de Bordeaux,0 , 1
+22,FC Nantes,OGC Nice,0 , 0
+22,RC Strasbourg,FC Metz,2 , 1
+22,Paris Saint-Germain,ESTAC Troyes,2 , 1
+22,AS Saint-Etienne,Toulouse FC,,
+22,Olympique de Marseille,Stade Rennais FC,1 , 0
+22,AS Saint-Etienne,Toulouse FC,1 , 3
+23,AC Ajaccio,Olympique de Marseille,3 , 1
+23,Girondins de Bordeaux,RC Strasbourg,2 , 1
+23,FC Metz,FC Nantes,1 , 4
+23,OGC Nice,Paris Saint-Germain,1 , 0
+23,Stade Rennais FC,AS Nancy-Lorraine,0 , 2
+23,FC Sochaux-Montbéliard,AS Saint-Etienne,4 , 0
+23,Toulouse FC,LOSC Lille,0 , 0
+23,ESTAC Troyes,Le Mans FC,1 , 3
+23,RC Lens,AS Monaco FC,1 , 1
+23,Olympique Lyonnais,AJ Auxerre,1 , 1
+24,Girondins de Bordeaux,RC Lens,1 , 0
+24,AJ Auxerre,Stade Rennais FC,2 , 0
+24,Le Mans FC,Toulouse FC,1 , 1
+24,Olympique de Marseille,FC Sochaux-Montbéliard,0 , 0
+24,AS Nancy-Lorraine,AC Ajaccio,0 , 0
+24,FC Nantes,ESTAC Troyes,,
+24,AS Saint-Etienne,OGC Nice,,
+24,LOSC Lille,FC Metz,3 , 1
+24,AS Monaco FC,Olympique Lyonnais,,
+24,RC Strasbourg,Paris Saint-Germain,1 , 1
+24,AS Saint-Etienne,OGC Nice,0 , 1
+24,FC Nantes,ESTAC Troyes,1 , 1
+24,AS Monaco FC,Olympique Lyonnais,2 , 1
+25,Paris Saint-Germain,AS Saint-Etienne,2 , 2
+25,AC Ajaccio,AJ Auxerre,1 , 0
+25,RC Lens,RC Strasbourg,2 , 1
+25,OGC Nice,LOSC Lille,2 , 0
+25,Stade Rennais FC,AS Monaco FC,1 , 3
+25,FC Sochaux-Montbéliard,Le Mans FC,0 , 0
+25,Toulouse FC,FC Nantes,1 , 0
+25,ESTAC Troyes,Olympique de Marseille,0 , 1
+25,Olympique Lyonnais,Girondins de Bordeaux,0 , 0
+25,FC Metz,AS Nancy-Lorraine,0 , 0
+26,RC Lens,Olympique Lyonnais,1 , 1
+26,AJ Auxerre,FC Metz,1 , 1
+26,Girondins de Bordeaux,Stade Rennais FC,2 , 0
+26,Le Mans FC,OGC Nice,2 , 0
+26,AS Monaco FC,ESTAC Troyes,1 , 1
+26,AS Nancy-Lorraine,AS Saint-Etienne,2 , 0
+26,FC Nantes,FC Sochaux-Montbéliard,3 , 1
+26,RC Strasbourg,AC Ajaccio,2 , 2
+26,Olympique de Marseille,Toulouse FC,0 , 0
+26,LOSC Lille,Paris Saint-Germain,0 , 0
+27,Olympique Lyonnais,FC Nantes,3 , 1
+27,OGC Nice,AS Monaco FC,2 , 0
+27,AC Ajaccio,Girondins de Bordeaux,0 , 2
+27,Paris Saint-Germain,Le Mans FC,0 , 1
+27,Stade Rennais FC,RC Lens,4 , 1
+27,AS Saint-Etienne,LOSC Lille,0 , 2
+27,FC Sochaux-Montbéliard,AJ Auxerre,1 , 0
+27,Toulouse FC,RC Strasbourg,1 , 2
+27,ESTAC Troyes,AS Nancy-Lorraine,0 , 1
+27,FC Metz,Olympique de Marseille,1 , 0
+28,FC Nantes,Paris Saint-Germain,0 , 0
+28,AJ Auxerre,Toulouse FC,2 , 0
+28,Girondins de Bordeaux,FC Metz,3 , 3
+28,Le Mans FC,AS Saint-Etienne,0 , 1
+28,Olympique Lyonnais,Stade Rennais FC,1 , 4
+28,AS Nancy-Lorraine,FC Sochaux-Montbéliard,0 , 3
+28,RC Lens,AC Ajaccio,1 , 0
+28,AS Monaco FC,LOSC Lille,0 , 1
+28,RC Strasbourg,ESTAC Troyes,2 , 0
+28,Olympique de Marseille,OGC Nice,1 , 0
+29,FC Sochaux-Montbéliard,Girondins de Bordeaux,,
+29,AC Ajaccio,Olympique Lyonnais,1 , 3
+29,LOSC Lille,Le Mans FC,4 , 0
+29,FC Metz,AS Monaco FC,2 , 1
+29,OGC Nice,RC Lens,0 , 0
+29,Stade Rennais FC,RC Strasbourg,2 , 1
+29,Toulouse FC,AS Nancy-Lorraine,1 , 1
+29,Paris Saint-Germain,Olympique de Marseille,0 , 0
+29,ESTAC Troyes,AJ Auxerre,1 , 1
+29,AS Saint-Etienne,FC Nantes,1 , 0
+29,FC Sochaux-Montbéliard,Girondins de Bordeaux,0 , 3
+30,AS Nancy-Lorraine,Paris Saint-Germain,1 , 1
+30,AJ Auxerre,OGC Nice,2 , 0
+30,Girondins de Bordeaux,Toulouse FC,2 , 0
+30,RC Lens,ESTAC Troyes,1 , 0
+30,Olympique Lyonnais,FC Metz,4 , 0
+30,AS Monaco FC,FC Sochaux-Montbéliard,4 , 1
+30,Stade Rennais FC,AC Ajaccio,3 , 0
+30,FC Nantes,LOSC Lille,1 , 1
+30,RC Strasbourg,Le Mans FC,1 , 2
+30,Olympique de Marseille,AS Saint-Etienne,2 , 0
+31,Le Mans FC,FC Nantes,0 , 0
+31,AC Ajaccio,AS Monaco FC,1 , 0
+31,FC Metz,Stade Rennais FC,0 , 1
+31,OGC Nice,AS Nancy-Lorraine,1 , 0
+31,FC Sochaux-Montbéliard,Olympique Lyonnais,0 , 4
+31,Toulouse FC,RC Lens,1 , 1
+31,ESTAC Troyes,Girondins de Bordeaux,1 , 1
+31,LOSC Lille,Olympique de Marseille,0 , 0
+31,AS Saint-Etienne,RC Strasbourg,0 , 2
+31,Paris Saint-Germain,AJ Auxerre,4 , 1
+32,Olympique Lyonnais,Toulouse FC,1 , 1
+32,AC Ajaccio,FC Metz,0 , 1
+32,AJ Auxerre,AS Saint-Etienne,0 , 0
+32,RC Lens,FC Sochaux-Montbéliard,2 , 1
+32,Olympique de Marseille,Le Mans FC,1 , 1
+32,AS Nancy-Lorraine,FC Nantes,0 , 0
+32,Stade Rennais FC,ESTAC Troyes,2 , 0
+32,RC Strasbourg,LOSC Lille,2 , 2
+32,Girondins de Bordeaux,OGC Nice,1 , 0
+32,AS Monaco FC,Paris Saint-Germain,1 , 1
+33,LOSC Lille,AJ Auxerre,1 , 1
+33,ESTAC Troyes,Olympique Lyonnais,0 , 1
+33,FC Metz,RC Lens,0 , 1
+33,FC Nantes,Olympique de Marseille,1 , 3
+33,OGC Nice,RC Strasbourg,3 , 1
+33,AS Saint-Etienne,AS Monaco FC,1 , 1
+33,FC Sochaux-Montbéliard,AC Ajaccio,3 , 1
+33,Le Mans FC,AS Nancy-Lorraine,0 , 0
+33,Toulouse FC,Stade Rennais FC,0 , 1
+33,Paris Saint-Germain,Girondins de Bordeaux,3 , 1
+34,RC Lens,Paris Saint-Germain,1 , 1
+34,AC Ajaccio,Toulouse FC,1 , 0
+34,Girondins de Bordeaux,AS Saint-Etienne,0 , 0
+34,Olympique Lyonnais,OGC Nice,2 , 1
+34,FC Metz,ESTAC Troyes,2 , 4
+34,AS Monaco FC,Olympique de Marseille,1 , 0
+34,AS Nancy-Lorraine,LOSC Lille,0 , 0
+34,RC Strasbourg,FC Nantes,0 , 1
+34,AJ Auxerre,Le Mans FC,0 , 0
+34,Stade Rennais FC,FC Sochaux-Montbéliard,2 , 1
+35,Toulouse FC,FC Metz,2 , 0
+35,LOSC Lille,Girondins de Bordeaux,3 , 2
+35,Le Mans FC,AS Monaco FC,0 , 0
+35,Olympique de Marseille,AS Nancy-Lorraine,6 , 0
+35,FC Nantes,AJ Auxerre,3 , 2
+35,AS Saint-Etienne,RC Lens,2 , 0
+35,FC Sochaux-Montbéliard,RC Strasbourg,1 , 1
+35,ESTAC Troyes,AC Ajaccio,3 , 0
+35,OGC Nice,Stade Rennais FC,2 , 1
+35,Paris Saint-Germain,Olympique Lyonnais,0 , 1
+36,RC Lens,LOSC Lille,4 , 2
+36,AC Ajaccio,OGC Nice,0 , 3
+36,Girondins de Bordeaux,Le Mans FC,2 , 2
+36,FC Metz,FC Sochaux-Montbéliard,0 , 1
+36,AS Monaco FC,FC Nantes,1 , 1
+36,RC Strasbourg,AS Nancy-Lorraine,1 , 3
+36,ESTAC Troyes,Toulouse FC,3 , 1
+36,Olympique Lyonnais,AS Saint-Etienne,4 , 0
+36,AJ Auxerre,Olympique de Marseille,1 , 2
+36,Stade Rennais FC,Paris Saint-Germain,1 , 1
+37,Le Mans FC,RC Lens,0 , 0
+37,LOSC Lille,Olympique Lyonnais,4 , 0
+37,Olympique de Marseille,RC Strasbourg,2 , 2
+37,AS Nancy-Lorraine,AJ Auxerre,1 , 3
+37,FC Nantes,Girondins de Bordeaux,0 , 1
+37,OGC Nice,FC Metz,2 , 1
+37,Paris Saint-Germain,AC Ajaccio,2 , 4
+37,AS Saint-Etienne,Stade Rennais FC,0 , 0
+37,FC Sochaux-Montbéliard,ESTAC Troyes,1 , 1
+37,Toulouse FC,AS Monaco FC,3 , 3
+38,AC Ajaccio,AS Saint-Etienne,3 , 1
+38,AJ Auxerre,RC Strasbourg,4 , 0
+38,Girondins de Bordeaux,Olympique de Marseille,1 , 1
+38,RC Lens,FC Nantes,3 , 1
+38,Olympique Lyonnais,Le Mans FC,8 , 1
+38,FC Metz,Paris Saint-Germain,1 , 0
+38,AS Monaco FC,AS Nancy-Lorraine,2 , 2
+38,Stade Rennais FC,LOSC Lille,2 , 2
+38,Toulouse FC,FC Sochaux-Montbéliard,1 , 2
+38,ESTAC Troyes,OGC Nice,1 , 2

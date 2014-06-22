@@ -1,0 +1,381 @@
+day,home_team,away_team,home_score,away_score
+1,Montpellier Hérault SC,Toulouse FC,1 , 1
+1,Evian TG FC,Girondins de Bordeaux,2 , 3
+1,AS Nancy-Lorraine,Stade Brestois 29,1 , 0
+1,OGC Nice,AC Ajaccio,0 , 1
+1,Paris Saint-Germain,FC Lorient,2 , 2
+1,Stade Rennais FC,Olympique Lyonnais,0 , 1
+1,AS Saint-Etienne,LOSC Lille,1 , 2
+1,FC Sochaux-Montbéliard,SC Bastia,2 , 3
+1,ESTAC Troyes,Valenciennes FC,0 , 1
+1,Stade de Reims,Olympique de Marseille,0 , 1
+2,LOSC Lille,AS Nancy-Lorraine,1 , 1
+2,Olympique Lyonnais,ESTAC Troyes,4 , 1
+2,SC Bastia,Stade de Reims,2 , 1
+2,Stade Brestois 29,Evian TG FC,1 , 0
+2,FC Lorient,Montpellier Hérault SC,2 , 1
+2,Toulouse FC,AS Saint-Etienne,2 , 1
+2,Valenciennes FC,OGC Nice,0 , 0
+2,Girondins de Bordeaux,Stade Rennais FC,1 , 0
+2,Olympique de Marseille,FC Sochaux-Montbéliard,2 , 0
+2,AC Ajaccio,Paris Saint-Germain,0 , 0
+3,Evian TG FC,Olympique Lyonnais,1 , 1
+3,OGC Nice,LOSC Lille,2 , 2
+3,AS Nancy-Lorraine,Toulouse FC,0 , 1
+3,Stade de Reims,FC Sochaux-Montbéliard,1 , 0
+3,Stade Rennais FC,SC Bastia,3 , 2
+3,ESTAC Troyes,FC Lorient,2 , 2
+3,Valenciennes FC,AC Ajaccio,3 , 0
+3,Montpellier Hérault SC,Olympique de Marseille,0 , 1
+3,AS Saint-Etienne,Stade Brestois 29,4 , 0
+3,Paris Saint-Germain,Girondins de Bordeaux,0 , 0
+4,Olympique Lyonnais,Valenciennes FC,3 , 2
+4,AC Ajaccio,Evian TG FC,2 , 0
+4,SC Bastia,AS Saint-Etienne,0 , 3
+4,Stade Brestois 29,ESTAC Troyes,2 , 1
+4,FC Lorient,AS Nancy-Lorraine,3 , 0
+4,FC Sochaux-Montbéliard,Montpellier Hérault SC,1 , 3
+4,Toulouse FC,Stade de Reims,1 , 1
+4,Girondins de Bordeaux,OGC Nice,1 , 1
+4,Olympique de Marseille,Stade Rennais FC,3 , 1
+4,LOSC Lille,Paris Saint-Germain,1 , 2
+5,Paris Saint-Germain,Toulouse FC,2 , 0
+5,Stade de Reims,Montpellier Hérault SC,3 , 1
+5,ESTAC Troyes,LOSC Lille,1 , 1
+5,Evian TG FC,SC Bastia,3 , 0
+5,OGC Nice,Stade Brestois 29,4 , 2
+5,AS Saint-Etienne,FC Sochaux-Montbéliard,0 , 1
+5,Valenciennes FC,Girondins de Bordeaux,0 , 0
+5,Stade Rennais FC,FC Lorient,1 , 2
+5,Olympique Lyonnais,AC Ajaccio,2 , 0
+5,AS Nancy-Lorraine,Olympique de Marseille,0 , 1
+6,Montpellier Hérault SC,AS Saint-Etienne,1 , 1
+6,SC Bastia,Paris Saint-Germain,0 , 4
+6,Stade Brestois 29,Valenciennes FC,2 , 1
+6,FC Lorient,OGC Nice,1 , 1
+6,Stade de Reims,AS Nancy-Lorraine,2 , 0
+6,FC Sochaux-Montbéliard,ESTAC Troyes,3 , 1
+6,Toulouse FC,Stade Rennais FC,2 , 2
+6,Girondins de Bordeaux,AC Ajaccio,2 , 2
+6,Olympique de Marseille,Evian TG FC,1 , 0
+6,LOSC Lille,Olympique Lyonnais,1 , 1
+7,Stade Rennais FC,LOSC Lille,2 , 0
+7,Paris Saint-Germain,FC Sochaux-Montbéliard,2 , 0
+7,AC Ajaccio,Stade Brestois 29,1 , 0
+7,Evian TG FC,FC Lorient,1 , 1
+7,AS Nancy-Lorraine,Montpellier Hérault SC,0 , 2
+7,OGC Nice,SC Bastia,2 , 2
+7,ESTAC Troyes,Toulouse FC,0 , 2
+7,Valenciennes FC,Olympique de Marseille,4 , 1
+7,AS Saint-Etienne,Stade de Reims,0 , 0
+7,Olympique Lyonnais,Girondins de Bordeaux,0 , 2
+8,AS Saint-Etienne,AS Nancy-Lorraine,4 , 0
+8,Montpellier Hérault SC,Evian TG FC,2 , 3
+8,SC Bastia,ESTAC Troyes,3 , 2
+8,LOSC Lille,AC Ajaccio,2 , 0
+8,Stade de Reims,OGC Nice,3 , 1
+8,FC Sochaux-Montbéliard,Stade Rennais FC,0 , 1
+8,Toulouse FC,Valenciennes FC,2 , 2
+8,Stade Brestois 29,Girondins de Bordeaux,1 , 1
+8,FC Lorient,Olympique Lyonnais,1 , 1
+8,Olympique de Marseille,Paris Saint-Germain,2 , 2
+9,Girondins de Bordeaux,LOSC Lille,1 , 1
+9,Paris Saint-Germain,Stade de Reims,1 , 0
+9,Evian TG FC,Toulouse FC,0 , 4
+9,AS Nancy-Lorraine,FC Sochaux-Montbéliard,1 , 1
+9,OGC Nice,AS Saint-Etienne,1 , 1
+9,Stade Rennais FC,Montpellier Hérault SC,2 , 1
+9,Valenciennes FC,FC Lorient,6 , 1
+9,AC Ajaccio,SC Bastia,0 , 0
+9,Olympique Lyonnais,Stade Brestois 29,1 , 0
+9,ESTAC Troyes,Olympique de Marseille,1 , 0
+10,AS Saint-Etienne,Stade Rennais FC,2 , 0
+10,LOSC Lille,Valenciennes FC,2 , 1
+10,Montpellier Hérault SC,OGC Nice,3 , 1
+10,AS Nancy-Lorraine,Paris Saint-Germain,0 , 1
+10,Stade de Reims,ESTAC Troyes,1 , 1
+10,Toulouse FC,Stade Brestois 29,3 , 1
+10,FC Lorient,AC Ajaccio,4 , 4
+10,SC Bastia,Girondins de Bordeaux,3 , 1
+10,FC Sochaux-Montbéliard,Evian TG FC,2 , 1
+10,Olympique de Marseille,Olympique Lyonnais,1 , 4
+11,Stade Brestois 29,FC Lorient,2 , 0
+11,Paris Saint-Germain,AS Saint-Etienne,1 , 2
+11,Evian TG FC,LOSC Lille,0 , 2
+11,OGC Nice,AS Nancy-Lorraine,2 , 1
+11,Stade Rennais FC,Stade de Reims,1 , 0
+11,ESTAC Troyes,Montpellier Hérault SC,1 , 1
+11,Valenciennes FC,FC Sochaux-Montbéliard,3 , 1
+11,AC Ajaccio,Olympique de Marseille,0 , 2
+11,Olympique Lyonnais,SC Bastia,5 , 2
+11,Girondins de Bordeaux,Toulouse FC,1 , 0
+12,AS Nancy-Lorraine,Stade Rennais FC,1 , 3
+12,LOSC Lille,Stade Brestois 29,1 , 0
+12,SC Bastia,Valenciennes FC,2 , 3
+12,Stade de Reims,Evian TG FC,1 , 2
+12,AS Saint-Etienne,ESTAC Troyes,2 , 0
+12,Toulouse FC,AC Ajaccio,2 , 4
+12,Olympique de Marseille,OGC Nice,2 , 2
+12,FC Lorient,Girondins de Bordeaux,0 , 4
+12,FC Sochaux-Montbéliard,Olympique Lyonnais,1 , 1
+12,Montpellier Hérault SC,Paris Saint-Germain,1 , 1
+13,FC Lorient,LOSC Lille,2 , 0
+13,Paris Saint-Germain,Stade Rennais FC,1 , 2
+13,AC Ajaccio,FC Sochaux-Montbéliard,0 , 1
+13,Stade Brestois 29,SC Bastia,3 , 0
+13,Evian TG FC,AS Saint-Etienne,2 , 2
+13,ESTAC Troyes,AS Nancy-Lorraine,3 , 3
+13,Valenciennes FC,Montpellier Hérault SC,1 , 1
+13,Olympique Lyonnais,Stade de Reims,3 , 0
+13,OGC Nice,Toulouse FC,1 , 0
+13,Girondins de Bordeaux,Olympique de Marseille,1 , 0
+14,AS Saint-Etienne,Valenciennes FC,1 , 0
+14,Paris Saint-Germain,ESTAC Troyes,4 , 0
+14,SC Bastia,FC Lorient,2 , 1
+14,AS Nancy-Lorraine,AC Ajaccio,1 , 1
+14,Stade de Reims,Stade Brestois 29,0 , 0
+14,Stade Rennais FC,Evian TG FC,0 , 1
+14,FC Sochaux-Montbéliard,OGC Nice,0 , 1
+14,Montpellier Hérault SC,Girondins de Bordeaux,1 , 0
+14,Toulouse FC,Olympique Lyonnais,3 , 0
+14,Olympique de Marseille,LOSC Lille,1 , 0
+15,AC Ajaccio,AS Saint-Etienne,0 , 0
+15,Olympique Lyonnais,Montpellier Hérault SC,1 , 0
+15,Girondins de Bordeaux,FC Sochaux-Montbéliard,2 , 2
+15,Evian TG FC,AS Nancy-Lorraine,1 , 1
+15,LOSC Lille,SC Bastia,0 , 0
+15,OGC Nice,Paris Saint-Germain,2 , 1
+15,Valenciennes FC,Stade de Reims,1 , 0
+15,Stade Brestois 29,Olympique de Marseille,1 , 2
+15,ESTAC Troyes,Stade Rennais FC,2 , 3
+15,FC Lorient,Toulouse FC,1 , 0
+16,Toulouse FC,SC Bastia,0 , 0
+16,Paris Saint-Germain,Evian TG FC,4 , 0
+16,Montpellier Hérault SC,AC Ajaccio,3 , 0
+16,AS Nancy-Lorraine,Valenciennes FC,1 , 1
+16,Stade Rennais FC,Stade Brestois 29,2 , 2
+16,FC Sochaux-Montbéliard,LOSC Lille,1 , 1
+16,ESTAC Troyes,OGC Nice,1 , 1
+16,Stade de Reims,Girondins de Bordeaux,0 , 0
+16,Olympique de Marseille,FC Lorient,0 , 3
+16,AS Saint-Etienne,Olympique Lyonnais,0 , 1
+17,OGC Nice,Stade Rennais FC,1 , 0
+17,Valenciennes FC,Paris Saint-Germain,0 , 4
+17,LOSC Lille,Toulouse FC,2 , 0
+17,AC Ajaccio,Stade de Reims,2 , 0
+17,Stade Brestois 29,Montpellier Hérault SC,1 , 2
+17,Evian TG FC,ESTAC Troyes,2 , 0
+17,FC Lorient,FC Sochaux-Montbéliard,2 , 0
+17,Olympique Lyonnais,AS Nancy-Lorraine,1 , 1
+17,SC Bastia,Olympique de Marseille,1 , 2
+17,Girondins de Bordeaux,AS Saint-Etienne,0 , 0
+18,Stade Rennais FC,Valenciennes FC,2 , 0
+18,Toulouse FC,Olympique de Marseille,0 , 1
+18,Montpellier Hérault SC,SC Bastia,4 , 0
+18,OGC Nice,Evian TG FC,3 , 2
+18,Stade de Reims,LOSC Lille,1 , 1
+18,FC Sochaux-Montbéliard,Stade Brestois 29,1 , 2
+18,ESTAC Troyes,AC Ajaccio,3 , 2
+18,AS Nancy-Lorraine,Girondins de Bordeaux,1 , 1
+18,AS Saint-Etienne,FC Lorient,0 , 2
+18,Paris Saint-Germain,Olympique Lyonnais,1 , 0
+19,Stade Brestois 29,Paris Saint-Germain,0 , 3
+19,LOSC Lille,Montpellier Hérault SC,4 , 1
+19,AC Ajaccio,Stade Rennais FC,2 , 4
+19,SC Bastia,AS Nancy-Lorraine,4 , 2
+19,Girondins de Bordeaux,ESTAC Troyes,0 , 0
+19,FC Lorient,Stade de Reims,2 , 2
+19,Olympique Lyonnais,OGC Nice,3 , 0
+19,Valenciennes FC,Evian TG FC,2 , 1
+19,Toulouse FC,FC Sochaux-Montbéliard,2 , 0
+19,Olympique de Marseille,AS Saint-Etienne,1 , 0
+20,AS Saint-Etienne,Toulouse FC,2 , 2
+20,Paris Saint-Germain,AC Ajaccio,0 , 0
+20,ESTAC Troyes,Olympique Lyonnais,1 , 2
+20,Evian TG FC,Stade Brestois 29,0 , 2
+20,Montpellier Hérault SC,FC Lorient,2 , 0
+20,AS Nancy-Lorraine,LOSC Lille,2 , 2
+20,Stade Rennais FC,Girondins de Bordeaux,0 , 2
+20,Stade de Reims,SC Bastia,1 , 2
+20,OGC Nice,Valenciennes FC,5 , 0
+20,FC Sochaux-Montbéliard,Olympique de Marseille,3 , 1
+21,Olympique Lyonnais,Evian TG FC,0 , 0
+21,FC Sochaux-Montbéliard,Stade de Reims,1 , 0
+21,Olympique de Marseille,Montpellier Hérault SC,3 , 2
+21,AC Ajaccio,Valenciennes FC,1 , 1
+21,Stade Brestois 29,AS Saint-Etienne,0 , 1
+21,FC Lorient,ESTAC Troyes,3 , 2
+21,Toulouse FC,AS Nancy-Lorraine,2 , 1
+21,SC Bastia,Stade Rennais FC,0 , 2
+21,LOSC Lille,OGC Nice,0 , 2
+21,Girondins de Bordeaux,Paris Saint-Germain,0 , 1
+22,Valenciennes FC,Olympique Lyonnais,0 , 2
+22,Stade Rennais FC,Olympique de Marseille,2 , 2
+22,Evian TG FC,AC Ajaccio,1 , 1
+22,Montpellier Hérault SC,FC Sochaux-Montbéliard,2 , 0
+22,AS Nancy-Lorraine,FC Lorient,2 , 1
+22,Stade de Reims,Toulouse FC,1 , 1
+22,ESTAC Troyes,Stade Brestois 29,2 , 1
+22,AS Saint-Etienne,SC Bastia,3 , 0
+22,OGC Nice,Girondins de Bordeaux,0 , 1
+22,Paris Saint-Germain,LOSC Lille,1 , 0
+23,Toulouse FC,Paris Saint-Germain,0 , 4
+23,FC Lorient,Stade Rennais FC,2 , 2
+23,SC Bastia,Evian TG FC,0 , 0
+23,Girondins de Bordeaux,Valenciennes FC,2 , 0
+23,Stade Brestois 29,OGC Nice,0 , 2
+23,LOSC Lille,ESTAC Troyes,1 , 1
+23,FC Sochaux-Montbéliard,AS Saint-Etienne,1 , 2
+23,AC Ajaccio,Olympique Lyonnais,3 , 1
+23,Montpellier Hérault SC,Stade de Reims,3 , 1
+23,Olympique de Marseille,AS Nancy-Lorraine,0 , 1
+24,Paris Saint-Germain,SC Bastia,3 , 1
+24,AS Saint-Etienne,Montpellier Hérault SC,4 , 1
+24,AC Ajaccio,Girondins de Bordeaux,1 , 0
+24,AS Nancy-Lorraine,Stade de Reims,1 , 2
+24,OGC Nice,FC Lorient,1 , 1
+24,ESTAC Troyes,FC Sochaux-Montbéliard,0 , 0
+24,Valenciennes FC,Stade Brestois 29,2 , 1
+24,Evian TG FC,Olympique de Marseille,1 , 1
+24,Stade Rennais FC,Toulouse FC,2 , 0
+24,Olympique Lyonnais,LOSC Lille,1 , 3
+25,LOSC Lille,Stade Rennais FC,2 , 0
+25,Olympique de Marseille,Valenciennes FC,1 , 0
+25,SC Bastia,OGC Nice,0 , 1
+25,Stade Brestois 29,AC Ajaccio,1 , 1
+25,FC Lorient,Evian TG FC,2 , 1
+25,Montpellier Hérault SC,AS Nancy-Lorraine,1 , 0
+25,Toulouse FC,ESTAC Troyes,2 , 2
+25,Girondins de Bordeaux,Olympique Lyonnais,0 , 4
+25,Stade de Reims,AS Saint-Etienne,1 , 1
+25,FC Sochaux-Montbéliard,Paris Saint-Germain,3 , 2
+26,OGC Nice,Stade de Reims,2 , 0
+26,Stade Rennais FC,FC Sochaux-Montbéliard,2 , 2
+26,AC Ajaccio,LOSC Lille,1 , 3
+26,Evian TG FC,Montpellier Hérault SC,0 , 1
+26,AS Nancy-Lorraine,AS Saint-Etienne,0 , 3
+26,ESTAC Troyes,SC Bastia,0 , 0
+26,Valenciennes FC,Toulouse FC,0 , 0
+26,Olympique Lyonnais,FC Lorient,3 , 1
+26,Girondins de Bordeaux,Stade Brestois 29,0 , 2
+26,Paris Saint-Germain,Olympique de Marseille,2 , 0
+27,Montpellier Hérault SC,Stade Rennais FC,2 , 0
+27,Stade de Reims,Paris Saint-Germain,1 , 0
+27,SC Bastia,AC Ajaccio,1 , 0
+27,FC Lorient,Valenciennes FC,1 , 1
+27,AS Saint-Etienne,OGC Nice,4 , 0
+27,FC Sochaux-Montbéliard,AS Nancy-Lorraine,1 , 2
+27,Toulouse FC,Evian TG FC,0 , 0
+27,Stade Brestois 29,Olympique Lyonnais,1 , 1
+27,Olympique de Marseille,ESTAC Troyes,2 , 1
+27,LOSC Lille,Girondins de Bordeaux,2 , 1
+28,Stade Rennais FC,AS Saint-Etienne,2 , 2
+28,Paris Saint-Germain,AS Nancy-Lorraine,2 , 1
+28,AC Ajaccio,FC Lorient,1 , 0
+28,Stade Brestois 29,Toulouse FC,0 , 1
+28,Evian TG FC,FC Sochaux-Montbéliard,5 , 1
+28,ESTAC Troyes,Stade de Reims,4 , 2
+28,Valenciennes FC,LOSC Lille,1 , 3
+28,OGC Nice,Montpellier Hérault SC,2 , 0
+28,Girondins de Bordeaux,SC Bastia,1 , 0
+28,Olympique Lyonnais,Olympique de Marseille,0 , 0
+29,Olympique de Marseille,AC Ajaccio,0 , 0
+29,SC Bastia,Olympique Lyonnais,4 , 1
+29,LOSC Lille,Evian TG FC,1 , 2
+29,FC Lorient,Stade Brestois 29,4 , 0
+29,Montpellier Hérault SC,ESTAC Troyes,1 , 1
+29,Stade de Reims,Stade Rennais FC,1 , 0
+29,FC Sochaux-Montbéliard,Valenciennes FC,1 , 1
+29,AS Nancy-Lorraine,OGC Nice,1 , 0
+29,Toulouse FC,Girondins de Bordeaux,0 , 0
+29,AS Saint-Etienne,Paris Saint-Germain,2 , 2
+30,Paris Saint-Germain,Montpellier Hérault SC,1 , 0
+30,ESTAC Troyes,AS Saint-Etienne,2 , 2
+30,AC Ajaccio,Toulouse FC,2 , 3
+30,Girondins de Bordeaux,FC Lorient,1 , 1
+30,Evian TG FC,Stade de Reims,2 , 2
+30,Stade Rennais FC,AS Nancy-Lorraine,0 , 2
+30,Valenciennes FC,SC Bastia,3 , 4
+30,OGC Nice,Olympique de Marseille,0 , 1
+30,Stade Brestois 29,LOSC Lille,1 , 2
+30,Olympique Lyonnais,FC Sochaux-Montbéliard,1 , 2
+31,Olympique de Marseille,Girondins de Bordeaux,1 , 0
+31,Stade Rennais FC,Paris Saint-Germain,0 , 2
+31,SC Bastia,Stade Brestois 29,4 , 0
+31,Montpellier Hérault SC,Valenciennes FC,3 , 1
+31,AS Nancy-Lorraine,ESTAC Troyes,1 , 0
+31,FC Sochaux-Montbéliard,AC Ajaccio,0 , 0
+31,Toulouse FC,OGC Nice,3 , 4
+31,AS Saint-Etienne,Evian TG FC,1 , 0
+31,Stade de Reims,Olympique Lyonnais,1 , 0
+31,LOSC Lille,FC Lorient,5 , 0
+32,Valenciennes FC,AS Saint-Etienne,0 , 0
+32,ESTAC Troyes,Paris Saint-Germain,0 , 1
+32,AC Ajaccio,AS Nancy-Lorraine,1 , 1
+32,Girondins de Bordeaux,Montpellier Hérault SC,4 , 2
+32,Stade Brestois 29,Stade de Reims,0 , 2
+32,Evian TG FC,Stade Rennais FC,4 , 2
+32,FC Lorient,SC Bastia,4 , 1
+32,OGC Nice,FC Sochaux-Montbéliard,3 , 0
+32,Olympique Lyonnais,Toulouse FC,3 , 1
+32,LOSC Lille,Olympique de Marseille,0 , 0
+33,Montpellier Hérault SC,Olympique Lyonnais,1 , 2
+33,Olympique de Marseille,Stade Brestois 29,1 , 0
+33,SC Bastia,LOSC Lille,1 , 2
+33,AS Nancy-Lorraine,Evian TG FC,3 , 1
+33,Stade de Reims,Valenciennes FC,0 , 1
+33,FC Sochaux-Montbéliard,Girondins de Bordeaux,2 , 2
+33,Toulouse FC,FC Lorient,0 , 1
+33,Paris Saint-Germain,OGC Nice,3 , 0
+33,Stade Rennais FC,ESTAC Troyes,1 , 2
+33,AS Saint-Etienne,AC Ajaccio,4 , 2
+34,LOSC Lille,FC Sochaux-Montbéliard,3 , 3
+34,FC Lorient,Olympique de Marseille,0 , 1
+34,AC Ajaccio,Montpellier Hérault SC,2 , 1
+34,SC Bastia,Toulouse FC,0 , 0
+34,Girondins de Bordeaux,Stade de Reims,0 , 0
+34,Stade Brestois 29,Stade Rennais FC,0 , 2
+34,Valenciennes FC,AS Nancy-Lorraine,0 , 0
+34,Olympique Lyonnais,AS Saint-Etienne,1 , 1
+34,OGC Nice,ESTAC Troyes,3 , 1
+34,Evian TG FC,Paris Saint-Germain,0 , 1
+35,AS Saint-Etienne,Girondins de Bordeaux,0 , 0
+35,Olympique de Marseille,SC Bastia,2 , 1
+35,Montpellier Hérault SC,Stade Brestois 29,2 , 1
+35,Stade de Reims,AC Ajaccio,1 , 1
+35,FC Sochaux-Montbéliard,FC Lorient,1 , 0
+35,Toulouse FC,LOSC Lille,4 , 2
+35,ESTAC Troyes,Evian TG FC,1 , 0
+35,Stade Rennais FC,OGC Nice,0 , 3
+35,AS Nancy-Lorraine,Olympique Lyonnais,0 , 3
+35,Paris Saint-Germain,Valenciennes FC,1 , 1
+36,LOSC Lille,Stade de Reims,3 , 0
+36,Olympique de Marseille,Toulouse FC,2 , 1
+36,AC Ajaccio,ESTAC Troyes,0 , 1
+36,SC Bastia,Montpellier Hérault SC,3 , 1
+36,Girondins de Bordeaux,AS Nancy-Lorraine,3 , 2
+36,Stade Brestois 29,FC Sochaux-Montbéliard,0 , 2
+36,Valenciennes FC,Stade Rennais FC,4 , 1
+36,FC Lorient,AS Saint-Etienne,3 , 1
+36,Evian TG FC,OGC Nice,4 , 0
+36,Olympique Lyonnais,Paris Saint-Germain,0 , 1
+37,Evian TG FC,Valenciennes FC,2 , 0
+37,Montpellier Hérault SC,LOSC Lille,0 , 0
+37,AS Nancy-Lorraine,SC Bastia,1 , 2
+37,Paris Saint-Germain,Stade Brestois 29,3 , 1
+37,Stade de Reims,FC Lorient,1 , 0
+37,Stade Rennais FC,AC Ajaccio,1 , 1
+37,AS Saint-Etienne,Olympique de Marseille,2 , 0
+37,FC Sochaux-Montbéliard,Toulouse FC,1 , 2
+37,ESTAC Troyes,Girondins de Bordeaux,1 , 0
+37,OGC Nice,Olympique Lyonnais,1 , 1
+38,AC Ajaccio,OGC Nice,0 , 2
+38,SC Bastia,FC Sochaux-Montbéliard,0 , 0
+38,Girondins de Bordeaux,Evian TG FC,2 , 1
+38,Stade Brestois 29,AS Nancy-Lorraine,1 , 2
+38,LOSC Lille,AS Saint-Etienne,1 , 1
+38,FC Lorient,Paris Saint-Germain,1 , 3
+38,Olympique Lyonnais,Stade Rennais FC,2 , 0
+38,Olympique de Marseille,Stade de Reims,0 , 0
+38,Toulouse FC,Montpellier Hérault SC,2 , 0
+38,Valenciennes FC,ESTAC Troyes,2 , 1

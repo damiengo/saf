@@ -1,0 +1,381 @@
+day,home_team,away_team,home_score,away_score
+1,Stade Lavallois,AS Saint-Etienne,4 , 0
+1,SC Toulon,OGC Nice,4 , 1
+1,LOSC Lille,FC Nantes,3 , 0
+1,Toulouse FC,Montpellier Hérault SC,3 , 1
+1,AS Monaco FC,Olympique de Marseille,3 , 1
+1,Paris Saint-Germain,Havre AC,2 , 0
+1,Girondins de Bordeaux,FC Metz,3 , 2
+1,Chamois Niortais,RC Lens,1 , 1
+1,AS Cannes,AJ Auxerre,0 , 0
+1,Stade Brestois 29,RC Paris,0 , 0
+2,RC Lens,AS Monaco FC,1 , 3
+2,AJ Auxerre,Girondins de Bordeaux,1 , 3
+2,Toulouse FC,Stade Lavallois,1 , 0
+2,OGC Nice,LOSC Lille,2 , 1
+2,Montpellier Hérault SC,Paris Saint-Germain,4 , 1
+2,FC Metz,SC Toulon,2 , 0
+2,Olympique de Marseille,AS Cannes,3 , 0
+2,Havre AC,Chamois Niortais,3 , 0
+2,RC Paris,AS Saint-Etienne,2 , 2
+2,FC Nantes,Stade Brestois 29,1 , 0
+3,AS Monaco FC,Havre AC,2 , 0
+3,Girondins de Bordeaux,Olympique de Marseille,2 , 0
+3,LOSC Lille,FC Metz,1 , 0
+3,Paris Saint-Germain,Toulouse FC,2 , 0
+3,Stade Brestois 29,OGC Nice,0 , 1
+3,Stade Lavallois,RC Paris,1 , 1
+3,SC Toulon,AJ Auxerre,0 , 0
+3,AS Saint-Etienne,FC Nantes,1 , 1
+3,Chamois Niortais,Montpellier Hérault SC,1 , 0
+3,AS Cannes,RC Lens,2 , 1
+4,Montpellier Hérault SC,AS Monaco FC,2 , 1
+4,RC Lens,Girondins de Bordeaux,1 , 0
+4,Toulouse FC,Chamois Niortais,1 , 0
+4,Paris Saint-Germain,Stade Brestois 29,0 , 0
+4,AJ Auxerre,LOSC Lille,2 , 1
+4,FC Metz,Stade Lavallois,2 , 1
+4,Olympique de Marseille,SC Toulon,1 , 1
+4,FC Nantes,RC Paris,1 , 1
+4,OGC Nice,AS Saint-Etienne,2 , 3
+4,Havre AC,AS Cannes,2 , 2
+5,AS Monaco FC,Toulouse FC,5 , 1
+5,Girondins de Bordeaux,Havre AC,2 , 2
+5,Chamois Niortais,Paris Saint-Germain,1 , 2
+5,SC Toulon,RC Lens,2 , 0
+5,RC Paris,OGC Nice,2 , 1
+5,AS Saint-Etienne,FC Metz,2 , 0
+5,LOSC Lille,Olympique de Marseille,1 , 1
+5,AS Cannes,Montpellier Hérault SC,0 , 0
+5,Stade Brestois 29,AJ Auxerre,1 , 1
+5,Stade Lavallois,FC Nantes,1 , 1
+6,Paris Saint-Germain,AS Monaco FC,0 , 1
+6,Montpellier Hérault SC,Girondins de Bordeaux,0 , 0
+6,Havre AC,SC Toulon,1 , 1
+6,FC Metz,RC Paris,0 , 0
+6,Toulouse FC,AS Cannes,0 , 1
+6,RC Lens,LOSC Lille,1 , 1
+6,Olympique de Marseille,Stade Brestois 29,1 , 0
+6,OGC Nice,FC Nantes,3 , 1
+6,AJ Auxerre,Stade Lavallois,1 , 1
+6,Chamois Niortais,AS Saint-Etienne,2 , 1
+7,AS Monaco FC,Chamois Niortais,1 , 3
+7,Girondins de Bordeaux,Toulouse FC,2 , 2
+7,AS Cannes,Paris Saint-Germain,1 , 3
+7,SC Toulon,Montpellier Hérault SC,0 , 0
+7,RC Paris,Olympique de Marseille,0 , 0
+7,Stade Lavallois,OGC Nice,1 , 2
+7,AS Saint-Etienne,AJ Auxerre,2 , 1
+7,LOSC Lille,Havre AC,0 , 0
+7,FC Nantes,FC Metz,0 , 0
+7,Stade Brestois 29,RC Lens,4 , 1
+8,AS Monaco FC,Stade Lavallois,2 , 0
+8,Paris Saint-Germain,Girondins de Bordeaux,1 , 0
+8,Olympique de Marseille,AS Saint-Etienne,5 , 1
+8,Montpellier Hérault SC,LOSC Lille,3 , 1
+8,Chamois Niortais,AS Cannes,2 , 0
+8,Toulouse FC,SC Toulon,1 , 0
+8,FC Metz,OGC Nice,2 , 0
+8,Havre AC,Stade Brestois 29,3 , 2
+8,RC Lens,RC Paris,2 , 1
+8,AJ Auxerre,FC Nantes,1 , 0
+9,FC Nantes,Olympique de Marseille,5 , 0
+9,AS Cannes,AS Monaco FC,1 , 1
+9,Girondins de Bordeaux,Chamois Niortais,1 , 0
+9,SC Toulon,Paris Saint-Germain,1 , 0
+9,RC Paris,Havre AC,2 , 0
+9,OGC Nice,AJ Auxerre,1 , 0
+9,AS Saint-Etienne,RC Lens,2 , 1
+9,LOSC Lille,Toulouse FC,2 , 0
+9,Stade Lavallois,Montpellier Hérault SC,1 , 0
+9,Stade Brestois 29,FC Metz,1 , 0
+10,AS Monaco FC,Girondins de Bordeaux,1 , 0
+10,Montpellier Hérault SC,RC Paris,6 , 1
+10,Paris Saint-Germain,LOSC Lille,1 , 3
+10,Olympique de Marseille,OGC Nice,2 , 0
+10,Chamois Niortais,SC Toulon,2 , 1
+10,Toulouse FC,Stade Brestois 29,2 , 1
+10,Havre AC,AS Saint-Etienne,1 , 1
+10,RC Lens,FC Nantes,1 , 2
+10,AJ Auxerre,FC Metz,0 , 1
+10,AS Cannes,Stade Lavallois,1 , 0
+11,SC Toulon,AS Monaco FC,0 , 0
+11,LOSC Lille,Chamois Niortais,0 , 1
+11,AS Saint-Etienne,Toulouse FC,2 , 0
+11,Girondins de Bordeaux,AS Cannes,3 , 3
+11,FC Nantes,Havre AC,2 , 0
+11,FC Metz,Olympique de Marseille,3 , 1
+11,Stade Brestois 29,Montpellier Hérault SC,4 , 0
+11,Stade Lavallois,Paris Saint-Germain,2 , 0
+11,OGC Nice,RC Lens,0 , 1
+11,RC Paris,AJ Auxerre,1 , 0
+12,AS Monaco FC,LOSC Lille,1 , 0
+12,Chamois Niortais,Stade Brestois 29,3 , 0
+12,Girondins de Bordeaux,Stade Lavallois,1 , 0
+12,Montpellier Hérault SC,FC Nantes,0 , 0
+12,Paris Saint-Germain,AS Saint-Etienne,3 , 0
+12,Toulouse FC,RC Paris,0 , 0
+12,AS Cannes,SC Toulon,1 , 0
+12,RC Lens,FC Metz,2 , 0
+12,Olympique de Marseille,AJ Auxerre,0 , 1
+12,Havre AC,OGC Nice,2 , 1
+13,RC Paris,Paris Saint-Germain,2 , 1
+13,Stade Brestois 29,AS Monaco FC,0 , 2
+13,SC Toulon,Girondins de Bordeaux,0 , 1
+13,FC Nantes,Toulouse FC,3 , 1
+13,OGC Nice,Chamois Niortais,1 , 0
+13,AS Saint-Etienne,Montpellier Hérault SC,2 , 1
+13,FC Metz,Havre AC,1 , 0
+13,LOSC Lille,AS Cannes,0 , 0
+13,Stade Lavallois,Olympique de Marseille,0 , 2
+13,AJ Auxerre,RC Lens,2 , 0
+14,Montpellier Hérault SC,FC Metz,1 , 0
+14,AS Monaco FC,AS Saint-Etienne,2 , 1
+14,Girondins de Bordeaux,LOSC Lille,1 , 0
+14,Paris Saint-Germain,FC Nantes,0 , 2
+14,Chamois Niortais,RC Paris,2 , 2
+14,AS Cannes,Stade Brestois 29,2 , 1
+14,RC Lens,Olympique de Marseille,2 , 4
+14,Havre AC,AJ Auxerre,1 , 2
+14,Toulouse FC,OGC Nice,2 , 0
+14,SC Toulon,Stade Lavallois,3 , 0
+15,RC Paris,AS Monaco FC,1 , 0
+15,FC Nantes,Chamois Niortais,2 , 1
+15,Stade Brestois 29,Girondins de Bordeaux,1 , 1
+15,Olympique de Marseille,Havre AC,3 , 1
+15,AS Saint-Etienne,AS Cannes,1 , 0
+15,FC Metz,Toulouse FC,4 , 1
+15,AJ Auxerre,Montpellier Hérault SC,1 , 1
+15,LOSC Lille,SC Toulon,1 , 0
+15,OGC Nice,Paris Saint-Germain,2 , 0
+15,Stade Lavallois,RC Lens,4 , 0
+16,AS Monaco FC,FC Nantes,2 , 1
+16,Girondins de Bordeaux,AS Saint-Etienne,1 , 0
+16,Paris Saint-Germain,FC Metz,0 , 2
+16,Chamois Niortais,Olympique de Marseille,1 , 0
+16,AS Cannes,RC Paris,3 , 1
+16,Montpellier Hérault SC,OGC Nice,4 , 1
+16,Toulouse FC,AJ Auxerre,0 , 0
+16,SC Toulon,Stade Brestois 29,3 , 0
+16,LOSC Lille,Stade Lavallois,0 , 0
+16,Havre AC,RC Lens,0 , 1
+17,OGC Nice,AS Monaco FC,0 , 0
+17,FC Nantes,AS Cannes,2 , 1
+17,RC Paris,Girondins de Bordeaux,1 , 0
+17,FC Metz,Chamois Niortais,2 , 0
+17,Olympique de Marseille,Toulouse FC,1 , 0
+17,AJ Auxerre,Paris Saint-Germain,3 , 0
+17,AS Saint-Etienne,SC Toulon,0 , 0
+17,RC Lens,Montpellier Hérault SC,2 , 1
+17,Stade Brestois 29,LOSC Lille,2 , 2
+17,Stade Lavallois,Havre AC,4 , 3
+18,AS Monaco FC,FC Metz,2 , 1
+18,Girondins de Bordeaux,FC Nantes,2 , 1
+18,LOSC Lille,AS Saint-Etienne,1 , 2
+18,Montpellier Hérault SC,Havre AC,3 , 1
+18,Chamois Niortais,AJ Auxerre,0 , 0
+18,AS Cannes,OGC Nice,0 , 1
+18,Toulouse FC,RC Lens,0 , 1
+18,Paris Saint-Germain,Olympique de Marseille,1 , 1
+18,Stade Brestois 29,Stade Lavallois,2 , 1
+18,SC Toulon,RC Paris,0 , 0
+19,RC Paris,LOSC Lille,3 , 0
+19,AJ Auxerre,AS Monaco FC,0 , 0
+19,OGC Nice,Girondins de Bordeaux,0 , 1
+19,FC Nantes,SC Toulon,1 , 1
+19,AS Saint-Etienne,Stade Brestois 29,4 , 0
+19,Olympique de Marseille,Montpellier Hérault SC,1 , 1
+19,FC Metz,AS Cannes,2 , 3
+19,Stade Lavallois,Chamois Niortais,2 , 0
+19,Havre AC,Toulouse FC,0 , 1
+19,RC Lens,Paris Saint-Germain,0 , 0
+20,AS Monaco FC,RC Lens,3 , 0
+20,Girondins de Bordeaux,AJ Auxerre,0 , 0
+20,AS Saint-Etienne,RC Paris,0 , 2
+20,Stade Brestois 29,FC Nantes,0 , 0
+20,AS Cannes,Olympique de Marseille,1 , 0
+20,Paris Saint-Germain,Montpellier Hérault SC,2 , 1
+20,SC Toulon,FC Metz,1 , 0
+20,Chamois Niortais,Havre AC,1 , 2
+20,Stade Lavallois,Toulouse FC,1 , 0
+20,LOSC Lille,OGC Nice,1 , 0
+21,Olympique de Marseille,Girondins de Bordeaux,1 , 0
+21,Havre AC,AS Monaco FC,0 , 0
+21,RC Paris,Stade Lavallois,1 , 0
+21,FC Nantes,AS Saint-Etienne,2 , 3
+21,RC Lens,AS Cannes,0 , 0
+21,Montpellier Hérault SC,Chamois Niortais,1 , 0
+21,FC Metz,LOSC Lille,3 , 1
+21,AJ Auxerre,SC Toulon,0 , 0
+21,OGC Nice,Stade Brestois 29,2 , 0
+21,Toulouse FC,Paris Saint-Germain,2 , 1
+22,AS Monaco FC,Montpellier Hérault SC,0 , 0
+22,Girondins de Bordeaux,RC Lens,5 , 2
+22,RC Paris,FC Nantes,2 , 2
+22,AS Saint-Etienne,OGC Nice,3 , 2
+22,SC Toulon,Olympique de Marseille,1 , 2
+22,AS Cannes,Havre AC,3 , 0
+22,LOSC Lille,AJ Auxerre,0 , 1
+22,Stade Lavallois,FC Metz,3 , 0
+22,Chamois Niortais,Toulouse FC,0 , 0
+22,Stade Brestois 29,Paris Saint-Germain,0 , 0
+23,Toulouse FC,AS Monaco FC,1 , 1
+23,Havre AC,Girondins de Bordeaux,0 , 1
+23,OGC Nice,RC Paris,1 , 2
+23,AJ Auxerre,Stade Brestois 29,4 , 0
+23,FC Metz,AS Saint-Etienne,2 , 1
+23,Montpellier Hérault SC,AS Cannes,4 , 2
+23,Olympique de Marseille,LOSC Lille,0 , 1
+23,FC Nantes,Stade Lavallois,1 , 2
+23,Paris Saint-Germain,Chamois Niortais,1 , 3
+23,RC Lens,SC Toulon,3 , 1
+24,AS Monaco FC,Paris Saint-Germain,2 , 1
+24,Girondins de Bordeaux,Montpellier Hérault SC,1 , 0
+24,RC Paris,FC Metz,2 , 0
+24,AS Saint-Etienne,Chamois Niortais,2 , 0
+24,Stade Lavallois,AJ Auxerre,0 , 0
+24,AS Cannes,Toulouse FC,1 , 1
+24,Stade Brestois 29,Olympique de Marseille,2 , 1
+24,FC Nantes,OGC Nice,0 , 1
+24,SC Toulon,Havre AC,3 , 0
+24,LOSC Lille,RC Lens,1 , 1
+25,Olympique de Marseille,RC Paris,2 , 0
+25,Chamois Niortais,AS Monaco FC,0 , 0
+25,Toulouse FC,Girondins de Bordeaux,2 , 1
+25,AJ Auxerre,AS Saint-Etienne,0 , 1
+25,FC Metz,FC Nantes,1 , 0
+25,Montpellier Hérault SC,SC Toulon,0 , 1
+25,OGC Nice,Stade Lavallois,0 , 1
+25,RC Lens,Stade Brestois 29,2 , 1
+25,Havre AC,LOSC Lille,0 , 0
+25,Paris Saint-Germain,AS Cannes,1 , 1
+26,Stade Lavallois,AS Monaco FC,0 , 0
+26,Girondins de Bordeaux,Paris Saint-Germain,0 , 0
+26,FC Nantes,AJ Auxerre,0 , 0
+26,OGC Nice,FC Metz,0 , 0
+26,RC Paris,RC Lens,1 , 0
+26,AS Saint-Etienne,Olympique de Marseille,0 , 1
+26,AS Cannes,Chamois Niortais,2 , 1
+26,SC Toulon,Toulouse FC,1 , 0
+26,LOSC Lille,Montpellier Hérault SC,3 , 1
+26,Stade Brestois 29,Havre AC,3 , 1
+27,RC Lens,AS Saint-Etienne,1 , 0
+27,AS Monaco FC,AS Cannes,4 , 1
+27,Havre AC,RC Paris,1 , 1
+27,Chamois Niortais,Girondins de Bordeaux,0 , 0
+27,Olympique de Marseille,FC Nantes,3 , 0
+27,AJ Auxerre,OGC Nice,2 , 0
+27,FC Metz,Stade Brestois 29,1 , 1
+27,Paris Saint-Germain,SC Toulon,1 , 0
+27,Montpellier Hérault SC,Stade Lavallois,2 , 1
+27,Toulouse FC,LOSC Lille,2 , 1
+28,Girondins de Bordeaux,AS Monaco FC,3 , 1
+28,RC Paris,Montpellier Hérault SC,0 , 2
+28,AS Saint-Etienne,Havre AC,2 , 1
+28,OGC Nice,Olympique de Marseille,3 , 1
+28,FC Metz,AJ Auxerre,1 , 0
+28,Stade Lavallois,AS Cannes,2 , 1
+28,SC Toulon,Chamois Niortais,1 , 1
+28,FC Nantes,RC Lens,2 , 0
+28,LOSC Lille,Paris Saint-Germain,1 , 0
+28,Stade Brestois 29,Toulouse FC,1 , 0
+29,AS Monaco FC,SC Toulon,0 , 0
+29,AS Cannes,Girondins de Bordeaux,1 , 0
+29,AJ Auxerre,RC Paris,3 , 0
+29,Toulouse FC,AS Saint-Etienne,2 , 3
+29,Olympique de Marseille,FC Metz,1 , 0
+29,Montpellier Hérault SC,Stade Brestois 29,6 , 0
+29,Paris Saint-Germain,Stade Lavallois,0 , 0
+29,Havre AC,FC Nantes,1 , 0
+29,Chamois Niortais,LOSC Lille,1 , 0
+29,RC Lens,OGC Nice,0 , 1
+30,LOSC Lille,AS Monaco FC,0 , 1
+30,Stade Lavallois,Girondins de Bordeaux,0 , 0
+30,RC Paris,Toulouse FC,0 , 0
+30,AJ Auxerre,Olympique de Marseille,2 , 0
+30,AS Saint-Etienne,Paris Saint-Germain,1 , 3
+30,FC Nantes,Montpellier Hérault SC,0 , 0
+30,SC Toulon,AS Cannes,1 , 0
+30,FC Metz,RC Lens,2 , 2
+30,Stade Brestois 29,Chamois Niortais,1 , 0
+30,OGC Nice,Havre AC,1 , 2
+31,Paris Saint-Germain,RC Paris,1 , 1
+31,AS Monaco FC,Stade Brestois 29,2 , 0
+31,Girondins de Bordeaux,SC Toulon,3 , 0
+31,Olympique de Marseille,Stade Lavallois,2 , 1
+31,Montpellier Hérault SC,AS Saint-Etienne,5 , 0
+31,RC Lens,AJ Auxerre,2 , 1
+31,Havre AC,FC Metz,1 , 1
+31,AS Cannes,LOSC Lille,1 , 5
+31,Toulouse FC,FC Nantes,0 , 1
+31,Chamois Niortais,OGC Nice,0 , 0
+32,AS Saint-Etienne,AS Monaco FC,3 , 0
+32,LOSC Lille,Girondins de Bordeaux,1 , 0
+32,RC Paris,Chamois Niortais,1 , 1
+32,Olympique de Marseille,RC Lens,4 , 1
+32,FC Metz,Montpellier Hérault SC,0 , 1
+32,AJ Auxerre,Havre AC,1 , 1
+32,Stade Lavallois,SC Toulon,0 , 3
+32,FC Nantes,Paris Saint-Germain,0 , 0
+32,Stade Brestois 29,AS Cannes,1 , 0
+32,OGC Nice,Toulouse FC,3 , 0
+33,AS Monaco FC,RC Paris,3 , 0
+33,Girondins de Bordeaux,Stade Brestois 29,2 , 0
+33,Toulouse FC,FC Metz,2 , 0
+33,SC Toulon,LOSC Lille,3 , 0
+33,Montpellier Hérault SC,AJ Auxerre,2 , 2
+33,Havre AC,Olympique de Marseille,1 , 0
+33,AS Cannes,AS Saint-Etienne,1 , 0
+33,Chamois Niortais,FC Nantes,1 , 3
+33,RC Lens,Stade Lavallois,1 , 2
+33,Paris Saint-Germain,OGC Nice,0 , 4
+34,Olympique de Marseille,Chamois Niortais,1 , 0
+34,Stade Brestois 29,SC Toulon,1 , 0
+34,FC Metz,Paris Saint-Germain,1 , 0
+34,AS Saint-Etienne,Girondins de Bordeaux,1 , 1
+34,RC Paris,AS Cannes,0 , 0
+34,RC Lens,Havre AC,0 , 0
+34,OGC Nice,Montpellier Hérault SC,2 , 0
+34,AJ Auxerre,Toulouse FC,0 , 2
+34,Stade Lavallois,LOSC Lille,0 , 1
+34,FC Nantes,AS Monaco FC,1 , 1
+35,AS Monaco FC,OGC Nice,1 , 0
+35,Girondins de Bordeaux,RC Paris,1 , 0
+35,Toulouse FC,Olympique de Marseille,1 , 0
+35,Montpellier Hérault SC,RC Lens,4 , 0
+35,SC Toulon,AS Saint-Etienne,1 , 1
+35,Paris Saint-Germain,AJ Auxerre,1 , 1
+35,AS Cannes,FC Nantes,1 , 4
+35,Chamois Niortais,FC Metz,1 , 3
+35,LOSC Lille,Stade Brestois 29,2 , 0
+35,Havre AC,Stade Lavallois,2 , 1
+36,FC Nantes,Girondins de Bordeaux,1 , 0
+36,FC Metz,AS Monaco FC,2 , 2
+36,Havre AC,Montpellier Hérault SC,1 , 3
+36,AS Saint-Etienne,LOSC Lille,4 , 3
+36,RC Paris,SC Toulon,0 , 0
+36,Olympique de Marseille,Paris Saint-Germain,1 , 2
+36,AJ Auxerre,Chamois Niortais,1 , 3
+36,OGC Nice,AS Cannes,1 , 2
+36,Stade Lavallois,Stade Brestois 29,0 , 0
+36,RC Lens,Toulouse FC,2 , 0
+37,AS Monaco FC,AJ Auxerre,3 , 2
+37,Girondins de Bordeaux,OGC Nice,4 , 2
+37,Montpellier Hérault SC,Olympique de Marseille,4 , 0
+37,Stade Brestois 29,AS Saint-Etienne,1 , 0
+37,LOSC Lille,RC Paris,5 , 0
+37,SC Toulon,FC Nantes,5 , 2
+37,AS Cannes,FC Metz,3 , 3
+37,Toulouse FC,Havre AC,2 , 1
+37,Chamois Niortais,Stade Lavallois,0 , 0
+37,Paris Saint-Germain,RC Lens,4 , 1
+38,Olympique de Marseille,AS Monaco FC,2 , 0
+38,FC Metz,Girondins de Bordeaux,2 , 0
+38,Montpellier Hérault SC,Toulouse FC,4 , 2
+38,AS Saint-Etienne,Stade Lavallois,2 , 1
+38,OGC Nice,SC Toulon,0 , 2
+38,RC Paris,Stade Brestois 29,1 , 1
+38,AJ Auxerre,AS Cannes,1 , 0
+38,FC Nantes,LOSC Lille,1 , 1
+38,Havre AC,Paris Saint-Germain,0 , 1
+38,RC Lens,Chamois Niortais,3 , 1
