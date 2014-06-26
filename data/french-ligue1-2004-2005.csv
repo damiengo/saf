@@ -228,9 +228,7 @@ day,home_team,away_team,home_score,away_score
 23,FC Nantes,AS Saint-Etienne,0 , 0
 23,OGC Nice,LOSC Lille,1 , 1
 23,Paris Saint-Germain,FC Istres,2 , 2
-23,RC Strasbourg,AS Monaco FC,,
 23,RC Strasbourg,AS Monaco FC,0 , 0
-24,SC Bastia,Olympique Lyonnais,,
 24,SM Caen,LOSC Lille,0 , 0
 24,RC Lens,RC Strasbourg,2 , 1
 24,FC Metz,AJ Auxerre,3 , 0
@@ -240,7 +238,6 @@ day,home_team,away_team,home_score,away_score
 24,FC Istres,FC Nantes,0 , 1
 24,AS Monaco FC,Paris Saint-Germain,2 , 0
 24,SC Bastia,Olympique Lyonnais,1 , 1
-24,AS Saint-Etienne,AC Ajaccio,,
 24,AS Saint-Etienne,AC Ajaccio,3 , 0
 25,LOSC Lille,FC Sochaux-Montbéliard,0 , 0
 25,AC Ajaccio,FC Istres,0 , 0
@@ -268,9 +265,7 @@ day,home_team,away_team,home_score,away_score
 27,FC Nantes,RC Strasbourg,2 , 1
 27,OGC Nice,AS Monaco FC,2 , 1
 27,Paris Saint-Germain,SC Bastia,1 , 0
-27,AJ Auxerre,Toulouse FC,,
 27,LOSC Lille,Stade Rennais FC,0 , 0
-27,FC Sochaux-Montbéliard,FC Metz,,
 27,Olympique de Marseille,FC Istres,1 , 1
 27,FC Sochaux-Montbéliard,FC Metz,2 , 1
 27,AJ Auxerre,Toulouse FC,3 , 2

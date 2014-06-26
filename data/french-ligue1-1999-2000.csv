@@ -99,7 +99,6 @@ day,home_team,away_team,home_score,away_score
 11,AJ Auxerre,SC Bastia,3 , 1
 11,CS Sedan,FC Metz,0 , 2
 12,Stade Rennais FC,AS Saint-Etienne,4 , 1
-12,AS Monaco FC,AJ Auxerre,,
 12,Girondins de Bordeaux,Olympique de Marseille,2 , 1
 12,FC Metz,Havre AC,3 , 0
 12,Paris Saint-Germain,CS Sedan,3 , 2
@@ -174,9 +173,7 @@ day,home_team,away_team,home_score,away_score
 20,Girondins de Bordeaux,Stade Rennais FC,1 , 0
 20,AJ Auxerre,Paris Saint-Germain,1 , 0
 20,AS Nancy-Lorraine,AS Saint-Etienne,1 , 0
-20,CS Sedan,Havre AC,,
 20,Olympique Lyonnais,FC Metz,2 , 0
-20,RC Strasbourg,ESTAC Troyes,,
 20,AS Monaco FC,Montpellier Hérault SC,1 , 0
 20,FC Nantes,SC Bastia,1 , 1
 20,Olympique de Marseille,RC Lens,1 , 2

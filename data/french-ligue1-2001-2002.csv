@@ -156,18 +156,14 @@ day,home_team,away_team,home_score,away_score
 18,Girondins de Bordeaux,Olympique de Marseille,0 , 0
 18,SC Bastia,EA Guingamp,3 , 0
 18,FC Lorient,LOSC Lille,2 , 4
-18,Montpellier Hérault SC,AS Monaco FC,,
 18,Paris Saint-Germain,AJ Auxerre,0 , 0
 18,Stade Rennais FC,FC Sochaux-Montbéliard,1 , 1
 18,CS Sedan,Olympique Lyonnais,2 , 1
-18,ESTAC Troyes,FC Metz,,
 18,Montpellier Hérault SC,AS Monaco FC,1 , 1
 18,ESTAC Troyes,FC Metz,2 , 0
 19,Olympique de Marseille,RC Lens,1 , 2
 19,FC Sochaux-Montbéliard,Paris Saint-Germain,0 , 2
 19,EA Guingamp,CS Sedan,1 , 2
-19,LOSC Lille,Girondins de Bordeaux,,
-19,FC Metz,Montpellier Hérault SC,,
 19,AS Monaco FC,Stade Rennais FC,3 , 1
 19,FC Nantes,ESTAC Troyes,1 , 0
 19,AJ Auxerre,FC Lorient,2 , 2
@@ -182,7 +178,6 @@ day,home_team,away_team,home_score,away_score
 20,Paris Saint-Germain,AS Monaco FC,1 , 2
 20,ESTAC Troyes,Olympique de Marseille,1 , 0
 20,RC Lens,FC Metz,2 , 2
-20,CS Sedan,AJ Auxerre,,
 20,CS Sedan,AJ Auxerre,3 , 3
 21,LOSC Lille,RC Lens,0 , 1
 21,Stade Rennais FC,Paris Saint-Germain,1 , 2
@@ -247,7 +242,6 @@ day,home_team,away_team,home_score,away_score
 27,Stade Rennais FC,SC Bastia,2 , 1
 27,FC Sochaux-Montbéliard,Olympique Lyonnais,2 , 1
 27,LOSC Lille,Olympique de Marseille,2 , 0
-28,Olympique de Marseille,AJ Auxerre,,
 28,SC Bastia,Paris Saint-Germain,0 , 1
 28,EA Guingamp,FC Lorient,4 , 3
 28,RC Lens,Stade Rennais FC,2 , 0

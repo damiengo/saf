@@ -154,7 +154,6 @@ day,home_team,away_team,home_score,away_score
 16,Le Mans FC,SM Caen,2 , 0
 16,LOSC Lille,FC Lorient,1 , 1
 16,Olympique Lyonnais,Valenciennes FC,0 , 0
-16,OGC Nice,GF38,,
 16,FC Sochaux-Montbéliard,Girondins de Bordeaux,0 , 0
 16,AS Nancy-Lorraine,AS Saint-Etienne,1 , 2
 16,Toulouse FC,Olympique de Marseille,0 , 0
@@ -192,13 +191,10 @@ day,home_team,away_team,home_score,away_score
 19,AS Monaco FC,Girondins de Bordeaux,3 , 4
 20,AJ Auxerre,Olympique de Marseille,0 , 2
 20,Havre AC,Toulouse FC,0 , 1
-20,Le Mans FC,LOSC Lille,,
 20,Olympique Lyonnais,FC Lorient,1 , 1
 20,AS Monaco FC,FC Nantes,1 , 2
-20,AS Nancy-Lorraine,OGC Nice,,
 20,Stade Rennais FC,GF38,1 , 0
 20,FC Sochaux-Montbéliard,AS Saint-Etienne,1 , 0
-20,Valenciennes FC,SM Caen,,
 20,Girondins de Bordeaux,Paris Saint-Germain,4 , 0
 20,Le Mans FC,LOSC Lille,0 , 0
 20,AS Nancy-Lorraine,OGC Nice,1 , 2

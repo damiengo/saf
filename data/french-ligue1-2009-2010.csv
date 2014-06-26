@@ -170,7 +170,6 @@ day,home_team,away_team,home_score,away_score
 17,Toulouse FC,Montpellier Hérault SC,0 , 1
 17,Olympique Lyonnais,Girondins de Bordeaux,0 , 1
 18,Girondins de Bordeaux,FC Lorient,4 , 1
-18,US Boulogne CO,FC Sochaux-Montbéliard,,
 18,GF38,OGC Nice,1 , 1
 18,Montpellier Hérault SC,AS Nancy-Lorraine,0 , 2
 18,Stade Rennais FC,Paris Saint-Germain,1 , 0
@@ -240,7 +239,6 @@ day,home_team,away_team,home_score,away_score
 24,AJ Auxerre,Stade Rennais FC,1 , 0
 24,FC Lorient,Toulouse FC,1 , 1
 24,Girondins de Bordeaux,AS Saint-Etienne,3 , 1
-25,Girondins de Bordeaux,AJ Auxerre,,
 25,US Boulogne CO,Le Mans FC,1 , 3
 25,GF38,Valenciennes FC,0 , 1
 25,RC Lens,AS Monaco FC,3 , 0
@@ -258,7 +256,6 @@ day,home_team,away_team,home_score,away_score
 26,Toulouse FC,RC Lens,1 , 0
 26,Valenciennes FC,AS Saint-Etienne,1 , 0
 26,Montpellier Hérault SC,Stade Rennais FC,3 , 1
-26,Le Mans FC,Girondins de Bordeaux,,
 26,LOSC Lille,AJ Auxerre,1 , 2
 26,Paris Saint-Germain,Olympique de Marseille,0 , 3
 26,Le Mans FC,Girondins de Bordeaux,2 , 1

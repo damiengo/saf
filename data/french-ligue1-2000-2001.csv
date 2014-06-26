@@ -45,7 +45,6 @@ day,home_team,away_team,home_score,away_score
 5,AJ Auxerre,AS Saint-Etienne,4 , 3
 5,Paris Saint-Germain,SC Bastia,3 , 1
 6,AS Monaco FC,Olympique de Marseille,0 , 2
-6,CS Sedan,Stade Rennais FC,,
 6,SC Bastia,LOSC Lille,1 , 0
 6,EA Guingamp,Toulouse FC,2 , 1
 6,RC Lens,AJ Auxerre,1 , 0
@@ -94,7 +93,6 @@ day,home_team,away_team,home_score,away_score
 11,Paris Saint-Germain,Olympique de Marseille,2 , 0
 11,RC Strasbourg,FC Nantes,0 , 5
 11,LOSC Lille,EA Guingamp,1 , 1
-11,Olympique Lyonnais,Toulouse FC,,
 11,FC Metz,ESTAC Troyes,2 , 2
 11,Stade Rennais FC,RC Lens,1 , 0
 11,CS Sedan,AS Saint-Etienne,2 , 1
@@ -197,7 +195,6 @@ day,home_team,away_team,home_score,away_score
 22,Olympique Lyonnais,AS Saint-Etienne,2 , 1
 22,Paris Saint-Germain,ESTAC Troyes,0 , 0
 22,Stade Rennais FC,CS Sedan,2 , 0
-22,RC Strasbourg,FC Metz,,
 22,Toulouse FC,EA Guingamp,1 , 1
 22,RC Strasbourg,FC Metz,0 , 1
 23,RC Lens,Olympique Lyonnais,0 , 0
@@ -225,7 +222,6 @@ day,home_team,away_team,home_score,away_score
 25,AS Monaco FC,FC Metz,6 , 1
 25,AS Saint-Etienne,RC Strasbourg,3 , 3
 25,Toulouse FC,Girondins de Bordeaux,1 , 1
-25,ESTAC Troyes,Stade Rennais FC,,
 25,RC Lens,LOSC Lille,0 , 1
 25,ESTAC Troyes,Stade Rennais FC,3 , 1
 26,Stade Rennais FC,AS Saint-Etienne,3 , 0
