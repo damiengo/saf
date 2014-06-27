@@ -38,19 +38,28 @@ namespace :saf do
   task goals: :environment do
 
     Dir.glob("data/*").each do |file|
-      season_goals = 0
-      season_games = 0
+      season_goals      = 0
+      season_home_goals = 0
+      season_away_goals = 0
+      season_games      = 0
+      season_diff       = 0
       CSV.foreach(file.to_s, {headers: true}) do |row|
         home_goals = row[3].strip.to_i
         away_goals = row[4].strip.to_i
-        season_goals = season_goals + home_goals + away_goals
-        season_games = season_games + 1
+        season_goals      = season_goals + home_goals + away_goals
+        season_home_goals = season_home_goals + home_goals
+        season_away_goals = season_away_goals + away_goals
+        season_games      = season_games + 1
+        season_diff       = season_diff + (home_goals - away_goals).abs
       end
       season_start = file.to_s[19..22]
       season_end   = file.to_s[24..27]
-      season_ratio = (season_goals.to_f/season_games.to_f * 100).round.to_f / 100.0
-      #puts "#{season_start};#{season_end};#{season_goals};#{season_games};#{season_ratio}"
-      puts "[#{season_start}, #{season_ratio}], "
+      season_goals_ratio      = (season_goals.to_f/season_games.to_f * 100).round.to_f / 100.0
+      season_home_goals_ratio = (season_home_goals.to_f/season_games.to_f * 100).round.to_f / 100.0
+      season_away_goals_ratio = (season_away_goals.to_f/season_games.to_f * 100).round.to_f / 100.0
+      season_diff_ratio       = (season_diff.to_f/season_games.to_f * 100).round.to_f / 100.0
+      #puts "#{season_start};#{season_end};#{season_goals};#{season_games};#{season_goals_ratio}"
+      puts "[#{season_start}, #{season_away_goals_ratio}], "
     end
 
   end
