@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140620223646) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "games", force: true do |t|
     t.integer  "home_goals"
     t.integer  "away_goals"
@@ -25,10 +28,10 @@ ActiveRecord::Schema.define(version: 20140620223646) do
     t.datetime "updated_at"
   end
 
-  add_index "games", ["away_team_id"], name: "index_games_on_away_team_id"
-  add_index "games", ["home_team_id"], name: "index_games_on_home_team_id"
-  add_index "games", ["season_id"], name: "index_games_on_season_id"
-  add_index "games", ["tournament_id"], name: "index_games_on_tournament_id"
+  add_index "games", ["away_team_id"], name: "index_games_on_away_team_id", using: :btree
+  add_index "games", ["home_team_id"], name: "index_games_on_home_team_id", using: :btree
+  add_index "games", ["season_id"], name: "index_games_on_season_id", using: :btree
+  add_index "games", ["tournament_id"], name: "index_games_on_tournament_id", using: :btree
 
   create_table "seasons", force: true do |t|
     t.integer  "start"
