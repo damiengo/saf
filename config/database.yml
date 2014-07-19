@@ -12,6 +12,8 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
+  host: localhost
+  port: 5432
   database: saf
   pool: 5
   username: saf
