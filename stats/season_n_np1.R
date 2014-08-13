@@ -15,3 +15,12 @@ plot(season$an_lose, season$np1_lose)
 losts <- lm(season$an_lose ~ season$np1_lose)
 abline(losts)
 summary(losts)
+
+# Function
+topTeams <- function(data) {
+  team_list <- unique(data$name)
+  return team_list
+}
+
+list <- topTeams(season)
+
