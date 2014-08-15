@@ -27,14 +27,16 @@ summary(losts)$r.squared
 
 # Function
 top_teams <- function(data) {
+  file_name <- "n_np1_score/losts_teams_cor_from_1993.csv"
+  if (file.exists(file_name)) file.remove(file_name)
   team_list <- unique(data$name)
   for(team in team_list) {
     print("=======================")
-    team_seasons <- subset(data, name == team)
-    team_cor <- cor(team_seasons$n_win,team_seasons$np1_win)
+    team_seasons <- subset(data, name == team & season_n > 1993)
+    team_cor <- cor(team_seasons$an_lose,team_seasons$np1_lose)
     print(team)
     print(team_cor)
-    team_wins <- lm(team_seasons$n_win ~ team_seasons$np1_win)
+    write.table(list(team, team_cor), file = file_name, col.names=FALSE, sep=",", append=TRUE)
     print("=======================")
   }
   
