@@ -1,4 +1,4 @@
-SELECT home_day1.start, 
+﻿T home_day1.start, 
        home_day1.day, 
        home_day1.name, 
        (home_day1.result+home_day2.result)::float/2 AS home_avg, 
