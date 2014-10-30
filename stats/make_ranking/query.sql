@@ -1,6 +1,8 @@
-﻿SELECT s.start, 
+INSERT INTO ranking3pts (season_id, day, rank, team_id, points, wins, draws, losts, goals_for, goals_against, goals_diff)
+SELECT s.id, 
        teams_day.day,
-       t.name,
+       0,
+       t.id,
        SUM(
 	       CASE
 	       WHEN g.home_team_id = teams_day.team_id THEN
@@ -62,23 +64,24 @@
 	       WHEN g.home_team_id = teams_day.team_id THEN g.away_goals
 	       ELSE g.home_goals
 	       END
-	) AS goals_against
+	) AS goals_against,
+        SUM(
+	       CASE
+	       WHEN g.home_team_id = teams_day.team_id THEN g.home_goals-g.away_goals
+	       ELSE g.away_goals-g.home_goals
+	       END
+	) AS goals_diff
 FROM games g
 INNER JOIN seasons s ON g.season_id = s.id
 INNER JOIN
 (
-	SELECT DISTINCT g.home_team_id AS team_id, g.day
+	SELECT t.id AS team_id, g.day
 	FROM games g 
-	INNER JOIN seasons s ON g.season_id = s.id
-	WHERE s.start = 2013
-	UNION
-	SELECT DISTINCT g.away_team_id AS team_id, g.day
-	FROM games g 
-	INNER JOIN seasons s ON g.season_id = s.id
-	WHERE s.start = 2013
+	INNER JOIN teams t ON (g.away_team_id = t.id OR g.home_team_id = t.id)
 ) teams_day ON (g.home_team_id = teams_day.team_id OR g.away_team_id = teams_day.team_id)
 INNER JOIN teams t ON teams_day.team_id = t.id
-WHERE s.start = 2013 
-AND g.day <= teams_day.day
-GROUP BY s.start, teams_day.day, t.name
-ORDER BY s.start ASC, teams_day.day ASC, points DESC
+-- WHERE s.start = 2013 
+-- AND g.day <= teams_day.day
+WHERE g.day = teams_day.day
+GROUP BY s.id, teams_day.day, t.id
+ORDER BY s.id ASC, teams_day.day ASC, points DESC, goals_diff DESC, goals_for DESC, t.name DESC
