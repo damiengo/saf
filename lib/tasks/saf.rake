@@ -4,6 +4,26 @@ require 'csv'
 
 namespace :saf do
 
+  # Calculate rank
+  desc "Calculate ranking"
+  task rank: :environment do
+    cur_season = -1
+    cur_day = -1
+    cur_rank = 1
+    ranks = Ranking3pts.order("season_id ASC, day ASC, points DESC, goals_diff DESC, goals_for DESC")
+    ranks.each do |rank|
+      if rank.day != cur_day || rank.season_id != cur_season
+        cur_day = rank.day
+        cur_season = rank.season_id
+        cur_rank = 1
+      end
+      rank.rank = cur_rank
+      rank.save
+      puts "#{cur_season}/#{cur_day}: #{cur_rank} saved"
+      cur_rank = cur_rank+1
+    end
+  end
+
   desc "Parse LFP"
   task parse_lfp: :environment do
 

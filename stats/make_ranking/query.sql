@@ -1,7 +1,8 @@
+TRUNCATE TABLE ranking3pts;
 INSERT INTO ranking3pts (season_id, day, rank, team_id, points, wins, draws, losts, goals_for, goals_against, goals_diff)
 SELECT s.id, 
        teams_day.day,
-       0,
+       0 as rank,
        t.id,
        SUM(
 	       CASE
@@ -75,13 +76,13 @@ FROM games g
 INNER JOIN seasons s ON g.season_id = s.id
 INNER JOIN
 (
-	SELECT t.id AS team_id, g.day
+	SELECT t.id AS team_id, g.day, g.season_id
 	FROM games g 
 	INNER JOIN teams t ON (g.away_team_id = t.id OR g.home_team_id = t.id)
 ) teams_day ON (g.home_team_id = teams_day.team_id OR g.away_team_id = teams_day.team_id)
 INNER JOIN teams t ON teams_day.team_id = t.id
 -- WHERE s.start = 2013 
--- AND g.day <= teams_day.day
-WHERE g.day = teams_day.day
+WHERE g.day <= teams_day.day
+AND s.id = teams_day.season_id
 GROUP BY s.id, teams_day.day, t.id
-ORDER BY s.id ASC, teams_day.day ASC, points DESC, goals_diff DESC, goals_for DESC, t.name DESC
+ORDER BY s.id ASC, teams_day.day ASC, points DESC, goals_diff DESC, goals_for DESC, t.name ASC
