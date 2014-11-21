@@ -1,22 +1,15 @@
-SELECT t.name, 
-       SUM(1) AS nb_games, 
-       SUM(
-       CASE WHEN g.home_goals > g.away_goals THEN 3 
-            WHEN g.home_goals < g.away_goals THEN 0
-            ELSE 1
-       END
-       ) AS points
-FROM games g 
-INNER JOIN seasons s ON g.season_id = s.id
-INNER JOIN ranking3pts r ON g.away_team_id = r.team_id AND g.season_id = r.season_id AND r.day = r.days
-INNER JOIN teams t ON g.away_team_id = t.id
-INNER JOIN 
+SELECT s.start, t.name, final_rank.rank as final_rank, r.day, r.rank as day_rank
+FROM
+-- Team final rank
 (
-    SELECT r.team_id, r.season_id
+    SELECT r.season_id, r.team_id, r.rank 
     FROM ranking3pts r 
-    WHERE r.day = r.days
-    AND r.rank = 1
-) leader ON g.home_team_id = leader.team_id AND s.id = leader.season_id
-WHERE s.start >= 2002
-GROUP BY t.id
-ORDER BY nb_games DESC
+    INNER JOIN seasons s ON r.season_id = s.id
+    WHERE s.start > 2002
+    AND r.day = 38
+) final_rank
+INNER JOIN ranking3pts r ON final_rank.season_id = r.season_id 
+                        AND final_rank.team_id = r.team_id
+INNER JOIN seasons s ON final_rank.season_id = s.id
+INNER JOIN teams t ON final_rank.team_id = t.id
+ORDER BY s.start ASC, final_rank.rank ASC, r.day ASC
