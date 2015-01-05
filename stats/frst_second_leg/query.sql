@@ -27,7 +27,17 @@ SELECT first.start,
        WHEN second.home_goals > second.away_goals THEN 3
        WHEN second.home_goals = second.away_goals THEN 1
        WHEN second.home_goals < second.away_goals THEN 0
-       END AS result_second_t2
+       END AS result_second_t2, 
+       CASE 
+       WHEN first.home_goals > first.away_goals THEN 1.14
+       WHEN first.home_goals = first.away_goals THEN 1
+       WHEN first.home_goals < first.away_goals THEN 0.9
+       END AS result_projection_second_t1, 
+       CASE 
+       WHEN first.home_goals < first.away_goals THEN 1.81
+       WHEN first.home_goals = first.away_goals THEN 1.67
+       WHEN first.home_goals > first.away_goals THEN 1.16
+       END AS result_projection_second_t2
 FROM
 (
 SELECT s.id AS season_id,  s.start, g.day, ht.id AS home_team_id, ht.name as home, at.id AS away_team_id, at.name as away, g.home_goals, g.away_goals
