@@ -121,4 +121,16 @@ namespace :saf do
 
   end
 
+  desc "Parse Sqwka"
+  task parse_sqw: :environment do
+
+      tournament = "24" # Ligue 1
+      season = "2012" # 2012/2013
+        
+      first_page = Nokogiri::HTML(open("http://www.squawka.com/match-results?ctl=#{tournament}_s#{season}"), nil, "utf-8")
+      
+      puts first_page
+      
+  end
+
 end
