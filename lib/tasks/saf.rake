@@ -126,10 +126,21 @@ namespace :saf do
 
       tournament = "24" # Ligue 1
       season = "2012" # 2012/2013
-        
-      first_page = Nokogiri::HTML(open("http://www.squawka.com/match-results?ctl=#{tournament}_s#{season}"), nil, "utf-8")
-      
-      puts first_page
+      page = 1
+    
+      url = "http://www.squawka.com/match-results?ctl=#{tournament}_s#{season}&pg=#{page}"
+      puts url
+      first_page = Nokogiri::HTML(open(url), nil, "utf-8")
+
+      first_page.css(".match-centre a").each do |details|
+          href = details.attr("href")
+          game_page = Nokogiri::HTML(open(href), nil, "utf-8")
+          game_page.inner_html.each_line do |line|
+              if /chatClient.roomID/.match(line)
+                  puts line
+              end
+          end
+      end
       
   end
 
