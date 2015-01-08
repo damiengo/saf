@@ -134,10 +134,13 @@ namespace :saf do
 
       first_page.css(".match-centre a").each do |details|
           href = details.attr("href")
+          puts "========"
+          puts href
           game_page = Nokogiri::HTML(open(href), nil, "utf-8")
           game_page.inner_html.each_line do |line|
               if /chatClient.roomID/.match(line)
                   puts line
+                  puts line.match(/parseInt\(\'(.*)\'\)/)[1]
               end
           end
       end
