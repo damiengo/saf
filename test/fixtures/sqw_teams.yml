@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sqw_id: 1
+  long_name: MyString
+  short_name: MyString
+  logo: MyString
+  shirt_url: MyString
+  club_url: MyString
+  color: MyString
+
+two:
+  sqw_id: 1
+  long_name: MyString
+  short_name: MyString
+  logo: MyString
+  shirt_url: MyString
+  club_url: MyString
+  color: MyString

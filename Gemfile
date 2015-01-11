@@ -43,3 +43,7 @@ gem 'spring',        group: :development
 gem 'nokogiri'
 
 gem 'tzinfo-data'
+
+gem 'capybara'
+gem 'capybara-webkit'
+gem 'poltergeist'

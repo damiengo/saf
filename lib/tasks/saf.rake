@@ -1,6 +1,8 @@
 require 'nokogiri'
 require 'open-uri'
 require 'csv'
+require 'capybara'
+require 'capybara/poltergeist'
 
 namespace :saf do
 
@@ -125,24 +127,123 @@ namespace :saf do
   task parse_sqw: :environment do
 
       tournament = "24" # Ligue 1
-      season = "2012" # 2012/2013
+      season = "2014"
       page = 1
+      
+      url = "http://www.squawka.com/match-results"
     
-      url = "http://www.squawka.com/match-results?ctl=#{tournament}_s#{season}&pg=#{page}"
-      puts url
-      first_page = Nokogiri::HTML(open(url), nil, "utf-8")
+      include Capybara::DSL
+      Capybara.default_driver = :poltergeist
+      
+      visit url
+      # Choose championship
+      select = page.find("#league-filter-list")
+      select.find("option[value='24']").select_option
+      sleep(2)
+      # Choose season
+      select = page.find("#league-season-list")
+      select.find("option[value='#{season}']").select_option
+      sleep(2)
+      
+      first_page_html = page.html
 
-      first_page.css(".match-centre a").each do |details|
-          href = details.attr("href")
-          puts "========"
-          puts href
-          game_page = Nokogiri::HTML(open(href), nil, "utf-8")
-          game_page.inner_html.each_line do |line|
-              if /chatClient.roomID/.match(line)
-                  puts line
-                  puts line.match(/parseInt\(\'(.*)\'\)/)[1]
+      while page < 1000 do
+          puts "====> Page #{page}"
+          first_page = Nokogiri::HTML(first_page_html, nil, "utf-8")
+          # List games
+          first_page.css(".match-centre a").each do |details|
+              href = details.attr("href")
+              puts "----"
+              championship_name = href.match(/http:\/\/(.*)\.squawka.*/)[1]
+              championship_name_cleaned = championship_name.gsub(/-/, "")
+              puts championship_name_cleaned
+              # Creates dir if not exists
+              sqw_data = "data/squawka"
+              Dir.mkdir(sqw_data) unless File.exists?(sqw_data)
+              championship_dir = "#{sqw_data}/#{championship_name}"
+              Dir.mkdir(championship_dir) unless File.exists?(championship_dir)
+              season_dir = "#{championship_dir}/#{season}"
+              Dir.mkdir(season_dir) unless File.exists?(season_dir)
+              # Opening game
+              game_page = Nokogiri::HTML(open(href), nil, "utf-8")
+              game_page.inner_html.each_line do |line|
+                  if /chatClient.roomID/.match(line)
+                      id = line.match(/parseInt\(\'(.*)\'\)/)[1]
+                      puts id
+                      data_xml = "http://s3-irl-#{championship_name_cleaned}.squawka.com/dp/ingame/#{id}"
+                      open("#{season_dir}/#{championship_name_cleaned}-#{id}.xml", 'wb') do |file|
+                          begin
+                              file << open(data_xml).read
+                          rescue OpenURI::HTTPError => ex
+                              puts "====> Error opening #{data_xml}"
+                          end
+                      end
+                  end
               end
           end
+      
+          page.all(".pageing_text_arrow", :text => /.*Next.*/).first.click
+          sleep(2)
+          first_page_html = page.html
+          page = page + 1
+      end
+      
+  end
+    
+  desc "Analyse Sqwka"
+  task analyse_sqw: :environment do
+      
+      # Season
+      season_start = 2012
+      season_end   = 2013
+      season = SqwSeason.find_by(start: season_start, end: season_end)
+      if season.nil?
+        season = SqwSeason.new
+        season.start = season_start
+        season.end   = season_end
+        season.save
+      end
+      
+      # Tournament
+      tournament_name    = "Ligue 1"
+      tournament_country = "France"
+      tournament = SqwTournament.find_by(name: tournament_name)
+      if tournament.nil?
+        tournament = SqwTournament.new
+        tournament.name    = tournament_name
+        tournament.country = tournament_country
+        tournament.save
+      end
+      
+      xml_file = "data/squawka/ligue-1/2014/ligue1-7729.xml"
+      f = File.open(xml_file)
+      doc = Nokogiri::XML(f)
+      f.close
+      
+      # Teams
+      home_team = nil
+      away_team = nil
+      doc.css("data_panel game team").each do |xml_team|
+          sqw_id = xml_team["id"]
+          team = SqwTeam.find_by(sqw_id: sqw_id)
+          if team.nil?
+              team            = SqwTeam.new
+              team.sqw_id     = sqw_id
+              team.long_name  = xml_team.css("long_name").text.strip
+              team.short_name = xml_team.css("short_name").text.strip
+              team.logo       = xml_team.css("logo").text.strip
+              team.shirt_url  = xml_team.css("shirt_url").text.strip
+              team.club_url   = xml_team.css("club_url").text.strip
+              team.team_color = xml_team.css("team_color").text.strip
+              team.save
+          end
+          # Home / Away
+          if xml_team.css("state").text.strip == "home"
+              home_team = team
+          else
+              away_team = team
+          end
+          puts xml_team
       end
       
   end
