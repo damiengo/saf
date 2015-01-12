@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kickoff: 2015-01-12 19:19:24
+  venue: MyString
+  home_goals: 1
+  away_goals: 1
+  sqw_home_team_id: 
+  sqw_away_team_id: 
+  sqw_season_id: 
+  sqw_tournament_id: 
+
+two:
+  kickoff: 2015-01-12 19:19:24
+  venue: MyString
+  home_goals: 1
+  away_goals: 1
+  sqw_home_team_id: 
+  sqw_away_team_id: 
+  sqw_season_id: 
+  sqw_tournament_id: 

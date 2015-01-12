@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150111191644) do
+ActiveRecord::Schema.define(version: 20150112212711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,58 @@ ActiveRecord::Schema.define(version: 20150111191644) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "sqw_games", force: true do |t|
+    t.datetime "kickoff"
+    t.string   "venue"
+    t.integer  "home_goals"
+    t.integer  "away_goals"
+    t.integer  "sqw_home_team_id"
+    t.integer  "sqw_away_team_id"
+    t.integer  "sqw_season_id"
+    t.integer  "sqw_tournament_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sqw_games", ["sqw_away_team_id"], name: "index_sqw_games_on_sqw_away_team_id", using: :btree
+  add_index "sqw_games", ["sqw_home_team_id"], name: "index_sqw_games_on_sqw_home_team_id", using: :btree
+  add_index "sqw_games", ["sqw_season_id"], name: "index_sqw_games_on_sqw_season_id", using: :btree
+  add_index "sqw_games", ["sqw_tournament_id"], name: "index_sqw_games_on_sqw_tournament_id", using: :btree
+
+  create_table "sqw_player_games", force: true do |t|
+    t.integer  "sqw_game_id"
+    t.integer  "sqw_player_id"
+    t.integer  "weight"
+    t.integer  "height"
+    t.string   "shirt_num"
+    t.float    "total_influence"
+    t.integer  "x_loc"
+    t.integer  "y_loc"
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "position"
+  end
+
+  add_index "sqw_player_games", ["sqw_game_id"], name: "index_sqw_player_games_on_sqw_game_id", using: :btree
+  add_index "sqw_player_games", ["sqw_player_id"], name: "index_sqw_player_games_on_sqw_player_id", using: :btree
+
+  create_table "sqw_players", force: true do |t|
+    t.integer  "sqw_id"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "name"
+    t.string   "surname"
+    t.string   "photo"
+    t.date     "dob"
+    t.string   "country"
+    t.integer  "sqw_team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sqw_players", ["sqw_team_id"], name: "index_sqw_players_on_sqw_team_id", using: :btree
 
   create_table "sqw_seasons", force: true do |t|
     t.integer  "start"

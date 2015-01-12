@@ -243,7 +243,60 @@ namespace :saf do
           else
               away_team = team
           end
-          puts xml_team
+      end
+      
+      # Game
+      full_result = doc.css("data_panel system headline").text.strip
+      matched_result = full_result.match(/.*([0-9]+)\ -\ ([0-9]+).*/)
+      puts matched_result[1]
+      puts matched_result[2]
+      puts doc.css("data_panel game venue").text.strip
+      puts doc.css("data_panel game kickoff").text.strip
+      
+      # Deleting existing game
+      SqwGame.where(sqw_season_id: season.id, sqw_tournament_id: tournament.id, sqw_home_team_id: home_team.id, sqw_away_team_id: away_team.id).destroy_all
+      game                = SqwGame.new
+      game.sqw_season     = season
+      game.sqw_tournament = tournament
+      game.sqw_home_team  = home_team
+      game.sqw_away_team  = away_team
+      game.home_goals     = matched_result[1]
+      game.away_goals     = matched_result[2]
+      game.venue          = doc.css("data_panel game venue").text.strip
+      game.kickoff        = doc.css("data_panel game kickoff").text.strip
+      game.save
+      
+      # Players
+      doc.css("data_panel players player").each do |xml_player|
+          # Base player
+          player = SqwPlayer.find_by(sqw_id: xml_player["id"])
+          if player.nil?
+              player = SqwPlayer.new
+              player.sqw_id      = xml_player["id"]
+              player.sqw_team_id = xml_player["team_id"]
+              player.first_name  = xml_player.css("first_name").text.strip
+              player.last_name   = xml_player.css("last_name").text.strip
+              player.name        = xml_player.css("name").text.strip
+              player.surname     = xml_player.css("surname").text.strip
+              player.photo       = xml_player.css("photo").text.strip
+              player.dob         = xml_player.css("dob").text.strip
+              player.country     = xml_player.css("country").text.strip
+              player.save
+          end
+          # Game player
+          SqwPlayerGame.where(sqw_game_id: game.id, sqw_player_id: player.id).destroy_all
+          player_game = SqwPlayerGame.new
+          player_game.sqw_player_id   = player.id
+          player_game.sqw_game_id     = game.id
+          player_game.position        = xml_player.css("position").text.strip
+          player_game.weight          = xml_player.css("weight").text.strip
+          player_game.height          = xml_player.css("height").text.strip
+          player_game.shirt_num       = xml_player.css("shirt_num").text.strip
+          player_game.total_influence = xml_player.css("total_influence").text.strip
+          player_game.x_loc           = xml_player.css("x_loc").text.strip
+          player_game.y_loc           = xml_player.css("y_loc").text.strip
+          player_game.state           = xml_player.css("state").text.strip
+          player_game.save
       end
       
   end

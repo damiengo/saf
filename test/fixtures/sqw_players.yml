@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sqw_id: 1
+  first_name: MyString
+  last_name: MyString
+  name: MyString
+  surname: MyString
+  photo: MyString
+  position: MyString
+  dob: 2015-01-12
+  country: MyString
+  age: 1
+  bmi: 1.5
+  sqw_team_id: 
+
+two:
+  sqw_id: 1
+  first_name: MyString
+  last_name: MyString
+  name: MyString
+  surname: MyString
+  photo: MyString
+  position: MyString
+  dob: 2015-01-12
+  country: MyString
+  age: 1
+  bmi: 1.5
+  sqw_team_id: 
