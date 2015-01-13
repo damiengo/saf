@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  min: 1
+  minsec: 1
+  sub_to_player_id: 
+  player_to_sub_id: 
+  sqw_team_id: 
+  sqw_game_id: 
+
+two:
+  min: 1
+  minsec: 1
+  sub_to_player_id: 
+  player_to_sub_id: 
+  sqw_team_id: 
+  sqw_game_id: 

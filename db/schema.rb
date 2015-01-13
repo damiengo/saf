@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150112212711) do
+ActiveRecord::Schema.define(version: 20150113213618) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -95,6 +95,22 @@ ActiveRecord::Schema.define(version: 20150112212711) do
 
   add_index "sqw_player_games", ["sqw_game_id"], name: "index_sqw_player_games_on_sqw_game_id", using: :btree
   add_index "sqw_player_games", ["sqw_player_id"], name: "index_sqw_player_games_on_sqw_player_id", using: :btree
+
+  create_table "sqw_player_swaps", force: true do |t|
+    t.integer  "min"
+    t.integer  "minsec"
+    t.integer  "sub_to_player_id"
+    t.integer  "player_to_sub_id"
+    t.integer  "sqw_team_id"
+    t.integer  "sqw_game_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sqw_player_swaps", ["player_to_sub_id"], name: "index_sqw_player_swaps_on_player_to_sub_id", using: :btree
+  add_index "sqw_player_swaps", ["sqw_game_id"], name: "index_sqw_player_swaps_on_sqw_game_id", using: :btree
+  add_index "sqw_player_swaps", ["sqw_team_id"], name: "index_sqw_player_swaps_on_sqw_team_id", using: :btree
+  add_index "sqw_player_swaps", ["sub_to_player_id"], name: "index_sqw_player_swaps_on_sub_to_player_id", using: :btree
 
   create_table "sqw_players", force: true do |t|
     t.integer  "sqw_id"

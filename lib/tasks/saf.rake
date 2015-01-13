@@ -248,13 +248,13 @@ namespace :saf do
       # Game
       full_result = doc.css("data_panel system headline").text.strip
       matched_result = full_result.match(/.*([0-9]+)\ -\ ([0-9]+).*/)
-      puts matched_result[1]
-      puts matched_result[2]
-      puts doc.css("data_panel game venue").text.strip
-      puts doc.css("data_panel game kickoff").text.strip
       
       # Deleting existing game
-      SqwGame.where(sqw_season_id: season.id, sqw_tournament_id: tournament.id, sqw_home_team_id: home_team.id, sqw_away_team_id: away_team.id).destroy_all
+      SqwGame.where(sqw_season_id: season.id, sqw_tournament_id: tournament.id, sqw_home_team_id: home_team.id, sqw_away_team_id: away_team.id).each do |one_game|
+          SqwPlayerGame.where(sqw_game_id: one_game.id).destroy_all
+          SqwPlayerSwap.where(sqw_game_id: one_game.id).destroy_all
+          one_game.destroy
+      end
       game                = SqwGame.new
       game.sqw_season     = season
       game.sqw_tournament = tournament
@@ -284,7 +284,6 @@ namespace :saf do
               player.save
           end
           # Game player
-          SqwPlayerGame.where(sqw_game_id: game.id, sqw_player_id: player.id).destroy_all
           player_game = SqwPlayerGame.new
           player_game.sqw_player_id   = player.id
           player_game.sqw_game_id     = game.id
@@ -298,7 +297,21 @@ namespace :saf do
           player_game.state           = xml_player.css("state").text.strip
           player_game.save
       end
-      
+
+      # Substitution
+      doc.css("data_panel possession period time_slice swap_players").each do |xml_swap|
+          swap_team          = SqwTeam.find_by(sqw_id: xml_swap["team_id"])
+          swap_sub_to_player = SqwPlayer.find_by(sqw_id: xml_swap.css("sub_to_player")[0]["player_id"])
+          swap_player_to_sub = SqwPlayer.find_by(sqw_id: xml_swap.css("player_to_sub")[0]["player_id"])
+          player_swap                  = SqwPlayerSwap.new
+          player_swap.sqw_game_id      = game.id
+          player_swap.sqw_team_id      = swap_team.id
+          player_swap.sub_to_player_id = swap_sub_to_player.id
+          player_swap.player_to_sub_id = swap_player_to_sub.id
+          player_swap.min              = xml_swap["min"]
+          player_swap.minsec           = xml_swap["minsec"]
+          player_swap.save
+      end
   end
 
 end
