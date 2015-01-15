@@ -56,12 +56,13 @@ class Sqw
 
       # Players
       doc.css("data_panel players player").each do |xml_player|
+          p_team = SqwTeam.find_by(sqw_id: xml_player["team_id"])
           # Base player
           player = SqwPlayer.find_by(sqw_id: xml_player["id"])
           if player.nil?
               player = SqwPlayer.new
               player.sqw_id      = xml_player["id"]
-              player.sqw_team_id = xml_player["team_id"]
+              player.sqw_team_id = p_team.id
               player.first_name  = xml_player.css("first_name").text.strip
               player.last_name   = xml_player.css("last_name").text.strip
               player.name        = xml_player.css("name").text.strip
