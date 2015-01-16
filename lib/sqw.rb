@@ -142,12 +142,14 @@ class Sqw
           sqw_ga_event.secs          = xml_ga_event["secs"]
           sqw_ga_event.minsec        = xml_ga_event["minsec"]
           sqw_ga_event.headed        = xml_ga_event["headed"]
-          sqw_ga_event.start_x       = xml_ga_event.css("coordinates")[0]["start_x"]
-          sqw_ga_event.start_y       = xml_ga_event.css("coordinates")[0]["start_y"]
-          sqw_ga_event.end_x         = xml_ga_event.css("coordinates")[0]["end_x"]
-          sqw_ga_event.end_y         = xml_ga_event.css("coordinates")[0]["end_y"]
-          sqw_ga_event.gmouth_y      = xml_ga_event.css("coordinates")[0]["gmouth_y"]
-          sqw_ga_event.gmouth_z      = xml_ga_event.css("coordinates")[0]["gmouth_z"]
+          if( ! xml_ga_event.css("coordinates")[0].nil?)
+              sqw_ga_event.start_x       = xml_ga_event.css("coordinates")[0]["start_x"]
+              sqw_ga_event.start_y       = xml_ga_event.css("coordinates")[0]["start_y"]
+              sqw_ga_event.end_x         = xml_ga_event.css("coordinates")[0]["end_x"]
+              sqw_ga_event.end_y         = xml_ga_event.css("coordinates")[0]["end_y"]
+              sqw_ga_event.gmouth_y      = xml_ga_event.css("coordinates")[0]["gmouth_y"]
+              sqw_ga_event.gmouth_z      = xml_ga_event.css("coordinates")[0]["gmouth_z"]
+          end
 
           sqw_ga_event.save           
       end
