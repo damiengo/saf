@@ -1,4 +1,5 @@
-SELECT t.id, 
+SELECT s.start,
+       t.id, 
        t.short_name,
        ROUND(AVG(
            CASE WHEN tsr.sqw_home_team_id = t.id THEN
@@ -77,6 +78,7 @@ FROM
 	       ROUND((away.shots / (home.shots + away.shots)::float)::numeric, 3) AS away_tsr, 
 	       g.home_goals,
 	       g.away_goals, 
+	       s.id AS season_id, 
 	       CASE WHEN g.home_goals > g.away_goals THEN 3
 	            WHEN g.home_goals = g.away_goals THEN 1
                  ELSE 
@@ -88,7 +90,7 @@ FROM
                     0
 	            END AS away_points
 	FROM sqw_games g 
-	INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id AND s.start = 2013
+	INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id
 	INNER JOIN sqw_tournaments t ON g.sqw_tournament_id = t.id AND t.name = 'Ligue 1'
 	INNER JOIN 
 	(
@@ -109,5 +111,7 @@ FROM
 	ORDER BY g.kickoff ASC
 ) tsr
 INNER JOIN sqw_teams t ON (tsr.sqw_home_team_id = t.id OR tsr.sqw_away_team_id = t.id)
-GROUP BY t.id
-ORDER BY tsr_for DESC
+INNER JOIN sqw_seasons s ON tsr.season_id = s.id
+WHERE s.start < 2014
+GROUP BY s.start, t.id
+ORDER BY s.start ASC, tsr_for DESC

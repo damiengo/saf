@@ -1,0 +1,13 @@
+results = read.csv("tsr.csv", sep=";", encoding="UTF-8")
+
+# TSR on points
+lm_tsr_points = lm(results$tsr_for ~ results$points_for)
+summary(lm_tsr_points)
+plot(results$points_for, results$tsr_for)
+abline(lm_tsr_points)
+
+# TSR on goals
+lm_tsr_goals = lm(results$tsr_for ~ results$goals_for)
+summary(lm_tsr_goals)
+plot(results$goals_for, results$tsr_for)
+abline(lm_tsr_goals)
