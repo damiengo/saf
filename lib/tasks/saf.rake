@@ -171,11 +171,14 @@ namespace :saf do
                       id = line.match(/parseInt\(\'(.*)\'\)/)[1]
                       puts id
                       data_xml = "http://s3-irl-#{championship_name_cleaned}.squawka.com/dp/ingame/#{id}"
-                      open("#{season_dir}/#{championship_name_cleaned}-#{id}.xml", 'wb') do |file|
-                          begin
-                              file << open(data_xml).read
-                          rescue OpenURI::HTTPError => ex
-                              puts "====> Error opening #{data_xml}"
+                      dest_file = "#{season_dir}/#{championship_name_cleaned}-#{id}.xml"
+                      if not File.exists?(dest_file)
+                          open(dest_file, 'wb') do |file|
+                              begin
+                                  file << open(data_xml).read
+                              rescue OpenURI::HTTPError => ex
+                                  puts "====> Error opening #{data_xml}"
+                              end
                           end
                       end
                   end
@@ -194,8 +197,8 @@ namespace :saf do
   task analyse_sqw: :environment do
       
       # Season
-      season_start = 2012
-      season_end   = 2013
+      season_start = 2014
+      season_end   = 2015
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
         season = SqwSeason.new

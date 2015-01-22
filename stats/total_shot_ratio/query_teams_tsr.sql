@@ -112,6 +112,6 @@ FROM
 ) tsr
 INNER JOIN sqw_teams t ON (tsr.sqw_home_team_id = t.id OR tsr.sqw_away_team_id = t.id)
 INNER JOIN sqw_seasons s ON tsr.season_id = s.id
-WHERE s.start < 2014
+WHERE s.start = 2014
 GROUP BY s.start, t.id
 ORDER BY s.start ASC, tsr_for DESC
