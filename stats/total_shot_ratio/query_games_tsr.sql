@@ -1,8 +1,8 @@
 SELECT g.id, 
-       g.sqw_home_team_id, 
-       g.sqw_away_team_id, 
-       home.short_name, 
-       away.short_name, 
+       g.sqw_home_team_id AS home_team_id, 
+       g.sqw_away_team_id AS away_team_id, 
+       home.short_name AS home_team_name, 
+       away.short_name AS away_team_name, 
        home.shots AS home_shots, 
        away.shots AS away_shots, 
        home.shots + away.shots AS total_shots, 
@@ -27,4 +27,5 @@ INNER JOIN
 	INNER JOIN sqw_goals_attempts_events gae ON gae.sqw_player_id = p.id
 	GROUP BY t.id, gae.sqw_game_id
 ) away ON g.sqw_away_team_id = away.sqw_team_id AND g.id = away.sqw_game_id
+INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id AND s.start = 2013
 ORDER BY g.kickoff ASC
