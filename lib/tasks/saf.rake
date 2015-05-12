@@ -128,7 +128,7 @@ namespace :saf do
 
       tournament = "24" # Ligue 1
       season = "2014"
-      page = 1
+      nb_page = 1
       
       url = "http://www.squawka.com/match-results"
     
@@ -136,19 +136,22 @@ namespace :saf do
       Capybara.default_driver = :poltergeist
       
       visit url
+      puts "----> #{page.current_url}"
       # Choose championship
       select = page.find("#league-filter-list")
-      select.find("option[value='24']").select_option
-      sleep(2)
+      select.find("option[value='#{tournament}']").select_option
+      sleep(8)
+      puts "----> #{page.current_url}"
       # Choose season
       select = page.find("#league-season-list")
       select.find("option[value='#{season}']").select_option
-      sleep(2)
+      sleep(8)
+      puts "----> #{page.current_url}"
       
       first_page_html = page.html
 
-      while page < 1000 do
-          puts "====> Page #{page}"
+      while nb_page < 1000 do
+          puts "====> Page #{nb_page}"
           first_page = Nokogiri::HTML(first_page_html, nil, "utf-8")
           # List games
           first_page.css(".match-centre a").each do |details|
@@ -186,9 +189,9 @@ namespace :saf do
           end
       
           page.all(".pageing_text_arrow", :text => /.*Next.*/).first.click
-          sleep(2)
+          sleep(4)
           first_page_html = page.html
-          page = page + 1
+          nb_page = nb_page + 1
       end
       
   end
