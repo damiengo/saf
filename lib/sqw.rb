@@ -143,7 +143,11 @@ class Sqw
           sqw_ga_event.mins          = xml_ga_event["mins"]
           sqw_ga_event.secs          = xml_ga_event["secs"]
           sqw_ga_event.minsec        = xml_ga_event["minsec"]
-          sqw_ga_event.headed        = xml_ga_event["headed"]
+          #sqw_ga_event.headed        = (xml_ga_event["headed"].to_i == 0)? false : true
+          sqw_ga_event.headed = false
+          if( ! xml_ga_event.css("headed")[0].nil?)
+              sqw_ga_event.headed = true
+          end
           if( ! xml_ga_event.css("coordinates")[0].nil?)
               sqw_ga_event.start_x       = xml_ga_event.css("coordinates")[0]["start_x"]
               sqw_ga_event.start_y       = xml_ga_event.css("coordinates")[0]["start_y"]
