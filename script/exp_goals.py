@@ -2,7 +2,7 @@
 
 from sklearn import cross_validation
 from sklearn.linear_model import LogisticRegression
-from numpy import genfromtxt, loadtxt, asarray, savetxt
+from numpy import genfromtxt, loadtxt, asarray, savetxt, c_
 
 def main():
     print("==== START ====")
@@ -21,7 +21,10 @@ def main():
     print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
     predicted_probs = model.predict_proba(train)
-    savetxt('../data/stats/exp_goals.csv', predicted_probs, delimiter=',', fmt='%f')
+    
+    results = c_[train, predicted_probs[:,1]]
+    
+    savetxt('../data/stats/exp_goals.csv', results, delimiter='\t', fmt='%f')
     
     print("==== END ====")
 
