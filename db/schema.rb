@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150327194648) do
+ActiveRecord::Schema.define(version: 20150712204023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -95,6 +95,40 @@ ActiveRecord::Schema.define(version: 20150327194648) do
 
   add_index "sqw_goal_keeping_events", ["sqw_game_id"], name: "index_sqw_goal_keeping_events_on_sqw_game_id", using: :btree
   add_index "sqw_goal_keeping_events", ["sqw_player_id"], name: "index_sqw_goal_keeping_events_on_sqw_player_id", using: :btree
+
+  create_table "sqw_goal_passlinks", force: true do |t|
+    t.string   "type"
+    t.string   "sub_type"
+    t.integer  "period"
+    t.integer  "player_id"
+    t.integer  "goal_min"
+    t.float    "start_x"
+    t.float    "start_y"
+    t.boolean  "is_own"
+    t.float    "end_x"
+    t.float    "end_y"
+    t.float    "gmouth_y"
+    t.float    "gmouth_z"
+    t.string   "swere"
+    t.boolean  "penalty_goal"
+    t.integer  "club_id"
+    t.string   "side"
+    t.integer  "min"
+    t.integer  "sec"
+    t.integer  "minsec"
+    t.integer  "other_event_playerid"
+    t.boolean  "headed"
+    t.string   "part"
+    t.string   "reason"
+    t.string   "foulcommitted_player"
+    t.string   "foulsuffured_player"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "sqw_goals_attempts_event_id"
+    t.float    "gmouth_x"
+  end
+
+  add_index "sqw_goal_passlinks", ["sqw_goals_attempts_event_id"], name: "index_sqw_goal_passlinks_on_sqw_goals_attempts_event_id", using: :btree
 
   create_table "sqw_goals_attempts_events", force: true do |t|
     t.string   "event_type"

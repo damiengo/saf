@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  sub_type: MyString
+  period: 1
+  player_id: 1
+  goal_min: 1
+  start_x: 1.5
+  start_y: 1.5
+  is_own: false
+  end_x: 1.5
+  end_y: 1.5
+  gmouth_y: 1.5
+  gmouth_z: 1.5
+  swere: MyString
+  penalty_goal: false
+  club_id: 1
+  side: MyString
+  min: 1
+  sec: 1
+  minsec: 1
+  other_event_playerid: 1
+  headed: false
+  part: MyString
+  reason: MyString
+  foulcommitted_player: MyString
+  foulsuffured_player: MyString
+
+two:
+  type: 
+  sub_type: MyString
+  period: 1
+  player_id: 1
+  goal_min: 1
+  start_x: 1.5
+  start_y: 1.5
+  is_own: false
+  end_x: 1.5
+  end_y: 1.5
+  gmouth_y: 1.5
+  gmouth_z: 1.5
+  swere: MyString
+  penalty_goal: false
+  club_id: 1
+  side: MyString
+  min: 1
+  sec: 1
+  minsec: 1
+  other_event_playerid: 1
+  headed: false
+  part: MyString
+  reason: MyString
+  foulcommitted_player: MyString
+  foulsuffured_player: MyString

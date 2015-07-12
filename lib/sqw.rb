@@ -41,6 +41,7 @@ class Sqw
           SqwGoalKeepingEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwGoalsAttemptsEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwHeadedDualsEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwGoalPasslink.joins(:sqw_goals_attempts_event).where("sqw_goals_attempts_events.sqw_game_id = ?", one_game.id).destroy_all
           one_game.destroy
       end
       game                = SqwGame.new
@@ -100,8 +101,8 @@ class Sqw
           if not swap_sub_to_player.nil?
               player_swap.sub_to_player_id = swap_sub_to_player.id
           end
-          if not swap_player_to_sub.nil? 
-              player_swap.player_to_sub_id = swap_player_to_sub.id 
+          if not swap_player_to_sub.nil?
+              player_swap.player_to_sub_id = swap_player_to_sub.id
           end
           player_swap.min              = xml_swap["min"]
           player_swap.minsec           = xml_swap["minsec"]
@@ -143,11 +144,11 @@ class Sqw
           sqw_ga_event.mins          = xml_ga_event["mins"]
           sqw_ga_event.secs          = xml_ga_event["secs"]
           sqw_ga_event.minsec        = xml_ga_event["minsec"]
-          #sqw_ga_event.headed        = (xml_ga_event["headed"].to_i == 0)? false : true
           sqw_ga_event.headed = false
           if( ! xml_ga_event.css("headed")[0].nil?)
               sqw_ga_event.headed = true
           end
+          # Coordinates
           if( ! xml_ga_event.css("coordinates")[0].nil?)
               sqw_ga_event.start_x       = xml_ga_event.css("coordinates")[0]["start_x"]
               sqw_ga_event.start_y       = xml_ga_event.css("coordinates")[0]["start_y"]
@@ -157,7 +158,43 @@ class Sqw
               sqw_ga_event.gmouth_z      = xml_ga_event.css("coordinates")[0]["gmouth_z"]
           end
 
-          sqw_ga_event.save           
+          sqw_ga_event.save
+
+          # Passlink
+          if( ! xml_ga_event.css("passlinks")[0].nil?)
+              json_passlink = JSON.parse(xml_ga_event.css("passlinks")[0])
+              json_passlink.each do |pass|
+                  sqw_goal_passlink = SqwGoalPasslink.new
+                  sqw_goal_passlink.sqw_goals_attempts_event_id = sqw_ga_event.id
+                  sqw_goal_passlink.type =                 (pass["type"].nil?)?                 "" : pass["type"].to_s
+                  sqw_goal_passlink.sub_type =             (pass["sub_type"].nil?)?             "" : pass["sub_type"].to_s
+                  sqw_goal_passlink.period =               (pass["period"].nil?)?               0  : pass["period"].to_i
+                  sqw_goal_passlink.player_id =            (pass["player_id"].nil?)?            0  : pass["player_id"].to_i
+                  sqw_goal_passlink.goal_min =             (pass["goal_min"].nil?)?             0  : pass["goal_min"].to_i
+                  sqw_goal_passlink.start_x =              (pass["start_x"].nil?)?              0  : pass["start_x"].to_f
+                  sqw_goal_passlink.start_y =              (pass["start_y"].nil?)?              0  : pass["start_y"].to_f
+                  sqw_goal_passlink.is_own =               (pass["is_own"].nil?)?               false : pass["is_own"].to_i
+                  sqw_goal_passlink.end_x =                (pass["end_x"].nil?)?                0  : pass["end_x"].to_f
+                  sqw_goal_passlink.end_y =                (pass["end_y"].nil?)?                0  : pass["end_y"].to_f
+                  #sqw_goal_passlink.gmouth_x =             (pass["gmouth_x"].nil?)?             0  : pass["gmouth_x"].to_f
+                  #sqw_goal_passlink.gmouth_y =             (pass["gmouth_y"].nil?)?             0  : pass["gmouth_y"].to_f
+                  #sqw_goal_passlink.gmouth_z =             (pass["gmouth_z"].nil?)?             0  : pass["gmouth_z"].to_f
+                  sqw_goal_passlink.swere =                (pass["swere"].nil?)?                "" : pass["swere"]
+                  sqw_goal_passlink.penalty_goal =         (pass["penalty_goal"].nil?)?         false : pass["penalty_goal"].to_i
+                  sqw_goal_passlink.club_id =              (pass["club_id"].nil?)?              0 : pass["club_id"].to_i
+                  sqw_goal_passlink.side =                 (pass["side"].nil?)?                 "" : pass["side"]
+                  sqw_goal_passlink.min =                  (pass["min"].nil?)?                  0  : pass["min"].to_i
+                  sqw_goal_passlink.sec =                  (pass["sec"].nil?)?                  0  : pass["sec"].to_i
+                  sqw_goal_passlink.minsec =               (pass["minsec"].nil?)?               0  : pass["minsec"].to_i
+                  sqw_goal_passlink.other_event_playerid = (pass["other_event_playerid"].nil?)? 0  : pass["other_event_playerid"].to_i
+                  sqw_goal_passlink.headed =               (pass["headed"].nil?)?               false : pass["headed"].to_i
+                  sqw_goal_passlink.reason =               (pass["reason"].nil?)?               "" : pass["reason"]
+                  sqw_goal_passlink.foulcommitted_player = (pass["foulcommitted_player"].nil?)? "" : pass["foulcommitted_player"]
+                  sqw_goal_passlink.foulsuffured_player =  (pass["foulsuffered_player"].nil?)?   "" : pass["foulsuffered_player"]
+
+                  sqw_goal_passlink.save
+              end
+          end
       end
 
       # Headed dual event
@@ -182,7 +219,7 @@ class Sqw
           sqw_hd_event.loc_x         = locs[1]
           sqw_hd_event.loc_y         = locs[2]
 
-          sqw_hd_event.save          
+          sqw_hd_event.save
       end
 
       #puts doc.css("data_panel filters interceptions")

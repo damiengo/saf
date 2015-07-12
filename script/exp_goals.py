@@ -24,7 +24,7 @@ def main():
     
     results = c_[train, predicted_probs[:,1]]
     
-    savetxt('../data/stats/exp_goals.csv', results, delimiter='\t', fmt='%f')
+    savetxt('../data/stats/exp_goals.tsv', results, delimiter='\t', fmt='%f', header="x\ty\thead\tpredict")
     
     print("==== END ====")
 
