@@ -129,12 +129,12 @@ namespace :saf do
       tournament = "24" # Ligue 1
       season = "2014"
       nb_page = 1
-      
+
       url = "http://www.squawka.com/match-results"
-    
+
       include Capybara::DSL
       Capybara.default_driver = :poltergeist
-      
+
       visit url
       puts "----> #{page.current_url}"
       # Choose championship
@@ -147,7 +147,7 @@ namespace :saf do
       select.find("option[value='#{season}']").select_option
       sleep(8)
       puts "----> #{page.current_url}"
-      
+
       first_page_html = page.html
 
       while nb_page < 1000 do
@@ -187,21 +187,21 @@ namespace :saf do
                   end
               end
           end
-      
+
           page.all(".pageing_text_arrow", :text => /.*Next.*/).first.click
           sleep(4)
           first_page_html = page.html
           nb_page = nb_page + 1
       end
-      
+
   end
-    
+
   desc "Analyse Sqwka"
   task analyse_sqw: :environment do
-      
+
       # Season
-      season_start = 2014
-      season_end   = 2015
+      season_start = 2012
+      season_end   = 2013
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
         season = SqwSeason.new
@@ -209,7 +209,7 @@ namespace :saf do
         season.end   = season_end
         season.save
       end
-      
+
       # Tournament
       tournament_name    = "Ligue 1"
       tournament_country = "France"
@@ -220,10 +220,10 @@ namespace :saf do
         tournament.country = tournament_country
         tournament.save
       end
-      
+
       #xml_file = "data/squawka/ligue-1/2014/ligue1-7729.xml"
       #Sqw::parse_xml_file(xml_file, season, tournament)
-      
+
       files = Dir.glob("data/squawka/ligue-1/#{season_start}/*").sort
       files.each do |xml_file|
           puts xml_file
