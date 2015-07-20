@@ -1,8 +1,8 @@
 #!/usr/bin/python2.7
 
 from sklearn import cross_validation
-from sklearn.linear_model import LogisticRegression
-from numpy import genfromtxt, loadtxt, asarray, savetxt, c_
+from sklearn.linear_model import LogisticRegression, LinearRegression
+from numpy import genfromtxt, loadtxt, asarray, savetxt, c_, newaxis
 from pandas import DataFrame, read_csv, concat
 
 def main():
@@ -39,7 +39,20 @@ def main():
     predicted_goals = DataFrame(predicted_probs[:,1], columns=['predict'])
 
     results = concat([dataset, predicted_goals], axis=1)
-    print results.groupby(['start', 'short_name']).sum()
+    grouped_results = results.groupby(['start', 'short_name']).sum()
+
+    grouped_results.to_csv('../data/stats/exp_goals_by_teams.tsv', sep='\t', encoding='utf-8')
+
+    lr = LinearRegression()
+    goals = grouped_results.ix[:, 'goal'].tolist()
+    predicts = grouped_results.ix[:,'predict'].tolist()
+    goals = asarray(goals).round()
+    predicts = asarray(predicts).round()
+    print goals
+    print predicts
+    reg = lr.fit(predicts[:,newaxis], goals)
+    print "R2: "+"%.9f" % reg.score(predicts[:,newaxis], goals)
+    print reg.predict(predicts[:,newaxis])
 
     #savetxt('../data/stats/exp_goals.tsv', results, delimiter='\t', fmt='%f', header="x\ty\thead\tpredict")
 
