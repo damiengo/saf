@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sqw_player_id: 
+  sqw_team_id: 
+  start_x: 1.5
+  start_y: 1.5
+  end_x: 1.5
+  end_y: 1.5
+  type: 
+  mins: 1
+  secs: 1
+  minsec: 1
+  throw_in: false
+  assist: false
+  long_ball: false
+  through_ball: false
+  headed: false
+
+two:
+  sqw_player_id: 
+  sqw_team_id: 
+  start_x: 1.5
+  start_y: 1.5
+  end_x: 1.5
+  end_y: 1.5
+  type: 
+  mins: 1
+  secs: 1
+  minsec: 1
+  throw_in: false
+  assist: false
+  long_ball: false
+  through_ball: false
+  headed: false

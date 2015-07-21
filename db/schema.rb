@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150712204023) do
+ActiveRecord::Schema.define(version: 20150721203056) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,30 @@ ActiveRecord::Schema.define(version: 20150712204023) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "sqw_all_passes_events", force: true do |t|
+    t.integer  "sqw_player_id"
+    t.integer  "sqw_team_id"
+    t.float    "start_x"
+    t.float    "start_y"
+    t.float    "end_x"
+    t.float    "end_y"
+    t.string   "pass_type"
+    t.integer  "mins"
+    t.integer  "secs"
+    t.integer  "minsec"
+    t.boolean  "throw_in"
+    t.boolean  "assist"
+    t.boolean  "long_ball"
+    t.boolean  "through_ball"
+    t.boolean  "headed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "sqw_game_id"
+  end
+
+  add_index "sqw_all_passes_events", ["sqw_player_id"], name: "index_sqw_all_passes_events_on_sqw_player_id", using: :btree
+  add_index "sqw_all_passes_events", ["sqw_team_id"], name: "index_sqw_all_passes_events_on_sqw_team_id", using: :btree
 
   create_table "sqw_games", force: true do |t|
     t.datetime "kickoff"

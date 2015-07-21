@@ -41,6 +41,7 @@ class Sqw
           SqwGoalKeepingEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwGoalsAttemptsEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwHeadedDualsEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwAllPassesEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwGoalPasslink.joins(:sqw_goals_attempts_event).where("sqw_goals_attempts_events.sqw_game_id = ?", one_game.id).destroy_all
           one_game.destroy
       end
@@ -222,6 +223,35 @@ class Sqw
           sqw_hd_event.save
       end
 
+      # All passes events
+      doc.css("data_panel filters all_passes event").each do |xml_ap_event|
+          ga_player                  = SqwPlayer.find_by(sqw_id: xml_ap_event["player_id"])
+          ga_team                    = SqwTeam.find_by(sqw_id: xml_ap_event["team_id"])
+
+          start_pos = xml_ap_event.css("start")[0].text.strip.match(/^(.*),(.*)$/)
+          end_pos   = xml_ap_event.css("end")[0].text.strip.match(/^(.*),(.*)$/)
+
+          sqw_ap_event               = SqwAllPassesEvent.new
+          sqw_ap_event.sqw_game_id   = game.id
+          sqw_ap_event.sqw_player_id = ga_player.id
+          sqw_ap_event.sqw_team_id   = ga_team.id
+          sqw_ap_event.start_x       = start_pos[1]
+          sqw_ap_event.start_y       = start_pos[2]
+          sqw_ap_event.end_x         = end_pos[1]
+          sqw_ap_event.end_y         = end_pos[2]
+          sqw_ap_event.pass_type     = xml_ap_event["type"]
+          sqw_ap_event.mins          = xml_ap_event["mins"]
+          sqw_ap_event.secs          = xml_ap_event["secs"]
+          sqw_ap_event.minsec        = xml_ap_event["minsec"]
+          sqw_ap_event.throw_in      = (xml_ap_event["throw_ins"] == "1")? true : false;
+          sqw_ap_event.assist        = (not xml_ap_event.css("assists")[0].nil?)? true : false;
+          sqw_ap_event.long_ball     = (not xml_ap_event.css("long_ball")[0].nil?)? true : false;
+          sqw_ap_event.through_ball  = (not xml_ap_event.css("through_ball")[0].nil?)? true : false;
+          sqw_ap_event.headed        = (not xml_ap_event.css("headed")[0].nil?)? true : false;
+
+          sqw_ap_event.save
+      end
+
       #puts doc.css("data_panel filters interceptions")
       #puts doc.css("data_panel filters clearances")
       #puts doc.css("data_panel filters all_passes")
@@ -236,7 +266,6 @@ class Sqw
       #puts doc.css("data_panel filters fouls")
       #puts doc.css("data_panel filters cards")
       #puts doc.css("data_panel filters blocked_events")
-      #puts doc.css("data_panel filters balls_out")
       #puts doc.css("data_panel filters balls_out")
   end
 end
