@@ -42,6 +42,8 @@ class Sqw
           SqwGoalsAttemptsEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwHeadedDualsEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwAllPassesEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwCrossesEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwCornersEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwGoalPasslink.joins(:sqw_goals_attempts_event).where("sqw_goals_attempts_events.sqw_game_id = ?", one_game.id).destroy_all
           one_game.destroy
       end
@@ -252,12 +254,58 @@ class Sqw
           sqw_ap_event.save
       end
 
+      # Crosses events
+      doc.css("data_panel filters crosses event").each do |xml_c_event|
+          c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
+          c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
+
+          start_pos = xml_c_event.css("start")[0].text.strip.match(/^(.*),(.*)$/)
+          end_pos   = xml_c_event.css("end")[0].text.strip.match(/^(.*),(.*)$/)
+
+          sqw_c_event               = SqwCrossesEvent.new
+          sqw_c_event.sqw_game_id   = game.id
+          sqw_c_event.sqw_player_id = c_player.id
+          sqw_c_event.sqw_team_id   = c_team.id
+          sqw_c_event.start_x       = start_pos[1]
+          sqw_c_event.start_y       = start_pos[2]
+          sqw_c_event.end_x         = end_pos[1]
+          sqw_c_event.end_y         = end_pos[2]
+          sqw_c_event.mins          = xml_c_event["mins"]
+          sqw_c_event.secs          = xml_c_event["secs"]
+          sqw_c_event.minsec        = xml_c_event["minsec"]
+          sqw_c_event.event_type    = xml_c_event["type"]
+
+          sqw_c_event.save
+      end
+
+      # Corners events
+      doc.css("data_panel filters corners event").each do |xml_c_event|
+          c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
+          c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
+
+          start_pos = xml_c_event.css("start")[0].text.strip.match(/^(.*),(.*)$/)
+          end_pos   = xml_c_event.css("end")[0].text.strip.match(/^(.*),(.*)$/)
+
+          sqw_c_event               = SqwCornersEvent.new
+          sqw_c_event.sqw_game_id   = game.id
+          sqw_c_event.sqw_player_id = c_player.id
+          sqw_c_event.sqw_team_id   = c_team.id
+          sqw_c_event.start_x       = start_pos[1]
+          sqw_c_event.start_y       = start_pos[2]
+          sqw_c_event.end_x         = end_pos[1]
+          sqw_c_event.end_y         = end_pos[2]
+          sqw_c_event.mins          = xml_c_event["mins"]
+          sqw_c_event.secs          = xml_c_event["secs"]
+          sqw_c_event.minsec        = xml_c_event["minsec"]
+          sqw_c_event.event_type    = xml_c_event["type"]
+          sqw_c_event.swere         = xml_c_event.css("swere").text
+
+          sqw_c_event.save
+      end
+
       #puts doc.css("data_panel filters interceptions")
       #puts doc.css("data_panel filters clearances")
-      #puts doc.css("data_panel filters all_passes")
       #puts doc.css("data_panel filters tackles")
-      #puts doc.css("data_panel filters crosses")
-      #puts doc.css("data_panel filters corners")
       #puts doc.css("data_panel filters offside")
       #puts doc.css("data_panel filters keepersweeper")
       #puts doc.css("data_panel filters oneonones")
