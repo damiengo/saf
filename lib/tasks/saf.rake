@@ -200,8 +200,8 @@ namespace :saf do
   task analyse_sqw: :environment do
 
       # Season
-      season_start = 2014
-      season_end   = 2015
+      season_start = 2013
+      season_end   = 2014
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
         season = SqwSeason.new

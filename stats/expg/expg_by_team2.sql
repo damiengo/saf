@@ -1,4 +1,6 @@
-SELECT CASE WHEN gae.event_type = 'goal' THEN 1 ELSE 0 END AS goal,
+SELECT s.start, 
+       t.short_name, 
+       CASE WHEN gae.event_type = 'goal' THEN 1 ELSE 0 END AS goal,
        atan2(100-gae.start_x, 50-gae.start_y) * (180 / pi()) AS degree, 
        sqrt((100-gae.start_x)^2+(50-gae.start_y)^2) AS distance, 
        CASE WHEN gae.headed THEN 1 ELSE 0 END AS shot_headed, 

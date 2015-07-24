@@ -235,8 +235,8 @@ class Sqw
 
           sqw_ap_event               = SqwAllPassesEvent.new
           sqw_ap_event.sqw_game_id   = game.id
-          sqw_ap_event.sqw_player_id = ga_player.id
-          sqw_ap_event.sqw_team_id   = ga_team.id
+          sqw_ap_event.sqw_player_id = ( not ga_player.nil?)? ga_player.id : nil
+          sqw_ap_event.sqw_team_id   = ( not ga_team.nil?)? ga_team.id : nil
           sqw_ap_event.start_x       = start_pos[1]
           sqw_ap_event.start_y       = start_pos[2]
           sqw_ap_event.end_x         = end_pos[1]
