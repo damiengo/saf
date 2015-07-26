@@ -12,14 +12,25 @@ def main():
     dataset = DataFrame.from_csv('../data/stats/shots_teams_2013_2014.tsv', sep='\t', index_col=False)
 
     target = dataset.loc[:,'goal']
-    train = dataset.loc[:,['degree', 'distance', 'shot_headed', 'crosses', 'corner', 'pass_throw_in', 'pass_long_ball', 'pass_through_ball', 'pass_headed']]
+    #train = dataset.loc[:,['degree', 'distance', 'shot_headed', 'crosses', 'corner', 'pass_throw_in', 'pass_long_ball', 'pass_through_ball', 'pass_headed']]
+    train = dataset.loc[:,['degree', 'distance', 'shot_headed', 'corner']]
 
-    train_target   = target.head(10000)
-    train_features = train.head(10000)
 
-    dataset_test = dataset.tail(5000)
-    test_target = target.tail(5000)
-    test_features = train.tail(5000)
+    # For validating the model
+    #train_target   = target.head(10000)
+    #train_features = train.head(10000)
+
+    #dataset_test = dataset.tail(5000)
+    #test_target = target.tail(5000)
+    #test_features = train.tail(5000)
+
+    # For using the model
+    train_target   = target
+    train_features = train
+
+    dataset_test = dataset
+    test_target = target
+    test_features = train
 
     dataset_test = dataset_test.reset_index(drop=True)
     test_target = test_target.reset_index(drop=True)
@@ -51,7 +62,8 @@ def main():
     print predicts
     reg = lr.fit(predicts[:,newaxis], goals)
     print "R2: "+"%.9f" % reg.score(predicts[:,newaxis], goals)
-    #print reg.predict(predicts[:,newaxis])
+    print reg.predict(predicts[:,newaxis])
+    print "Intercept: %.9f" % reg.intercept_
 
     #savetxt('../data/stats/exp_goals.tsv', results, delimiter='\t', fmt='%f', header="x\ty\thead\tpredict")
 

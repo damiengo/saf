@@ -51,7 +51,7 @@ def main():
     print predicts
     reg = lr.fit(predicts[:,newaxis], goals)
     print "R2: "+"%.9f" % reg.score(predicts[:,newaxis], goals)
-    print reg.predict(predicts[:,newaxis])
+    #print reg.predict(predicts[:,newaxis])
 
     #savetxt('../data/stats/exp_goals.tsv', results, delimiter='\t', fmt='%f', header="x\ty\thead\tpredict")
 
