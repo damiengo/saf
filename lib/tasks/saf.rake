@@ -126,8 +126,9 @@ namespace :saf do
   desc "Parse Sqwka"
   task parse_sqw: :environment do
 
-      tournament = "24" # Ligue 1
-      season = "2014"
+      # 24 => Ligue 1, 8 => EPL, 22 => Bundesliga, 21 => Serie A, 23 => Liga, 9 => Eredivise
+      tournament = "24"
+      season = "2015"
       nb_page = 1
 
       url = "http://www.squawka.com/match-results"
@@ -140,12 +141,15 @@ namespace :saf do
       # Choose championship
       select = page.find("#league-filter-list")
       select.find("option[value='#{tournament}']").select_option
-      sleep(8)
-      puts "----> #{page.current_url}"
+      puts page.find("#league-filter-list").value
+      puts page.find("#league-season-list").value
+      sleep(5)
       # Choose season
       select = page.find("#league-season-list")
       select.find("option[value='#{season}']").select_option
-      sleep(8)
+      sleep(5)
+      puts page.find("#league-filter-list").value
+      puts page.find("#league-season-list").value
       puts "----> #{page.current_url}"
 
       first_page_html = page.html
@@ -188,7 +192,13 @@ namespace :saf do
               end
           end
 
-          page.all(".pageing_text_arrow", :text => /.*Next.*/).first.click
+          next_page = page.all(".pageing_text_arrow", :text => /.*Next.*/)
+          if next_page.length > 0
+              next_page.first.click
+          else
+              # Quit
+              nb_page = 9999
+          end
           sleep(4)
           first_page_html = page.html
           nb_page = nb_page + 1
@@ -200,8 +210,8 @@ namespace :saf do
   task analyse_sqw: :environment do
 
       # Season
-      season_start = 2013
-      season_end   = 2014
+      season_start = 2015
+      season_end   = 2016
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
         season = SqwSeason.new
@@ -230,6 +240,28 @@ namespace :saf do
           Sqw::parse_xml_file(xml_file, season, tournament)
       end
 
+  end
+
+  desc "Update ELO"
+  task update_elo: :environment do
+    puts "======== Start updating ELO ========"
+
+    url = URI.parse('http://api.clubelo.com/2015-09-21')
+    req = Net::HTTP::Get.new(url.to_s)
+    res = Net::HTTP.start(url.host, url.port) {|http|
+      http.request(req)
+    }
+    CSV.parse(res.body, :headers => true) do |row|
+      puts "----"
+      puts "Team: #{row[1]}"
+      puts "Country: #{row[2]}"
+      puts "Level: #{row[3]}"
+      puts "ELO: #{row[4]}"
+      puts "From: #{row[5]}"
+      puts "To: #{row[6]}"
+    end
+
+    puts "======== End updating ELO ========"
   end
 
 end

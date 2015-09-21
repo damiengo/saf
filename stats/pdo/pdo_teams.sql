@@ -9,7 +9,7 @@ FROM
 	FROM sqw_games g 
 	INNER JOIN sqw_teams ht ON g.sqw_home_team_id = ht.id
 	INNER JOIN sqw_teams at ON g.sqw_away_team_id = at.id
-	INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id AND s.start = 2014
+	INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id AND s.start = 2015
 ) games
 INNER JOIN sqw_teams t ON games.ht_id = t.id OR games.at_id = t.id
 -- Current team shots
@@ -53,7 +53,7 @@ FROM
 	FROM sqw_games g 
 	INNER JOIN sqw_teams ht ON g.sqw_home_team_id = ht.id
 	INNER JOIN sqw_teams at ON g.sqw_away_team_id = at.id
-	INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id AND s.start = 2014
+	INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id AND s.start = 2015
 ) games
 INNER JOIN sqw_teams t ON games.ht_id = t.id OR games.at_id = t.id
 INNER JOIN 

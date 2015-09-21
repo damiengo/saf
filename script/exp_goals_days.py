@@ -10,28 +10,18 @@ def main():
     print("==== START ====")
 
     dataset = DataFrame.from_csv('../data/stats/shots_teams_2013_2014.tsv', sep='\t', index_col=False)
+    current_day = DataFrame.from_csv('../data/stats/shots_games_2015_J6.tsv', sep='\t', index_col=False)
 
     target = dataset.loc[:,'goal']
-    #train = dataset.loc[:,['degree', 'distance', 'shot_headed', 'crosses', 'corner', 'pass_throw_in', 'pass_long_ball', 'pass_through_ball', 'pass_headed']]
     train = dataset.loc[:,['degree', 'distance', 'shot_headed', 'corner']]
-    #train = dataset.loc[:,['start_x', 'start_y', 'shot_headed']]
-
-
-    # For validating the model
-    #train_target   = target.head(10000)
-    #train_features = train.head(10000)
-
-    #dataset_test = dataset.tail(5000)
-    #test_target = target.tail(5000)
-    #test_features = train.tail(5000)
 
     # For using the model
     train_target   = target
     train_features = train
 
-    dataset_test = dataset
-    test_target = target
-    test_features = train
+    dataset_test = current_day
+    test_target = dataset_test.loc[:,'goal']
+    test_features = dataset_test.loc[:,['degree', 'distance', 'shot_headed', 'corner']]
 
     dataset_test = dataset_test.reset_index(drop=True)
     test_target = test_target.reset_index(drop=True)
@@ -41,19 +31,18 @@ def main():
     #model = RandomForestClassifier(n_estimators = 100)
     model = model.fit(train_features, train_target)
 
-    kf_total = cross_validation.KFold(len(test_features), n_folds=2)
-    scores = cross_validation.cross_val_score(model, asarray(test_features), asarray(test_target), cv=kf_total, n_jobs=1)
+    #kf_total = cross_validation.KFold(len(test_features), n_folds=2)
+    #scores = cross_validation.cross_val_score(model, asarray(test_features), asarray(test_target), cv=kf_total, n_jobs=1)
 
-    print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+    #print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
     predicted_probs = model.predict_proba(test_features)
     predicted_goals = DataFrame(predicted_probs[:,1], columns=['predict'])
 
     results = concat([dataset_test, predicted_goals], axis=1)
-    grouped_results = results.groupby(['start', 'short_name']).sum()
+    grouped_results = results.groupby(['game_id'])
 
-    grouped_results.to_csv('../data/stats/exp_goals_v2_by_teams.tsv', sep='\t', encoding='utf-8')
-    #grouped_results.to_csv('../data/stats/exp_goals_by_teams.tsv', sep='\t', encoding='utf-8')
+    results.to_csv('../data/stats/exp_goals_days_J6.tsv', sep='\t', encoding='utf-8')
 
     lr = LinearRegression()
     goals = grouped_results.ix[:, 'goal'].tolist()

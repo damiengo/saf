@@ -264,8 +264,8 @@ class Sqw
 
           sqw_c_event               = SqwCrossesEvent.new
           sqw_c_event.sqw_game_id   = game.id
-          sqw_c_event.sqw_player_id = c_player.id
-          sqw_c_event.sqw_team_id   = c_team.id
+          sqw_c_event.sqw_player_id = ( not c_player.nil?)? c_player.id : nil
+          sqw_c_event.sqw_team_id   = ( not c_team.nil?)? c_team.id : nil
           sqw_c_event.start_x       = start_pos[1]
           sqw_c_event.start_y       = start_pos[2]
           sqw_c_event.end_x         = end_pos[1]
@@ -288,8 +288,8 @@ class Sqw
 
           sqw_c_event               = SqwCornersEvent.new
           sqw_c_event.sqw_game_id   = game.id
-          sqw_c_event.sqw_player_id = c_player.id
-          sqw_c_event.sqw_team_id   = c_team.id
+          sqw_c_event.sqw_player_id = ( not c_player.nil?)? c_player.id : nil
+          sqw_c_event.sqw_team_id   = ( not c_team.nil?)? c_team.id : nil
           sqw_c_event.start_x       = start_pos[1]
           sqw_c_event.start_y       = start_pos[2]
           sqw_c_event.end_x         = end_pos[1]

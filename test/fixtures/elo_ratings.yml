@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team: MyString
+  country: MyString
+  level: 1
+  elo: 1.5
+  from: 2015-09-21
+  to: 2015-09-21
+  date_of_update: 2015-09-21
+
+two:
+  team: MyString
+  country: MyString
+  level: 1
+  elo: 1.5
+  from: 2015-09-21
+  to: 2015-09-21
+  date_of_update: 2015-09-21
