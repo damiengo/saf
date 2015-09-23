@@ -1,0 +1,22 @@
+SELECT p.id, 
+       p.name as player_name, 
+       t.short_name as pass_team, 
+       ht.short_name as home_team, 
+       at.short_name as away_team, 
+       ape.pass_type, 
+       ape.start_x, 
+       ape.start_y, 
+       ape.end_x, 
+       ape.end_y
+FROM sqw_all_passes_events ape
+INNER JOIN sqw_players p ON ape.sqw_player_id = p.id
+INNER JOIN sqw_teams t ON ape.sqw_team_id = t.id
+INNER JOIN sqw_games g ON ape.sqw_game_id = g.id
+INNER JOIN sqw_teams ht ON g.sqw_home_team_id = ht.id
+INNER JOIN sqw_teams at ON g.sqw_away_team_id = at.id
+INNER JOIN sqw_seasons s ON g.sqw_season_id = s.id
+WHERE s.start = '2015'
+AND ape.end_y > 30
+AND ape.end_y < 60
+AND ape.end_x > 60
+AND ape.end_x < 101

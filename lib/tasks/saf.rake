@@ -246,19 +246,55 @@ namespace :saf do
   task update_elo: :environment do
     puts "======== Start updating ELO ========"
 
-    url = URI.parse('http://api.clubelo.com/2015-09-21')
-    req = Net::HTTP::Get.new(url.to_s)
-    res = Net::HTTP.start(url.host, url.port) {|http|
-      http.request(req)
-    }
-    CSV.parse(res.body, :headers => true) do |row|
-      puts "----"
-      puts "Team: #{row[1]}"
-      puts "Country: #{row[2]}"
-      puts "Level: #{row[3]}"
-      puts "ELO: #{row[4]}"
-      puts "From: #{row[5]}"
-      puts "To: #{row[6]}"
+    last_update = EloRating.maximum("date_of_update")
+    now = Date.today
+
+    # If no date found
+    if not last_update
+      last_update = Date.new(1959, 12, 31)
+    end
+
+    # Set current date
+    current_update = last_update + 1.day
+
+    while current_update <= now
+
+      url = URI.parse("http://api.clubelo.com/#{current_update.to_s(:db)}")
+      req = Net::HTTP::Get.new(url.to_s)
+      res = Net::HTTP.start(url.host, url.port) {|http|
+        http.request(req)
+      }
+
+      CSV.parse(res.body, :headers => true) do |row|
+        date_of_update = current_update
+        team    = row[1]
+        country = row[2]
+        level   = row[3]
+        elo     = row[4]
+        from    = row[5]
+        to      = row[6]
+        if team
+          puts "#{date_of_update.to_s(:db)} #{team} (#{country}): #{elo} from #{from} to #{to}"
+          # Delete old elo rating if exists
+          #old_elo = EloRating.find_by(team: team, country: country, date_of_update: date_of_update)
+          #if old_elo
+            #old_elo.destroy
+          #end
+          # Save new
+          elo_rating                = EloRating.new
+          elo_rating.team           = team
+          elo_rating.country        = country
+          elo_rating.level          = level
+          elo_rating.elo            = elo
+          elo_rating.from           = from
+          elo_rating.to             = to
+          elo_rating.date_of_update = current_update
+          elo_rating.save
+        end
+      end
+
+      current_update = current_update + 1.day
+
     end
 
     puts "======== End updating ELO ========"

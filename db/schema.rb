@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150921211248) do
+ActiveRecord::Schema.define(version: 20150923223117) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,12 @@ ActiveRecord::Schema.define(version: 20150921211248) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "elo_ratings", ["country"], name: "index_elo_ratings_on_country", using: :btree
+  add_index "elo_ratings", ["date_of_update"], name: "index_elo_ratings_on_date_of_update", using: :btree
+  add_index "elo_ratings", ["elo"], name: "index_elo_ratings_on_elo", using: :btree
+  add_index "elo_ratings", ["level"], name: "index_elo_ratings_on_level", using: :btree
+  add_index "elo_ratings", ["team"], name: "index_elo_ratings_on_team", using: :btree
 
   create_table "games", force: true do |t|
     t.integer  "home_goals"
