@@ -1,0 +1,1141 @@
+kickoff	venue	home_team	away_team	score	home_goals	away_goals	result_1	result_n	result_2	result	home_elo	away_elo	elo_diff	elo_swap
+2012-08-10	Stade de la Mosson	Montpellier	Toulouse	1 - 1	1	1	0	1	0	2	1732	1620	112	3.1
+2012-08-11	Stade de l'Aube	Troyes	Valenciennes	0 - 1	0	1	0	0	1	3	1490	1584	94	7.4
+2012-08-11	Parc des Princes	PSG	Lorient	2 - 2	2	2	0	1	0	2	1748	1558	190	5.0
+2012-08-11	Stade de la Route-de-Lorient	Rennes	Lyon	0 - 1	0	1	0	0	1	3	1637	1708	71	8.0
+2012-08-11	Parc des Sports, Annecy	Evian	Bordeaux	2 - 3	2	3	0	0	1	3	1591	1699	108	7.0
+2012-08-11	Stade Geoffroy-Guichard	St Etienne	Lille	1 - 2	1	2	0	0	1	3	1621	1768	147	6.0
+2012-08-11	Stade Marcel Picot	Nancy	Brest	1 - 0	1	0	1	0	0	1	1600	1569	31	9.1
+2012-08-11	Stade Bonal	Sochaux	Bastia	2 - 3	2	3	0	0	1	3	1574	1519	55	11.6
+2012-08-11	Stade du Ray	Nice	Ajaccio	0 - 1	0	1	0	0	1	3	1581	1544	37	11.1
+2012-08-12	Stade Auguste Delaune II	Reims	Marseille	0 - 1	0	1	0	0	1	3	1506	1676	170	5.5
+2012-08-17	Grand Stade Lille Métropole	Lille	Nancy	1 - 1	1	1	0	1	0	2	1775	1605	170	4.5
+2012-08-18	Stade de Gerland	Lyon	Troyes	4 - 1	4	1	1	0	0	1	1717	1483	234	4.1
+2012-08-18	Stade Francis-le Blé	Brest	Evian	1 - 0	1	0	1	0	0	1	1563	1583	20	10.6
+2012-08-18	Stade du Moustoir	Lorient	Montpellier	2 - 1	2	1	1	0	0	1	1564	1730	166	14.4
+2012-08-18	Stade Armand-Cesari-Furiani	Bastia	Reims	2 - 1	2	1	1	0	0	1	1531	1500	31	9.1
+2012-08-18	Stadium Municipal	Toulouse	St Etienne	2 - 1	2	1	1	0	0	1	1628	1615	13	9.6
+2012-08-18	Stade du Hainaut	Valenciennes	Nice	0 - 0	0	0	0	1	0	2	1592	1569	23	0.7
+2012-08-19	Stade Jacques Chaban-Delmas	Bordeaux	Rennes	1 - 0	1	0	1	0	0	1	1706	1628	78	7.8
+2012-08-19	Stade Vélodrome	Marseille	Sochaux	2 - 0	2	0	1	0	0	1	1682	1562	120	6.7
+2012-08-19	Stade Francois-Coty	Ajaccio	PSG	0 - 0	0	0	0	1	0	2	1555	1742	187	4.9
+2012-08-24	Parc des Sports, Annecy	Evian	Lyon	1 - 1	1	1	0	1	0	2	1574	1718	144	3.9
+2012-08-25	Stade du Ray	Nice	Lille	2 - 2	2	2	0	1	0	2	1570	1760	190	5.0
+2012-08-25	Stade de la Route-de-Lorient	Rennes	Bastia	3 - 2	3	2	1	0	0	1	1622	1534	88	7.5
+2012-08-25	Stade Auguste Delaune II	Reims	Sochaux	1 - 0	1	0	1	0	0	1	1492	1555	63	11.8
+2012-08-25	Stade du Hainaut	Valenciennes	Ajaccio	3 - 0	3	0	1	0	0	1	1587	1556	31	9.1
+2012-08-25	Stade Marcel Picot	Nancy	Toulouse	0 - 1	0	1	0	0	1	3	1609	1632	23	9.3
+2012-08-25	Stade de l'Aube	Troyes	Lorient	2 - 2	2	2	0	1	0	2	1477	1572	95	2.7
+2012-08-26	Stade Geoffroy-Guichard	St Etienne	Brest	4 - 0	4	0	1	0	0	1	1607	1568	39	8.9
+2012-08-26	Stade de la Mosson	Montpellier	Marseille	0 - 1	0	1	0	0	1	3	1717	1686	31	10.9
+2012-08-26	Parc des Princes	PSG	Bordeaux	0 - 0	0	0	0	1	0	2	1736	1707	29	0.8
+2012-09-01	Stade de Gerland	Lyon	Valenciennes	3 - 2	3	2	1	0	0	1	1721	1601	120	6.7
+2012-09-01	Stade Francois-Coty	Ajaccio	Evian	2 - 0	2	0	1	0	0	1	1552	1581	29	10.8
+2012-09-01	Stade Francis-le Blé	Brest	Troyes	2 - 1	2	1	1	0	0	1	1562	1482	80	7.7
+2012-09-01	Stadium Municipal	Toulouse	Reims	1 - 1	1	1	0	1	0	2	1647	1505	142	3.9
+2012-09-01	Stade du Moustoir	Lorient	Nancy	3 - 0	3	0	1	0	0	1	1577	1604	27	10.8
+2012-09-01	Stade Armand-Cesari-Furiani	Bastia	St Etienne	0 - 3	0	3	0	0	1	3	1535	1622	87	7.5
+2012-09-01	Stade Bonal	Sochaux	Montpellier	1 - 3	1	3	0	0	1	3	1553	1711	158	5.7
+2012-09-02	Stade Jacques Chaban-Delmas	Bordeaux	Nice	1 - 1	1	1	0	1	0	2	1719	1578	141	3.8
+2012-09-02	Stade Vélodrome	Marseille	Rennes	3 - 1	3	1	1	0	0	1	1702	1631	71	8.0
+2012-09-02	Grand Stade Lille Métropole	Lille	PSG	1 - 2	1	2	0	0	1	3	1773	1738	35	11.0
+2012-09-14	Parc des Princes	PSG	Toulouse	2 - 0	2	0	1	0	0	1	1749	1641	108	7.0
+2012-09-14	Stade Auguste Delaune II	Reims	Montpellier	3 - 1	3	1	1	0	0	1	1511	1720	209	15.4
+2012-09-15	Stade de l'Aube	Troyes	Lille	1 - 1	1	1	0	1	0	2	1478	1762	284	6.7
+2012-09-15	Stade du Ray	Nice	Brest	4 - 2	4	2	1	0	0	1	1584	1567	17	9.5
+2012-09-15	Parc des Sports, Annecy	Evian	Bastia	3 - 0	3	0	1	0	0	1	1572	1521	51	8.5
+2012-09-15	Stade du Hainaut	Valenciennes	Bordeaux	0 - 0	0	0	0	1	0	2	1598	1713	115	3.2
+2012-09-15	Stade Geoffroy-Guichard	St Etienne	Sochaux	0 - 1	0	1	0	0	1	3	1636	1544	92	12.6
+2012-09-16	Stade de la Route-de-Lorient	Rennes	Lorient	1 - 2	1	2	0	0	1	3	1625	1589	36	11.0
+2012-09-16	Stade de Gerland	Lyon	Ajaccio	2 - 0	2	0	1	0	0	1	1725	1561	164	5.6
+2012-09-16	Stade Marcel Picot	Nancy	Marseille	0 - 1	0	1	0	0	1	3	1593	1708	115	6.8
+2012-09-21	Stade de la Mosson	Montpellier	St Etienne	1 - 1	1	1	0	1	0	2	1690	1616	74	2.1
+2012-09-22	Stade Armand-Cesari-Furiani	Bastia	PSG	0 - 4	0	4	0	0	1	3	1511	1763	252	3.8
+2012-09-22	Stade Francis-le Blé	Brest	Valenciennes	2 - 1	2	1	1	0	0	1	1556	1596	40	11.1
+2012-09-22	Stade Auguste Delaune II	Reims	Nancy	2 - 0	2	0	1	0	0	1	1524	1583	59	11.7
+2012-09-22	Stade Bonal	Sochaux	Troyes	3 - 1	3	1	1	0	0	1	1554	1481	73	7.9
+2012-09-22	Stadium Municipal	Toulouse	Rennes	2 - 2	2	2	0	1	0	2	1633	1611	22	0.6
+2012-09-22	Stade du Moustoir	Lorient	Nice	1 - 1	1	1	0	1	0	2	1598	1590	8	0.2
+2012-09-23	Stade Jacques Chaban-Delmas	Bordeaux	Ajaccio	2 - 2	2	2	0	1	0	2	1718	1555	163	4.4
+2012-09-23	Stade Vélodrome	Marseille	Evian	1 - 0	1	0	1	0	0	1	1715	1578	137	6.2
+2012-09-23	Grand Stade Lille Métropole	Lille	Lyon	1 - 1	1	1	0	1	0	2	1733	1730	3	0.1
+2012-09-28	Stade de la Route-de-Lorient	Rennes	Lille	2 - 0	2	0	1	0	0	1	1614	1730	116	13.2
+2012-09-29	Parc des Princes	PSG	Sochaux	2 - 0	2	0	1	0	0	1	1770	1561	209	4.6
+2012-09-29	Parc des Sports, Annecy	Evian	Lorient	1 - 1	1	1	0	1	0	2	1575	1595	20	0.6
+2012-09-29	Stade du Ray	Nice	Bastia	2 - 2	2	2	0	1	0	2	1592	1503	89	2.5
+2012-09-29	Stade Marcel Picot	Nancy	Montpellier	0 - 2	0	2	0	0	1	3	1572	1690	118	6.7
+2012-09-29	Stade Francois-Coty	Ajaccio	Brest	1 - 0	1	0	1	0	0	1	1561	1563	2	10.1
+2012-09-29	Stade de l'Aube	Troyes	Toulouse	0 - 2	0	2	0	0	1	3	1475	1631	156	5.8
+2012-09-30	Stade du Hainaut	Valenciennes	Marseille	4 - 1	4	1	1	0	0	1	1589	1718	129	13.6
+2012-09-30	Stade Geoffroy-Guichard	St Etienne	Reims	0 - 0	0	0	0	1	0	2	1626	1535	91	2.6
+2012-09-30	Stade de Gerland	Lyon	Bordeaux	0 - 2	0	2	0	0	1	3	1732	1712	20	10.6
+2012-10-05	Stade Geoffroy-Guichard	St Etienne	Nancy	4 - 0	4	0	1	0	0	1	1619	1561	58	8.3
+2012-10-06	Stade de la Mosson	Montpellier	Evian	2 - 3	2	3	0	0	1	3	1703	1571	132	13.6
+2012-10-06	Grand Stade Lille Métropole	Lille	Ajaccio	2 - 0	2	0	1	0	0	1	1710	1565	145	6.1
+2012-10-06	Stadium Municipal	Toulouse	Valenciennes	2 - 2	2	2	0	1	0	2	1637	1603	34	1.0
+2012-10-06	Stade Auguste Delaune II	Reims	Nice	3 - 1	3	1	1	0	0	1	1537	1585	48	11.4
+2012-10-06	Stade Armand-Cesari-Furiani	Bastia	Troyes	3 - 2	3	2	1	0	0	1	1505	1463	42	8.8
+2012-10-06	Stade Bonal	Sochaux	Rennes	0 - 1	0	1	0	0	1	3	1555	1624	69	8.0
+2012-10-07	Stade Francis-le Blé	Brest	Bordeaux	1 - 1	1	1	0	1	0	2	1555	1715	160	4.3
+2012-10-07	Stade du Moustoir	Lorient	Lyon	1 - 1	1	1	0	1	0	2	1595	1718	123	3.4
+2012-10-07	Stade Vélodrome	Marseille	PSG	2 - 2	2	2	0	1	0	2	1703	1767	64	1.8
+2012-10-19	Stade Jacques Chaban-Delmas	Bordeaux	Lille	1 - 1	1	1	0	1	0	2	1713	1714	1	0.0
+2012-10-20	Parc des Princes	PSG	Reims	1 - 0	1	0	1	0	0	1	1768	1547	221	4.4
+2012-10-20	Stade de la Route-de-Lorient	Rennes	Montpellier	2 - 1	2	1	1	0	0	1	1633	1690	57	11.6
+2012-10-20	Stade Marcel Picot	Nancy	Sochaux	1 - 1	1	1	0	1	0	2	1550	1547	3	0.1
+2012-10-20	Stade du Ray	Nice	St Etienne	1 - 1	1	1	0	1	0	2	1575	1628	53	1.5
+2012-10-20	Stade du Hainaut	Valenciennes	Lorient	6 - 1	6	1	1	0	0	1	1606	1596	10	9.7
+2012-10-20	Parc des Sports, Annecy	Evian	Toulouse	0 - 4	0	4	0	0	1	3	1584	1634	50	8.6
+2012-10-21	Stade Francois-Coty	Ajaccio	Bastia	0 - 0	0	0	0	1	0	2	1561	1510	51	1.5
+2012-10-21	Stade de Gerland	Lyon	Brest	1 - 0	1	0	1	0	0	1	1717	1557	160	5.7
+2012-10-21	Stade de l'Aube	Troyes	Marseille	1 - 0	1	0	1	0	0	1	1458	1702	244	16.1
+2012-10-26	Stade Geoffroy-Guichard	St Etienne	Rennes	2 - 0	2	0	1	0	0	1	1626	1637	11	10.3
+2012-10-27	Grand Stade Lille Métropole	Lille	Valenciennes	2 - 1	2	1	1	0	0	1	1707	1615	92	7.4
+2012-10-27	Stade de la Mosson	Montpellier	Nice	3 - 1	3	1	1	0	0	1	1668	1570	98	7.3
+2012-10-27	Stadium Municipal	Toulouse	Brest	3 - 1	3	1	1	0	0	1	1647	1550	97	7.3
+2012-10-27	Stade Marcel Picot	Nancy	PSG	0 - 1	0	1	0	0	1	3	1543	1772	229	4.2
+2012-10-27	Stade Auguste Delaune II	Reims	Troyes	1 - 1	1	1	0	1	0	2	1541	1466	75	2.1
+2012-10-28	Stade du Moustoir	Lorient	Ajaccio	4 - 4	4	4	0	1	0	2	1578	1552	26	0.7
+2012-10-28	Stade Armand-Cesari-Furiani	Bastia	Bordeaux	3 - 1	3	1	1	0	0	1	1509	1704	195	15.1
+2012-11-02	Stade Francis-le Blé	Brest	Lorient	2 - 0	2	0	1	0	0	1	1544	1575	31	10.9
+2012-11-03	Parc des Princes	PSG	St Etienne	1 - 2	1	2	0	0	1	3	1777	1633	144	13.9
+2012-11-03	Stade de la Route-de-Lorient	Rennes	Reims	1 - 0	1	0	1	0	0	1	1626	1537	89	7.5
+2012-11-03	Stade du Ray	Nice	Nancy	2 - 1	2	1	1	0	0	1	1564	1539	25	9.3
+2012-11-03	Stade du Hainaut	Valenciennes	Sochaux	3 - 1	3	1	1	0	0	1	1611	1545	66	8.1
+2012-11-03	Parc des Sports, Annecy	Evian	Lille	0 - 2	0	2	0	0	1	3	1562	1711	149	6.0
+2012-11-03	Stade de l'Aube	Troyes	Montpellier	1 - 1	1	1	0	1	0	2	1470	1674	204	5.3
+2012-11-04	Stade Francois-Coty	Ajaccio	Marseille	0 - 2	0	2	0	0	1	3	1555	1677	122	6.6
+2012-11-04	Stade de Gerland	Lyon	Bastia	5 - 2	5	2	1	0	0	1	1721	1525	196	4.9
+2012-11-04	Stade Jacques Chaban-Delmas	Bordeaux	Toulouse	1 - 0	1	0	1	0	0	1	1689	1653	36	9.0
+2012-11-07	Stade Bonal	Sochaux	Evian	2 - 1	2	1	1	0	0	1	1538	1553	15	10.4
+2012-11-09	Stade Marcel Picot	Nancy	Rennes	1 - 3	1	3	0	0	1	3	1531	1628	97	7.3
+2012-11-10	Grand Stade Lille Métropole	Lille	Brest	1 - 0	1	0	1	0	0	1	1717	1555	162	5.6
+2012-11-10	Stade Geoffroy-Guichard	St Etienne	Troyes	2 - 0	2	0	1	0	0	1	1648	1475	173	5.4
+2012-11-10	Stade Armand-Cesari-Furiani	Bastia	Valenciennes	2 - 3	2	3	0	0	1	3	1522	1619	97	7.3
+2012-11-10	Stade Auguste Delaune II	Reims	Evian	1 - 2	1	2	0	0	1	3	1534	1548	14	9.6
+2012-11-10	Stadium Municipal	Toulouse	Ajaccio	2 - 4	2	4	0	0	1	3	1649	1547	102	12.9
+2012-11-11	Stade Vélodrome	Marseille	Nice	2 - 2	2	2	0	1	0	2	1687	1571	116	3.2
+2012-11-11	Stade du Moustoir	Lorient	Bordeaux	0 - 4	0	4	0	0	1	3	1567	1698	131	6.4
+2012-11-11	Stade Bonal	Sochaux	Lyon	1 - 1	1	1	0	1	0	2	1546	1737	191	5.0
+2012-11-11	Stade de la Mosson	Montpellier	PSG	1 - 1	1	1	0	1	0	2	1665	1768	103	2.9
+2012-11-16	Stade du Moustoir	Lorient	Lille	2 - 0	2	0	1	0	0	1	1553	1720	167	14.5
+2012-11-17	Parc des Princes	PSG	Rennes	1 - 2	1	2	0	0	1	3	1767	1643	124	13.4
+2012-11-17	Stade Francis-le Blé	Brest	Bastia	3 - 0	3	0	1	0	0	1	1552	1515	37	8.9
+2012-11-17	Stade Francois-Coty	Ajaccio	Sochaux	0 - 1	0	1	0	0	1	3	1565	1549	16	10.5
+2012-11-17	Stade du Hainaut	Valenciennes	Montpellier	1 - 1	1	1	0	1	0	2	1626	1666	40	1.1
+2012-11-17	Parc des Sports, Annecy	Evian	St Etienne	2 - 2	2	2	0	1	0	2	1557	1652	95	2.7
+2012-11-17	Stade de l'Aube	Troyes	Nancy	3 - 3	3	3	0	1	0	2	1471	1524	53	1.5
+2012-11-18	Stade de Gerland	Lyon	Reims	3 - 0	3	0	1	0	0	1	1733	1524	209	4.6
+2012-11-18	Stade du Ray	Nice	Toulouse	1 - 0	1	0	1	0	0	1	1576	1631	55	11.6
+2012-11-18	Stade Jacques Chaban-Delmas	Bordeaux	Marseille	1 - 0	1	0	1	0	0	1	1712	1682	30	9.1
+2012-11-23	Stade Geoffroy-Guichard	St Etienne	Valenciennes	1 - 0	1	0	1	0	0	1	1659	1632	27	9.2
+2012-11-24	Parc des Princes	PSG	Troyes	4 - 0	4	0	1	0	0	1	1773	1475	298	3.0
+2012-11-24	Stade Auguste Delaune II	Reims	Brest	0 - 0	0	0	0	1	0	2	1525	1566	41	1.2
+2012-11-24	Stade de la Route-de-Lorient	Rennes	Evian	0 - 1	0	1	0	0	1	3	1661	1563	98	12.7
+2012-11-24	Stade Bonal	Sochaux	Nice	0 - 1	0	1	0	0	1	3	1565	1589	24	9.3
+2012-11-24	Stade Marcel Picot	Nancy	Ajaccio	1 - 1	1	1	0	1	0	2	1530	1559	29	0.8
+2012-11-24	Stade Armand-Cesari-Furiani	Bastia	Lorient	2 - 1	2	1	1	0	0	1	1511	1573	62	11.8
+2012-11-25	Stade de la Mosson	Montpellier	Bordeaux	1 - 0	1	0	1	0	0	1	1668	1729	61	11.7
+2012-11-25	Stadium Municipal	Toulouse	Lyon	3 - 0	3	0	1	0	0	1	1628	1741	113	13.1
+2012-11-25	Stade Vélodrome	Marseille	Lille	1 - 0	1	0	1	0	0	1	1670	1721	51	11.5
+2012-11-28	Stade Vélodrome	Marseille	Lyon	1 - 4	1	4	0	0	1	3	1677	1726	49	8.6
+2012-11-30	Stade Francois-Coty	Ajaccio	St Etienne	0 - 0	0	0	0	1	0	2	1561	1662	101	2.8
+2012-12-01	Stade de Gerland	Lyon	Montpellier	1 - 0	1	0	1	0	0	1	1741	1676	65	8.2
+2012-12-01	Grand Stade Lille Métropole	Lille	Bastia	0 - 0	0	0	0	1	0	2	1713	1518	195	5.1
+2012-12-01	Stade Jacques Chaban-Delmas	Bordeaux	Sochaux	2 - 2	2	2	0	1	0	2	1721	1555	166	4.4
+2012-12-01	Stade du Ray	Nice	PSG	2 - 1	2	1	1	0	0	1	1598	1776	178	14.7
+2012-12-01	Parc des Sports, Annecy	Evian	Nancy	1 - 1	1	1	0	1	0	2	1575	1528	47	1.3
+2012-12-01	Stade du Hainaut	Valenciennes	Reims	1 - 0	1	0	1	0	0	1	1625	1524	101	7.2
+2012-12-02	Stade Francis-le Blé	Brest	Marseille	1 - 2	1	2	0	0	1	3	1567	1662	95	7.3
+2012-12-02	Stade de l'Aube	Troyes	Rennes	2 - 3	2	3	0	0	1	3	1473	1649	176	5.3
+2012-12-02	Stade du Moustoir	Lorient	Toulouse	1 - 0	1	0	1	0	0	1	1565	1644	79	12.2
+2012-12-07	Stadium Municipal	Toulouse	Bastia	0 - 0	0	0	0	1	0	2	1636	1525	111	3.1
+2012-12-08	Parc des Princes	PSG	Evian	4 - 0	4	0	1	0	0	1	1770	1568	202	4.8
+2012-12-08	Stade de la Route-de-Lorient	Rennes	Brest	2 - 2	2	2	0	1	0	2	1650	1555	95	2.7
+2012-12-08	Stade Marcel Picot	Nancy	Valenciennes	1 - 1	1	1	0	1	0	2	1528	1625	97	2.7
+2012-12-08	Stade de l'Aube	Troyes	Nice	1 - 1	1	1	0	1	0	2	1463	1605	142	3.9
+2012-12-08	Stade Bonal	Sochaux	Lille	1 - 1	1	1	0	1	0	2	1557	1694	137	3.8
+2012-12-08	Stade de la Mosson	Montpellier	Ajaccio	3 - 0	3	0	1	0	0	1	1668	1558	110	6.9
+2012-12-09	Stade Auguste Delaune II	Reims	Bordeaux	0 - 0	0	0	0	1	0	2	1516	1718	202	5.2
+2012-12-09	Stade Vélodrome	Marseille	Lorient	0 - 3	0	3	0	0	1	3	1645	1570	75	12.1
+2012-12-09	Stade Geoffroy-Guichard	St Etienne	Lyon	0 - 1	0	1	0	0	1	3	1658	1743	85	7.6
+2012-12-11	Stade du Ray	Nice	Rennes	1 - 0	1	0	1	0	0	1	1603	1646	43	11.2
+2012-12-11	Stade du Hainaut	Valenciennes	PSG	0 - 4	0	4	0	0	1	3	1624	1775	151	5.9
+2012-12-11	Grand Stade Lille Métropole	Lille	Toulouse	2 - 0	2	0	1	0	0	1	1692	1627	65	8.2
+2012-12-12	Stade Francois-Coty	Ajaccio	Reims	2 - 0	2	0	1	0	0	1	1551	1520	31	9.1
+2012-12-12	Stade du Moustoir	Lorient	Sochaux	2 - 0	2	0	1	0	0	1	1590	1559	31	9.1
+2012-12-12	Parc des Sports, Annecy	Evian	Troyes	2 - 0	2	0	1	0	0	1	1563	1465	98	7.3
+2012-12-12	Stade Francis-le Blé	Brest	Montpellier	1 - 2	1	2	0	0	1	3	1560	1675	115	6.8
+2012-12-12	Stade de Gerland	Lyon	Nancy	1 - 1	1	1	0	1	0	2	1751	1528	223	5.7
+2012-12-12	Stade Armand-Cesari-Furiani	Bastia	Marseille	1 - 2	1	2	0	0	1	3	1526	1625	99	7.2
+2012-12-13	Stade Jacques Chaban-Delmas	Bordeaux	St Etienne	0 - 0	0	0	0	1	0	2	1715	1650	65	1.8
+2012-12-14	Stade de la Route-de-Lorient	Rennes	Valenciennes	2 - 0	2	0	1	0	0	1	1638	1612	26	9.3
+2012-12-15	Stadium Municipal	Toulouse	Marseille	0 - 1	0	1	0	0	1	3	1620	1633	13	9.6
+2012-12-15	Stade de la Mosson	Montpellier	Bastia	4 - 0	4	0	1	0	0	1	1682	1518	164	5.6
+2012-12-15	Stade de l'Aube	Troyes	Ajaccio	3 - 2	3	2	1	0	0	1	1459	1559	100	12.8
+2012-12-15	Stade du Ray	Nice	Evian	3 - 2	3	2	1	0	0	1	1610	1569	41	8.8
+2012-12-15	Stade Bonal	Sochaux	Brest	1 - 2	1	2	0	0	1	3	1551	1553	2	9.9
+2012-12-15	Stade Auguste Delaune II	Reims	Lille	1 - 1	1	1	0	1	0	2	1512	1699	187	4.9
+2012-12-16	Stade Marcel Picot	Nancy	Bordeaux	1 - 1	1	1	0	1	0	2	1535	1711	176	4.7
+2012-12-16	Stade Geoffroy-Guichard	St Etienne	Lorient	0 - 2	0	2	0	0	1	3	1654	1597	57	11.6
+2012-12-16	Parc des Princes	PSG	Lyon	1 - 0	1	0	1	0	0	1	1787	1744	43	8.8
+2012-12-21	Stade Francis-le Blé	Brest	PSG	0 - 3	0	3	0	0	1	3	1563	1792	229	4.2
+2012-12-22	Grand Stade Lille Métropole	Lille	Montpellier	4 - 1	4	1	1	0	0	1	1696	1688	8	9.8
+2012-12-22	Stade du Moustoir	Lorient	Reims	2 - 2	2	2	0	1	0	2	1614	1515	99	2.8
+2012-12-22	Stade Francois-Coty	Ajaccio	Rennes	2 - 4	2	4	0	0	1	3	1550	1646	96	7.3
+2012-12-22	Stade Jean-Laville	Bastia	Nancy	4 - 2	4	2	1	0	0	1	1513	1538	25	10.7
+2012-12-22	Stade de Gerland	Lyon	Nice	3 - 0	3	0	1	0	0	1	1739	1615	124	6.6
+2012-12-22	Stade Jacques Chaban-Delmas	Bordeaux	Troyes	0 - 0	0	0	0	1	0	2	1708	1468	240	6.0
+2012-12-23	Stade du Hainaut	Valenciennes	Evian	2 - 1	2	1	1	0	0	1	1604	1564	40	8.9
+2012-12-23	Stadium Municipal	Toulouse	Sochaux	2 - 0	2	0	1	0	0	1	1610	1541	69	8.0
+2012-12-23	Stade Vélodrome	Marseille	St Etienne	1 - 0	1	0	1	0	0	1	1642	1638	4	9.9
+2013-01-11	Stade Geoffroy-Guichard	St Etienne	Toulouse	2 - 2	2	2	0	1	0	2	1632	1617	15	0.4
+2013-01-11	Parc des Princes	PSG	Ajaccio	0 - 0	0	0	0	1	0	2	1799	1539	260	6.3
+2013-01-12	Stade de l'Aube	Troyes	Lyon	1 - 2	1	2	0	0	1	3	1475	1745	270	3.5
+2013-01-12	Parc des Sports, Annecy	Evian	Brest	0 - 2	0	2	0	0	1	3	1559	1555	4	10.1
+2013-01-12	Stade de la Route-de-Lorient	Rennes	Bordeaux	0 - 2	0	2	0	0	1	3	1657	1701	44	8.7
+2013-01-12	Stade de la Mosson	Montpellier	Lorient	2 - 0	2	0	1	0	0	1	1677	1609	68	8.1
+2013-01-12	Stade Marcel Picot	Nancy	Lille	2 - 2	2	2	0	1	0	2	1528	1707	179	4.7
+2013-01-13	Stade Auguste Delaune II	Reims	Bastia	1 - 2	1	2	0	0	1	3	1520	1522	2	9.9
+2013-01-13	Stade du Ray	Nice	Valenciennes	5 - 0	5	0	1	0	0	1	1609	1609	0	10.0
+2013-01-13	Stade Bonal	Sochaux	Marseille	3 - 1	3	1	1	0	0	1	1535	1649	114	13.2
+2013-01-18	Stade de Gerland	Lyon	Evian	0 - 0	0	0	0	1	0	2	1748	1545	203	5.3
+2013-01-19	Stade Bonal	Sochaux	Reims	1 - 0	1	0	1	0	0	1	1548	1510	38	8.9
+2013-01-19	Stade Vélodrome	Marseille	Montpellier	3 - 2	3	2	1	0	0	1	1636	1684	48	11.4
+2013-01-19	Stade Francois-Coty	Ajaccio	Valenciennes	1 - 1	1	1	0	1	0	2	1547	1595	48	1.4
+2013-01-19	Stade du Moustoir	Lorient	Troyes	3 - 2	3	2	1	0	0	1	1602	1472	130	6.4
+2013-01-19	Stade Francis-le Blé	Brest	St Etienne	0 - 1	0	1	0	0	1	3	1570	1629	59	8.3
+2013-01-19	Stadium Municipal	Toulouse	Nancy	2 - 1	2	1	1	0	0	1	1620	1531	89	7.5
+2013-01-20	Stade Jean-Laville	Bastia	Rennes	0 - 2	0	2	0	0	1	3	1532	1644	112	6.9
+2013-01-20	Grand Stade Lille Métropole	Lille	Nice	0 - 2	0	2	0	0	1	3	1704	1623	81	12.3
+2013-01-20	Stade Jacques Chaban-Delmas	Bordeaux	PSG	0 - 1	0	1	0	0	1	3	1713	1792	79	7.8
+2013-01-25	Stade du Hainaut	Valenciennes	Lyon	0 - 2	0	2	0	0	1	3	1596	1742	146	6.0
+2013-01-26	Stade de la Route-de-Lorient	Rennes	Marseille	2 - 2	2	2	0	1	0	2	1654	1643	11	0.3
+2013-01-26	Stade de la Mosson	Montpellier	Sochaux	2 - 0	2	0	1	0	0	1	1676	1553	123	6.6
+2013-01-26	Stade de l'Aube	Troyes	Brest	2 - 1	2	1	1	0	0	1	1468	1561	93	12.6
+2013-01-26	Parc des Sports, Annecy	Evian	Ajaccio	1 - 1	1	1	0	1	0	2	1551	1546	5	0.1
+2013-01-26	Stade Auguste Delaune II	Reims	Toulouse	1 - 1	1	1	0	1	0	2	1505	1624	119	3.3
+2013-01-26	Stade Marcel Picot	Nancy	Lorient	2 - 1	2	1	1	0	0	1	1527	1606	79	12.2
+2013-01-27	Stade Geoffroy-Guichard	St Etienne	Bastia	3 - 0	3	0	1	0	0	1	1637	1522	115	6.8
+2013-01-27	Stade du Ray	Nice	Bordeaux	0 - 1	0	1	0	0	1	3	1640	1705	65	8.2
+2013-01-27	Parc des Princes	PSG	Lille	1 - 0	1	0	1	0	0	1	1800	1687	113	6.9
+2013-02-01	Stadium Municipal	Toulouse	PSG	0 - 4	0	4	0	0	1	3	1623	1804	181	5.2
+2013-02-02	Stade du Moustoir	Lorient	Rennes	2 - 2	2	2	0	1	0	2	1598	1652	54	1.5
+2013-02-02	Stade Francis-le Blé	Brest	Nice	0 - 2	0	2	0	0	1	3	1552	1631	79	7.8
+2013-02-02	Stade Jacques Chaban-Delmas	Bordeaux	Valenciennes	2 - 0	2	0	1	0	0	1	1714	1587	127	6.5
+2013-02-02	Grand Stade Lille Métropole	Lille	Troyes	1 - 1	1	1	0	1	0	2	1683	1477	206	5.3
+2013-02-02	Stade Bonal	Sochaux	St Etienne	1 - 2	1	2	0	0	1	3	1548	1644	96	7.3
+2013-02-02	Stade de l'Abbé-Deschamps	Bastia	Evian	0 - 0	0	0	0	1	0	2	1516	1549	33	0.9
+2013-02-03	Stade Francois-Coty	Ajaccio	Lyon	3 - 1	3	1	1	0	0	1	1548	1750	202	15.2
+2013-02-03	Stade de la Mosson	Montpellier	Reims	3 - 1	3	1	1	0	0	1	1681	1506	175	5.3
+2013-02-03	Stade Vélodrome	Marseille	Nancy	0 - 1	0	1	0	0	1	3	1645	1535	110	13.1
+2013-02-08	Parc des Princes	PSG	Bastia	3 - 1	3	1	1	0	0	1	1814	1514	300	3.0
+2013-02-09	Stade Geoffroy-Guichard	St Etienne	Montpellier	4 - 1	4	1	1	0	0	1	1651	1685	34	11.0
+2013-02-09	Stade du Ray	Nice	Lorient	1 - 1	1	1	0	1	0	2	1643	1597	46	1.3
+2013-02-09	Stade Francois-Coty	Ajaccio	Bordeaux	1 - 0	1	0	1	0	0	1	1564	1719	155	14.2
+2013-02-09	Stade du Hainaut	Valenciennes	Brest	2 - 1	2	1	1	0	0	1	1582	1541	41	8.8
+2013-02-09	Stade de l'Aube	Troyes	Sochaux	0 - 0	0	0	0	1	0	2	1484	1540	56	1.6
+2013-02-09	Stade Marcel Picot	Nancy	Reims	1 - 2	1	2	0	0	1	3	1548	1502	46	11.3
+2013-02-10	Parc des Sports, Annecy	Evian	Marseille	1 - 1	1	1	0	1	0	2	1550	1633	83	2.3
+2013-02-10	Stade de la Route-de-Lorient	Rennes	Toulouse	2 - 0	2	0	1	0	0	1	1652	1612	40	8.9
+2013-02-10	Stade de Gerland	Lyon	Lille	1 - 3	1	3	0	0	1	3	1734	1677	57	11.6
+2013-02-15	Grand Stade Lille Métropole	Lille	Rennes	2 - 0	2	0	1	0	0	1	1696	1663	33	9.1
+2013-02-16	Stade Vélodrome	Marseille	Valenciennes	1 - 0	1	0	1	0	0	1	1637	1592	45	8.7
+2013-02-16	Stade du Moustoir	Lorient	Evian	2 - 1	2	1	1	0	0	1	1604	1554	50	8.6
+2013-02-16	Stade Armand-Cesari-Furiani	Bastia	Nice	0 - 1	0	1	0	0	1	3	1516	1643	127	6.5
+2013-02-16	Stadium Municipal	Toulouse	Troyes	2 - 2	2	2	0	1	0	2	1608	1487	121	3.3
+2013-02-16	Stade de la Mosson	Montpellier	Nancy	1 - 0	1	0	1	0	0	1	1677	1540	137	6.2
+2013-02-16	Stade Francis-le Blé	Brest	Ajaccio	1 - 1	1	1	0	1	0	2	1540	1578	38	1.1
+2013-02-17	Stade Jacques Chaban-Delmas	Bordeaux	Lyon	0 - 4	0	4	0	0	1	3	1716	1720	4	9.9
+2013-02-17	Stade Auguste Delaune II	Reims	St Etienne	1 - 1	1	1	0	1	0	2	1517	1667	150	4.1
+2013-02-17	Stade Bonal	Sochaux	PSG	3 - 2	3	2	1	0	0	1	1545	1830	285	16.8
+2013-02-22	Stade du Ray	Nice	Reims	2 - 0	2	0	1	0	0	1	1650	1519	131	6.4
+2013-02-23	Stade de la Route-de-Lorient	Rennes	Sochaux	2 - 2	2	2	0	1	0	2	1657	1558	99	2.8
+2013-02-23	Parc des Sports, Annecy	Evian	Montpellier	0 - 1	0	1	0	0	1	3	1550	1681	131	6.4
+2013-02-23	Stade de l'Aube	Troyes	Bastia	0 - 0	0	0	0	1	0	2	1493	1510	17	0.5
+2013-02-23	Stade du Hainaut	Valenciennes	Toulouse	0 - 0	0	0	0	1	0	2	1587	1604	17	0.5
+2013-02-23	Stade Francois-Coty	Ajaccio	Lille	1 - 3	1	3	0	0	1	3	1580	1705	125	6.5
+2013-02-23	Stade Marcel Picot	Nancy	St Etienne	0 - 3	0	3	0	0	1	3	1538	1666	128	6.5
+2013-02-24	Stade de Gerland	Lyon	Lorient	3 - 1	3	1	1	0	0	1	1734	1610	124	6.6
+2013-02-24	Stade Jacques Chaban-Delmas	Bordeaux	Brest	0 - 2	0	2	0	0	1	3	1704	1539	165	14.4
+2013-02-24	Parc des Princes	PSG	Marseille	2 - 0	2	0	1	0	0	1	1818	1642	176	5.3
+2013-03-01	Stade de la Mosson	Montpellier	Rennes	2 - 0	2	0	1	0	0	1	1688	1652	36	9.0
+2013-03-02	Stade Auguste Delaune II	Reims	PSG	1 - 0	1	0	1	0	0	1	1515	1822	307	17.1
+2013-03-02	Stade Geoffroy-Guichard	St Etienne	Nice	4 - 0	4	0	1	0	0	1	1678	1656	22	9.4
+2013-03-02	Stadium Municipal	Toulouse	Evian	0 - 0	0	0	0	1	0	2	1605	1543	62	1.8
+2013-03-02	Stade Bonal	Sochaux	Nancy	1 - 2	1	2	0	0	1	3	1563	1526	37	11.1
+2013-03-02	Stade du Moustoir	Lorient	Valenciennes	1 - 1	1	1	0	1	0	2	1605	1585	20	0.6
+2013-03-02	Stade Armand-Cesari-Furiani	Bastia	Ajaccio	1 - 0	1	0	1	0	0	1	1512	1570	58	11.7
+2013-03-03	Stade Francis-le Blé	Brest	Lyon	1 - 1	1	1	0	1	0	2	1559	1739	180	4.8
+2013-03-03	Stade Vélodrome	Marseille	Troyes	2 - 1	2	1	1	0	0	1	1638	1491	147	6.0
+2013-03-03	Grand Stade Lille Métropole	Lille	Bordeaux	2 - 1	2	1	1	0	0	1	1714	1685	29	9.2
+2013-03-08	Stade de la Route-de-Lorient	Rennes	St Etienne	2 - 2	2	2	0	1	0	2	1645	1689	44	1.3
+2013-03-09	Parc des Princes	PSG	Nancy	2 - 1	2	1	1	0	0	1	1808	1536	272	3.5
+2013-03-09	Stade de l'Aube	Troyes	Reims	4 - 2	4	2	1	0	0	1	1487	1528	41	11.2
+2013-03-09	Stade du Hainaut	Valenciennes	Lille	1 - 3	1	3	0	0	1	3	1587	1719	132	6.4
+2013-03-09	Stade Francois-Coty	Ajaccio	Lorient	1 - 0	1	0	1	0	0	1	1562	1602	40	11.1
+2013-03-09	Parc des Sports, Annecy	Evian	Sochaux	5 - 1	5	1	1	0	0	1	1546	1551	5	10.1
+2013-03-09	Stade Francis-le Blé	Brest	Toulouse	0 - 1	0	1	0	0	1	3	1561	1601	40	8.9
+2013-03-10	Stade du Ray	Nice	Montpellier	2 - 0	2	0	1	0	0	1	1643	1695	52	11.5
+2013-03-10	Stade Jacques Chaban-Delmas	Bordeaux	Bastia	1 - 0	1	0	1	0	0	1	1676	1519	157	5.8
+2013-03-10	Stade de Gerland	Lyon	Marseille	0 - 0	0	0	0	1	0	2	1735	1641	94	2.6
+2013-03-15	Stade Vélodrome	Marseille	Ajaccio	0 - 0	0	0	0	1	0	2	1646	1569	77	2.2
+2013-03-16	Stade Armand-Cesari-Furiani	Bastia	Lyon	4 - 1	4	1	1	0	0	1	1514	1729	215	15.5
+2013-03-16	Stade Auguste Delaune II	Reims	Rennes	1 - 0	1	0	1	0	0	1	1516	1641	125	13.5
+2013-03-16	Grand Stade Lille Métropole	Lille	Evian	1 - 2	1	2	0	0	1	3	1727	1557	170	14.5
+2013-03-16	Stade du Moustoir	Lorient	Brest	4 - 0	4	0	1	0	0	1	1593	1550	43	8.8
+2013-03-16	Stade Bonal	Sochaux	Valenciennes	1 - 1	1	1	0	1	0	2	1537	1576	39	1.1
+2013-03-16	Stade de la Mosson	Montpellier	Troyes	1 - 1	1	1	0	1	0	2	1683	1496	187	4.9
+2013-03-17	Stade Marcel Picot	Nancy	Nice	1 - 0	1	0	1	0	0	1	1533	1652	119	13.3
+2013-03-17	Stadium Municipal	Toulouse	Bordeaux	0 - 0	0	0	0	1	0	2	1608	1673	65	1.8
+2013-03-17	Stade Geoffroy-Guichard	St Etienne	PSG	2 - 2	2	2	0	1	0	2	1688	1808	120	3.3
+2013-03-29	Parc des Princes	PSG	Montpellier	1 - 0	1	0	1	0	0	1	1806	1676	130	6.4
+2013-03-30	Stade de l'Aube	Troyes	St Etienne	2 - 2	2	2	0	1	0	2	1502	1689	187	4.9
+2013-03-30	Stade Jacques Chaban-Delmas	Bordeaux	Lorient	1 - 1	1	1	0	1	0	2	1673	1603	70	2.0
+2013-03-30	Stade du Hainaut	Valenciennes	Bastia	3 - 4	3	4	0	0	1	3	1577	1534	43	11.2
+2013-03-30	Stade de la Route-de-Lorient	Rennes	Nancy	0 - 2	0	2	0	0	1	3	1632	1542	90	12.5
+2013-03-30	Stade Francois-Coty	Ajaccio	Toulouse	2 - 3	2	3	0	0	1	3	1572	1608	36	9.0
+2013-03-30	Parc des Sports, Annecy	Evian	Reims	2 - 2	2	2	0	1	0	2	1571	1526	45	1.3
+2013-03-31	Stade du Ray	Nice	Marseille	0 - 1	0	1	0	0	1	3	1643	1640	3	10.1
+2013-03-31	Stade Francis-le Blé	Brest	Lille	1 - 2	1	2	0	0	1	3	1540	1713	173	5.4
+2013-03-31	Stade de Gerland	Lyon	Sochaux	1 - 2	1	2	0	0	1	3	1709	1536	173	14.6
+2013-04-05	Stade Vélodrome	Marseille	Bordeaux	1 - 0	1	0	1	0	0	1	1650	1669	19	10.5
+2013-04-06	Stade de la Route-de-Lorient	Rennes	PSG	0 - 2	0	2	0	0	1	3	1614	1809	195	4.9
+2013-04-06	Stade Armand-Cesari-Furiani	Bastia	Brest	4 - 0	4	0	1	0	0	1	1545	1534	11	9.7
+2013-04-06	Stade Bonal	Sochaux	Ajaccio	0 - 0	0	0	0	1	0	2	1550	1562	12	0.3
+2013-04-06	Stade Marcel Picot	Nancy	Troyes	1 - 0	1	0	1	0	0	1	1559	1505	54	8.5
+2013-04-06	Stade de la Mosson	Montpellier	Valenciennes	3 - 1	3	1	1	0	0	1	1673	1566	107	7.0
+2013-04-06	Stadium Municipal	Toulouse	Nice	3 - 4	3	4	0	0	1	3	1617	1633	16	9.5
+2013-04-07	Stade Geoffroy-Guichard	St Etienne	Evian	1 - 0	1	0	1	0	0	1	1686	1568	118	6.7
+2013-04-07	Stade Auguste Delaune II	Reims	Lyon	1 - 0	1	0	1	0	0	1	1529	1695	166	14.4
+2013-04-07	Grand Stade Lille Métropole	Lille	Lorient	5 - 0	5	0	1	0	0	1	1719	1607	112	6.9
+2013-04-12	Stade du Hainaut	Valenciennes	St Etienne	0 - 0	0	0	0	1	0	2	1560	1689	129	3.6
+2013-04-13	Stade de l'Aube	Troyes	PSG	0 - 1	0	1	0	0	1	3	1500	1815	315	2.8
+2013-04-13	Stade du Moustoir	Lorient	Bastia	4 - 1	4	1	1	0	0	1	1598	1557	41	8.8
+2013-04-13	Parc des Sports, Annecy	Evian	Rennes	4 - 2	4	2	1	0	0	1	1564	1607	43	11.2
+2013-04-13	Stade Francis-le Blé	Brest	Reims	0 - 2	0	2	0	0	1	3	1522	1539	17	9.5
+2013-04-13	Stade Francois-Coty	Ajaccio	Nancy	1 - 1	1	1	0	1	0	2	1564	1564	0	0.0
+2013-04-13	Stade Jacques Chaban-Delmas	Bordeaux	Montpellier	4 - 2	4	2	1	0	0	1	1662	1678	16	10.5
+2013-04-14	Stade du Ray	Nice	Sochaux	3 - 0	3	0	1	0	0	1	1642	1548	94	7.4
+2013-04-14	Stade de Gerland	Lyon	Toulouse	3 - 1	3	1	1	0	0	1	1685	1607	78	7.8
+2013-04-14	Grand Stade Lille Métropole	Lille	Marseille	0 - 0	0	0	0	1	0	2	1727	1656	71	2.0
+2013-04-19	Stade de la Mosson	Montpellier	Lyon	1 - 2	1	2	0	0	1	3	1668	1691	23	9.3
+2013-04-20	Stade Vélodrome	Marseille	Brest	1 - 0	1	0	1	0	0	1	1660	1508	152	5.9
+2013-04-21	Stade Armand-Cesari-Furiani	Bastia	Lille	1 - 2	1	2	0	0	1	3	1548	1723	175	5.3
+2013-04-21	Stade Marcel Picot	Nancy	Evian	3 - 1	3	1	1	0	0	1	1566	1574	8	10.2
+2013-04-21	Stade Auguste Delaune II	Reims	Valenciennes	0 - 1	0	1	0	0	1	3	1553	1562	9	9.7
+2013-04-21	Stade Bonal	Sochaux	Bordeaux	2 - 2	2	2	0	1	0	2	1541	1671	130	3.6
+2013-04-21	Stadium Municipal	Toulouse	Lorient	0 - 1	0	1	0	0	1	3	1601	1607	6	9.8
+2013-04-21	Parc des Princes	PSG	Nice	3 - 0	3	0	1	0	0	1	1818	1649	169	5.5
+2013-04-24	Stade Geoffroy-Guichard	St Etienne	Ajaccio	4 - 2	4	2	1	0	0	1	1688	1562	126	6.5
+2013-04-24	Stade de la Route-de-Lorient	Rennes	Troyes	1 - 2	1	2	0	0	1	3	1597	1497	100	12.8
+2013-04-26	Grand Stade Lille Métropole	Lille	Sochaux	3 - 3	3	3	0	1	0	2	1728	1542	186	4.9
+2013-04-27	Stade du Moustoir	Lorient	Marseille	0 - 1	0	1	0	0	1	3	1617	1663	46	8.7
+2013-04-27	Stade Jacques Chaban-Delmas	Bordeaux	Reims	0 - 0	0	0	0	1	0	2	1670	1543	127	3.5
+2013-04-27	Stade du Hainaut	Valenciennes	Nancy	0 - 0	0	0	0	1	0	2	1571	1575	4	0.1
+2013-04-27	Stade Francis-le Blé	Brest	Rennes	0 - 2	0	2	0	0	1	3	1505	1584	79	7.8
+2013-04-27	Stade Francois-Coty	Ajaccio	Montpellier	2 - 1	2	1	1	0	0	1	1557	1659	102	12.9
+2013-04-27	Stade Armand-Cesari-Furiani	Bastia	Toulouse	0 - 0	0	0	0	1	0	2	1543	1591	48	1.4
+2013-04-28	Stade de Gerland	Lyon	St Etienne	1 - 1	1	1	0	1	0	2	1700	1693	7	0.2
+2013-04-28	Stade du Ray	Nice	Troyes	3 - 1	3	1	1	0	0	1	1644	1509	135	6.3
+2013-04-28	Parc des Sports, Annecy	Evian	PSG	0 - 1	0	1	0	0	1	3	1565	1823	258	3.7
+2013-05-03	Stade Geoffroy-Guichard	St Etienne	Bordeaux	0 - 0	0	0	0	1	0	2	1695	1664	31	0.9
+2013-05-04	Stade Vélodrome	Marseille	Bastia	2 - 1	2	1	1	0	0	1	1672	1542	130	6.4
+2013-05-04	Stade de l'Aube	Troyes	Evian	1 - 0	1	0	1	0	0	1	1504	1561	57	11.6
+2013-05-04	Stade Auguste Delaune II	Reims	Ajaccio	1 - 1	1	1	0	1	0	2	1548	1565	17	0.5
+2013-05-04	Stade Bonal	Sochaux	Lorient	1 - 0	1	0	1	0	0	1	1549	1608	59	11.7
+2013-05-04	Stade de la Mosson	Montpellier	Brest	2 - 1	2	1	1	0	0	1	1650	1494	156	5.8
+2013-05-04	Stadium Municipal	Toulouse	Lille	4 - 2	4	2	1	0	0	1	1592	1722	130	13.6
+2013-05-05	Stade de la Route-de-Lorient	Rennes	Nice	0 - 3	0	3	0	0	1	3	1595	1649	54	8.5
+2013-05-05	Stade Marcel Picot	Nancy	Lyon	0 - 3	0	3	0	0	1	3	1577	1698	121	6.7
+2013-05-05	Parc des Princes	PSG	Valenciennes	1 - 1	1	1	0	1	0	2	1826	1569	257	6.3
+2013-05-10	Grand Stade Lille Métropole	Lille	Reims	3 - 0	3	0	1	0	0	1	1708	1547	161	5.7
+2013-05-11	Stade Vélodrome	Marseille	Toulouse	2 - 1	2	1	1	0	0	1	1676	1605	71	8.0
+2013-05-11	Stade Jacques Chaban-Delmas	Bordeaux	Nancy	3 - 2	3	2	1	0	0	1	1667	1565	102	7.1
+2013-05-11	Stade Armand-Cesari-Furiani	Bastia	Montpellier	3 - 1	3	1	1	0	0	1	1538	1653	115	13.2
+2013-05-11	Stade Francois-Coty	Ajaccio	Troyes	0 - 1	0	1	0	0	1	3	1567	1512	55	11.6
+2013-05-11	Stade du Hainaut	Valenciennes	Rennes	4 - 1	4	1	1	0	0	1	1577	1581	4	10.1
+2013-05-11	Stade Francis-le Blé	Brest	Sochaux	0 - 2	0	2	0	0	1	3	1491	1556	65	8.2
+2013-05-12	Stade du Moustoir	Lorient	St Etienne	3 - 1	3	1	1	0	0	1	1601	1692	91	12.6
+2013-05-12	Parc des Sports, Annecy	Evian	Nice	4 - 0	4	0	1	0	0	1	1553	1664	111	13.1
+2013-05-12	Stade de Gerland	Lyon	PSG	0 - 1	0	1	0	0	1	3	1710	1819	109	7.0
+2013-05-18	Stade Bonal	Sochaux	Toulouse	1 - 2	1	2	0	0	1	3	1568	1600	32	9.1
+2013-05-18	Stade Geoffroy-Guichard	St Etienne	Marseille	2 - 0	2	0	1	0	0	1	1680	1681	1	10.0
+2013-05-18	Stade de la Mosson	Montpellier	Lille	0 - 0	0	0	0	1	0	2	1640	1713	73	2.1
+2013-05-18	Parc des Sports, Annecy	Evian	Valenciennes	2 - 0	2	0	1	0	0	1	1572	1588	16	10.5
+2013-05-18	Stade Marcel Picot	Nancy	Bastia	1 - 2	1	2	0	0	1	3	1561	1551	10	10.3
+2013-05-18	Stade Auguste Delaune II	Reims	Lorient	1 - 0	1	0	1	0	0	1	1541	1613	72	12.0
+2013-05-18	Stade de la Route-de-Lorient	Rennes	Ajaccio	1 - 1	1	1	0	1	0	2	1569	1556	13	0.4
+2013-05-18	Stade de l'Aube	Troyes	Bordeaux	1 - 0	1	0	1	0	0	1	1523	1672	149	14.0
+2013-05-18	Parc des Princes	PSG	Brest	3 - 1	3	1	1	0	0	1	1826	1479	347	2.4
+2013-05-19	Stade du Ray	Nice	Lyon	1 - 1	1	1	0	1	0	2	1645	1703	58	1.7
+2013-05-26	Stade Armand-Cesari-Furiani	Bastia	Sochaux	0 - 0	0	0	0	1	0	2	1561	1559	2	0.1
+2013-05-26	Stadium Municipal	Toulouse	Montpellier	2 - 0	2	0	1	0	0	1	1609	1640	31	10.9
+2013-05-26	Grand Stade Lille Métropole	Lille	St Etienne	1 - 1	1	1	0	1	0	2	1713	1689	24	0.7
+2013-05-26	Stade Jacques Chaban-Delmas	Bordeaux	Evian	2 - 1	2	1	1	0	0	1	1661	1581	80	7.7
+2013-05-26	Stade du Moustoir	Lorient	PSG	1 - 3	1	3	0	0	1	3	1605	1827	222	4.4
+2013-05-26	Stade Francois-Coty	Ajaccio	Nice	0 - 2	0	2	0	0	1	3	1558	1645	87	7.5
+2013-05-26	Stade de Gerland	Lyon	Rennes	2 - 0	2	0	1	0	0	1	1703	1567	136	6.3
+2013-05-26	Stade du Hainaut	Valenciennes	Troyes	2 - 1	2	1	1	0	0	1	1579	1533	46	8.7
+2013-05-26	Stade Francis-le Blé	Brest	Nancy	1 - 2	1	2	0	0	1	3	1478	1551	73	7.9
+2013-05-26	Stade Vélodrome	Marseille	Reims	0 - 0	0	0	0	1	0	2	1671	1549	122	3.4
+2013-08-09	Stade de la Mosson	Montpellier	PSG	1 - 1	1	1	0	1	0	2	1633	1836	203	5.3
+2013-08-10	Grand Stade Lille Métropole	Lille	Lorient	1 - 0	1	0	1	0	0	1	1713	1601	112	6.9
+2013-08-10	Stade du Hainaut	Valenciennes	Toulouse	3 - 0	3	0	1	0	0	1	1586	1622	36	11.0
+2013-08-10	Stade de la Route-de-Lorient	Rennes	Reims	2 - 1	2	1	1	0	0	1	1565	1557	8	9.8
+2013-08-10	Stade Jacques Chaban-Delmas	Bordeaux	Monaco	0 - 2	0	2	0	0	1	3	1669	1589	80	12.3
+2013-08-10	Parc des Sports, Annecy	Evian	Sochaux	1 - 1	1	1	0	1	0	2	1579	1563	16	0.5
+2013-08-10	Stade de Gerland	Lyon	Nice	4 - 0	4	0	1	0	0	1	1717	1658	59	8.3
+2013-08-10	La Beaujoire-Louis-Fonteneau	Nantes	Bastia	0 - 0	0	0	0	1	0	2	1533	1562	29	0.8
+2013-08-11	Stade Francois-Coty	Ajaccio	St Etienne	0 - 1	0	1	0	0	1	3	1550	1695	145	6.1
+2013-08-11	Stade Municipal de Roudourou	Guingamp	Marseille	1 - 3	1	3	0	0	1	3	1543	1669	126	6.5
+2013-08-16	Stade Bonal	Sochaux	Lyon	1 - 3	1	3	0	0	1	3	1566	1727	161	5.7
+2013-08-17	Stade Vélodrome	Marseille	Evian	2 - 0	2	0	1	0	0	1	1678	1577	101	7.2
+2013-08-17	Stadium Municipal	Toulouse	Bordeaux	1 - 1	1	1	0	1	0	2	1610	1652	42	1.2
+2013-08-17	Stade Auguste Delaune II	Reims	Lille	2 - 1	2	1	1	0	0	1	1551	1717	166	14.4
+2013-08-17	Stade du Ray	Nice	Rennes	2 - 1	2	1	1	0	0	1	1649	1571	78	7.8
+2013-08-17	Stade Armand-Cesari-Furiani	Bastia	Valenciennes	2 - 0	2	0	1	0	0	1	1552	1599	47	11.3
+2013-08-17	Stade Geoffroy-Guichard	St Etienne	Guingamp	1 - 0	1	0	1	0	0	1	1701	1534	167	5.5
+2013-08-18	Stade Louis II	Monaco	Montpellier	4 - 1	4	1	1	0	0	1	1605	1637	32	10.9
+2013-08-18	Stade du Moustoir	Lorient	Nantes	2 - 1	2	1	1	0	0	1	1597	1543	54	8.5
+2013-08-18	Parc des Princes	PSG	Ajaccio	1 - 1	1	1	0	1	0	2	1832	1544	288	6.8
+2013-08-23	Stade Louis II	Monaco	Toulouse	0 - 0	0	0	0	1	0	2	1613	1605	8	0.2
+2013-08-24	Stade du Hainaut	Valenciennes	Marseille	0 - 1	0	1	0	0	1	3	1577	1673	96	7.3
+2013-08-24	Stade de Gerland	Lyon	Reims	0 - 1	0	1	0	0	1	3	1713	1550	163	14.4
+2013-08-24	Stade Jacques Chaban-Delmas	Bordeaux	Bastia	1 - 0	1	0	1	0	0	1	1641	1551	90	7.5
+2013-08-24	Parc des Sports, Annecy	Evian	Rennes	1 - 2	1	2	0	0	1	3	1560	1555	5	10.1
+2013-08-24	Stade Municipal de Roudourou	Guingamp	Lorient	2 - 0	2	0	1	0	0	1	1519	1591	72	12.0
+2013-08-24	Stade de la Mosson	Montpellier	Sochaux	2 - 1	2	1	1	0	0	1	1613	1547	66	8.1
+2013-08-25	Grand Stade Lille Métropole	Lille	St Etienne	1 - 0	1	0	1	0	0	1	1695	1688	7	9.8
+2013-08-25	Stade Francois-Coty	Ajaccio	Nice	0 - 0	0	0	0	1	0	2	1540	1628	88	2.5
+2013-08-25	La Beaujoire-Louis-Fonteneau	Nantes	PSG	1 - 2	1	2	0	0	1	3	1527	1813	286	3.2
+2013-08-31	Parc des Sports	Evian	Lyon	2 - 1	2	1	1	0	0	1	1536	1681	145	13.9
+2013-08-31	Parc des Princes	PSG	Guingamp	2 - 0	2	0	1	0	0	1	1803	1516	287	3.2
+2013-08-31	Stade Auguste Delaune II	Reims	Nantes	0 - 0	0	0	0	1	0	2	1550	1510	40	1.1
+2013-08-31	Stade Bonal	Sochaux	Ajaccio	0 - 0	0	0	0	1	0	2	1528	1526	2	0.1
+2013-08-31	Stade de la Route-de-Lorient	Rennes	Lille	0 - 0	0	0	0	1	0	2	1551	1687	136	3.7
+2013-08-31	Stade Armand-Cesari-Furiani	Bastia	Toulouse	2 - 1	2	1	1	0	0	1	1533	1586	53	11.5
+2013-08-31	Stade du Moustoir	Lorient	Valenciennes	1 - 0	1	0	1	0	0	1	1566	1556	10	9.7
+2013-09-01	Stade Geoffroy-Guichard	St Etienne	Bordeaux	2 - 1	2	1	1	0	0	1	1641	1632	9	9.7
+2013-09-01	Stade Municipal du Ray	Nice	Montpellier	2 - 2	2	2	0	1	0	2	1607	1604	3	0.1
+2013-09-01	Stade Vélodrome	Marseille	Monaco	1 - 2	1	2	0	0	1	3	1666	1590	76	12.2
+2013-09-13	Stade Jacques Chaban-Delmas	Bordeaux	PSG	0 - 2	0	2	0	0	1	3	1625	1805	180	5.2
+2013-09-14	Stadium Municipal	Toulouse	Marseille	1 - 1	1	1	0	1	0	2	1578	1655	77	2.2
+2013-09-14	Stade du Hainaut	Valenciennes	St Etienne	1 - 3	1	3	0	0	1	3	1550	1647	97	7.3
+2013-09-14	Stade Municipal de Roudourou	Guingamp	Bastia	1 - 1	1	1	0	1	0	2	1514	1540	26	0.7
+2013-09-14	La Beaujoire-Louis-Fonteneau	Nantes	Sochaux	1 - 0	1	0	1	0	0	1	1513	1526	13	10.4
+2013-09-14	Stade de la Mosson	Montpellier	Reims	0 - 0	0	0	0	1	0	2	1606	1547	59	1.7
+2013-09-14	Stade François-Coty	Ajaccio	Evian	2 - 3	2	3	0	0	1	3	1529	1546	17	9.5
+2013-09-15	Stade Louis II	Monaco	Lorient	1 - 0	1	0	1	0	0	1	1601	1572	29	9.2
+2013-09-15	Stade Pierre-Mauroy	Lille	Nice	0 - 2	0	2	0	0	1	3	1685	1604	81	12.3
+2013-09-15	Stade de Gerland	Lyon	Rennes	0 - 0	0	0	0	1	0	2	1671	1553	118	3.3
+2013-09-20	Stade Geoffroy-Guichard	St Etienne	Toulouse	1 - 2	1	2	0	0	1	3	1660	1581	79	12.2
+2013-09-21	Stade Armand-Cesari-Furiani	Bastia	Marseille	0 - 0	0	0	0	1	0	2	1543	1651	108	3.0
+2013-09-21	Parc des Sports	Evian	Montpellier	2 - 2	2	2	0	1	0	2	1556	1604	48	1.4
+2013-09-21	Stade Auguste-Delaune	Reims	Guingamp	1 - 1	1	1	0	1	0	2	1552	1514	38	1.1
+2013-09-21	Stade de la Route-de-Lorient	Rennes	Ajaccio	2 - 0	2	0	1	0	0	1	1559	1520	39	8.9
+2013-09-21	Stade Bonal	Sochaux	Lille	0 - 2	0	2	0	0	1	3	1520	1670	150	5.9
+2013-09-22	Stade du Moustoir	Lorient	Bordeaux	3 - 3	3	3	0	1	0	2	1567	1611	44	1.3
+2013-09-22	Stade de Gerland	Lyon	Nantes	3 - 1	3	1	1	0	0	1	1671	1520	151	5.9
+2013-09-22	Allianz Riviera	Nice	Valenciennes	4 - 0	4	0	1	0	0	1	1622	1540	82	7.7
+2013-09-22	Parc des Princes	PSG	Monaco	1 - 1	1	1	0	1	0	2	1826	1608	218	5.6
+2013-09-24	Stade Pierre-Mauroy	Lille	Evian	3 - 0	3	0	1	0	0	1	1678	1556	122	6.6
+2013-09-24	Stade Vélodrome	Marseille	St Etienne	2 - 1	2	1	1	0	0	1	1650	1647	3	9.9
+2013-09-25	Stade François-Coty	Ajaccio	Lyon	2 - 1	2	1	1	0	0	1	1513	1676	163	14.4
+2013-09-25	Stade Jacques Chaban-Delmas	Bordeaux	Reims	0 - 0	0	0	0	1	0	2	1611	1548	63	1.8
+2013-09-25	Stadium Municipal	Toulouse	Lorient	1 - 0	1	0	1	0	0	1	1591	1566	25	9.3
+2013-09-25	Stade Municipal de Roudourou	Guingamp	Sochaux	5 - 1	5	1	1	0	0	1	1517	1512	5	9.9
+2013-09-25	La Beaujoire-Louis-Fonteneau	Nantes	Nice	2 - 0	2	0	1	0	0	1	1516	1631	115	13.2
+2013-09-25	Stade du Hainaut	Valenciennes	PSG	0 - 1	0	1	0	0	1	3	1531	1819	288	3.2
+2013-09-25	Stade Louis II	Monaco	Bastia	3 - 0	3	0	1	0	0	1	1615	1544	71	8.0
+2013-09-26	Stade de la Mosson	Montpellier	Rennes	0 - 0	0	0	0	1	0	2	1604	1567	37	1.1
+2013-09-28	Stade du Moustoir	Lorient	Marseille	0 - 2	0	2	0	0	1	3	1561	1656	95	7.3
+2013-09-28	Parc des Princes	PSG	Toulouse	2 - 0	2	0	1	0	0	1	1822	1597	225	4.3
+2013-09-28	Stade Geoffroy-Guichard	St Etienne	Bastia	2 - 2	2	2	0	1	0	2	1640	1536	104	2.9
+2013-09-28	Parc des Sports	Evian	Bordeaux	1 - 1	1	1	0	1	0	2	1549	1608	59	1.7
+2013-09-28	Stade de Gerland	Lyon	Lille	0 - 0	0	0	0	1	0	2	1666	1685	19	0.5
+2013-09-28	Allianz Riviera	Nice	Guingamp	1 - 0	1	0	1	0	0	1	1618	1529	89	7.5
+2013-09-28	Stade Bonal	Sochaux	Valenciennes	2 - 0	2	0	1	0	0	1	1500	1528	28	10.8
+2013-09-29	Stade de la Route-de-Lorient	Rennes	Nantes	1 - 3	1	3	0	0	1	3	1570	1529	41	11.2
+2013-09-29	Stade François-Coty	Ajaccio	Montpellier	1 - 1	1	1	0	1	0	2	1523	1601	78	2.2
+2013-09-29	Stade Auguste-Delaune	Reims	Monaco	1 - 1	1	1	0	1	0	2	1552	1623	71	2.0
+2013-10-04	Stade Armand-Cesari-Furiani	Bastia	Lorient	4 - 1	4	1	1	0	0	1	1544	1553	9	10.3
+2013-10-05	Stade Louis II	Monaco	St Etienne	2 - 1	2	1	1	0	0	1	1620	1632	12	10.3
+2013-10-05	La Beaujoire-Louis-Fonteneau	Nantes	Evian	3 - 0	3	0	1	0	0	1	1542	1546	4	10.1
+2013-10-05	Stade du Hainaut	Valenciennes	Reims	1 - 1	1	1	0	1	0	2	1515	1549	34	1.0
+2013-10-05	Stadium Municipal	Toulouse	Nice	1 - 0	1	0	1	0	0	1	1591	1619	28	10.8
+2013-10-05	Stade Municipal de Roudourou	Guingamp	Rennes	2 - 0	2	0	1	0	0	1	1522	1551	29	10.8
+2013-10-05	Stade Pierre-Mauroy	Lille	Ajaccio	3 - 0	3	0	1	0	0	1	1683	1520	163	5.6
+2013-10-06	Stade de la Mosson	Montpellier	Lyon	5 - 1	5	1	1	0	0	1	1598	1655	57	11.6
+2013-10-06	Stade Jacques Chaban-Delmas	Bordeaux	Sochaux	4 - 1	4	1	1	0	0	1	1594	1506	88	7.5
+2013-10-06	Stade Vélodrome	Marseille	PSG	1 - 2	1	2	0	0	1	3	1661	1833	172	5.4
+2013-10-18	Allianz Riviera	Nice	Marseille	1 - 0	1	0	1	0	0	1	1612	1655	43	11.2
+2013-10-18	Stade Auguste-Delaune	Reims	Toulouse	1 - 2	1	2	0	0	1	3	1550	1598	48	8.6
+2013-10-19	Parc des Princes	PSG	Bastia	4 - 0	4	0	1	0	0	1	1839	1549	290	3.2
+2013-10-19	Stade de la Route-de-Lorient	Rennes	Valenciennes	2 - 2	2	2	0	1	0	2	1541	1514	27	0.8
+2013-10-19	Stade François-Coty	Ajaccio	Nantes	0 - 1	0	1	0	0	1	3	1515	1553	38	8.9
+2013-10-19	Stade de la Mosson	Montpellier	Lille	0 - 1	0	1	0	0	1	3	1613	1688	75	7.9
+2013-10-19	Parc des Sports	Evian	Guingamp	1 - 2	1	2	0	0	1	3	1535	1531	4	10.1
+2013-10-20	Stade Bonal	Sochaux	Monaco	2 - 2	2	2	0	1	0	2	1499	1626	127	3.5
+2013-10-20	Stade Geoffroy-Guichard	St Etienne	Lorient	3 - 2	3	2	1	0	0	1	1626	1536	90	7.5
+2013-10-20	Stade de Gerland	Lyon	Bordeaux	1 - 1	1	1	0	1	0	2	1641	1601	40	1.1
+2013-10-25	La Beaujoire-Louis-Fonteneau	Nantes	Lille	0 - 1	0	1	0	0	1	3	1563	1697	134	6.3
+2013-10-26	Stade Vélodrome	Marseille	Reims	2 - 3	2	3	0	0	1	3	1644	1544	100	12.8
+2013-10-26	Stade Armand-Cesari-Furiani	Bastia	Nice	1 - 0	1	0	1	0	0	1	1549	1623	74	12.1
+2013-10-26	Stade du Hainaut	Valenciennes	Evian	0 - 1	0	1	0	0	1	3	1520	1528	8	9.8
+2013-10-26	Stade du Moustoir	Lorient	Sochaux	2 - 1	2	1	1	0	0	1	1535	1503	32	9.1
+2013-10-26	Stadium Municipal	Toulouse	Rennes	0 - 5	0	5	0	0	1	3	1610	1541	69	12.0
+2013-10-26	Stade Municipal de Roudourou	Guingamp	Ajaccio	2 - 1	2	1	1	0	0	1	1545	1509	36	9.0
+2013-10-27	Stade Jacques Chaban-Delmas	Bordeaux	Montpellier	2 - 0	2	0	1	0	0	1	1613	1608	5	9.9
+2013-10-27	Stade Louis II	Monaco	Lyon	2 - 1	2	1	1	0	0	1	1628	1643	15	10.4
+2013-10-27	Stade Geoffroy-Guichard	St Etienne	PSG	2 - 2	2	2	0	1	0	2	1633	1854	221	5.6
+2013-11-01	Parc des Princes	PSG	Lorient	4 - 0	4	0	1	0	0	1	1850	1540	310	2.9
+2013-11-02	Stade de la Route-de-Lorient	Rennes	Marseille	1 - 1	1	1	0	1	0	2	1568	1631	63	1.8
+2013-11-02	Stade Auguste-Delaune	Reims	Bastia	4 - 2	4	2	1	0	0	1	1557	1557	0	10.0
+2013-11-02	Stade François-Coty	Ajaccio	Valenciennes	1 - 3	1	3	0	0	1	3	1503	1510	7	9.8
+2013-11-02	Stade de Gerland	Lyon	Guingamp	2 - 0	2	0	1	0	0	1	1636	1550	86	7.6
+2013-11-02	Stade Bonal	Sochaux	St Etienne	0 - 0	0	0	0	1	0	2	1498	1637	139	3.8
+2013-11-02	Parc des Sports	Evian	Toulouse	2 - 1	2	1	1	0	0	1	1538	1583	45	11.3
+2013-11-03	Allianz Riviera	Nice	Bordeaux	1 - 2	1	2	0	0	1	3	1615	1621	6	9.8
+2013-11-03	Stade de la Mosson	Montpellier	Nantes	1 - 1	1	1	0	1	0	2	1599	1558	41	1.2
+2013-11-03	Stade Pierre-Mauroy	Lille	Monaco	2 - 0	2	0	1	0	0	1	1706	1635	71	8.0
+2013-11-08	Stade Louis II	Monaco	Evian	1 - 1	1	1	0	1	0	2	1625	1541	84	2.4
+2013-11-09	Parc des Princes	PSG	Nice	3 - 1	3	1	1	0	0	1	1836	1595	241	4.0
+2013-11-09	Stade du Moustoir	Lorient	Reims	0 - 0	0	0	0	1	0	2	1529	1556	27	0.8
+2013-11-09	Stade du Hainaut	Valenciennes	Montpellier	1 - 1	1	1	0	1	0	2	1515	1586	71	2.0
+2013-11-09	Stadium Municipal	Toulouse	Ajaccio	1 - 1	1	1	0	1	0	2	1567	1480	87	2.5
+2013-11-09	Stade Municipal de Roudourou	Guingamp	Lille	0 - 0	0	0	0	1	0	2	1535	1703	168	4.5
+2013-11-09	Stade Armand-Cesari-Furiani	Bastia	Rennes	1 - 0	1	0	1	0	0	1	1539	1558	19	10.5
+2013-11-10	Stade Jacques Chaban-Delmas	Bordeaux	Nantes	0 - 3	0	3	0	0	1	3	1613	1553	60	11.7
+2013-11-10	Stade Vélodrome	Marseille	Sochaux	2 - 1	2	1	1	0	0	1	1619	1490	129	6.4
+2013-11-10	Stade Geoffroy-Guichard	St Etienne	Lyon	1 - 2	1	2	0	0	1	3	1626	1627	1	10.0
+2013-11-22	Stade François-Coty	Ajaccio	Marseille	1 - 3	1	3	0	0	1	3	1484	1622	138	6.2
+2013-11-23	Stade Auguste-Delaune	Reims	PSG	0 - 3	0	3	0	0	1	3	1558	1839	281	3.3
+2013-11-23	Stade de la Route-de-Lorient	Rennes	Bordeaux	1 - 1	1	1	0	1	0	2	1551	1592	41	1.2
+2013-11-23	Stade de Gerland	Lyon	Valenciennes	1 - 1	1	1	0	1	0	2	1638	1515	123	3.4
+2013-11-23	Parc des Sports	Evian	Lorient	0 - 4	0	4	0	0	1	3	1540	1527	13	10.4
+2013-11-23	Stade Bonal	Sochaux	Bastia	1 - 1	1	1	0	1	0	2	1487	1545	58	1.7
+2013-11-23	Stade de la Mosson	Montpellier	Guingamp	1 - 1	1	1	0	1	0	2	1587	1537	50	1.4
+2013-11-24	Stade Pierre-Mauroy	Lille	Toulouse	1 - 0	1	0	1	0	0	1	1701	1563	138	6.2
+2013-11-24	Allianz Riviera	Nice	St Etienne	0 - 1	0	1	0	0	1	3	1593	1616	23	9.3
+2013-11-24	La Beaujoire-Louis-Fonteneau	Nantes	Monaco	0 - 1	0	1	0	0	1	3	1573	1615	42	8.8
+2013-11-29	Stade Vélodrome	Marseille	Montpellier	2 - 0	2	0	1	0	0	1	1630	1584	46	8.7
+2013-11-30	Stade Geoffroy-Guichard	St Etienne	Reims	4 - 0	4	0	1	0	0	1	1626	1552	74	7.9
+2013-11-30	Stade Louis II	Monaco	Rennes	2 - 0	2	0	1	0	0	1	1624	1551	73	7.9
+2013-11-30	Stade du Moustoir	Lorient	Nice	3 - 0	3	0	1	0	0	1	1548	1584	36	11.0
+2013-11-30	Stade Municipal de Roudourou	Guingamp	Nantes	1 - 0	1	0	1	0	0	1	1541	1564	23	10.7
+2013-11-30	Stade du Hainaut	Valenciennes	Lille	0 - 1	0	1	0	0	1	3	1521	1705	184	5.1
+2013-11-30	Stadium Municipal	Toulouse	Sochaux	5 - 1	5	1	1	0	0	1	1560	1487	73	7.9
+2013-12-01	Stade Jacques Chaban-Delmas	Bordeaux	Ajaccio	4 - 0	4	0	1	0	0	1	1586	1475	111	6.9
+2013-12-01	Stade Armand-Cesari-Furiani	Bastia	Evian	2 - 0	2	0	1	0	0	1	1546	1520	26	9.3
+2013-12-01	Parc des Princes	PSG	Lyon	4 - 0	4	0	1	0	0	1	1849	1640	209	4.6
+2013-12-03	Stade Pierre Mauroy	Lille	Marseille	1 - 0	1	0	1	0	0	1	1710	1637	73	7.9
+2013-12-03	La Beaujoire-Louis-Fonteneau	Nantes	Valenciennes	2 - 1	2	1	1	0	0	1	1557	1515	42	8.8
+2013-12-03	Allianz Arena	Nice	Monaco	0 - 3	0	3	0	0	1	3	1572	1631	59	8.3
+2013-12-04	Stade de la Mosson	Montpellier	Lorient	0 - 2	0	2	0	0	1	3	1576	1560	16	10.5
+2013-12-04	Stade Municipal de Roudourou	Guingamp	Bordeaux	0 - 1	0	1	0	0	1	3	1548	1594	46	8.7
+2013-12-04	Stade Bonal	Sochaux	Reims	0 - 2	0	2	0	0	1	3	1478	1543	65	8.2
+2013-12-04	Stade Parsemain	Ajaccio	Bastia	1 - 1	1	1	0	1	0	2	1468	1554	86	2.4
+2013-12-04	Stade de la Route-de-Lorient	Rennes	St Etienne	3 - 1	3	1	1	0	0	1	1544	1635	91	12.6
+2013-12-04	Parc des Sports	Evian	PSG	2 - 0	2	0	1	0	0	1	1512	1854	342	17.5
+2013-12-05	Stade de Gerland	Lyon	Toulouse	1 - 1	1	1	0	1	0	2	1636	1569	67	1.9
+2013-12-06	Stade Vélodrome	Marseille	Nantes	0 - 1	0	1	0	0	1	3	1633	1563	70	12.0
+2013-12-07	Parc des Princes	PSG	Sochaux	5 - 0	5	0	1	0	0	1	1834	1466	368	2.1
+2013-12-07	Stade du Hainaut	Valenciennes	Guingamp	1 - 1	1	1	0	1	0	2	1510	1539	29	0.8
+2013-12-07	Stade du Moustoir	Lorient	Rennes	2 - 0	2	0	1	0	0	1	1575	1556	19	9.5
+2013-12-07	Stade Auguste-Delaune	Reims	Nice	1 - 0	1	0	1	0	0	1	1555	1557	2	10.1
+2013-12-08	Stade Jacques Chaban-Delmas	Bordeaux	Lille	1 - 0	1	0	1	0	0	1	1603	1715	112	13.1
+2013-12-08	Stade Armand-Cesari-Furiani	Bastia	Lyon	1 - 3	1	3	0	0	1	3	1554	1632	78	7.8
+2013-12-08	Stadium Municipal	Toulouse	Montpellier	1 - 1	1	1	0	1	0	2	1573	1561	12	0.3
+2013-12-08	Stade Louis II	Monaco	Ajaccio	1 - 0	1	0	1	0	0	1	1646	1468	178	5.3
+2013-12-13	Stade de la Mosson	Montpellier	St Etienne	0 - 1	0	1	0	0	1	3	1560	1619	59	8.3
+2013-12-14	Stade de la Route-de-Lorient	Rennes	PSG	1 - 3	1	3	0	0	1	3	1544	1825	281	3.3
+2013-12-14	La Beaujoire-Louis-Fonteneau	Nantes	Toulouse	1 - 2	1	2	0	0	1	3	1571	1566	5	10.1
+2013-12-14	Stade François-Coty	Ajaccio	Lorient	1 - 2	1	2	0	0	1	3	1461	1579	118	6.7
+2013-12-14	Parc des Sports	Evian	Reims	1 - 1	1	1	0	1	0	2	1528	1557	29	0.8
+2013-12-14	Allianz Riviera	Nice	Sochaux	1 - 0	1	0	1	0	0	1	1547	1460	87	7.5
+2013-12-14	Stade Municipal de Roudourou	Guingamp	Monaco	0 - 2	0	2	0	0	1	3	1537	1645	108	7.0
+2013-12-15	Stade Jacques Chaban-Delmas	Bordeaux	Valenciennes	2 - 1	2	1	1	0	0	1	1601	1505	96	7.3
+2013-12-15	Stade Pierre Mauroy	Lille	Bastia	2 - 1	2	1	1	0	0	1	1702	1538	164	5.6
+2013-12-15	Stade de Gerland	Lyon	Marseille	2 - 2	2	2	0	1	0	2	1646	1614	32	0.9
+2013-12-20	Stade Louis II	Monaco	Valenciennes	1 - 2	1	2	0	0	1	3	1655	1501	154	14.2
+2013-12-21	Stade Geoffroy-Guichard	St Etienne	Nantes	2 - 0	2	0	1	0	0	1	1628	1560	68	8.1
+2013-12-21	Stadium Municipal	Toulouse	Guingamp	0 - 0	0	0	0	1	0	2	1577	1526	51	1.5
+2013-12-21	Stade Auguste-Delaune	Reims	Ajaccio	4 - 1	4	1	1	0	0	1	1559	1454	105	7.1
+2013-12-21	Stade Armand-Cesari-Furiani	Bastia	Montpellier	0 - 0	0	0	0	1	0	2	1536	1552	16	0.5
+2013-12-21	Allianz Riviera	Nice	Evian	3 - 1	3	1	1	0	0	1	1551	1527	24	9.3
+2013-12-21	Stade Bonal	Sochaux	Rennes	2 - 1	2	1	1	0	0	1	1456	1540	84	12.4
+2013-12-22	Stade Vélodrome	Marseille	Bordeaux	2 - 2	2	2	0	1	0	2	1617	1605	12	0.3
+2013-12-22	Stade du Moustoir	Lorient	Lyon	2 - 2	2	2	0	1	0	2	1586	1643	57	1.6
+2013-12-22	Parc des Princes	PSG	Lille	2 - 2	2	2	0	1	0	2	1830	1705	125	3.5
+2014-01-08	Stade Geoffroy-Guichard	St Etienne	Evian	1 - 0	1	0	1	0	0	1	1635	1519	116	6.8
+2014-01-10	Stade de la Mosson	Montpellier	Monaco	1 - 1	1	1	0	1	0	2	1553	1641	88	2.5
+2014-01-11	Stade François-Coty	Ajaccio	PSG	1 - 2	1	2	0	0	1	3	1448	1824	376	2.1
+2014-01-11	Stade de Gerland	Lyon	Sochaux	2 - 0	2	0	1	0	0	1	1644	1464	180	5.2
+2014-01-11	Stade Municipal de Roudourou	Guingamp	St Etienne	0 - 0	0	0	0	1	0	2	1530	1638	108	3.0
+2014-01-11	Stade Jacques Chaban-Delmas	Bordeaux	Toulouse	0 - 1	0	1	0	0	1	3	1608	1573	35	11.0
+2014-01-11	Stade de la Route-de-Lorient	Rennes	Nice	0 - 0	0	0	0	1	0	2	1531	1559	28	0.8
+2014-01-11	Stade du Hainaut	Valenciennes	Bastia	3 - 2	3	2	1	0	0	1	1515	1534	19	10.5
+2014-01-12	La Beaujoire-Louis-Fonteneau	Nantes	Lorient	1 - 0	1	0	1	0	0	1	1554	1586	32	10.9
+2014-01-12	Parc des Sports	Evian	Marseille	1 - 2	1	2	0	0	1	3	1516	1614	98	7.3
+2014-01-12	Stade Pierre Mauroy	Lille	Reims	1 - 2	1	2	0	0	1	3	1710	1566	144	13.9
+2014-01-17	Stade Geoffroy-Guichard	St Etienne	Lille	2 - 0	2	0	1	0	0	1	1637	1696	59	11.7
+2014-01-18	Stade de la Route-de-Lorient	Rennes	Evian	0 - 0	0	0	0	1	0	2	1530	1508	22	0.6
+2014-01-18	Stade Bonal	Sochaux	Montpellier	0 - 2	0	2	0	0	1	3	1460	1554	94	7.4
+2014-01-18	Stade du Moustoir	Lorient	Guingamp	2 - 0	2	0	1	0	0	1	1579	1531	48	8.6
+2014-01-18	Allianz Riviera	Nice	Ajaccio	2 - 0	2	0	1	0	0	1	1560	1446	114	6.8
+2014-01-18	Stade Armand-Cesari-Furiani	Bastia	Bordeaux	1 - 0	1	0	1	0	0	1	1527	1597	70	12.0
+2014-01-19	Stade Auguste-Delaune	Reims	Lyon	0 - 2	0	2	0	0	1	3	1579	1648	69	8.0
+2014-01-19	Stadium Municipal	Toulouse	Monaco	0 - 2	0	2	0	0	1	3	1584	1641	57	8.4
+2014-01-19	Parc des Princes	PSG	Nantes	5 - 0	5	0	1	0	0	1	1826	1560	266	3.6
+2014-01-24	Stade Pierre Mauroy	Lille	Rennes	1 - 1	1	1	0	1	0	2	1686	1527	159	4.3
+2014-01-25	Stade Municipal de Roudourou	Guingamp	PSG	1 - 1	1	1	0	1	0	2	1524	1830	306	7.1
+2014-01-25	Stade François-Coty	Ajaccio	Sochaux	1 - 1	1	1	0	1	0	2	1440	1450	10	0.3
+2014-01-25	Stade du Hainaut	Valenciennes	Lorient	1 - 1	1	1	0	1	0	2	1521	1586	65	1.8
+2014-01-25	La Beaujoire-Louis-Fonteneau	Nantes	Reims	0 - 0	0	0	0	1	0	2	1557	1568	11	0.3
+2014-01-25	Stade de la Mosson	Montpellier	Nice	3 - 1	3	1	1	0	0	1	1564	1565	1	10.0
+2014-01-26	Stade de Gerland	Lyon	Evian	3 - 0	3	0	1	0	0	1	1659	1511	148	6.0
+2014-01-26	Stade Jacques Chaban-Delmas	Bordeaux	St Etienne	2 - 0	2	0	1	0	0	1	1589	1648	59	11.7
+2014-01-26	Stade Louis II	Monaco	Marseille	2 - 0	2	0	1	0	0	1	1653	1622	31	9.1
+2014-01-29	Stade Vélodrome	Marseille	Valenciennes	2 - 1	2	1	1	0	0	1	1614	1521	93	7.4
+2014-01-31	Parc des Princes	PSG	Bordeaux	2 - 0	2	0	1	0	0	1	1824	1600	224	4.3
+2014-02-01	Stade du Moustoir	Lorient	Monaco	2 - 2	2	2	0	1	0	2	1586	1661	75	2.1
+2014-02-01	Stade Auguste-Delaune	Reims	Montpellier	2 - 4	2	4	0	0	1	3	1569	1573	4	9.9
+2014-02-01	Parc des Sports	Evian	Ajaccio	1 - 1	1	1	0	1	0	2	1506	1438	68	1.9
+2014-02-01	Stade Geoffroy-Guichard	St Etienne	Valenciennes	3 - 0	3	0	1	0	0	1	1637	1517	120	6.7
+2014-02-01	Stade Armand-Cesari-Furiani	Bastia	Guingamp	3 - 2	3	2	1	0	0	1	1535	1529	6	9.8
+2014-02-01	Stade Bonal	Sochaux	Nantes	1 - 0	1	0	1	0	0	1	1452	1555	103	12.9
+2014-02-02	Allianz Riviera	Nice	Lille	1 - 0	1	0	1	0	0	1	1556	1680	124	13.4
+2014-02-02	Stade de la Route-de-Lorient	Rennes	Lyon	2 - 0	2	0	1	0	0	1	1533	1665	132	13.6
+2014-02-02	Stade Vélodrome	Marseille	Toulouse	2 - 2	2	2	0	1	0	2	1618	1572	46	1.3
+2014-02-07	Stadium Municipal	Toulouse	St Etienne	0 - 0	0	0	0	1	0	2	1576	1643	67	1.9
+2014-02-08	Stade Vélodrome	Marseille	Bastia	3 - 0	3	0	1	0	0	1	1615	1541	74	7.9
+2014-02-08	Stade de la Mosson	Montpellier	Evian	1 - 1	1	1	0	1	0	2	1587	1502	85	2.4
+2014-02-08	Stade Pierre Mauroy	Lille	Sochaux	2 - 0	2	0	1	0	0	1	1670	1460	210	4.6
+2014-02-08	Stade du Hainaut	Valenciennes	Nice	2 - 1	2	1	1	0	0	1	1511	1566	55	11.6
+2014-02-08	Stade Municipal de Roudourou	Guingamp	Reims	1 - 2	1	2	0	0	1	3	1524	1555	31	9.1
+2014-02-08	Stade François-Coty	Ajaccio	Rennes	3 - 1	3	1	1	0	0	1	1442	1546	104	12.9
+2014-02-09	La Beaujoire-Louis-Fonteneau	Nantes	Lyon	1 - 2	1	2	0	0	1	3	1546	1651	105	7.1
+2014-02-09	Stade Louis II	Monaco	PSG	1 - 1	1	1	0	1	0	2	1661	1827	166	4.4
+2014-02-11	Stadium Municipal	Toulouse	Bastia	1 - 3	1	3	0	0	1	3	1575	1534	41	11.2
+2014-02-14	Parc des Princes	PSG	Valenciennes	3 - 0	3	0	1	0	0	1	1825	1518	307	2.9
+2014-02-15	Stade Armand-Cesari-Furiani	Bastia	Monaco	0 - 2	0	2	0	0	1	3	1550	1663	113	6.9
+2014-02-15	Stade du Moustoir	Lorient	Toulouse	1 - 3	1	3	0	0	1	3	1586	1559	27	10.8
+2014-02-15	Stade Auguste-Delaune	Reims	Bordeaux	1 - 0	1	0	1	0	0	1	1565	1597	32	10.9
+2014-02-15	Stade Bonal	Sochaux	Guingamp	1 - 0	1	0	1	0	0	1	1457	1514	57	11.6
+2014-02-15	Allianz Riviera	Nice	Nantes	0 - 0	0	0	0	1	0	2	1558	1539	19	0.5
+2014-02-15	Stade de la Route-de-Lorient	Rennes	Montpellier	2 - 2	2	2	0	1	0	2	1534	1583	49	1.4
+2014-02-16	Stade de Gerland	Lyon	Ajaccio	3 - 1	3	1	1	0	0	1	1659	1455	204	4.7
+2014-02-16	Parc des Sports	Evian	Lille	2 - 2	2	2	0	1	0	2	1506	1673	167	4.5
+2014-02-16	Stade Geoffroy-Guichard	St Etienne	Marseille	1 - 1	1	1	0	1	0	2	1644	1622	22	0.6
+2014-02-21	Stade Louis II	Monaco	Reims	3 - 2	3	2	1	0	0	1	1681	1579	102	7.1
+2014-02-22	Stade Vélodrome	Marseille	Lorient	1 - 0	1	0	1	0	0	1	1632	1578	54	8.5
+2014-02-22	Stade Armand-Cesari-Furiani	Bastia	St Etienne	0 - 2	0	2	0	0	1	3	1547	1648	101	7.2
+2014-02-22	Stade de la Mosson	Montpellier	Ajaccio	2 - 0	2	0	1	0	0	1	1591	1459	132	6.4
+2014-02-22	Stade du Hainaut	Valenciennes	Sochaux	2 - 2	2	2	0	1	0	2	1523	1472	51	1.5
+2014-02-22	Stade Municipal de Roudourou	Guingamp	Nice	1 - 0	1	0	1	0	0	1	1514	1563	49	11.4
+2014-02-22	Stade Jacques Chaban-Delmas	Bordeaux	Evian	2 - 1	2	1	1	0	0	1	1597	1516	81	7.7
+2014-02-23	Stadium Municipal	Toulouse	PSG	2 - 4	2	4	0	0	1	3	1582	1854	272	3.5
+2014-02-23	La Beaujoire-Louis-Fonteneau	Nantes	Rennes	0 - 3	0	3	0	0	1	3	1549	1540	9	10.3
+2014-02-23	Stade Pierre Mauroy	Lille	Lyon	0 - 0	0	0	0	1	0	2	1678	1668	10	0.3
+2014-02-25	Stade Jacques Chaban-Delmas	Bordeaux	Lorient	3 - 2	3	2	1	0	0	1	1601	1573	28	9.2
+2014-02-28	Parc des Sports	Evian	Nantes	2 - 0	2	0	1	0	0	1	1511	1530	19	10.5
+2014-03-01	Stade Geoffroy-Guichard	St Etienne	Monaco	2 - 0	2	0	1	0	0	1	1661	1687	26	10.7
+2014-03-01	Allianz Riviera	Nice	Toulouse	0 - 2	0	2	0	0	1	3	1558	1579	21	9.4
+2014-03-01	Stade du Moustoir	Lorient	Bastia	1 - 1	1	1	0	1	0	2	1570	1539	31	0.9
+2014-03-01	Stade Auguste-Delaune	Reims	Valenciennes	3 - 1	3	1	1	0	0	1	1577	1522	55	8.4
+2014-03-01	Stade de la Route-de-Lorient	Rennes	Guingamp	0 - 2	0	2	0	0	1	3	1561	1524	37	11.1
+2014-03-01	Stade Bonal	Sochaux	Bordeaux	2 - 0	2	0	1	0	0	1	1478	1609	131	13.6
+2014-03-02	Stade François-Coty	Ajaccio	Lille	2 - 3	2	3	0	0	1	3	1456	1678	222	4.4
+2014-03-02	Stade de Gerland	Lyon	Montpellier	0 - 0	0	0	0	1	0	2	1680	1598	82	2.3
+2014-03-02	Parc des Princes	PSG	Marseille	2 - 0	2	0	1	0	0	1	1862	1640	222	4.4
+2014-03-07	Stade Vélodrome	Marseille	Nice	0 - 1	0	1	0	0	1	3	1637	1544	93	12.6
+2014-03-08	Stade Armand-Cesari-Furiani	Bastia	PSG	0 - 3	0	3	0	0	1	3	1542	1865	323	2.7
+2014-03-08	Stade Louis II	Monaco	Sochaux	2 - 1	2	1	1	0	0	1	1678	1491	187	5.1
+2014-03-08	Stadium Municipal	Toulouse	Reims	3 - 2	3	2	1	0	0	1	1593	1584	9	9.7
+2014-03-08	Stade Municipal de Roudourou	Guingamp	Evian	0 - 1	0	1	0	0	1	3	1540	1523	17	10.5
+2014-03-08	La Beaujoire-Louis-Fonteneau	Nantes	Ajaccio	2 - 2	2	2	0	1	0	2	1523	1452	71	2.0
+2014-03-08	Stade du Hainaut	Valenciennes	Rennes	2 - 1	2	1	1	0	0	1	1515	1545	30	10.9
+2014-03-09	Stade Pierre Mauroy	Lille	Montpellier	2 - 0	2	0	1	0	0	1	1683	1603	80	7.7
+2014-03-09	Stade du Moustoir	Lorient	St Etienne	1 - 0	1	0	1	0	0	1	1567	1671	104	12.9
+2014-03-09	Stade Jacques Chaban-Delmas	Bordeaux	Lyon	1 - 2	1	2	0	0	1	3	1596	1676	80	7.7
+2014-03-14	Stade Auguste-Delaune	Reims	Marseille	1 - 1	1	1	0	1	0	2	1578	1624	46	1.3
+2014-03-15	Stade Pierre Mauroy	Lille	Nantes	0 - 0	0	0	0	1	0	2	1695	1525	170	4.5
+2014-03-15	Allianz Riviera	Nice	Bastia	2 - 0	2	0	1	0	0	1	1563	1543	20	9.4
+2014-03-15	Stade François-Coty	Ajaccio	Guingamp	1 - 2	1	2	0	0	1	3	1462	1535	73	7.9
+2014-03-15	Stade Bonal	Sochaux	Lorient	2 - 0	2	0	1	0	0	1	1494	1581	87	12.5
+2014-03-15	Parc des Sports	Evian	Valenciennes	0 - 1	0	1	0	0	1	3	1540	1528	12	10.3
+2014-03-15	Stade de la Route-de-Lorient	Rennes	Toulouse	2 - 3	2	3	0	0	1	3	1544	1605	61	8.3
+2014-03-16	Stade de la Mosson	Montpellier	Bordeaux	1 - 1	1	1	0	1	0	2	1602	1594	8	0.2
+2014-03-16	Stade de Gerland	Lyon	Monaco	2 - 3	2	3	0	0	1	3	1705	1686	19	10.5
+2014-03-16	Parc des Princes	PSG	St Etienne	2 - 0	2	0	1	0	0	1	1875	1668	207	4.7
+2014-03-21	Stade du Moustoir	Lorient	PSG	0 - 1	0	1	0	0	1	3	1570	1878	308	2.9
+2014-03-22	Stade Vélodrome	Marseille	Rennes	0 - 1	0	1	0	0	1	3	1631	1535	96	12.7
+2014-03-22	Stadium Municipal	Toulouse	Evian	1 - 1	1	1	0	1	0	2	1613	1529	84	2.4
+2014-03-22	Stade du Hainaut	Valenciennes	Ajaccio	2 - 3	2	3	0	0	1	3	1538	1453	85	12.4
+2014-03-22	La Beaujoire-Louis-Fonteneau	Nantes	Montpellier	2 - 1	2	1	1	0	0	1	1531	1599	68	11.9
+2014-03-22	Stade Armand-Cesari-Furiani	Bastia	Reims	2 - 0	2	0	1	0	0	1	1535	1583	48	11.4
+2014-03-22	Stade Jacques Chaban-Delmas	Bordeaux	Nice	1 - 1	1	1	0	1	0	2	1596	1570	26	0.7
+2014-03-23	Stade Geoffroy-Guichard	St Etienne	Sochaux	3 - 1	3	1	1	0	0	1	1664	1506	158	5.7
+2014-03-23	Stade Municipal de Roudourou	Guingamp	Lyon	0 - 1	0	1	0	0	1	3	1543	1693	150	5.9
+2014-03-23	Stade Louis II	Monaco	Lille	1 - 1	1	1	0	1	0	2	1696	1688	8	0.2
+2014-03-28	Allianz Riviera	Nice	PSG	0 - 1	0	1	0	0	1	3	1573	1881	308	2.9
+2014-03-29	Stade Bonal	Sochaux	Marseille	1 - 1	1	1	0	1	0	2	1501	1618	117	3.2
+2014-03-29	Stade François-Coty	Ajaccio	Toulouse	2 - 2	2	2	0	1	0	2	1465	1609	144	3.9
+2014-03-29	Stade Auguste-Delaune	Reims	Lorient	1 - 1	1	1	0	1	0	2	1573	1567	6	0.2
+2014-03-29	Parc des Sports	Evian	Monaco	1 - 0	1	0	1	0	0	1	1533	1694	161	14.3
+2014-03-29	Stade de la Mosson	Montpellier	Valenciennes	0 - 0	0	0	0	1	0	2	1592	1526	66	1.9
+2014-03-29	La Beaujoire-Louis-Fonteneau	Nantes	Bordeaux	0 - 0	0	0	0	1	0	2	1539	1593	54	1.5
+2014-03-30	Stade de la Route-de-Lorient	Rennes	Bastia	3 - 0	3	0	1	0	0	1	1548	1545	3	9.9
+2014-03-30	Stade Pierre Mauroy	Lille	Guingamp	1 - 0	1	0	1	0	0	1	1691	1537	154	5.8
+2014-03-30	Stade de Gerland	Lyon	St Etienne	1 - 2	1	2	0	0	1	3	1700	1668	32	10.9
+2014-04-04	Stade Vélodrome	Marseille	Ajaccio	3 - 1	3	1	1	0	0	1	1622	1471	151	5.9
+2014-04-05	Parc des Princes	PSG	Reims	3 - 0	3	0	1	0	0	1	1898	1573	325	2.7
+2014-04-05	Stade Jacques Chaban-Delmas	Bordeaux	Rennes	2 - 2	2	2	0	1	0	2	1596	1561	35	1.0
+2014-04-05	Stade Municipal de Roudourou	Guingamp	Montpellier	1 - 2	1	2	0	0	1	3	1536	1590	54	8.5
+2014-04-05	Stade du Moustoir	Lorient	Evian	1 - 1	1	1	0	1	0	2	1572	1546	26	0.7
+2014-04-05	Stade Armand-Cesari-Furiani	Bastia	Sochaux	2 - 2	2	2	0	1	0	2	1537	1505	32	0.9
+2014-04-05	Stadium Municipal	Toulouse	Lille	1 - 2	1	2	0	0	1	3	1610	1697	87	7.5
+2014-04-06	Stade Geoffroy-Guichard	St Etienne	Nice	1 - 1	1	1	0	1	0	2	1682	1573	109	3.0
+2014-04-06	Stade du Hainaut	Valenciennes	Lyon	1 - 2	1	2	0	0	1	3	1533	1688	155	5.8
+2014-04-06	Stade Louis II	Monaco	Nantes	3 - 1	3	1	1	0	0	1	1687	1541	146	6.0
+2014-04-11	Stade de la Mosson	Montpellier	Marseille	2 - 3	2	3	0	0	1	3	1593	1618	25	9.3
+2014-04-12	Stade Pierre Mauroy	Lille	Valenciennes	1 - 0	1	0	1	0	0	1	1697	1519	178	5.3
+2014-04-12	Parc des Sports	Evian	Bastia	2 - 1	2	1	1	0	0	1	1542	1527	15	9.6
+2014-04-12	Allianz Riviera	Nice	Lorient	1 - 2	1	2	0	0	1	3	1570	1561	9	10.3
+2014-04-12	Stade Bonal	Sochaux	Toulouse	2 - 0	2	0	1	0	0	1	1501	1594	93	12.6
+2014-04-12	Stade François-Coty	Ajaccio	Bordeaux	1 - 1	1	1	0	1	0	2	1458	1586	128	3.5
+2014-04-12	Stade de la Route-de-Lorient	Rennes	Monaco	0 - 1	0	1	0	0	1	3	1557	1684	127	6.5
+2014-04-13	La Beaujoire-Louis-Fonteneau	Nantes	Guingamp	1 - 0	1	0	1	0	0	1	1529	1520	9	9.7
+2014-04-13	Stade Auguste-Delaune	Reims	St Etienne	2 - 2	2	2	0	1	0	2	1563	1670	107	3.0
+2014-04-13	Stade de Gerland	Lyon	PSG	1 - 0	1	0	1	0	0	1	1684	1874	190	15.0
+2014-04-18	Stade Geoffroy-Guichard	St Etienne	Rennes	0 - 0	0	0	0	1	0	2	1669	1550	119	3.3
+2014-04-20	Stade Louis II	Monaco	Nice	1 - 0	1	0	1	0	0	1	1690	1560	130	6.4
+2014-04-20	Stade Armand-Cesari-Furiani	Bastia	Ajaccio	2 - 1	2	1	1	0	0	1	1521	1459	62	8.2
+2014-04-20	Stade Jacques Chaban-Delmas	Bordeaux	Guingamp	5 - 1	5	1	1	0	0	1	1584	1514	70	8.0
+2014-04-20	Stade du Hainaut	Valenciennes	Nantes	2 - 6	2	6	0	0	1	3	1516	1535	19	9.5
+2014-04-20	Stade Auguste-Delaune	Reims	Sochaux	0 - 1	0	1	0	0	1	3	1564	1513	51	11.5
+2014-04-20	Stade du Moustoir	Lorient	Montpellier	4 - 4	4	4	0	1	0	2	1572	1582	10	0.3
+2014-04-20	Stade Vélodrome	Marseille	Lille	0 - 0	0	0	0	1	0	2	1626	1700	74	2.1
+2014-04-23	Parc des Princes	PSG	Evian	1 - 0	1	0	1	0	0	1	1863	1547	316	2.8
+2014-04-23	Stadium Municipal	Toulouse	Lyon	0 - 0	0	0	0	1	0	2	1582	1695	113	3.1
+2014-04-25	La Beaujoire-Louis-Fonteneau	Nantes	Marseille	1 - 1	1	1	0	1	0	2	1554	1626	72	2.0
+2014-04-26	Stade François-Coty	Ajaccio	Monaco	1 - 4	1	4	0	0	1	3	1455	1694	239	4.0
+2014-04-26	Stade Municipal de Roudourou	Guingamp	Valenciennes	1 - 0	1	0	1	0	0	1	1505	1497	8	9.8
+2014-04-26	Stade de la Route-de-Lorient	Rennes	Lorient	1 - 1	1	1	0	1	0	2	1555	1570	15	0.4
+2014-04-26	Parc des Sports	Evian	St Etienne	1 - 2	1	2	0	0	1	3	1546	1664	118	6.7
+2014-04-26	Stade de la Mosson	Montpellier	Toulouse	2 - 1	2	1	1	0	0	1	1584	1583	1	10.0
+2014-04-26	Allianz Riviera	Nice	Reims	1 - 0	1	0	1	0	0	1	1557	1553	4	9.9
+2014-04-27	Stade Bonal	Sochaux	PSG	1 - 1	1	1	0	1	0	2	1524	1865	341	7.5
+2014-04-27	Stade de Gerland	Lyon	Bastia	4 - 1	4	1	1	0	0	1	1694	1526	168	5.5
+2014-04-27	Stade Pierre-Mauroy	Lille	Bordeaux	2 - 1	2	1	1	0	0	1	1700	1593	107	7.0
+2014-05-02	Stade Armand-Cesari-Furiani	Bastia	Lille	1 - 1	1	1	0	1	0	2	1521	1704	183	4.8
+2014-05-04	Stade Geoffroy-Guichard	St Etienne	Montpellier	2 - 0	2	0	1	0	0	1	1671	1590	81	7.7
+2014-05-04	Stade du Hainaut	Valenciennes	Bordeaux	0 - 1	0	1	0	0	1	3	1491	1590	99	7.2
+2014-05-04	Stadium Municipal	Toulouse	Nantes	1 - 1	1	1	0	1	0	2	1577	1554	23	0.7
+2014-05-04	Stade Bonal	Sochaux	Nice	2 - 0	2	0	1	0	0	1	1531	1563	32	10.9
+2014-05-04	Stade du Moustoir	Lorient	Ajaccio	1 - 0	1	0	1	0	0	1	1572	1447	125	6.5
+2014-05-04	Stade Auguste-Delaune	Reims	Evian	1 - 0	1	0	1	0	0	1	1547	1539	8	9.8
+2014-05-04	Stade Vélodrome	Marseille	Lyon	4 - 2	4	2	1	0	0	1	1626	1699	73	12.1
+2014-05-07	Stade Louis II	Monaco	Guingamp	1 - 1	1	1	0	1	0	2	1701	1511	190	5.0
+2014-05-07	Parc des Princes	PSG	Rennes	1 - 2	1	2	0	0	1	3	1858	1553	305	17.1
+2014-05-10	Stade Pierre-Mauroy	Lille	PSG	1 - 3	1	3	0	0	1	3	1701	1843	142	6.1
+2014-05-10	Stade du Hainaut	Valenciennes	Monaco	1 - 2	1	2	0	0	1	3	1484	1694	210	4.6
+2014-05-10	Stade de la Mosson	Montpellier	Bastia	0 - 2	0	2	0	0	1	3	1584	1524	60	11.7
+2014-05-10	Stade Municipal de Roudourou	Guingamp	Toulouse	2 - 0	2	0	1	0	0	1	1517	1574	57	11.6
+2014-05-10	Parc des Sports	Evian	Nice	2 - 0	2	0	1	0	0	1	1533	1553	20	10.6
+2014-05-10	Stade Jacques-Chaban-Delmas	Bordeaux	Marseille	1 - 1	1	1	0	1	0	2	1597	1638	41	1.2
+2014-05-10	Stade de la Route-de-Lorient	Rennes	Sochaux	1 - 2	1	2	0	0	1	3	1569	1540	29	10.8
+2014-05-10	Stade François-Coty	Ajaccio	Reims	2 - 1	2	1	1	0	0	1	1444	1553	109	13.0
+2014-05-10	La Beaujoire-Louis-Fonteneau	Nantes	St Etienne	1 - 3	1	3	0	0	1	3	1557	1677	120	6.7
+2014-05-10	Stade de Gerland	Lyon	Lorient	0 - 1	0	1	0	0	1	3	1688	1575	113	13.1
+2014-05-17	Stade Auguste-Delaune	Reims	Rennes	1 - 3	1	3	0	0	1	3	1544	1558	14	9.6
+2014-05-17	Stadium Municipal	Toulouse	Valenciennes	3 - 1	3	1	1	0	0	1	1563	1479	84	7.6
+2014-05-17	Stade Armand-Cesari-Furiani	Bastia	Nantes	0 - 0	0	0	0	1	0	2	1540	1547	7	0.2
+2014-05-17	Stade Louis II	Monaco	Bordeaux	1 - 1	1	1	0	1	0	2	1699	1596	103	2.9
+2014-05-17	Allianz Riviera	Nice	Lyon	0 - 1	0	1	0	0	1	3	1543	1675	132	6.4
+2014-05-17	Parc des Princes	PSG	Montpellier	4 - 0	4	0	1	0	0	1	1851	1568	283	3.3
+2014-05-17	Stade Geoffroy-Guichard	St Etienne	Ajaccio	3 - 1	3	1	1	0	0	1	1687	1453	234	4.1
+2014-05-17	Stade Bonal	Sochaux	Evian	0 - 3	0	3	0	0	1	3	1551	1543	8	10.2
+2014-05-17	Stade du Moustoir	Lorient	Lille	1 - 4	1	4	0	0	1	3	1588	1692	104	7.1
+2014-05-17	Stade Vélodrome	Marseille	Guingamp	1 - 0	1	0	1	0	0	1	1639	1528	111	6.9
+2014-08-08	Stade Auguste-Delaune	Reims	PSG	2 - 2	2	2	0	1	0	2	1536	1860	324	7.3
+2014-08-09	Parc des Sports	Evian	Caen	0 - 3	0	3	0	0	1	3	1565	1520	45	11.3
+2014-08-09	Stade Armand-Cesari-Furiani	Bastia	Marseille	3 - 3	3	3	0	1	0	2	1543	1648	105	2.9
+2014-08-09	Stade Pierre-Mauroy	Lille	Metz	0 - 0	0	0	0	1	0	2	1716	1514	202	5.2
+2014-08-09	Stade de la Mosson	Montpellier	Bordeaux	0 - 1	0	1	0	0	1	3	1570	1606	36	9.0
+2014-08-09	La Beaujoire-Louis-Fonteneau	Nantes	Lens	1 - 0	1	0	1	0	0	1	1554	1487	67	8.1
+2014-08-09	Allianz Riviera	Nice	Toulouse	3 - 2	3	2	1	0	0	1	1542	1575	33	10.9
+2014-08-09	Stade Municipal de Roudourou	Guingamp	St Etienne	0 - 2	0	2	0	0	1	3	1529	1695	166	5.6
+2014-08-10	Stade de Gerland	Lyon	Rennes	2 - 0	2	0	1	0	0	1	1694	1577	117	6.8
+2014-08-10	Stade Louis II	Monaco	Lorient	1 - 2	1	2	0	0	1	3	1700	1580	120	13.3
+2014-08-15	MMArena	Caen	Lille	0 - 1	0	1	0	0	1	3	1539	1709	170	5.5
+2014-08-16	Parc des Princes	PSG	Bastia	2 - 0	2	0	1	0	0	1	1853	1544	309	2.9
+2014-08-16	Stade du Moustoir	Lorient	Nice	0 - 0	0	0	0	1	0	2	1593	1549	44	1.3
+2014-08-16	Stadium Municipal	Toulouse	Lyon	2 - 1	2	1	1	0	0	1	1568	1699	131	13.6
+2014-08-16	Stade de la Route-de-Lorient	Rennes	Evian	6 - 2	6	2	1	0	0	1	1571	1546	25	9.3
+2014-08-16	Stade Saint-Symphorien	Metz	Nantes	1 - 1	1	1	0	1	0	2	1520	1559	39	1.1
+2014-08-16	Stade de la Licorne	Lens	Guingamp	0 - 1	0	1	0	0	1	3	1482	1521	39	8.9
+2014-08-17	Stade Geoffroy-Guichard	St Etienne	Reims	3 - 1	3	1	1	0	0	1	1703	1542	161	5.7
+2014-08-17	Stade Vélodrome	Marseille	Montpellier	0 - 2	0	2	0	0	1	3	1647	1561	86	12.4
+2014-08-17	Stade Jacques-Chaban-Delmas	Bordeaux	Monaco	4 - 1	4	1	1	0	0	1	1615	1687	72	12.0
+2014-08-22	Parc des Sports	Evian	PSG	0 - 0	0	0	0	1	0	2	1532	1853	321	7.3
+2014-08-23	Stade Municipal de Roudourou	Guingamp	Marseille	0 - 1	0	1	0	0	1	3	1520	1620	100	7.2
+2014-08-23	Allianz Riviera	Nice	Bordeaux	1 - 3	1	3	0	0	1	3	1542	1619	77	7.8
+2014-08-23	Stade Auguste-Delaune	Reims	Caen	0 - 2	0	2	0	0	1	3	1527	1523	4	10.1
+2014-08-23	Stade Armand-Cesari-Furiani	Bastia	Toulouse	1 - 0	1	0	1	0	0	1	1532	1567	35	11.0
+2014-08-23	Stade Pierre-Mauroy	Lille	Lorient	2 - 0	2	0	1	0	0	1	1698	1580	118	6.7
+2014-08-23	Stade de la Mosson	Montpellier	Metz	2 - 0	2	0	1	0	0	1	1568	1510	58	8.3
+2014-08-24	Stade de Gerland	Lyon	Lens	0 - 1	0	1	0	0	1	3	1668	1463	205	15.3
+2014-08-24	Stade Geoffroy-Guichard	St Etienne	Rennes	0 - 0	0	0	0	1	0	2	1689	1573	116	3.2
+2014-08-24	La Beaujoire-Louis-Fonteneau	Nantes	Monaco	0 - 1	0	1	0	0	1	3	1550	1663	113	6.9
+2014-08-29	Stade Vélodrome	Marseille	Nice	4 - 0	4	0	1	0	0	1	1624	1528	96	7.3
+2014-08-30	Stade Louis II	Monaco	Lille	1 - 1	1	1	0	1	0	2	1667	1693	26	0.7
+2014-08-30	Stade de la Licorne	Lens	Reims	4 - 2	4	2	1	0	0	1	1475	1511	36	11.0
+2014-08-30	La Beaujoire-Louis-Fonteneau	Nantes	Montpellier	1 - 0	1	0	1	0	0	1	1540	1573	33	10.9
+2014-08-30	Stadium Municipal	Toulouse	Evian	1 - 0	1	0	1	0	0	1	1558	1528	30	9.1
+2014-08-30	Stade du Moustoir	Lorient	Guingamp	4 - 0	4	0	1	0	0	1	1572	1510	62	8.2
+2014-08-30	MMArena	Caen	Rennes	0 - 1	0	1	0	0	1	3	1535	1575	40	8.9
+2014-08-31	Stade Jacques-Chaban-Delmas	Bordeaux	Bastia	1 - 1	1	1	0	1	0	2	1628	1537	91	2.6
+2014-08-31	Stade Saint-Symphorien	Metz	Lyon	2 - 1	2	1	1	0	0	1	1500	1653	153	14.1
+2014-08-31	Parc des Princes	PSG	St Etienne	5 - 0	5	0	1	0	0	1	1837	1683	154	5.8
+2014-09-12	Stade de Gerland	Lyon	Monaco	2 - 1	2	1	1	0	0	1	1643	1666	23	10.7
+2014-09-13	Stade de la Route-de-Lorient	Rennes	PSG	1 - 1	1	1	0	1	0	2	1584	1844	260	6.3
+2014-09-13	Stade de la Mosson	Montpellier	Lorient	1 - 0	1	0	1	0	0	1	1566	1582	16	10.5
+2014-09-13	Stade Auguste-Delaune	Reims	Toulouse	2 - 0	2	0	1	0	0	1	1501	1564	63	11.8
+2014-09-13	Stade Geoffroy-Guichard	St Etienne	Caen	1 - 0	1	0	1	0	0	1	1675	1526	149	6.0
+2014-09-13	Stade Armand-Cesari-Furiani	Bastia	Lens	1 - 1	1	1	0	1	0	2	1541	1486	55	1.6
+2014-09-13	Allianz Riviera	Nice	Metz	1 - 0	1	0	1	0	0	1	1520	1510	10	9.7
+2014-09-14	Stade Pierre-Mauroy	Lille	Nantes	2 - 0	2	0	1	0	0	1	1694	1548	146	6.0
+2014-09-14	Stade Municipal de Roudourou	Guingamp	Bordeaux	2 - 1	2	1	1	0	0	1	1500	1624	124	13.4
+2014-09-14	Parc des Sports	Evian	Marseille	1 - 3	1	3	0	0	1	3	1523	1634	111	6.9
+2014-09-19	Stade Jacques-Chaban-Delmas	Bordeaux	Evian	2 - 1	2	1	1	0	0	1	1616	1515	101	7.2
+2014-09-20	Stade Vélodrome	Marseille	Rennes	3 - 0	3	0	1	0	0	1	1640	1585	55	8.4
+2014-09-20	Stadium Municipal	Toulouse	Caen	3 - 3	3	3	0	1	0	2	1549	1519	30	0.9
+2014-09-20	Stade du Moustoir	Lorient	Reims	0 - 1	0	1	0	0	1	3	1572	1509	63	11.8
+2014-09-20	Stade Saint-Symphorien	Metz	Bastia	3 - 1	3	1	1	0	0	1	1500	1534	34	11.0
+2014-09-20	La Beaujoire-Louis-Fonteneau	Nantes	Nice	2 - 1	2	1	1	0	0	1	1539	1522	17	9.5
+2014-09-21	Stade Pierre-Mauroy	Lille	Montpellier	0 - 0	0	0	0	1	0	2	1691	1569	122	3.4
+2014-09-21	Stade Louis II	Monaco	Guingamp	1 - 0	1	0	1	0	0	1	1666	1501	165	5.6
+2014-09-21	Stade de la Licorne	Lens	St Etienne	0 - 1	0	1	0	0	1	3	1485	1668	183	5.2
+2014-09-21	Parc des Princes	PSG	Lyon	1 - 1	1	1	0	1	0	2	1832	1646	186	4.9
+2014-09-23	Stade Auguste-Delaune	Reims	Marseille	0 - 5	0	5	0	0	1	3	1520	1648	128	6.5
+2014-09-23	Stade de la Route-de-Lorient	Rennes	Toulouse	0 - 3	0	3	0	0	1	3	1577	1546	31	10.9
+2014-09-24	Parc des Sports	Evian	Lens	2 - 1	2	1	1	0	0	1	1505	1480	25	9.3
+2014-09-24	Allianz Riviera	Nice	Lille	1 - 0	1	0	1	0	0	1	1516	1686	170	14.5
+2014-09-24	Stade de Gerland	Lyon	Lorient	4 - 0	4	0	1	0	0	1	1652	1560	92	7.4
+2014-09-24	Stade Municipal de Roudourou	Guingamp	Metz	0 - 1	0	1	0	0	1	3	1498	1510	12	9.7
+2014-09-24	Stade Armand-Cesari-Furiani	Bastia	Nantes	0 - 0	0	0	0	1	0	2	1524	1545	21	0.6
+2014-09-24	Stade de la Mosson	Montpellier	Monaco	0 - 1	0	1	0	0	1	3	1574	1669	95	7.3
+2014-09-24	Stade Michel-d'Ornano	Caen	PSG	0 - 2	0	2	0	0	1	3	1522	1825	303	3.0
+2014-09-25	Stade Geoffroy-Guichard	St Etienne	Bordeaux	1 - 1	1	1	0	1	0	2	1673	1614	59	1.7
+2014-09-27	Stade Louis II	Monaco	Nice	0 - 1	0	1	0	0	1	3	1676	1527	149	14.0
+2014-09-27	Stadium Municipal	Toulouse	PSG	1 - 1	1	1	0	1	0	2	1565	1829	264	6.4
+2014-09-27	Stade Pierre-Mauroy	Lille	Bastia	1 - 0	1	0	1	0	0	1	1675	1523	152	5.9
+2014-09-27	Stade Saint-Symphorien	Metz	Reims	3 - 0	3	0	1	0	0	1	1520	1505	15	9.6
+2014-09-27	Stade de la Mosson	Montpellier	Guingamp	2 - 1	2	1	1	0	0	1	1567	1489	78	7.8
+2014-09-27	Stade du Moustoir	Lorient	Evian	0 - 2	0	2	0	0	1	3	1552	1511	41	11.2
+2014-09-28	Stade Jacques-Chaban-Delmas	Bordeaux	Rennes	2 - 1	2	1	1	0	0	1	1618	1558	60	8.3
+2014-09-28	La Beaujoire-Louis-Fonteneau	Nantes	Lyon	1 - 1	1	1	0	1	0	2	1547	1661	114	3.2
+2014-09-28	Stade de la Licorne	Lens	Caen	0 - 0	0	0	0	1	0	2	1474	1518	44	1.3
+2014-09-28	Stade Vélodrome	Marseille	St Etienne	2 - 1	2	1	1	0	0	1	1663	1670	7	10.2
+2014-10-03	Stade Auguste-Delaune	Reims	Bordeaux	1 - 0	1	0	1	0	0	1	1501	1629	128	13.5
+2014-10-04	Stade Michel-d'Ornano	Caen	Marseille	1 - 2	1	2	0	0	1	3	1530	1681	151	5.9
+2014-10-04	Parc des Sports	Evian	Metz	3 - 0	3	0	1	0	0	1	1537	1542	5	10.1
+2014-10-04	Stade Armand-Cesari-Furiani	Bastia	Lorient	0 - 2	0	2	0	0	1	3	1530	1548	18	9.5
+2014-10-04	Stade de la Route-de-Lorient	Rennes	Lens	2 - 0	2	0	1	0	0	1	1564	1485	79	7.8
+2014-10-04	Allianz Riviera	Nice	Montpellier	1 - 1	1	1	0	1	0	2	1552	1582	30	0.9
+2014-10-05	Stade Geoffroy-Guichard	St Etienne	Toulouse	0 - 1	0	1	0	0	1	3	1671	1581	90	12.5
+2014-10-05	Stade de Gerland	Lyon	Lille	3 - 0	3	0	1	0	0	1	1671	1693	22	10.6
+2014-10-05	Stade Municipal de Roudourou	Guingamp	Nantes	0 - 1	0	1	0	0	1	3	1508	1559	51	8.5
+2014-10-05	Parc des Princes	PSG	Monaco	1 - 1	1	1	0	1	0	2	1847	1678	169	4.5
+2014-10-17	Stade de France	Lens	PSG	1 - 3	1	3	0	0	1	3	1478	1841	363	2.2
+2014-10-18	Stade du Moustoir	Lorient	St Etienne	0 - 1	0	1	0	0	1	3	1561	1659	98	7.3
+2014-10-18	Stade Saint-Symphorien	Metz	Rennes	0 - 0	0	0	0	1	0	2	1530	1571	41	1.2
+2014-10-18	Stade Pierre-Mauroy	Lille	Guingamp	1 - 2	1	2	0	0	1	3	1681	1499	182	14.8
+2014-10-18	Allianz Riviera	Nice	Bastia	0 - 1	0	1	0	0	1	3	1551	1517	34	11.0
+2014-10-18	Stade Louis II	Monaco	Evian	2 - 0	2	0	1	0	0	1	1684	1549	135	6.3
+2014-10-18	La Beaujoire-Louis-Fonteneau	Nantes	Reims	1 - 1	1	1	0	1	0	2	1568	1516	52	1.5
+2014-10-19	Stade Vélodrome	Marseille	Toulouse	2 - 0	2	0	1	0	0	1	1687	1593	94	7.4
+2014-10-19	Stade Jacques-Chaban-Delmas	Bordeaux	Caen	1 - 1	1	1	0	1	0	2	1624	1524	100	2.8
+2014-10-19	Stade de Gerland	Lyon	Montpellier	5 - 1	5	1	1	0	0	1	1683	1584	99	7.2
+2014-10-24	Stadium Municipal	Toulouse	Lens	0 - 2	0	2	0	0	1	3	1589	1477	112	13.1
+2014-10-25	Parc des Princes	PSG	Bordeaux	3 - 0	3	0	1	0	0	1	1851	1623	228	4.2
+2014-10-25	Stade Armand-Cesari-Furiani	Bastia	Monaco	1 - 3	1	3	0	0	1	3	1532	1695	163	5.6
+2014-10-25	Parc des Sports	Evian	Nantes	0 - 2	0	2	0	0	1	3	1547	1568	21	9.4
+2014-10-25	Stade Auguste-Delaune	Reims	Montpellier	1 - 0	1	0	1	0	0	1	1523	1579	56	11.6
+2014-10-25	Stade Michel-d'Ornano	Caen	Lorient	2 - 1	2	1	1	0	0	1	1532	1557	25	10.7
+2014-10-26	Stade de la Route-de-Lorient	Rennes	Lille	2 - 0	2	0	1	0	0	1	1575	1672	97	12.7
+2014-10-26	Stade Geoffroy-Guichard	St Etienne	Metz	1 - 0	1	0	1	0	0	1	1672	1533	139	6.2
+2014-10-26	Stade Municipal de Roudourou	Guingamp	Nice	2 - 7	2	7	0	0	1	3	1518	1544	26	9.3
+2014-10-26	Stade de Gerland	Lyon	Marseille	1 - 0	1	0	1	0	0	1	1695	1696	1	10.0
+2014-10-31	Stade Louis II	Monaco	Reims	1 - 1	1	1	0	1	0	2	1702	1530	172	4.6
+2014-11-01	Stade du Moustoir	Lorient	PSG	1 - 2	1	2	0	0	1	3	1550	1855	305	2.9
+2014-11-01	Allianz Riviera	Nice	Lyon	1 - 3	1	3	0	0	1	3	1564	1701	137	6.2
+2014-11-01	Stade Municipal de Roudourou	Guingamp	Bastia	1 - 0	1	0	1	0	0	1	1497	1524	27	10.8
+2014-11-01	Stade Pierre-Mauroy	Lille	St Etienne	1 - 1	1	1	0	1	0	2	1659	1675	16	0.5
+2014-11-01	Stade Saint-Symphorien	Metz	Caen	3 - 2	3	2	1	0	0	1	1530	1539	9	10.3
+2014-11-01	Altrad Stadium	Montpellier	Evian	2 - 0	2	0	1	0	0	1	1571	1534	37	8.9
+2014-11-02	La Beaujoire-Louis-Fonteneau	Nantes	Rennes	1 - 1	1	1	0	1	0	2	1581	1588	7	0.2
+2014-11-02	Stade Jacques-Chaban-Delmas	Bordeaux	Toulouse	2 - 1	2	1	1	0	0	1	1619	1573	46	8.7
+2014-11-02	Stade Vélodrome	Marseille	Lens	2 - 1	2	1	1	0	0	1	1690	1496	194	4.9
+2014-11-07	Stade de la Route-de-Lorient	Rennes	Lorient	1 - 0	1	0	1	0	0	1	1589	1546	43	8.8
+2014-11-08	Stade de la Licorne	Lens	Bordeaux	1 - 2	1	2	0	0	1	3	1492	1623	131	6.4
+2014-11-08	Stadium Municipal	Toulouse	Metz	3 - 0	3	0	1	0	0	1	1566	1535	31	9.1
+2014-11-08	Parc des Sports	Evian	Nice	1 - 0	1	0	1	0	0	1	1525	1554	29	10.8
+2014-11-08	Stade Michel-d'Ornano	Caen	Nantes	1 - 2	1	2	0	0	1	3	1531	1578	47	8.7
+2014-11-08	Stade Armand-Cesari-Furiani	Bastia	Montpellier	2 - 0	2	0	1	0	0	1	1515	1577	62	11.8
+2014-11-09	Stade de Gerland	Lyon	Guingamp	3 - 1	3	1	1	0	0	1	1709	1510	199	4.8
+2014-11-09	Stade Auguste-Delaune	Reims	Lille	2 - 0	2	0	1	0	0	1	1535	1650	115	13.2
+2014-11-09	Stade Geoffroy-Guichard	St Etienne	Monaco	1 - 1	1	1	0	1	0	2	1673	1691	18	0.5
+2014-11-09	Parc des Princes	PSG	Marseille	2 - 0	2	0	1	0	0	1	1857	1691	166	5.6
+2014-11-21	Stade Saint-Symphorien	Metz	PSG	2 - 3	2	3	0	0	1	3	1525	1862	337	2.5
+2014-11-22	Stade Armand-Cesari-Furiani	Bastia	Lyon	0 - 0	0	0	0	1	0	2	1527	1712	185	4.9
+2014-11-22	Stade Municipal de Roudourou	Guingamp	Rennes	0 - 1	0	1	0	0	1	3	1507	1593	86	7.6
+2014-11-22	Stade Louis II	Monaco	Caen	2 - 2	2	2	0	1	0	2	1693	1522	171	4.6
+2014-11-22	Stade du Moustoir	Lorient	Lens	1 - 0	1	0	1	0	0	1	1540	1486	54	8.5
+2014-11-22	Allianz Riviera	Nice	Reims	0 - 0	0	0	0	1	0	2	1547	1548	1	0.0
+2014-11-23	La Beaujoire-Louis-Fonteneau	Nantes	St Etienne	0 - 0	0	0	0	1	0	2	1587	1671	84	2.4
+2014-11-23	Altrad Stadium	Montpellier	Toulouse	2 - 0	2	0	1	0	0	1	1566	1576	10	10.3
+2014-11-23	Stade Vélodrome	Marseille	Bordeaux	3 - 1	3	1	1	0	0	1	1687	1630	57	8.4
+2014-11-28	Stade Vélodrome	Marseille	Nantes	2 - 0	2	0	1	0	0	1	1700	1593	107	7.0
+2014-11-29	Parc des Princes	PSG	Nice	1 - 0	1	0	1	0	0	1	1869	1547	322	2.7
+2014-11-29	Stade Michel-d'Ornano	Caen	Montpellier	1 - 1	1	1	0	1	0	2	1530	1577	47	1.3
+2014-11-29	Stadium Municipal	Toulouse	Lorient	2 - 3	2	3	0	0	1	3	1568	1547	21	10.6
+2014-11-29	Stade de la Route-de-Lorient	Rennes	Monaco	2 - 0	2	0	1	0	0	1	1603	1701	98	12.7
+2014-11-29	Stade Auguste-Delaune	Reims	Bastia	2 - 1	2	1	1	0	0	1	1552	1531	21	9.4
+2014-11-29	Stade de la Licorne	Lens	Metz	2 - 0	2	0	1	0	0	1	1483	1524	41	11.2
+2014-11-30	Stade Jacques-Chaban-Delmas	Bordeaux	Lille	1 - 0	1	0	1	0	0	1	1625	1641	16	10.5
+2014-11-30	Parc des Sports	Evian	Guingamp	2 - 0	2	0	1	0	0	1	1534	1495	39	8.9
+2014-11-30	Stade Geoffroy-Guichard	St Etienne	Lyon	3 - 0	3	0	1	0	0	1	1665	1711	46	11.3
+2014-12-02	La Beaujoire-Louis-Fonteneau	Nantes	Toulouse	1 - 2	1	2	0	0	1	3	1583	1558	25	10.7
+2014-12-02	Stade du Moustoir	Lorient	Marseille	1 - 1	1	1	0	1	0	2	1558	1701	143	3.9
+2014-12-02	Stade Louis II	Monaco	Lens	2 - 0	2	0	1	0	0	1	1689	1493	196	4.9
+2014-12-03	Altrad Stadium	Montpellier	St Etienne	0 - 2	0	2	0	0	1	3	1578	1677	99	7.2
+2014-12-03	Allianz Riviera	Nice	Rennes	1 - 2	1	2	0	0	1	3	1545	1615	70	8.0
+2014-12-03	Stade Armand-Cesari-Furiani	Bastia	Evian	1 - 2	1	2	0	0	1	3	1526	1541	15	9.6
+2014-12-03	Stade Saint-Symphorien	Metz	Bordeaux	0 - 0	0	0	0	1	0	2	1514	1631	117	3.2
+2014-12-03	Stade Municipal de Roudourou	Guingamp	Caen	5 - 1	5	1	1	0	0	1	1488	1529	41	11.2
+2014-12-03	Stade Pierre-Mauroy	Lille	PSG	1 - 1	1	1	0	1	0	2	1634	1870	236	5.9
+2014-12-04	Stade de Gerland	Lyon	Reims	2 - 1	2	1	1	0	0	1	1698	1558	140	6.2
+2014-12-05	Stadium Municipal	Toulouse	Monaco	0 - 2	0	2	0	0	1	3	1569	1692	123	6.6
+2014-12-06	Parc des Princes	PSG	Nantes	2 - 1	2	1	1	0	0	1	1866	1572	294	3.1
+2014-12-06	Stade Jacques-Chaban-Delmas	Bordeaux	Lorient	3 - 2	3	2	1	0	0	1	1630	1560	70	8.0
+2014-12-06	Stade Michel-d'Ornano	Caen	Nice	2 - 3	2	3	0	0	1	3	1515	1537	22	9.4
+2014-12-06	Stade de la Route-de-Lorient	Rennes	Montpellier	0 - 4	0	4	0	0	1	3	1624	1567	57	11.6
+2014-12-06	Stade Geoffroy-Guichard	St Etienne	Bastia	1 - 0	1	0	1	0	0	1	1688	1516	172	5.4
+2014-12-07	Parc des Sports	Evian	Lyon	2 - 3	2	3	0	0	1	3	1551	1701	150	5.9
+2014-12-07	Stade Auguste-Delaune	Reims	Guingamp	2 - 3	2	3	0	0	1	3	1554	1502	52	11.5
+2014-12-07	Stade de France	Lens	Lille	1 - 1	1	1	0	1	0	2	1489	1638	149	4.0
+2014-12-07	Stade Vélodrome	Marseille	Metz	3 - 1	3	1	1	0	0	1	1699	1515	184	5.1
+2014-12-12	Stade de Gerland	Lyon	Caen	3 - 0	3	0	1	0	0	1	1710	1508	202	4.8
+2014-12-13	La Beaujoire-Louis-Fonteneau	Nantes	Bordeaux	2 - 1	2	1	1	0	0	1	1570	1634	64	11.8
+2014-12-13	Stade Armand-Cesari	Bastia	Rennes	2 - 0	2	0	1	0	0	1	1512	1600	88	12.5
+2014-12-13	Stade Auguste-Delaune	Reims	Evian	3 - 2	3	2	1	0	0	1	1542	1543	1	10.0
+2014-12-13	Altrad Stadium	Montpellier	Lens	3 - 3	3	3	0	1	0	2	1589	1490	99	2.8
+2014-12-13	Stade du Moustoir	Lorient	Metz	3 - 1	3	1	1	0	0	1	1554	1510	44	8.7
+2014-12-14	Allianz Riviera	Nice	St Etienne	0 - 0	0	0	0	1	0	2	1545	1680	135	3.7
+2014-12-14	Stade Pierre-Mauroy	Lille	Toulouse	3 - 0	3	0	1	0	0	1	1624	1558	66	8.1
+2014-12-14	Stade Municipal de Roudourou	Guingamp	PSG	1 - 0	1	0	1	0	0	1	1524	1862	338	17.5
+2014-12-14	Stade Louis II	Monaco	Marseille	1 - 0	1	0	1	0	0	1	1712	1702	10	9.7
+2014-12-19	Stade de la Licorne	Lens	Nice	2 - 0	2	0	1	0	0	1	1495	1547	52	11.5
+2014-12-20	Parc des Princes	PSG	Montpellier	0 - 0	0	0	0	1	0	2	1848	1584	264	6.4
+2014-12-20	Stadium Municipal	Toulouse	Guingamp	1 - 1	1	1	0	1	0	2	1550	1538	12	0.3
+2014-12-20	Stade Michel-d'Ornano	Caen	Bastia	1 - 1	1	1	0	1	0	2	1500	1524	24	0.7
+2014-12-20	Stade Saint-Symphorien	Metz	Monaco	0 - 1	0	1	0	0	1	3	1503	1718	215	4.5
+2014-12-20	Stade du Moustoir	Lorient	Nantes	1 - 2	1	2	0	0	1	3	1561	1578	17	9.5
+2014-12-20	Stade de la Route-de-Lorient	Rennes	Reims	1 - 3	1	3	0	0	1	3	1588	1548	40	11.1
+2014-12-21	Stade Vélodrome	Marseille	Lille	2 - 1	2	1	1	0	0	1	1696	1632	64	8.2
+2014-12-21	Stade Geoffroy-Guichard	St Etienne	Evian	3 - 0	3	0	1	0	0	1	1678	1537	141	6.2
+2014-12-21	Stade Jacques-Chaban-Delmas	Bordeaux	Lyon	0 - 5	0	5	0	0	1	3	1626	1710	84	7.6
+2015-01-07	Stade Pierre-Mauroy	Lille	Evian	1 - 0	1	0	1	0	0	1	1628	1531	97	7.3
+2015-01-09	Stade de la Mosson	Montpellier	Marseille	2 - 1	2	1	1	0	0	1	1592	1701	109	13.0
+2015-01-10	Stade Armand-Cesari	Bastia	PSG	4 - 2	4	2	1	0	0	1	1526	1840	314	17.2
+2015-01-10	Stade Municipal de Roudourou	Guingamp	Lens	2 - 0	2	0	1	0	0	1	1541	1505	36	9.0
+2015-01-10	Stade Auguste-Delaune	Reims	St Etienne	1 - 2	1	2	0	0	1	3	1564	1684	120	6.7
+2015-01-10	Allianz Riviera	Nice	Lorient	3 - 1	3	1	1	0	0	1	1536	1552	16	10.5
+2015-01-10	Stade Pierre-Mauroy	Lille	Caen	1 - 0	1	0	1	0	0	1	1632	1499	133	6.3
+2015-01-10	Parc des Sports	Evian	Rennes	1 - 1	1	1	0	1	0	2	1527	1572	45	1.3
+2015-01-11	Stade de Gerland	Lyon	Toulouse	3 - 0	3	0	1	0	0	1	1728	1547	181	5.2
+2015-01-11	La Beaujoire-Louis-Fonteneau	Nantes	Metz	0 - 0	0	0	0	1	0	2	1587	1498	89	2.5
+2015-01-11	Stade Louis II	Monaco	Bordeaux	0 - 0	0	0	0	1	0	2	1723	1609	114	3.2
+2015-01-16	Stade Jacques-Chaban-Delmas	Bordeaux	Nice	1 - 2	1	2	0	0	1	3	1614	1546	68	11.9
+2015-01-17	Stade de la Licorne	Lens	Lyon	0 - 2	0	2	0	0	1	3	1498	1732	234	4.1
+2015-01-17	Stade Michel-d'Ornano	Caen	Reims	4 - 1	4	1	1	0	0	1	1495	1557	62	11.8
+2015-01-17	Stade Saint-Symphorien	Metz	Montpellier	2 - 3	2	3	0	0	1	3	1503	1601	98	7.3
+2015-01-17	Stade Louis II	Monaco	Nantes	1 - 0	1	0	1	0	0	1	1718	1583	135	6.3
+2015-01-17	Stadium Municipal	Toulouse	Bastia	1 - 1	1	1	0	1	0	2	1543	1546	3	0.1
+2015-01-17	Stade du Moustoir	Lorient	Lille	1 - 0	1	0	1	0	0	1	1542	1635	93	12.6
+2015-01-18	Parc des Princes	PSG	Evian	4 - 2	4	2	1	0	0	1	1820	1526	294	3.1
+2015-01-18	Stade de la Route-de-Lorient	Rennes	St Etienne	0 - 0	0	0	0	1	0	2	1573	1691	118	3.3
+2015-01-18	Stade Vélodrome	Marseille	Guingamp	2 - 1	2	1	1	0	0	1	1692	1548	144	6.1
+2015-01-23	Allianz Riviera	Nice	Marseille	2 - 1	2	1	1	0	0	1	1558	1695	137	13.8
+2015-01-24	Stade Pierre-Mauroy	Lille	Monaco	0 - 1	0	1	0	0	1	3	1627	1721	94	7.4
+2015-01-24	Stade Municipal de Roudourou	Guingamp	Lorient	3 - 2	3	2	1	0	0	1	1545	1551	6	10.2
+2015-01-24	Stade de la Mosson	Montpellier	Nantes	4 - 0	4	0	1	0	0	1	1608	1579	29	9.2
+2015-01-24	Stade Armand-Cesari	Bastia	Bordeaux	0 - 0	0	0	0	1	0	2	1548	1602	54	1.5
+2015-01-25	Stade de Gerland	Lyon	Metz	2 - 0	2	0	1	0	0	1	1738	1495	243	4.0
+2015-01-25	Parc des Sports	Evian	Toulouse	1 - 0	1	0	1	0	0	1	1524	1541	17	10.5
+2015-01-25	Stade de la Route-de-Lorient	Rennes	Caen	1 - 4	1	4	0	0	1	3	1574	1509	65	11.8
+2015-01-25	Stade Auguste-Delaune	Reims	Lens	0 - 0	0	0	0	1	0	2	1544	1492	52	1.5
+2015-01-25	Stade Geoffroy-Guichard	St Etienne	PSG	0 - 1	0	1	0	0	1	3	1690	1822	132	6.4
+2015-01-30	Parc des Princes	PSG	Rennes	1 - 0	1	0	1	0	0	1	1829	1554	275	3.4
+2015-01-31	Stade Vélodrome	Marseille	Evian	1 - 0	1	0	1	0	0	1	1685	1531	154	5.8
+2015-01-31	La Beaujoire-Louis-Fonteneau	Nantes	Lille	1 - 1	1	1	0	1	0	2	1568	1619	51	1.5
+2015-01-31	Stadium Municipal	Toulouse	Reims	1 - 0	1	0	1	0	0	1	1534	1540	6	10.2
+2015-01-31	Stade de la Licorne	Lens	Bastia	1 - 1	1	1	0	1	0	2	1495	1547	52	1.5
+2015-01-31	Stade du Moustoir	Lorient	Montpellier	0 - 0	0	0	0	1	0	2	1545	1620	75	2.1
+2015-01-31	Stade Saint-Symphorien	Metz	Nice	0 - 0	0	0	0	1	0	2	1493	1568	75	2.1
+2015-02-01	Stade Michel-d'Ornano	Caen	St Etienne	1 - 0	1	0	1	0	0	1	1528	1683	155	14.2
+2015-02-01	Stade Jacques-Chaban-Delmas	Bordeaux	Guingamp	1 - 1	1	1	0	1	0	2	1602	1551	51	1.5
+2015-02-01	Stade Louis II	Monaco	Lyon	0 - 0	0	0	0	1	0	2	1729	1741	12	0.3
+2015-02-06	Stade Geoffroy-Guichard	St Etienne	Lens	3 - 3	3	3	0	1	0	2	1673	1495	178	4.7
+2015-02-07	Stade de la Route-de-Lorient	Rennes	Marseille	1 - 1	1	1	0	1	0	2	1552	1688	136	3.7
+2015-02-07	Stade de la Mosson	Montpellier	Lille	1 - 2	1	2	0	0	1	3	1619	1619	0	10.0
+2015-02-07	Parc des Sports	Evian	Bordeaux	0 - 1	0	1	0	0	1	3	1528	1599	71	8.0
+2015-02-07	Stade Michel-d'Ornano	Caen	Toulouse	2 - 0	2	0	1	0	0	1	1539	1540	1	10.0
+2015-02-07	Stade Armand-Cesari	Bastia	Metz	2 - 0	2	0	1	0	0	1	1548	1493	55	8.4
+2015-02-07	Stade Auguste-Delaune	Reims	Lorient	1 - 3	1	3	0	0	1	3	1534	1545	11	9.7
+2015-02-08	Stade Municipal de Roudourou	Guingamp	Monaco	1 - 0	1	0	1	0	0	1	1555	1727	172	14.6
+2015-02-08	Allianz Riviera	Nice	Nantes	0 - 0	0	0	0	1	0	2	1567	1568	1	0.0
+2015-02-08	Stade de Gerland	Lyon	PSG	1 - 1	1	1	0	1	0	2	1742	1831	89	2.5
+2015-02-13	Stade Vélodrome	Marseille	Reims	2 - 2	2	2	0	1	0	2	1686	1520	166	4.4
+2015-02-14	Parc des Princes	PSG	Caen	2 - 2	2	2	0	1	0	2	1830	1548	282	6.7
+2015-02-14	La Beaujoire-Louis-Fonteneau	Nantes	Bastia	0 - 2	0	2	0	0	1	3	1570	1555	15	10.4
+2015-02-14	Stadium Municipal	Toulouse	Rennes	2 - 1	2	1	1	0	0	1	1531	1554	23	10.7
+2015-02-14	Stade de la Licorne	Lens	Evian	0 - 2	0	2	0	0	1	3	1501	1520	19	9.5
+2015-02-14	Stade Pierre-Mauroy	Lille	Nice	0 - 0	0	0	0	1	0	2	1629	1565	64	1.8
+2015-02-15	Stade Jacques-Chaban-Delmas	Bordeaux	St Etienne	1 - 0	1	0	1	0	0	1	1607	1666	59	11.7
+2015-02-15	Stade Saint-Symphorien	Metz	Guingamp	0 - 2	0	2	0	0	1	3	1486	1566	80	7.7
+2015-02-15	Stade du Moustoir	Lorient	Lyon	1 - 1	1	1	0	1	0	2	1558	1743	185	4.9
+2015-02-20	Allianz Riviera	Nice	Monaco	0 - 1	0	1	0	0	1	3	1569	1716	147	6.0
+2015-02-21	Parc des Princes	PSG	Toulouse	3 - 1	3	1	1	0	0	1	1823	1540	283	3.3
+2015-02-21	Stade Michel-d'Ornano	Caen	Lens	4 - 1	4	1	1	0	0	1	1557	1489	68	8.1
+2015-02-21	Stade de la Route-de-Lorient	Rennes	Bordeaux	1 - 1	1	1	0	1	0	2	1549	1617	68	1.9
+2015-02-21	Stade Armand-Cesari	Bastia	Lille	2 - 1	2	1	1	0	0	1	1571	1627	56	11.6
+2015-02-22	Stade Municipal de Roudourou	Guingamp	Montpellier	0 - 2	0	2	0	0	1	3	1583	1611	28	9.2
+2015-02-22	Stade de Gerland	Lyon	Nantes	1 - 0	1	0	1	0	0	1	1741	1556	185	5.1
+2015-02-22	Stade Auguste-Delaune	Reims	Metz	0 - 0	0	0	0	1	0	2	1528	1476	52	1.5
+2015-02-22	Stade Geoffroy-Guichard	St Etienne	Marseille	2 - 2	2	2	0	1	0	2	1660	1682	22	0.6
+2015-02-27	Stade Vélodrome	Marseille	Caen	2 - 3	2	3	0	0	1	3	1691	1573	118	13.3
+2015-02-28	Stade Pierre-Mauroy	Lille	Lyon	2 - 1	2	1	1	0	0	1	1622	1747	125	13.5
+2015-02-28	Stade du Moustoir	Lorient	Bastia	2 - 0	2	0	1	0	0	1	1566	1582	16	10.5
+2015-02-28	Stadium Municipal	Toulouse	St Etienne	1 - 1	1	1	0	1	0	2	1541	1661	120	3.3
+2015-02-28	Stade Jacques-Chaban-Delmas	Bordeaux	Reims	1 - 1	1	1	0	1	0	2	1620	1527	93	2.6
+2015-02-28	Stade de la Licorne	Lens	Rennes	0 - 1	0	1	0	0	1	3	1484	1552	68	8.1
+2015-02-28	Stade Saint-Symphorien	Metz	Evian	1 - 2	1	2	0	0	1	3	1483	1537	54	8.5
+2015-03-01	La Beaujoire-Louis-Fonteneau	Nantes	Guingamp	1 - 0	1	0	1	0	0	1	1557	1562	5	10.1
+2015-03-01	Stade de la Mosson	Montpellier	Nice	2 - 1	2	1	1	0	0	1	1627	1567	60	8.3
+2015-03-01	Stade Louis II	Monaco	PSG	0 - 0	0	0	0	1	0	2	1747	1828	81	2.3
+2015-03-04	Parc des Sports	Evian	Lorient	1 - 0	1	0	1	0	0	1	1546	1575	29	10.8
+2015-03-06	Stadium Municipal	Toulouse	Marseille	1 - 6	1	6	0	0	1	3	1542	1674	132	6.4
+2015-03-07	Parc des Princes	PSG	Lens	4 - 1	4	1	1	0	0	1	1828	1476	352	2.3
+2015-03-07	Stade Auguste-Delaune	Reims	Nantes	3 - 1	3	1	1	0	0	1	1532	1563	31	10.9
+2015-03-07	Stade Armand-Cesari	Bastia	Nice	2 - 1	2	1	1	0	0	1	1572	1562	10	9.7
+2015-03-07	Parc des Sports	Evian	Monaco	1 - 3	1	3	0	0	1	3	1553	1747	194	4.9
+2015-03-07	Stade de la Route-de-Lorient	Rennes	Metz	1 - 0	1	0	1	0	0	1	1560	1474	86	7.6
+2015-03-07	Stade Michel-d'Ornano	Caen	Bordeaux	1 - 2	1	2	0	0	1	3	1581	1615	34	9.0
+2015-03-08	Stade Geoffroy-Guichard	St Etienne	Lorient	2 - 0	2	0	1	0	0	1	1660	1568	92	7.4
+2015-03-08	Stade Municipal de Roudourou	Guingamp	Lille	0 - 1	0	1	0	0	1	3	1555	1632	77	7.8
+2015-03-08	Stade de la Mosson	Montpellier	Lyon	1 - 5	1	5	0	0	1	3	1632	1737	105	7.1
+2015-03-13	Allianz Riviera	Nice	Guingamp	1 - 2	1	2	0	0	1	3	1561	1552	9	10.3
+2015-03-13	Stade Louis II	Monaco	Bastia	3 - 0	3	0	1	0	0	1	1759	1583	176	5.3
+2015-03-14	Stade Saint-Symphorien	Metz	St Etienne	2 - 3	2	3	0	0	1	3	1474	1671	197	4.9
+2015-03-14	Stade de la Mosson	Montpellier	Reims	3 - 1	3	1	1	0	0	1	1622	1547	75	7.9
+2015-03-14	Stade du Moustoir	Lorient	Caen	2 - 1	2	1	1	0	0	1	1567	1577	10	10.3
+2015-03-14	Stade de la Licorne	Lens	Toulouse	1 - 0	1	0	1	0	0	1	1479	1532	53	11.5
+2015-03-14	La Beaujoire-Louis-Fonteneau	Nantes	Evian	2 - 1	2	1	1	0	0	1	1558	1550	8	9.8
+2015-03-15	Stade Pierre-Mauroy	Lille	Rennes	3 - 0	3	0	1	0	0	1	1644	1569	75	7.9
+2015-03-15	Stade Jacques-Chaban-Delmas	Bordeaux	PSG	3 - 2	3	2	1	0	0	1	1629	1846	217	15.5
+2015-03-15	Stade Vélodrome	Marseille	Lyon	0 - 0	0	0	0	1	0	2	1693	1756	63	1.8
+2015-03-20	Parc des Princes	PSG	Lorient	3 - 1	3	1	1	0	0	1	1831	1570	261	3.6
+2015-03-21	Stade de Gerland	Lyon	Nice	1 - 2	1	2	0	0	1	3	1753	1547	206	15.3
+2015-03-21	Stade Michel-d'Ornano	Caen	Metz	0 - 0	0	0	0	1	0	2	1567	1466	101	2.8
+2015-03-21	Stadium Municipal	Toulouse	Bordeaux	2 - 1	2	1	1	0	0	1	1521	1637	116	13.2
+2015-03-21	Stade de la Route-de-Lorient	Rennes	Nantes	0 - 0	0	0	0	1	0	2	1557	1561	4	0.1
+2015-03-21	Parc des Sports	Evian	Montpellier	1 - 0	1	0	1	0	0	1	1541	1625	84	12.4
+2015-03-21	Stade Armand-Cesari	Bastia	Guingamp	0 - 0	0	0	0	1	0	2	1575	1558	17	0.5
+2015-03-22	Stade Geoffroy-Guichard	St Etienne	Lille	2 - 0	2	0	1	0	0	1	1672	1649	23	9.3
+2015-03-22	Stade Auguste-Delaune	Reims	Monaco	1 - 3	1	3	0	0	1	3	1537	1752	215	4.5
+2015-03-22	Stade de France	Lens	Marseille	0 - 4	0	4	0	0	1	3	1483	1689	206	4.7
+2015-04-03	Stade Louis II	Monaco	St Etienne	1 - 1	1	1	0	1	0	2	1758	1681	77	2.2
+2015-04-04	Stade Municipal de Roudourou	Guingamp	Lyon	1 - 3	1	3	0	0	1	3	1561	1738	177	5.3
+2015-04-04	Allianz Riviera	Nice	Evian	2 - 2	2	2	0	1	0	2	1562	1549	13	0.4
+2015-04-04	Stade du Moustoir	Lorient	Rennes	0 - 3	0	3	0	0	1	3	1567	1555	12	10.3
+2015-04-04	Stade Pierre-Mauroy	Lille	Reims	3 - 1	3	1	1	0	0	1	1641	1530	111	6.9
+2015-04-04	Stade Saint-Symphorien	Metz	Toulouse	3 - 2	3	2	1	0	0	1	1470	1530	60	11.7
+2015-04-04	Stade de la Mosson	Montpellier	Bastia	3 - 1	3	1	1	0	0	1	1617	1572	45	8.7
+2015-04-05	Stade Jacques-Chaban-Delmas	Bordeaux	Lens	2 - 1	2	1	1	0	0	1	1628	1474	154	5.8
+2015-04-05	La Beaujoire-Louis-Fonteneau	Nantes	Caen	1 - 2	1	2	0	0	1	3	1563	1562	1	10.0
+2015-04-05	Stade Vélodrome	Marseille	PSG	2 - 3	2	3	0	0	1	3	1699	1833	134	6.3
+2015-04-07	Stade Louis II	Monaco	Montpellier	0 - 0	0	0	0	1	0	2	1754	1624	130	3.6
+2015-04-10	Stade Michel-d'Ornano	Caen	Monaco	0 - 3	0	3	0	0	1	3	1572	1749	177	5.3
+2015-04-12	Stade Geoffroy-Guichard	St Etienne	Nantes	1 - 0	1	0	1	0	0	1	1685	1553	132	6.4
+2015-04-12	Parc des Sports	Evian	Lille	0 - 1	0	1	0	0	1	3	1551	1646	95	7.3
+2015-04-12	Stadium Municipal	Toulouse	Montpellier	1 - 0	1	0	1	0	0	1	1522	1629	107	13.0
+2015-04-12	Stade de la Licorne	Lens	Lorient	0 - 0	0	0	0	1	0	2	1471	1550	79	2.2
+2015-04-12	Stade Auguste-Delaune	Reims	Nice	0 - 1	0	1	0	0	1	3	1525	1559	34	9.0
+2015-04-12	Stade de la Route-de-Lorient	Rennes	Guingamp	1 - 0	1	0	1	0	0	1	1573	1553	20	9.4
+2015-04-12	Stade Jacques-Chaban-Delmas	Bordeaux	Marseille	1 - 0	1	0	1	0	0	1	1631	1692	61	11.7
+2015-04-15	Stade de Gerland	Lyon	Bastia	2 - 0	2	0	1	0	0	1	1746	1565	181	5.2
+2015-04-17	La Beaujoire-Louis-Fonteneau	Nantes	Marseille	1 - 0	1	0	1	0	0	1	1546	1681	135	13.7
+2015-04-18	Allianz Riviera	Nice	PSG	1 - 3	1	3	0	0	1	3	1565	1831	266	3.6
+2015-04-18	Stade du Moustoir	Lorient	Toulouse	0 - 1	0	1	0	0	1	3	1546	1528	18	10.5
+2015-04-18	Stade Armand-Cesari	Bastia	Reims	1 - 2	1	2	0	0	1	3	1558	1512	46	11.3
+2015-04-18	Stade Municipal de Roudourou	Guingamp	Evian	1 - 1	1	1	0	1	0	2	1544	1541	3	0.1
+2015-04-18	Stade Saint-Symphorien	Metz	Lens	3 - 1	3	1	1	0	0	1	1475	1468	7	9.8
+2015-04-18	Stade Louis II	Monaco	Rennes	1 - 1	1	1	0	1	0	2	1752	1576	176	4.7
+2015-04-19	Stade Pierre-Mauroy	Lille	Bordeaux	2 - 0	2	0	1	0	0	1	1650	1636	14	9.6
+2015-04-19	Stade de la Mosson	Montpellier	Caen	1 - 0	1	0	1	0	0	1	1617	1559	58	8.3
+2015-04-19	Stade de Gerland	Lyon	St Etienne	2 - 2	2	2	0	1	0	2	1746	1685	61	1.7
+2015-04-24	Stade Vélodrome	Marseille	Lorient	3 - 5	3	5	0	0	1	3	1670	1534	136	13.7
+2015-04-25	Parc des Princes	PSG	Lille	6 - 1	6	1	1	0	0	1	1834	1658	176	5.3
+2015-04-25	Parc des Sports	Evian	Bastia	1 - 2	1	2	0	0	1	3	1541	1545	4	9.9
+2015-04-25	Stade Jacques-Chaban-Delmas	Bordeaux	Metz	1 - 1	1	1	0	1	0	2	1626	1482	144	3.9
+2015-04-25	Stade Michel-d'Ornano	Caen	Guingamp	0 - 2	0	2	0	0	1	3	1553	1541	12	10.3
+2015-04-25	Stade de la Route-de-Lorient	Rennes	Nice	2 - 1	2	1	1	0	0	1	1581	1559	22	9.4
+2015-04-25	Stadium Municipal	Toulouse	Nantes	1 - 1	1	1	0	1	0	2	1537	1555	18	0.5
+2015-04-26	Stade Geoffroy-Guichard	St Etienne	Montpellier	1 - 0	1	0	1	0	0	1	1688	1621	67	8.1
+2015-04-26	Stade de la Licorne	Lens	Monaco	0 - 3	0	3	0	0	1	3	1458	1742	284	3.3
+2015-04-26	Stade Auguste-Delaune	Reims	Lyon	2 - 4	2	4	0	0	1	3	1522	1742	220	4.4
+2015-04-28	Parc des Princes	PSG	Metz	3 - 1	3	1	1	0	0	1	1840	1488	352	2.3
+2015-05-01	Stade Saint-Symphorien	Metz	Marseille	0 - 2	0	2	0	0	1	3	1486	1651	165	5.6
+2015-05-02	Stade de Gerland	Lyon	Evian	2 - 0	2	0	1	0	0	1	1748	1532	216	4.5
+2015-05-02	Stade Armand-Cesari	Bastia	St Etienne	1 - 0	1	0	1	0	0	1	1555	1693	138	13.8
+2015-05-02	Allianz Riviera	Nice	Caen	1 - 1	1	1	0	1	0	2	1553	1539	14	0.4
+2015-05-02	Stade de la Mosson	Montpellier	Rennes	0 - 0	0	0	0	1	0	2	1616	1587	29	0.8
+2015-05-02	Stade du Moustoir	Lorient	Bordeaux	0 - 0	0	0	0	1	0	2	1553	1620	67	1.9
+2015-05-02	Stade Municipal de Roudourou	Guingamp	Reims	2 - 0	2	0	1	0	0	1	1555	1516	39	8.9
+2015-05-03	Stade Pierre-Mauroy	Lille	Lens	3 - 1	3	1	1	0	0	1	1652	1452	200	4.8
+2015-05-03	Stade Louis II	Monaco	Toulouse	4 - 1	4	1	1	0	0	1	1748	1536	212	4.6
+2015-05-03	La Beaujoire-Louis-Fonteneau	Nantes	PSG	0 - 2	0	2	0	0	1	3	1556	1842	286	3.2
+2015-05-08	Parc des Princes	PSG	Guingamp	6 - 0	6	0	1	0	0	1	1846	1563	283	3.3
+2015-05-09	Stade Michel-d'Ornano	Caen	Lyon	3 - 0	3	0	1	0	0	1	1541	1751	210	15.4
+2015-05-09	Stade Jacques-Chaban-Delmas	Bordeaux	Nantes	2 - 1	2	1	1	0	0	1	1620	1551	69	8.0
+2015-05-09	Stade Saint-Symphorien	Metz	Lorient	0 - 4	0	4	0	0	1	3	1479	1553	74	7.9
+2015-05-09	Parc des Sports	Evian	Reims	2 - 3	2	3	0	0	1	3	1529	1509	20	10.6
+2015-05-09	Stade de la Route-de-Lorient	Rennes	Bastia	0 - 1	0	1	0	0	1	3	1589	1565	24	10.7
+2015-05-09	Stadium Municipal	Toulouse	Lille	3 - 2	3	2	1	0	0	1	1532	1655	123	13.4
+2015-05-10	Stade de la Licorne	Lens	Montpellier	0 - 1	0	1	0	0	1	3	1448	1613	165	5.6
+2015-05-10	Stade Geoffroy-Guichard	St Etienne	Nice	5 - 0	5	0	1	0	0	1	1682	1551	131	6.4
+2015-05-10	Stade Vélodrome	Marseille	Monaco	2 - 1	2	1	1	0	0	1	1659	1752	93	12.6
+2015-05-16	Stade de Gerland	Lyon	Bordeaux	1 - 1	1	1	0	1	0	2	1731	1625	106	3.0
+2015-05-16	Stade Armand-Cesari	Bastia	Caen	1 - 1	1	1	0	1	0	2	1576	1561	15	0.4
+2015-05-16	Parc des Sports	Evian	St Etienne	1 - 2	1	2	0	0	1	3	1518	1691	173	5.4
+2015-05-16	Stade Municipal de Roudourou	Guingamp	Toulouse	2 - 1	2	1	1	0	0	1	1559	1542	17	9.5
+2015-05-16	Stade Pierre-Mauroy	Lille	Marseille	0 - 4	0	4	0	0	1	3	1645	1668	23	9.3
+2015-05-16	Stade Louis II	Monaco	Metz	2 - 0	2	0	1	0	0	1	1743	1463	280	3.3
+2015-05-16	Stade de la Mosson	Montpellier	PSG	1 - 2	1	2	0	0	1	3	1619	1850	231	4.2
+2015-05-16	La Beaujoire-Louis-Fonteneau	Nantes	Lorient	1 - 1	1	1	0	1	0	2	1547	1568	21	0.6
+2015-05-16	Allianz Riviera	Nice	Lens	2 - 1	2	1	1	0	0	1	1542	1443	99	7.2
+2015-05-16	Stade Auguste-Delaune	Reims	Rennes	1 - 0	1	0	1	0	0	1	1519	1579	60	11.7
+2015-05-23	Stade Michel-d'Ornano	Caen	Evian	3 - 2	3	2	1	0	0	1	1564	1513	51	8.5
+2015-05-23	Stade de la Licorne	Lens	Nantes	1 - 0	1	0	1	0	0	1	1439	1545	106	13.0
+2015-05-23	Stade du Moustoir	Lorient	Monaco	0 - 1	0	1	0	0	1	3	1570	1746	176	5.3
+2015-05-23	Stadium Municipal	Toulouse	Nice	2 - 3	2	3	0	0	1	3	1536	1546	10	9.7
+2015-05-23	Stade Geoffroy-Guichard	St Etienne	Guingamp	2 - 1	2	1	1	0	0	1	1696	1565	131	6.4
+2015-05-23	Stade de la Route-de-Lorient	Rennes	Lyon	0 - 1	0	1	0	0	1	3	1571	1726	155	5.8
+2015-05-23	Nouveau Stade Bordeaux	Bordeaux	Montpellier	2 - 1	2	1	1	0	0	1	1630	1615	15	9.6
+2015-05-23	Parc des Princes	PSG	Reims	3 - 2	3	2	1	0	0	1	1854	1527	327	2.6
+2015-05-23	Stade Vélodrome	Marseille	Bastia	3 - 0	3	0	1	0	0	1	1686	1573	113	6.9
+2015-05-23	Stade Saint-Symphorien	Metz	Lille	1 - 4	1	4	0	0	1	3	1461	1627	166	5.6

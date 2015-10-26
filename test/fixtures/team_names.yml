@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  abbr: MyString
+  elo: MyString
+  sqw: MyString
+  lfp: MyString
+
+two:
+  abbr: MyString
+  elo: MyString
+  sqw: MyString
+  lfp: MyString

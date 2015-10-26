@@ -48,5 +48,5 @@ LEFT JOIN LATERAL (SELECT *
 WHERE NOT ((gae.start_x >= 88.4 AND gae.start_x <= 88.6) AND (gae.start_y >= 49.8 AND gae.start_y <= 50.4))
 AND s.start IN (2015)
 AND gae.start_x >= 50
-AND g.kickoff > '2015-09-22 00:00:00'
+AND g.kickoff > '2015-10-23 00:00:00'
 ORDER BY s.start DESC, g.kickoff ASC, g.id ASC, t.short_name ASC

@@ -1,0 +1,381 @@
+day,home_team,away_team,home_score,away_score
+1,Stade de Reims,Paris Saint-Germain,2,2
+1,SC Bastia,Olympique de Marseille,3,3
+1,Evian TG FC,SM Caen,0,3
+1,EA Guingamp,AS Saint-Etienne,0,2
+1,LOSC,FC Metz,0,0
+1,Montpellier Hérault SC,Girondins de Bordeaux,0,1
+1,FC Nantes,RC Lens,1,0
+1,OGC Nice,Toulouse FC,3,2
+1,Olympique Lyonnais,Stade Rennais FC,2,0
+1,AS Monaco,FC Lorient,1,2
+2,SM Caen,LOSC,0,1
+2,Paris Saint-Germain,SC Bastia,2,0
+2,RC Lens,EA Guingamp,0,1
+2,FC Lorient,OGC Nice,0,0
+2,FC Metz,FC Nantes,1,1
+2,Stade Rennais FC,Evian TG FC,6,2
+2,Toulouse FC,Olympique Lyonnais,2,1
+2,Olympique de Marseille,Montpellier Hérault SC,0,2
+2,AS Saint-Etienne,Stade de Reims,3,1
+2,Girondins de Bordeaux,AS Monaco,4,1
+3,Evian TG FC,Paris Saint-Germain,0,0
+3,EA Guingamp,Olympique de Marseille,0,1
+3,SC Bastia,Toulouse FC,1,0
+3,LOSC,FC Lorient,2,0
+3,Montpellier Hérault SC,FC Metz,2,0
+3,OGC Nice,Girondins de Bordeaux,1,3
+3,Stade de Reims,SM Caen,0,2
+3,Olympique Lyonnais,RC Lens,0,1
+3,AS Saint-Etienne,Stade Rennais FC,0,0
+3,FC Nantes,AS Monaco,0,1
+4,Olympique de Marseille,OGC Nice,4,0
+4,AS Monaco,LOSC,1,1
+4,SM Caen,Stade Rennais FC,0,1
+4,RC Lens,Stade de Reims,4,2
+4,FC Lorient,EA Guingamp,4,0
+4,FC Nantes,Montpellier Hérault SC,1,0
+4,Toulouse FC,Evian TG FC,1,0
+4,Girondins de Bordeaux,SC Bastia,1,1
+4,FC Metz,Olympique Lyonnais,2,1
+4,Paris Saint-Germain,AS Saint-Etienne,5,0
+5,Olympique Lyonnais,AS Monaco,2,1
+5,Stade Rennais FC,Paris Saint-Germain,1,1
+5,SC Bastia,RC Lens,1,1
+5,Montpellier Hérault SC,FC Lorient,1,0
+5,OGC Nice,FC Metz,1,0
+5,Stade de Reims,Toulouse FC,2,0
+5,AS Saint-Etienne,SM Caen,1,0
+5,LOSC,FC Nantes,2,0
+5,EA Guingamp,Girondins de Bordeaux,2,1
+5,Evian TG FC,Olympique de Marseille,1,3
+6,Girondins de Bordeaux,Evian TG FC,2,1
+6,Olympique de Marseille,Stade Rennais FC,3,0
+6,FC Lorient,Stade de Reims,0,1
+6,FC Metz,SC Bastia,3,1
+6,FC Nantes,OGC Nice,2,1
+6,Toulouse FC,SM Caen,3,3
+6,LOSC,Montpellier Hérault SC,0,0
+6,RC Lens,AS Saint-Etienne,0,1
+6,AS Monaco,EA Guingamp,1,0
+6,Paris Saint-Germain,Olympique Lyonnais,1,1
+7,Stade de Reims,Olympique de Marseille,0,5
+7,Stade Rennais FC,Toulouse FC,0,3
+7,SC Bastia,FC Nantes,0,0
+7,Evian TG FC,RC Lens,2,1
+7,EA Guingamp,FC Metz,0,1
+7,Olympique Lyonnais,FC Lorient,4,0
+7,Montpellier Hérault SC,AS Monaco,0,1
+7,OGC Nice,LOSC,1,0
+7,SM Caen,Paris Saint-Germain,0,2
+7,AS Saint-Etienne,Girondins de Bordeaux,1,1
+8,AS Monaco,OGC Nice,0,1
+8,Toulouse FC,Paris Saint-Germain,1,1
+8,LOSC,SC Bastia,1,0
+8,FC Lorient,Evian TG FC,0,2
+8,FC Metz,Stade de Reims,3,0
+8,Montpellier Hérault SC,EA Guingamp,2,1
+8,Girondins de Bordeaux,Stade Rennais FC,2,1
+8,RC Lens,SM Caen,0,0
+8,FC Nantes,Olympique Lyonnais,1,1
+8,Olympique de Marseille,AS Saint-Etienne,2,1
+9,Stade de Reims,Girondins de Bordeaux,1,0
+9,SM Caen,Olympique de Marseille,1,2
+9,SC Bastia,FC Lorient,0,2
+9,Evian TG FC,FC Metz,3,0
+9,OGC Nice,Montpellier Hérault SC,1,1
+9,Stade Rennais FC,RC Lens,2,0
+9,AS Saint-Etienne,Toulouse FC,0,1
+9,EA Guingamp,FC Nantes,0,1
+9,Olympique Lyonnais,LOSC,3,0
+9,Paris Saint-Germain,AS Monaco,1,1
+10,RC Lens,Paris Saint-Germain,1,3
+10,FC Lorient,AS Saint-Etienne,0,1
+10,LOSC,EA Guingamp,1,2
+10,FC Metz,Stade Rennais FC,0,0
+10,AS Monaco,Evian TG FC,2,0
+10,FC Nantes,Stade de Reims,1,1
+10,OGC Nice,SC Bastia,0,1
+10,Olympique de Marseille,Toulouse FC,2,0
+10,Girondins de Bordeaux,SM Caen,1,1
+10,Olympique Lyonnais,Montpellier Hérault SC,5,1
+11,Toulouse FC,RC Lens,0,2
+11,Paris Saint-Germain,Girondins de Bordeaux,3,0
+11,SC Bastia,AS Monaco,1,3
+11,SM Caen,FC Lorient,2,1
+11,Evian TG FC,FC Nantes,0,2
+11,Stade de Reims,Montpellier Hérault SC,1,0
+11,Stade Rennais FC,LOSC,2,0
+11,EA Guingamp,OGC Nice,2,7
+11,AS Saint-Etienne,FC Metz,1,0
+11,Olympique Lyonnais,Olympique de Marseille,1,0
+12,AS Monaco,Stade de Reims,1,1
+12,FC Lorient,Paris Saint-Germain,1,2
+12,EA Guingamp,SC Bastia,1,0
+12,LOSC,AS Saint-Etienne,1,1
+12,FC Metz,SM Caen,3,2
+12,Montpellier Hérault SC,Evian TG FC,2,0
+12,OGC Nice,Olympique Lyonnais,1,3
+12,FC Nantes,Stade Rennais FC,1,1
+12,Girondins de Bordeaux,Toulouse FC,2,1
+12,Olympique de Marseille,RC Lens,2,1
+13,Stade Rennais FC,FC Lorient,1,0
+13,RC Lens,Girondins de Bordeaux,1,2
+13,SC Bastia,Montpellier Hérault SC,2,0
+13,SM Caen,FC Nantes,1,2
+13,Evian TG FC,OGC Nice,1,0
+13,Toulouse FC,FC Metz,3,0
+13,Olympique Lyonnais,EA Guingamp,3,1
+13,Stade de Reims,LOSC,2,0
+13,AS Saint-Etienne,AS Monaco,1,1
+13,Paris Saint-Germain,Olympique de Marseille,2,0
+14,FC Metz,Paris Saint-Germain,2,3
+14,SC Bastia,Olympique Lyonnais,0,0
+14,EA Guingamp,Stade Rennais FC,0,1
+14,FC Lorient,RC Lens,1,0
+14,AS Monaco,SM Caen,2,2
+14,OGC Nice,Stade de Reims,0,0
+14,FC Nantes,AS Saint-Etienne,0,0
+14,Montpellier Hérault SC,Toulouse FC,2,0
+14,Olympique de Marseille,Girondins de Bordeaux,3,1
+14,LOSC,Evian TG FC,1,0
+15,Olympique de Marseille,FC Nantes,2,0
+15,Paris Saint-Germain,OGC Nice,1,0
+15,SM Caen,Montpellier Hérault SC,1,1
+15,RC Lens,FC Metz,2,0
+15,Stade de Reims,SC Bastia,2,1
+15,Stade Rennais FC,AS Monaco,2,0
+15,Toulouse FC,FC Lorient,2,3
+15,Girondins de Bordeaux,LOSC,1,0
+15,Evian TG FC,EA Guingamp,2,0
+15,AS Saint-Etienne,Olympique Lyonnais,3,0
+16,FC Lorient,Olympique de Marseille,1,1
+16,FC Nantes,Toulouse FC,1,2
+16,AS Monaco,RC Lens,2,0
+16,SC Bastia,Evian TG FC,1,2
+16,EA Guingamp,SM Caen,5,1
+16,FC Metz,Girondins de Bordeaux,0,0
+16,Montpellier Hérault SC,AS Saint-Etienne,0,2
+16,OGC Nice,Stade Rennais FC,1,2
+16,LOSC,Paris Saint-Germain,1,1
+16,Olympique Lyonnais,Stade de Reims,2,1
+17,Toulouse FC,AS Monaco,0,2
+17,Paris Saint-Germain,FC Nantes,2,1
+17,Girondins de Bordeaux,FC Lorient,3,2
+17,SM Caen,OGC Nice,2,3
+17,Stade Rennais FC,Montpellier Hérault SC,0,4
+17,AS Saint-Etienne,SC Bastia,1,0
+17,Evian TG FC,Olympique Lyonnais,2,3
+17,RC Lens,LOSC,1,1
+17,Stade de Reims,EA Guingamp,2,3
+17,Olympique de Marseille,FC Metz,3,1
+18,Olympique Lyonnais,SM Caen,3,0
+18,FC Nantes,Girondins de Bordeaux,2,1
+18,SC Bastia,Stade Rennais FC,2,0
+18,FC Lorient,FC Metz,3,1
+18,Montpellier Hérault SC,RC Lens,3,3
+18,Stade de Reims,Evian TG FC,3,2
+18,OGC Nice,AS Saint-Etienne,0,0
+18,EA Guingamp,Paris Saint-Germain,1,0
+18,LOSC,Toulouse FC,3,0
+18,AS Monaco,Olympique de Marseille,1,0
+19,RC Lens,OGC Nice,2,0
+19,Paris Saint-Germain,Montpellier Hérault SC,0,0
+19,SM Caen,SC Bastia,1,1
+19,FC Lorient,FC Nantes,1,2
+19,FC Metz,AS Monaco,0,1
+19,Stade Rennais FC,Stade de Reims,1,3
+19,Toulouse FC,EA Guingamp,1,1
+19,Olympique de Marseille,LOSC,2,1
+19,AS Saint-Etienne,Evian TG FC,3,0
+19,Girondins de Bordeaux,Olympique Lyonnais,0,5
+20,Montpellier Hérault SC,Olympique de Marseille,2,1
+20,SC Bastia,Paris Saint-Germain,4,2
+20,Evian TG FC,Stade Rennais FC,1,1
+20,EA Guingamp,RC Lens,2,0
+20,LOSC,SM Caen,1,0
+20,OGC Nice,FC Lorient,3,1
+20,Stade de Reims,AS Saint-Etienne,1,2
+20,Olympique Lyonnais,Toulouse FC,3,0
+20,FC Nantes,FC Metz,0,0
+20,AS Monaco,Girondins de Bordeaux,0,0
+21,Girondins de Bordeaux,OGC Nice,1,2
+21,RC Lens,Olympique Lyonnais,0,2
+21,SM Caen,Stade de Reims,4,1
+21,FC Lorient,LOSC,1,0
+21,FC Metz,Montpellier Hérault SC,2,3
+21,AS Monaco,FC Nantes,1,0
+21,Toulouse FC,SC Bastia,1,1
+21,Paris Saint-Germain,Evian TG FC,4,2
+21,Stade Rennais FC,AS Saint-Etienne,0,0
+21,Olympique de Marseille,EA Guingamp,2,1
+22,OGC Nice,Olympique de Marseille,2,1
+22,LOSC,AS Monaco,0,1
+22,SC Bastia,Girondins de Bordeaux,0,0
+22,EA Guingamp,FC Lorient,3,2
+22,Montpellier Hérault SC,FC Nantes,4,0
+22,Evian TG FC,Toulouse FC,1,0
+22,Olympique Lyonnais,FC Metz,2,0
+22,Stade de Reims,RC Lens,0,0
+22,Stade Rennais FC,SM Caen,1,4
+22,AS Saint-Etienne,Paris Saint-Germain,0,1
+23,Paris Saint-Germain,Stade Rennais FC,1,0
+23,Olympique de Marseille,Evian TG FC,1,0
+23,RC Lens,SC Bastia,1,1
+23,FC Lorient,Montpellier Hérault SC,0,0
+23,FC Metz,OGC Nice,0,0
+23,FC Nantes,LOSC,1,1
+23,Toulouse FC,Stade de Reims,1,0
+23,SM Caen,AS Saint-Etienne,1,0
+23,Girondins de Bordeaux,EA Guingamp,1,1
+23,AS Monaco,Olympique Lyonnais,0,0
+24,AS Saint-Etienne,RC Lens,3,3
+24,Stade Rennais FC,Olympique de Marseille,1,1
+24,SC Bastia,FC Metz,2,0
+24,SM Caen,Toulouse FC,2,0
+24,Evian TG FC,Girondins de Bordeaux,0,1
+24,Montpellier Hérault SC,LOSC,1,2
+24,Stade de Reims,FC Lorient,1,3
+24,EA Guingamp,AS Monaco,1,0
+24,OGC Nice,FC Nantes,0,0
+24,Olympique Lyonnais,Paris Saint-Germain,1,1
+25,Olympique de Marseille,Stade de Reims,2,2
+25,Paris Saint-Germain,SM Caen,2,2
+25,RC Lens,Evian TG FC,0,2
+25,LOSC,OGC Nice,0,0
+25,FC Nantes,SC Bastia,0,2
+25,Toulouse FC,Stade Rennais FC,2,1
+25,Girondins de Bordeaux,AS Saint-Etienne,1,0
+25,FC Metz,EA Guingamp,0,2
+25,FC Lorient,Olympique Lyonnais,1,1
+25,AS Monaco,Montpellier Hérault SC,0,0
+26,OGC Nice,AS Monaco,0,1
+26,Paris Saint-Germain,Toulouse FC,3,1
+26,SC Bastia,LOSC,2,1
+26,SM Caen,RC Lens,4,1
+26,Stade Rennais FC,Girondins de Bordeaux,1,1
+26,EA Guingamp,Montpellier Hérault SC,0,2
+26,Olympique Lyonnais,FC Nantes,1,0
+26,Stade de Reims,FC Metz,0,0
+26,AS Saint-Etienne,Olympique de Marseille,2,2
+26,Evian TG FC,FC Lorient,1,0
+27,Olympique de Marseille,SM Caen,2,3
+27,LOSC,Olympique Lyonnais,2,1
+27,Girondins de Bordeaux,Stade de Reims,1,1
+27,RC Lens,Stade Rennais FC,0,1
+27,FC Lorient,SC Bastia,2,0
+27,FC Metz,Evian TG FC,1,2
+27,Toulouse FC,AS Saint-Etienne,1,1
+27,FC Nantes,EA Guingamp,1,0
+27,Montpellier Hérault SC,OGC Nice,2,1
+27,AS Monaco,Paris Saint-Germain,0,0
+28,Toulouse FC,Olympique de Marseille,1,6
+28,Paris Saint-Germain,RC Lens,4,1
+28,SC Bastia,OGC Nice,2,1
+28,SM Caen,Girondins de Bordeaux,1,2
+28,Evian TG FC,AS Monaco,1,3
+28,Stade de Reims,FC Nantes,3,1
+28,Stade Rennais FC,FC Metz,1,0
+28,AS Saint-Etienne,FC Lorient,2,0
+28,EA Guingamp,LOSC,0,1
+28,Montpellier Hérault SC,Olympique Lyonnais,1,5
+29,AS Monaco,SC Bastia,3,0
+29,OGC Nice,EA Guingamp,1,2
+29,FC Metz,AS Saint-Etienne,2,3
+29,RC Lens,Toulouse FC,1,0
+29,FC Lorient,SM Caen,2,1
+29,Montpellier Hérault SC,Stade de Reims,3,1
+29,FC Nantes,Evian TG FC,2,1
+29,LOSC,Stade Rennais FC,3,0
+29,Girondins de Bordeaux,Paris Saint-Germain,3,2
+29,Olympique de Marseille,Olympique Lyonnais,0,0
+30,Paris Saint-Germain,FC Lorient,3,1
+30,Olympique Lyonnais,OGC Nice,1,2
+30,SC Bastia,EA Guingamp,0,0
+30,SM Caen,FC Metz,0,0
+30,Evian TG FC,Montpellier Hérault SC,1,0
+30,Stade Rennais FC,FC Nantes,0,0
+30,Toulouse FC,Girondins de Bordeaux,2,1
+30,AS Saint-Etienne,LOSC,2,0
+30,Stade de Reims,AS Monaco,1,3
+30,RC Lens,Olympique de Marseille,0,4
+31,AS Monaco,AS Saint-Etienne,1,1
+31,EA Guingamp,Olympique Lyonnais,1,3
+31,LOSC,Stade de Reims,3,1
+31,FC Lorient,Stade Rennais FC,0,3
+31,FC Metz,Toulouse FC,3,2
+31,Montpellier Hérault SC,SC Bastia,3,1
+31,OGC Nice,Evian TG FC,2,2
+31,Girondins de Bordeaux,RC Lens,2,1
+31,FC Nantes,SM Caen,1,2
+31,Olympique de Marseille,Paris Saint-Germain,2,3
+32,SM Caen,AS Monaco,0,3
+32,AS Saint-Etienne,FC Nantes,1,0
+32,Evian TG FC,LOSC,0,1
+32,RC Lens,FC Lorient,0,0
+32,Stade de Reims,OGC Nice,0,1
+32,Stade Rennais FC,EA Guingamp,1,0
+32,Toulouse FC,Montpellier Hérault SC,1,0
+32,Girondins de Bordeaux,Olympique de Marseille,1,0
+32,Olympique Lyonnais,SC Bastia,2,0
+32,Paris Saint-Germain,FC Metz,3,1
+33,FC Nantes,Olympique de Marseille,1,0
+33,OGC Nice,Paris Saint-Germain,1,3
+33,SC Bastia,Stade de Reims,1,2
+33,EA Guingamp,Evian TG FC,1,1
+33,FC Lorient,Toulouse FC,0,1
+33,FC Metz,RC Lens,3,1
+33,AS Monaco,Stade Rennais FC,1,1
+33,LOSC,Girondins de Bordeaux,2,0
+33,Montpellier Hérault SC,SM Caen,1,0
+33,Olympique Lyonnais,AS Saint-Etienne,2,2
+34,Olympique de Marseille,FC Lorient,3,5
+34,Paris Saint-Germain,LOSC,6,1
+34,Girondins de Bordeaux,FC Metz,1,1
+34,SM Caen,EA Guingamp,0,2
+34,Evian TG FC,SC Bastia,1,2
+34,Stade Rennais FC,OGC Nice,2,1
+34,Toulouse FC,FC Nantes,1,1
+34,AS Saint-Etienne,Montpellier Hérault SC,1,0
+34,RC Lens,AS Monaco,0,3
+34,Stade de Reims,Olympique Lyonnais,2,4
+35,FC Metz,Olympique de Marseille,0,2
+35,Olympique Lyonnais,Evian TG FC,2,0
+35,SC Bastia,AS Saint-Etienne,1,0
+35,EA Guingamp,Stade de Reims,2,0
+35,FC Lorient,Girondins de Bordeaux,0,0
+35,Montpellier Hérault SC,Stade Rennais FC,0,0
+35,OGC Nice,SM Caen,1,1
+35,LOSC,RC Lens,3,1
+35,AS Monaco,Toulouse FC,4,1
+35,FC Nantes,Paris Saint-Germain,0,2
+36,Paris Saint-Germain,EA Guingamp,6,0
+36,SM Caen,Olympique Lyonnais,3,0
+36,Girondins de Bordeaux,FC Nantes,2,1
+36,Evian TG FC,Stade de Reims,2,3
+36,FC Metz,FC Lorient,0,4
+36,Stade Rennais FC,SC Bastia,0,1
+36,Toulouse FC,LOSC,3,2
+36,RC Lens,Montpellier Hérault SC,0,1
+36,AS Saint-Etienne,OGC Nice,5,0
+36,Olympique de Marseille,AS Monaco,2,1
+37,SC Bastia,SM Caen,1,1
+37,Evian TG FC,AS Saint-Etienne,1,2
+37,EA Guingamp,Toulouse FC,2,1
+37,LOSC,Olympique de Marseille,0,4
+37,Olympique Lyonnais,Girondins de Bordeaux,1,1
+37,AS Monaco,FC Metz,2,0
+37,Montpellier Hérault SC,Paris Saint-Germain,1,2
+37,FC Nantes,FC Lorient,1,1
+37,OGC Nice,RC Lens,2,1
+37,Stade de Reims,Stade Rennais FC,1,0
+38,Girondins de Bordeaux,Montpellier Hérault SC,2,1
+38,SM Caen,Evian TG FC,3,2
+38,RC Lens,FC Nantes,1,0
+38,FC Lorient,AS Monaco,0,1
+38,Olympique de Marseille,SC Bastia,3,0
+38,FC Metz,LOSC,1,4
+38,Paris Saint-Germain,Stade de Reims,3,2
+38,Stade Rennais FC,Olympique Lyonnais,0,1
+38,AS Saint-Etienne,EA Guingamp,2,1
+38,Toulouse FC,OGC Nice,2,3

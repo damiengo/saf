@@ -10,7 +10,7 @@ def main():
     print("==== START ====")
 
     dataset = DataFrame.from_csv('../data/stats/shots_teams_2013_2014.tsv', sep='\t', index_col=False)
-    current_day = DataFrame.from_csv('../data/stats/shots_games_2015_J7.tsv', sep='\t', index_col=False)
+    current_day = DataFrame.from_csv('../data/stats/shots_games_2015_J11.tsv', sep='\t', index_col=False)
 
     target = dataset.loc[:,'goal']
     train = dataset.loc[:,['degree', 'distance', 'shot_headed', 'corner']]
@@ -42,7 +42,7 @@ def main():
     results = concat([dataset_test, predicted_goals], axis=1)
     grouped_results = results.groupby(['game_id'])
 
-    results.to_csv('../data/stats/exp_goals_days_J7.tsv', sep='\t', encoding='utf-8')
+    results.to_csv('../data/stats/exp_goals_days_J11.tsv', sep='\t', encoding='utf-8')
 
     lr = LinearRegression()
     goals = grouped_results.ix[:, 'goal'].tolist()

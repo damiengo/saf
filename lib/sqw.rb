@@ -140,7 +140,7 @@ class Sqw
 
           sqw_ga_event               = SqwGoalsAttemptsEvent.new
           sqw_ga_event.sqw_game_id   = game.id
-          sqw_ga_event.sqw_player_id = ga_player.id
+          sqw_ga_event.sqw_player_id = ( not ga_player.nil?)? ga_player.id : nil
           sqw_ga_event.sqw_team_id   = ga_team.id
           sqw_ga_event.event_type    = xml_ga_event["type"]
           sqw_ga_event.action_type   = xml_ga_event["action_type"]

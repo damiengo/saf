@@ -29,11 +29,11 @@ namespace :saf do
   desc "Parse LFP"
   task parse_lfp: :environment do
 
-    season_name = "2013-2014"
-    season_id = 82
+    season_name = "2014-2015"
+    season_id = 83
     page = 1
 
-    CSV.open("data/french-ligue1-#{season_name}.csv", "wb") do |csv|
+    CSV.open("data/lfp/french-ligue1-#{season_name}.csv", "wb") do |csv|
       csv << ["day", "home_team", "away_team", "home_score", "away_score"]
       while page > 0
         first_page = Nokogiri::HTML(open("http://www.lfp.fr/ligue1/competitionPluginCalendrierResultat/changeCalendrierSaison?sai=#{season_id}&jour=#{page}"), nil, "utf-8")
@@ -42,10 +42,10 @@ namespace :saf do
           home_team   = tr.css(".domicile").text.strip
           away_team   = tr.css(".exterieur").text.strip
           result      = tr.css(".stats").text.strip
-          home_result = result.split("-")[0].strip
-          away_result = result.split("-")[1].strip
 
           if( ! home_team.empty?)
+            home_result = result.split("-")[0].strip
+            away_result = result.split("-")[1].strip
             puts home_team + " - " + away_team + ": " + result
             csv << [page, home_team, away_team, home_result, away_result]
           end
@@ -61,14 +61,18 @@ namespace :saf do
 
     ligue1_model = Tournament.find(1)
 
-    Dir.glob("data/*").each do |file|
+    #filter = "data/lfp/*"
+    filter = "data/lfp/french-ligue1-2014-2015.*"
+
+    Dir.glob(filter).each do |file|
+      print file
       season_goals      = 0
       season_home_goals = 0
       season_away_goals = 0
       season_games      = 0
       season_diff       = 0
-      season_start = file.to_s[19..22]
-      season_end   = file.to_s[24..27]
+      season_start = file.to_s[23..26]
+      season_end   = file.to_s[28..31]
       # Save season
       season_model = Season.find_by(start: season_start, end: season_end)
       if season_model.nil?
