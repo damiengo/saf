@@ -22,7 +22,11 @@ def main():
     model = LogisticRegression()
     model = model.fit(train_features, train_target)
 
-    plt.scatter(x=elo_histo['home_elo'], y=elo_histo['away_elo'], c=elo_histo['result'])
+    markers = {1: '+', 2: '*', 3: '_'}
+
+    for x, y, c, m in zip(elo_histo['home_elo'], elo_histo['away_elo'], elo_histo['result'], elo_histo['result'].map(markers)):
+      plt.scatter(x=x, y=y, c=c, marker=m)
+
     plt.show()
 
     kf_total = cross_validation.KFold(len(train_features), n_folds=2)
