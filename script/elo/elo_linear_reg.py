@@ -41,6 +41,26 @@ def classifersTest(X, y):
         print("Classifier %s: mean %0.2f std %0.2f" % (name, score.mean(), score.std()))
 
 """
+ Selects a team values.
+"""
+def onlyTeam(df, team_name):
+    # Selecting columns
+    selected_home = df[df.home_team == team_name]
+    selected_away = df[df.away_team == team_name]
+
+    home = selected_home.ix[:, ['kickoff', 'home_elo', 'away_elo']]
+    away = selected_away.ix[:, ['kickoff', 'away_elo', 'home_elo']]
+
+    home['diff'] = selected_home.ix[:, 'home_elo'] - selected_home.ix[:, 'away_elo']
+    away['diff'] = selected_away.ix[:, 'away_elo'] - selected_away.ix[:, 'home_elo']
+
+    # Reset columns names
+    home.columns = ['kickoff', 'elo', 'vs_elo', 'diff']
+    away.columns = ['kickoff', 'elo', 'vs_elo', 'diff']
+
+    return home.append(away)
+
+"""
  Main launcher.
 """
 def main():
@@ -50,13 +70,18 @@ def main():
 
     team_names = Series(elo_histo['home_team']).unique()
 
-    teams = DataFrame()
     for team_name in team_names:
         print "==============================="
         print team_name
-        teams.set_value(team_name, team_name, elo_histo[(elo_histo.home_team == team_name) | (elo_histo.away_team == team_name)])
+        team = onlyTeam(elo_histo, team_name)
+        subset =  team[team.kickoff > '2014-12-01'][0:5].mean()['elo']
+        print subset
 
-    # Reorder datas programmatically
+    for index, row in elo_histo.iterrows():
+        home_team = onlyTeam(elo_histo, row.home_team)
+         #elo_histo.loc('home_5g_mean') = home_team[home_team.kickoff < row.kickoff][0:5].mean()['elo']
+
+    elo_histo['home_5g_team'] = onlyTeam(elo_histo, elo_histo.home_team)[0:5].mean()['elo']
 
     target = elo_histo.loc[:,'result']
     train  = elo_histo.loc[:,['home_elo', 'away_elo']]
