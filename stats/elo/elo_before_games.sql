@@ -21,7 +21,35 @@ SELECT g.kickoff::date,
            THEN (0.5 -  1/(1+POWER(10, -(CAST(erh.elo AS integer) - CAST(era.elo AS integer)::integer)/400::float))) * 20
          WHEN home_goals < away_goals 
            THEN (0 -  1/(1+POWER(10, -(CAST(erh.elo AS integer) - CAST(era.elo AS integer)::integer)/400::float))) * 20
-       END)::numeric, 1) AS elo_swap
+       END)::numeric, 1) AS elo_swap, 
+       (
+           SELECT erh.elo - elos.elo
+           FROM
+           (
+	           SELECT er.*
+	           FROM sqw_teams t 
+	           INNER JOIN team_names tn ON t.short_name = tn.sqw
+	           INNER JOIN elo_ratings er ON tn.elo = er.team 
+	                                    AND er.date_of_update::date < (g.kickoff - interval '1 month')::date
+	           WHERE t.id = ht.id
+	           ORDER BY er.date_of_update DESC
+	           LIMIT 1
+           ) AS elos
+       ) AS home_1m_elo_diff, 
+       (
+           SELECT era.elo - elos.elo
+           FROM
+           (
+	           SELECT er.*
+	           FROM sqw_teams t 
+	           INNER JOIN team_names tn ON t.short_name = tn.sqw
+	           INNER JOIN elo_ratings er ON tn.elo = er.team 
+	                                    AND er.date_of_update::date < (g.kickoff - interval '1 month')::date
+	           WHERE t.id = at.id
+	           ORDER BY er.date_of_update DESC
+	           LIMIT 1
+           ) AS elos
+       ) AS away_1m_elo_diff
 FROM sqw_games g 
 INNER JOIN sqw_teams ht ON g.sqw_home_team_id = ht.id
 INNER JOIN sqw_teams at ON g.sqw_away_team_id = at.id

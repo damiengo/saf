@@ -6,6 +6,7 @@ from numpy import *
 from sklearn import naive_bayes as nb
 from sklearn import cross_validation
 import matplotlib.pyplot as plt
+import copy
 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
@@ -19,7 +20,7 @@ from sklearn.qda import QDA
  Test multiple classifiers throught features and target.
  http://scikit-learn.org/stable/auto_examples/plot_classifier_comparison.html
 """
-def classifersTest(X, y):
+def classifersTest(X, y, data):
     names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Decision Tree",
          "Random Forest", "AdaBoost", "Naive Bayes", "LDA", "QDA"]
     classifiers = [
@@ -36,39 +37,27 @@ def classifersTest(X, y):
     X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y)
     # iterate over classifiers
     for name, clf in zip(names, classifiers):
+        X_graph = copy.deepcopy(X)
         clf.fit(X_train, y_train)
         score = clf.score(X_test, y_test)
+        predicted = clf.predict(X)
+
+        X_graph['predicted'] = predicted
+        X_graph['result'] = y
+        X_graph['kickoff'] = data['kickoff']
+
+        X_graph = X_graph.set_index(DatetimeIndex(X_graph['kickoff']), drop=False)
+
+        summed_ok  = X_graph[X_graph['predicted'] == X_graph['result']].groupby(TimeGrouper("M")).count()
+        summed_all = X_graph.groupby(TimeGrouper("M")).count()
+
+        summed_ok['all'] = summed_all['result']
+        summed_ok['ratio'] = summed_ok['result'] / summed_ok['all']
+
+
         print("Classifier %s: mean %0.2f std %0.2f" % (name, score.mean(), score.std()))
-
-"""
- Selects a team values.
-"""
-def onlyTeam(df, team_name, before_date):
-    print '!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-    print df
-    print "==============****============"
-    print team_name
-    print '/////////////////////////////'
-    print before_date
-    print '---------------------------'
-    # Selecting columns
-    selected_home = df[(df.home_team == team_name) & (df.kickoff < before_date)]
-    selected_away = df[(df.away_team == team_name) & (df.kickoff < before_date)]
-
-    home = selected_home.ix[:, ['kickoff', 'home_elo', 'away_elo']]
-    away = selected_away.ix[:, ['kickoff', 'away_elo', 'home_elo']]
-
-    home['diff'] = selected_home.ix[:, 'home_elo'] - selected_home.ix[:, 'away_elo']
-    away['diff'] = selected_away.ix[:, 'away_elo'] - selected_away.ix[:, 'home_elo']
-
-    # Reset columns names
-    home.columns = ['kickoff', 'elo', 'vs_elo', 'diff']
-    away.columns = ['kickoff', 'elo', 'vs_elo', 'diff']
-
-    result =  home.append(away)
-    result.sort_values(by='kickoff')
-
-    return result
+        print("%i/%i" % ((predicted == y).sum(), y.sum()))
+        print summed_ok[['result', 'all', 'ratio']]
 
 """
  Main launcher.
@@ -78,16 +67,10 @@ def main():
 
     elo_histo = DataFrame.from_csv('../../data/stats/results_ligue1_elo.tsv', sep='\t', index_col=False)
 
-    team_names = Series(elo_histo['home_team']).unique()
-
-    elo_histo['home_5g_team'] = onlyTeam(elo_histo, elo_histo.home_team, elo_histo.kickoff)[0:5].mean()['elo']
-
-    print elo_histo
-
     target = elo_histo.loc[:,'result']
-    train  = elo_histo.loc[:,['home_elo', 'away_elo']]
+    train  = elo_histo.loc[:,['home_elo', 'away_elo', 'home_1m_elo_diff', 'away_1m_elo_diff']]
 
-    classifersTest(train, target)
+    classifersTest(train, target, elo_histo)
 
     print("==== END ELO ====")
 
