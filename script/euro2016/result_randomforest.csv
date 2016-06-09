@@ -1,0 +1,37 @@
+;name_team1;name_team2;home_win;draw;away_win
+0;France;Romania;0.33063;0.27858;0.38979
+1;Albania;Switzerland;0.21408;0.25555;0.52937
+2;Romania;Switzerland;0.50478;0.14627;0.34795
+3;France;Albania;0.49396;0.40565;0.09939
+4;Switzerland;France;0.41536;0.23224;0.3514
+5;Romania;Albania;0.48945;0.224;0.28555
+6;Wales;Slovakia;0.4216;0.32919;0.24821
+7;England;Russia;0.55822;0.26308;0.1777
+8;Russia;Slovakia;0.56369;0.27159;0.16372
+9;England;Wales;0.51019;0.40632;0.08249
+10;Slovakia;England;0.07117;0.17876;0.74907
+11;Russia;Wales;0.37269;0.44922;0.17709
+12;Poland;Northern Ireland;0.40442;0.32912;0.26546
+13;Germany;Ukraine;0.81627;0.1253;0.05743
+14;Ukraine;Northern Ireland;0.26802;0.2693;0.46168
+15;Germany;Poland;0.65464;0.22102;0.12334
+16;Northern Ireland;Germany;0.07205;0.38301;0.54394
+17;Ukraine;Poland;0.43672;0.21842;0.34386
+18;Turkey;Croatia;0.30609;0.26132;0.43159
+19;Spain;Czech;0.67003;0.10638;0.22259
+20;Czech;Croatia;0.46705;0.18413;0.34782
+21;Spain;Turkey;0.55782;0.27209;0.16909
+22;Croatia;Spain;0.23105;0.13116;0.63679
+23;Czech;Turkey;0.40778;0.14598;0.44524
+24;Ireland;Sweden;0.3049;0.15032;0.54378
+25;Belgium;Italy;0.34986;0.33977;0.30937
+26;Italy;Sweden;0.51485;0.16194;0.32221
+27;Belgium;Ireland;0.45866;0.20347;0.33687
+28;Sweden;Belgium;0.56335;0.11991;0.31574
+29;Italy;Ireland;0.65918;0.2065;0.13332
+30;Austria;Hungary;0.18222;0.27474;0.54204
+31;Portugal;Iceland;0.65945;0.22307;0.11648
+32;Iceland;Hungary;0.17482;0.248;0.57618
+33;Portugal;Austria;0.58089;0.16464;0.25347
+34;Iceland;Austria;0.2693;0.4006;0.3291
+35;Hungary;Portugal;0.48814;0.19845;0.31241
