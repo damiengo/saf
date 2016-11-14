@@ -1,0 +1,33 @@
+<h1>Queries</h1>
+
+<%= form_tag({controller: "queries", action: "show_script"}, method: "get", id: "choose_script") do %>
+  <select name='script'>
+    <% @sqls.each do |sql| %>
+      <% sql_splitted = sql.split('/') %>
+      <option value='<%= sql %>'><%= sql_splitted[1] + '/' + sql_splitted[2] %></option>
+    <% end %>
+  </select>
+  <input type='submit' value=' OK ' />
+<% end %>
+
+<div id="script_result">
+  <div class="block">
+    <h2>Query</h2>
+    <pre><code id="script_content"></code></pre>
+  </div>
+
+  <div class="block">
+    <h2>Results</h3>
+    <div id="script_results"></div>
+  </div>
+
+  <div class="block">
+    <h2>Graph</h2>
+    <select id='graph_type' name="graph_type">
+      <option value="bar_chart">Bar chart</option>
+    </select>
+    <input type="submit" id="chosse_chart" value=" OK " />
+    <ul id="graph_vars"></ul>
+    <div id="script_graph"></div>
+  </div>
+</div>

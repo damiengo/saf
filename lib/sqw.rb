@@ -55,7 +55,7 @@ class Sqw
       game.home_goals     = matched_result[1]
       game.away_goals     = matched_result[2]
       game.venue          = doc.css("data_panel game venue").text.strip
-      game.kickoff        = doc.css("data_panel game kickoff").text.strip
+      game.kickoff        = Date.strptime(doc.css("data_panel game kickoff").text.strip, "%a, %d %b %Y %H:%M:%S")
       game.save
 
       # Players

@@ -132,7 +132,7 @@ namespace :saf do
 
       # 24 => Ligue 1, 8 => EPL, 22 => Bundesliga, 21 => Serie A, 23 => Liga, 9 => Eredivise
       tournament = "24"
-      season = "2015"
+      season = "2016"
       nb_page = 1
 
       url = "http://www.squawka.com/match-results"
@@ -214,8 +214,8 @@ namespace :saf do
   task analyse_sqw: :environment do
 
       # Season
-      season_start = 2015
-      season_end   = 2016
+      season_start = 2016
+      season_end   = 2017
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
         season = SqwSeason.new

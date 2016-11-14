@@ -1,4 +1,4 @@
-SELECT CASE WHEN gae.event_type = 'goal' THEN 1 ELSE 0 END AS goal,
+﻿SELECT CASE WHEN gae.event_type = 'goal' THEN 1 ELSE 0 END AS goal,
        atan2(100-gae.start_x, 50-gae.start_y) * (180 / pi()) AS degree, 
        sqrt((100-gae.start_x)^2+(50-gae.start_y)^2) AS distance, 
        CASE WHEN gae.headed THEN 1 ELSE 0 END AS shot_headed, 
@@ -35,5 +35,5 @@ LEFT JOIN LATERAL (SELECT *
            ORDER BY ap.created_at DESC
            LIMIT 1) passes ON true
 WHERE NOT ((gae.start_x >= 88.4 AND gae.start_x <= 88.6) AND (gae.start_y >= 49.8 AND gae.start_y <= 50.4))
-AND s.start IN (2013, 2014)
+AND s.start IN (2013, 2014, 2016)
 AND gae.start_x >= 50
