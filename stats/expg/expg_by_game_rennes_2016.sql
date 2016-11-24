@@ -1,10 +1,4 @@
-﻿SELECT s.start, 
-       g.id AS game_id,
-       g.sqw_home_team_id,
-       g.sqw_away_team_id,
-       t.id as team_id,
-       t.short_name, 
-       p.first_name, 
+﻿SELECT p.first_name, 
        p.last_name,
        CASE WHEN gae.event_type = 'goal' THEN 1 ELSE 0 END AS goal,
        gae.start_x, 
@@ -49,4 +43,5 @@ WHERE NOT ((gae.start_x >= 88.4 AND gae.start_x <= 88.6) AND (gae.start_y >= 49.
 AND s.start IN (2016)
 AND gae.start_x >= 50
 AND g.kickoff > '2015-11-06 00:00:00'
+AND t.short_name = 'Rennes'
 ORDER BY s.start DESC, g.kickoff ASC, g.id ASC, t.short_name ASC
