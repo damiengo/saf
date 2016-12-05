@@ -6,11 +6,6 @@ import numpy as np
 from sklearn import preprocessing
 import logging as log
 
-import sys
-import os
-sys.path.append(os.path.abspath("/home/dam/www/saf/script/soccerfield"))
-from soccerfield import *
-
 # An object oriented neural network
 class Network:
     def __init__(self, input, target):
@@ -35,7 +30,7 @@ class Network:
             # Backward
             if(backward):
                 # Error is the difference between expected and calculated values
-                layer2_error    = self.target - layer2_out.T
+                layer2_error    = self.rmse(self.target, layer2_out.T)
                 # Gradient is the derivative of the layer2 out
                 layer2_gradient = self.sigmoid_grad(layer2_out)
                 # Delta is the derivate multiplicated by the error to get the force
@@ -85,6 +80,10 @@ class Network:
     def randomWeights(self, inputSize, outputSize):
         return (np.random.random((inputSize, outputSize)) * 2) - 1
 
+    # Calculates RMSE
+    def rmse(self, target, out):
+        return np.power(np.mean(np.power(target - out, 2)), 0.5)
+
 # Main function
 if __name__=="__main__":
     np.random.seed(8)
@@ -100,9 +99,8 @@ if __name__=="__main__":
     train_input  = sample[:15000, 1:4]
 
     # Last entries are for test
-    test_target    = sample[15000:, 0]
-    test_input     = sample[15000:, 1:4]
-    test_input_all = sample[15000:, :]
+    test_target = sample[15000:, 0]
+    test_input  = sample[15000:, 1:4]
 
     # Train network
     network = Network(train_input, train_target)
@@ -111,10 +109,7 @@ if __name__=="__main__":
     # Test network
     network.set_data(test_input, test_target)
     test_out = network.run_2_layers(False)
-    log.debug(np.c_[test_input_all, test_target, test_out])
+    log.debug(np.c_[test_target, test_out])
     log.debug('Test RMSE: '+str(np.power(np.mean(np.power(test_target - test_out, 2)), 0.5)))
-
-    sf = Soccerfield(np.c_[test_input_all[:, 3], test_input_all[:, 4], test_out * 100])
-    sf.show()
 
     log.info("END")

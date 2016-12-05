@@ -11,7 +11,9 @@
        CASE WHEN passes.throw_in THEN 1 ELSE 0 END AS pass_throw_in, 
        CASE WHEN passes.long_ball THEN 1 ELSE 0 END AS pass_long_ball, 
        CASE WHEN passes.through_ball THEN 1 ELSE 0 END AS pass_through_ball, 
-       CASE WHEN passes.headed THEN 1 ELSE 0 END AS pass_headed
+       CASE WHEN passes.headed THEN 1 ELSE 0 END AS pass_headed, 
+       t.team_color AS color, 
+       1 AS nb
 FROM sqw_goals_attempts_events gae
 INNER JOIN sqw_teams t ON gae.sqw_team_id = t.id
 INNER JOIN sqw_games g ON gae.sqw_game_id = g.id
@@ -42,6 +44,6 @@ LEFT JOIN LATERAL (SELECT *
 WHERE NOT ((gae.start_x >= 88.4 AND gae.start_x <= 88.6) AND (gae.start_y >= 49.8 AND gae.start_y <= 50.4))
 AND s.start IN (2016)
 AND gae.start_x >= 50
-AND g.kickoff > '2015-11-06 00:00:00'
+AND g.kickoff > '2016-08-06 00:00:00'
 AND t.short_name = 'Rennes'
 ORDER BY s.start DESC, g.kickoff ASC, g.id ASC, t.short_name ASC
