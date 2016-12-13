@@ -26,7 +26,11 @@ class Soccerfield:
     """
     Creates the soccerfield.
     """
-    def __init__(self, home_shots, away_shots):
+    def __init__(self, home_shots, away_shots,
+                       home_team, away_team,
+                       home_np_goals, away_np_goals,
+                       home_p_goals, away_p_goals,
+                       home_color, away_color):
         fig, ax = plt.subplots(figsize=(12, 10))
 
         # Conserve scaling
@@ -39,6 +43,7 @@ class Soccerfield:
         # No axes
         plt.axis('off')
         ax.set_ylim(ymin=0, ymax=100)
+        plt.subplots_adjust(left=0, bottom=0, top=0.95, right=1)
 
         fieldLinesColor = 'white'
         fieldLinesWitdh = 1
@@ -137,21 +142,30 @@ class Soccerfield:
                 color='#333333'
             )
         )
+
+        font_size = 16
+        font_small_size = 12
         # Score
-        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+12, '-', color='white', family='monospace', size='10', horizontalalignment='center')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+12, 'Rennes 2', color='white', family='monospace', horizontalalignment='right')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+12, '1 Nantes', color='white', family='monospace', horizontalalignment='left')
+        home_goals = str(home_np_goals)
+        if(home_p_goals > 0):
+            home_goals = home_goals + ' (+' + str(home_p_goals) + ' pen)'
+        away_goals = str(away_np_goals)
+        if(away_p_goals > 0):
+            away_goals = away_goals + ' (+' + str(away_p_goals) + ' pen)'
+        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+12, ' ', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+12, home_team+' '+home_goals, color='white', family='monospace', size=font_size, horizontalalignment='right')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+12, away_goals+' '+away_team, color='white', family='monospace', size=font_size, horizontalalignment='left')
         # Shots
-        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+7, 'Tirs', color='white', family='monospace', size='10', horizontalalignment='center')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+7, str(home_shots[:, 2].size), color='white', family='monospace', horizontalalignment='right')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+7, str(away_shots[:, 2].size), color='white', family='monospace', horizontalalignment='left')
+        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+7, 'Tirs', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+7, str(home_shots[:, 2].size), color='white', family='monospace', size=font_size, horizontalalignment='right')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+7, str(away_shots[:, 2].size), color='white', family='monospace', size=font_size, horizontalalignment='left')
         # ExpG
-        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+2, 'expG', color='white', family='monospace', size='10', horizontalalignment='center')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+2, str(np.sum(home_shots[:, 2])), color='white', family='monospace', horizontalalignment='right')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(np.sum(away_shots[:, 2])), color='white', family='monospace', horizontalalignment='left')
+        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+2, 'expG', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+2, str(np.sum(home_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='right')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(np.sum(away_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='left')
         # Points
-        plt.scatter(self.fieldWidth-self.scaleX(home_shots[:, 0])+self.fieldStartX, self.scaleY(home_shots[:, 1])+self.fieldStartY, s=home_shots[:, 2]*150, c='red', alpha=0.7, marker='h', zorder=2)
-        plt.scatter(self.scaleX(away_shots[:, 0])+self.fieldStartX,                 self.scaleY(away_shots[:, 1])+self.fieldStartY, s=away_shots[:, 2]*150, c='yellow', alpha=0.7, marker='h', zorder=2)
+        plt.scatter(self.fieldWidth-self.scaleX(home_shots[:, 0])+self.fieldStartX, self.scaleY(home_shots[:, 1])+self.fieldStartY, s=home_shots[:, 2]*400, c=home_color, alpha=0.8, marker='h', zorder=2)
+        plt.scatter(self.scaleX(away_shots[:, 0])+self.fieldStartX,                 self.scaleY(away_shots[:, 1])+self.fieldStartY, s=away_shots[:, 2]*400, c=away_color, alpha=0.8, marker='h', zorder=2)
 
     """
     Scale X point.
@@ -176,7 +190,7 @@ class Soccerfield:
 
 # Test
 
-home_shots = np.array([[70, 30, 0.6], [95, 80, 0.09]])
-away_shots = np.array([[70, 40, 0.07], [95, 50, 0.86]])
-sf = Soccerfield(home_shots, away_shots)
+home_shots = np.array([[70, 30, 0.6, 1], [95, 80, 0.09, 0]])
+away_shots = np.array([[70, 40, 0.07, 0], [95, 50, 1, 1]])
+sf = Soccerfield(home_shots, away_shots, 'Rennes', 'Lille', 3, 1, 2, 0, 'red', 'black')
 sf.show()
