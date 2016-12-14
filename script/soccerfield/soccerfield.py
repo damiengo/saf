@@ -164,8 +164,11 @@ class Soccerfield:
         ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+2, str(np.sum(home_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='right')
         ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(np.sum(away_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='left')
         # Points
+        # Create two arrays: one for shots and one for goals
+        print np.where(home_shots[:, 3] == 1)
         plt.scatter(self.fieldWidth-self.scaleX(home_shots[:, 0])+self.fieldStartX, self.scaleY(home_shots[:, 1])+self.fieldStartY, s=home_shots[:, 2]*400, c=home_color, alpha=0.8, marker='h', zorder=2)
         plt.scatter(self.scaleX(away_shots[:, 0])+self.fieldStartX,                 self.scaleY(away_shots[:, 1])+self.fieldStartY, s=away_shots[:, 2]*400, c=away_color, alpha=0.8, marker='h', zorder=2)
+
 
     """
     Scale X point.
