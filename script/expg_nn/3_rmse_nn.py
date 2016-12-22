@@ -11,7 +11,7 @@ class Network:
     def __init__(self, input, target):
         self.set_data(input, target)
         self.hiddenSize = 2
-        self.alpha      = 0.0001
+        self.alpha      = 0.01
         self.iter       = 1000
         self.s1_weights = self.randomWeights(self.input.shape[1], self.hiddenSize)
         self.s2_weights = self.randomWeights(self.hiddenSize, 1)
@@ -82,7 +82,7 @@ class Network:
 
     # Calculates RMSE
     def rmse(self, target, out):
-        return np.power(np.mean(np.power(target - out, 2)), 0.5)
+        return np.sqrt(np.square(target - out))
 
 # Main function
 if __name__=="__main__":

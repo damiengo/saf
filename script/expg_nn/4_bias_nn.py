@@ -13,17 +13,20 @@ sys.path.append(os.path.abspath("/home/dam/www/saf/script/soccerfield"))
 from soccerfield import *
 
 # An object oriented neural network
+# Bias : http://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks
 class Network:
     def __init__(self, input, target):
         self.set_data(input, target)
         self.hiddenSize = 2
         self.alpha      = 0.0001
-        self.iter       = 1000
+        self.iter       = 2000
         self.s1_weights = self.randomWeights(self.input.shape[1], self.hiddenSize)
         self.s2_weights = self.randomWeights(self.hiddenSize, 1)
 
     def set_data(self, input, target):
         self.input  = preprocessing.scale(input)
+        # Add the bias unit for first layer
+        self.input  = np.c_[self.input, np.ones(self.input.shape[0])]
         self.target = target
 
     # 2 layers network
@@ -54,25 +57,14 @@ class Network:
 
         return layer2_out
 
-    # 1 layer network
-    def run_1_layer(self):
-        weights = self.randomWeights(self.input.shape[1], 1)
-        for j in xrange(self.iter):
-            # Forward
-            layer1_out = self.sigmoid(np.dot(self.input, weights))
-            # Backward
-
-            # Error is the difference between expected and calculated values
-            layer1_error    = self.target - layer1_out.T
-            # Gradient is the derivative of the layer2 out
-            layer1_gradient = self.sigmoid_grad(layer1_out)
-            # Delta is the derivate multiplicated by the error to get the force
-            layer1_delta    = layer1_error.T * layer1_gradient
-
-            weights += self.alpha * (np.dot(self.input.T, layer1_delta))
-
-            if (j% (self.iter/10)) == 0:
-                log.debug(str(j)+' : '+str(np.mean(np.abs(layer1_error))))
+    """
+    Print weights.
+    """
+    def print_weights(self):
+        print "==== S1 weights ===="
+        print self.s1_weights
+        print "==== S2 weights ===="
+        print self.s2_weights
 
     # The sigmoid function
     def sigmoid(self, values):
@@ -112,7 +104,8 @@ if __name__=="__main__":
     # Test network
     network.set_data(test_input, test_target)
     test_out = network.run_2_layers(False)
-    log.debug(np.c_[test_input_all, test_target, test_out])
+    log.debug(np.c_[test_input, test_target, test_out])
     log.debug('Test RMSE: '+str(np.power(np.mean(np.power(test_target - test_out, 2)), 0.5)))
+    log.debug(network.print_weights())
 
     log.info("END")

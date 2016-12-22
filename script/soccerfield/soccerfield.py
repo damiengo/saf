@@ -165,9 +165,14 @@ class Soccerfield:
         ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(np.sum(away_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='left')
         # Points
         # Create two arrays: one for shots and one for goals
-        print np.where(home_shots[:, 3] == 1)
-        plt.scatter(self.fieldWidth-self.scaleX(home_shots[:, 0])+self.fieldStartX, self.scaleY(home_shots[:, 1])+self.fieldStartY, s=home_shots[:, 2]*400, c=home_color, alpha=0.8, marker='h', zorder=2)
-        plt.scatter(self.scaleX(away_shots[:, 0])+self.fieldStartX,                 self.scaleY(away_shots[:, 1])+self.fieldStartY, s=away_shots[:, 2]*400, c=away_color, alpha=0.8, marker='h', zorder=2)
+        home_no_goals = home_shots[home_shots[:, 3] == 0]
+        home_goals    = home_shots[home_shots[:, 3] == 1]
+        away_no_goals = away_shots[away_shots[:, 3] == 0]
+        away_goals    = away_shots[away_shots[:, 3] == 1]
+        plt.scatter(self.fieldWidth-self.scaleX(home_no_goals[:, 0])+self.fieldStartX, self.scaleY(home_no_goals[:, 1])+self.fieldStartY, s=home_no_goals[:, 2]*400, c=home_color, alpha=0.8, marker='o', zorder=2)
+        plt.scatter(self.fieldWidth-self.scaleX(home_goals[:, 0])+self.fieldStartX,    self.scaleY(home_goals[:, 1])+self.fieldStartY,    s=home_goals[:, 2]*400,    c=home_color, alpha=0.8, marker='h', zorder=2)
+        plt.scatter(self.scaleX(away_no_goals[:, 0])+self.fieldStartX,                 self.scaleY(away_no_goals[:, 1])+self.fieldStartY, s=away_no_goals[:, 2]*400, c=away_color, alpha=0.8, marker='o', zorder=2)
+        plt.scatter(self.scaleX(away_goals[:, 0])+self.fieldStartX,                    self.scaleY(away_goals[:, 1])+self.fieldStartY,    s=away_goals[:, 2]*400,    c=away_color, alpha=0.8, marker='h', zorder=2)
 
 
     """
@@ -193,7 +198,9 @@ class Soccerfield:
 
 # Test
 
+"""
 home_shots = np.array([[70, 30, 0.6, 1], [95, 80, 0.09, 0]])
 away_shots = np.array([[70, 40, 0.07, 0], [95, 50, 1, 1]])
 sf = Soccerfield(home_shots, away_shots, 'Rennes', 'Lille', 3, 1, 2, 0, 'red', 'black')
 sf.show()
+"""
