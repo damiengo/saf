@@ -14,3 +14,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Sqlite database
+script/kaggle_data/data/sqlite/database.sqlite
