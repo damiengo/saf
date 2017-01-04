@@ -15,13 +15,14 @@ from soccerfield import *
 # An object oriented neural network
 # Regul: http://cs231n.github.io/neural-networks-2/#reg
 #        http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/
+#        http://neuralnetworksanddeeplearning.com/chap3.html
 class Network:
     def __init__(self, input, target):
         self.set_data(input, target)
         self.hiddenSize = 2
         self.alpha      = 0.0001
         self.iter       = 2000
-        self.reg_lambda = 0.01
+        self.reg_lambda = 0.001
         self.s1_weights = self.randomWeights(self.input.shape[1], self.hiddenSize)
         self.s2_weights = self.randomWeights(self.hiddenSize, 1)
 
@@ -46,17 +47,19 @@ class Network:
                 layer2_gradient = self.sigmoid_grad(layer2_out)
                 # Delta is the derivate multiplicated by the error to get the force
                 layer2_delta    = layer2_error.T * layer2_gradient
-                # Regularization
-                layer2_delta   += self.s2_weights.dot(self.reg_lambda)
 
                 layer1_error    = layer2_delta.dot(self.s2_weights.T)
                 layer1_gradient = self.sigmoid_grad(layer1_out)
                 layer1_delta    = layer1_error * layer1_gradient
-                # Regularization
-                layer1_delta   += self.reg_lambda * self.s1_weights
 
-                self.s2_weights += self.alpha * (np.dot(layer1_out.T, layer2_delta))
-                self.s1_weights += self.alpha * (np.dot(self.input.T, layer1_delta))
+                dW2 = np.dot(layer1_out.T, layer2_delta)
+                dW1 = np.dot(self.input.T, layer1_delta)
+
+                dW2 += self.reg_lambda * self.s2_weights
+                dW1 += self.reg_lambda * self.s1_weights
+
+                self.s2_weights += self.alpha * dW2
+                self.s1_weights += self.alpha * dW1
 
                 if (j% (self.iter/10)) == 0:
                     log.debug(str(j)+' : '+str(np.mean(np.abs(layer2_error))))
