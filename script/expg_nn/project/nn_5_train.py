@@ -27,10 +27,9 @@ test_input     = sample[15000:, 1:4]
 test_input_all = sample[15000:, :]
 
 # Train network
-network = regularization_5.Network(train_input, train_target)
-network.fit()
+network = regularization_5.Network()
+network.fit(train_input, train_target)
 network.save_weights('save/5_regularization')
-network.load_weights('save/5_regularization')
 
 """
 # Test network

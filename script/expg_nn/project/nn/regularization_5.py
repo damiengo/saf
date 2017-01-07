@@ -17,35 +17,35 @@ from soccerfield import *
 #        http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/
 #        http://neuralnetworksanddeeplearning.com/chap3.html
 class Network:
-    def __init__(self, input, target):
+    def __init__(self):
         np.random.seed(8)
         np.set_printoptions(precision=5, suppress=True, threshold='nan')
         log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
-        self.set_data(input, target)
         self.hiddenSize = 2
         self.alpha      = 0.0001
         self.iter       = 2000
         self.reg_lambda = 0.001
-        self.s1_weights = self.randomWeights(self.input.shape[1], self.hiddenSize)
-        self.s2_weights = self.randomWeights(self.hiddenSize, 1)
 
     def set_data(self, input, target):
-        self.input  = preprocessing.scale(input)
+        input  = preprocessing.scale(input)
         # Add the bias unit for first layer
-        self.input  = np.c_[self.input, np.ones(self.input.shape[0])]
-        self.target = target
+        input  = np.c_[input, np.ones(input.shape[0])]
+
+        return [input, target]
 
     # 2 layers network
-    def fit(self, backward=True):
+    def fit(self, input, target, backward=True):
+        input, target = self.set_data(input, target)
+        self.s1_weights = self.randomWeights(input.shape[1], self.hiddenSize)
+        self.s2_weights = self.randomWeights(self.hiddenSize, 1)
         for j in xrange(self.iter):
             # Forward
-            layer1_out = self.sigmoid(np.dot(self.input, self.s1_weights))
-            layer2_out = self.sigmoid(np.dot(layer1_out, self.s2_weights))
+            layer1_out, layer2_out = self.predict(input, True)
 
             # Backward
             if(backward):
                 # Error is the difference between expected and calculated values
-                layer2_error    = self.target - layer2_out.T
+                layer2_error    = target - layer2_out.T
                 # Gradient is the derivative of the layer2 out
                 layer2_gradient = self.sigmoid_grad(layer2_out)
                 # Delta is the derivate multiplicated by the error to get the force
@@ -56,7 +56,7 @@ class Network:
                 layer1_delta    = layer1_error * layer1_gradient
 
                 dW2 = np.dot(layer1_out.T, layer2_delta)
-                dW1 = np.dot(self.input.T, layer1_delta)
+                dW1 = np.dot(input.T, layer1_delta)
 
                 dW2 += self.reg_lambda * self.s2_weights
                 dW1 += self.reg_lambda * self.s1_weights
@@ -68,6 +68,18 @@ class Network:
                     log.debug(str(j)+' : '+str(np.mean(np.abs(layer2_error))))
 
         return layer2_out
+
+    """
+    Predictions.
+    """
+    def predict(self, input, all_layers = False):
+        layer1_out = self.sigmoid(np.dot(input, self.s1_weights))
+        layer2_out = self.sigmoid(np.dot(layer1_out, self.s2_weights))
+
+        if(all_layers):
+            return [layer1_out, layer2_out]
+        else:
+            return layer2_out
 
     """
     Print weights.
