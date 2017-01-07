@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# 2016/11/20
+# 2017/01/05
 #
 import numpy as np
 from sklearn import preprocessing
@@ -18,6 +18,9 @@ from soccerfield import *
 #        http://neuralnetworksanddeeplearning.com/chap3.html
 class Network:
     def __init__(self, input, target):
+        np.random.seed(8)
+        np.set_printoptions(precision=5, suppress=True, threshold='nan')
+        log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
         self.set_data(input, target)
         self.hiddenSize = 2
         self.alpha      = 0.0001
@@ -33,7 +36,7 @@ class Network:
         self.target = target
 
     # 2 layers network
-    def run_2_layers(self, backward=True):
+    def fit(self, backward=True):
         for j in xrange(self.iter):
             # Forward
             layer1_out = self.sigmoid(np.dot(self.input, self.s1_weights))
@@ -70,10 +73,24 @@ class Network:
     Print weights.
     """
     def print_weights(self):
-        print "==== S1 weights ===="
-        print self.s1_weights
-        print "==== S2 weights ===="
-        print self.s2_weights
+        log.info("==== S1 weights ====")
+        log.info(self.s1_weights)
+        log.info("==== S2 weights ====")
+        log.info(self.s2_weights)
+
+    """
+    Save the weights into files.
+    """
+    def save_weights(self, save_dir):
+        self.s1_weights.dump(save_dir+'/s1_weights.dump')
+        self.s2_weights.dump(save_dir+'/s2_weights.dump')
+
+    """
+    Load weights from files.
+    """
+    def load_weights(self, save_dir):
+        self.s1_weights = np.load(save_dir+'/s1_weights.dump')
+        self.s2_weights = np.load(save_dir+'/s2_weights.dump')
 
     # The sigmoid function
     def sigmoid(self, values):
@@ -86,35 +103,3 @@ class Network:
     # Generate random weights
     def randomWeights(self, inputSize, outputSize):
         return (np.random.random((inputSize, outputSize)) * 2) - 1
-
-# Main function
-if __name__=="__main__":
-    np.random.seed(8)
-    np.set_printoptions(precision=5, suppress=True, threshold='nan')
-    log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
-
-    log.info("START")
-    all_shots = np.genfromtxt('../../data/stats/expg/shots_2014_2016.csv', delimiter=';', skip_header=1)
-    sample = all_shots
-
-    # First 15000 entries are for train
-    train_target = sample[:15000, 0]
-    train_input  = sample[:15000, 1:4]
-
-    # Last entries are for test
-    test_target    = sample[15000:, 0]
-    test_input     = sample[15000:, 1:4]
-    test_input_all = sample[15000:, :]
-
-    # Train network
-    network = Network(train_input, train_target)
-    network.run_2_layers()
-
-    # Test network
-    network.set_data(test_input, test_target)
-    test_out = network.run_2_layers(False)
-    log.debug(np.c_[test_input, test_target, test_out])
-    log.debug('Test RMSE: '+str(np.power(np.mean(np.power(test_target - test_out, 2)), 0.5)))
-    log.debug(network.print_weights())
-
-    log.info("END")
