@@ -19,11 +19,12 @@ sample = all_shots
 
 # First 15000 entries are for train
 train_target = sample[:15000, 0]
-train_input  = sample[:15000, 1:4]
+# 1: degree, 2: distance, 5: headed
+train_input  = sample[:15000, [1, 2, 5]]
 
 # Last entries are for test
 test_target    = sample[15000:, 0]
-test_input     = sample[15000:, 1:4]
+test_input     = sample[15000:, [1, 2, 5]]
 test_input_all = sample[15000:, :]
 
 # Train network

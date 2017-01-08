@@ -2,6 +2,7 @@
 from nn import regularization_5
 import psycopg2
 import logging as log
+import numpy as np
 
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
 log.info("START")
@@ -25,10 +26,9 @@ for row_game in rows_games:
 
     cur.execute(open('queries/expg_by_game.sql').read(), [game_id])
     rows_shots = cur.fetchall()
-    for row_shot in rows_shots:
-        log.debug(row_shot)
+    match_shots  = np.fromiter(iterable=rows_shots, dtype=float, count=-1)#[:, [11, 12, 13]]
+    print match_shots
 
-    print "   ", game_id
 
 # Train network
 network = regularization_5.Network()
