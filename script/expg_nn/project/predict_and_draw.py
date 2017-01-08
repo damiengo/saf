@@ -6,10 +6,29 @@ import logging as log
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
 log.info("START")
 
+# Connect to DB
 try:
     conn = psycopg2.connect("dbname='saf' user='saf' host='localhost' password='saf'")
 except:
     print "Error while connecting to database"
+
+cur = conn.cursor()
+cur.execute(open('queries/last_n_games.sql').read(), [20])
+rows_games = cur.fetchall()
+for row_game in rows_games:
+    game_id    = row_game[0]
+    kickoff    = row_game[1]
+    home_team  = row_game[2]
+    away_team  = row_game[3]
+    home_color = row_game[4]
+    away_color = row_game[5]
+
+    cur.execute(open('queries/expg_by_game.sql').read(), [game_id])
+    rows_shots = cur.fetchall()
+    for row_shot in rows_shots:
+        log.debug(row_shot)
+
+    print "   ", game_id
 
 # Train network
 network = regularization_5.Network()
