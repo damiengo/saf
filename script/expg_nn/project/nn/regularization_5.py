@@ -26,16 +26,16 @@ class Network:
         self.iter       = 2000
         self.reg_lambda = 0.001
 
-    def set_data(self, input, target):
+    def set_data(self, input):
         input  = preprocessing.scale(input)
         # Add the bias unit for first layer
         input  = np.c_[input, np.ones(input.shape[0])]
 
-        return [input, target]
+        return input
 
     # 2 layers network
     def fit(self, input, target, backward=True):
-        input, target = self.set_data(input, target)
+        input = self.set_data(input)
         self.s1_weights = self.randomWeights(input.shape[1], self.hiddenSize)
         self.s2_weights = self.randomWeights(self.hiddenSize, 1)
         for j in xrange(self.iter):
