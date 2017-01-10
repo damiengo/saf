@@ -1,7 +1,5 @@
 SELECT s.start,
        g.id AS game_id,
-       g.sqw_home_team_id,
-       g.sqw_away_team_id,
        t.id as team_id,
        t.short_name,
        p.first_name,
@@ -48,4 +46,5 @@ LEFT JOIN LATERAL (SELECT *
 WHERE NOT ((gae.start_x >= 88.4 AND gae.start_x <= 88.6) AND (gae.start_y >= 49.8 AND gae.start_y <= 50.4))
 AND gae.start_x >= 50
 AND g.id = %s
+AND t.id = %s
 ORDER BY s.start DESC, g.kickoff ASC, g.id ASC, t.short_name ASC

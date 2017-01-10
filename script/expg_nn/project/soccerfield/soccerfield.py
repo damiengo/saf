@@ -165,14 +165,14 @@ class Soccerfield:
         ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(np.sum(away_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='left')
         # Points
         # Create two arrays: one for shots and one for goals
-        home_no_goals = home_shots[home_shots[:, 3] == 0]
-        home_goals    = home_shots[home_shots[:, 3] == 1]
-        away_no_goals = away_shots[away_shots[:, 3] == 0]
-        away_goals    = away_shots[away_shots[:, 3] == 1]
-        plt.scatter(self.fieldWidth-self.scaleX(home_no_goals[:, 0])+self.fieldStartX, self.scaleY(home_no_goals[:, 1])+self.fieldStartY, s=home_no_goals[:, 2]*400, c=home_color, alpha=0.8, marker='o', zorder=2)
-        plt.scatter(self.fieldWidth-self.scaleX(home_goals[:, 0])+self.fieldStartX,    self.scaleY(home_goals[:, 1])+self.fieldStartY,    s=home_goals[:, 2]*400,    c=home_color, alpha=0.8, marker='h', zorder=2)
-        plt.scatter(self.scaleX(away_no_goals[:, 0])+self.fieldStartX,                 self.scaleY(away_no_goals[:, 1])+self.fieldStartY, s=away_no_goals[:, 2]*400, c=away_color, alpha=0.8, marker='o', zorder=2)
-        plt.scatter(self.scaleX(away_goals[:, 0])+self.fieldStartX,                    self.scaleY(away_goals[:, 1])+self.fieldStartY,    s=away_goals[:, 2]*400,    c=away_color, alpha=0.8, marker='h', zorder=2)
+        home_no_goals = home_shots[home_shots[:, 2] == 0]
+        home_goals    = home_shots[home_shots[:, 2] == 1]
+        away_no_goals = away_shots[away_shots[:, 2] == 0]
+        away_goals    = away_shots[away_shots[:, 2] == 1]
+        plt.scatter(self.fieldWidth-self.scaleX(home_no_goals[:, 0])+self.fieldStartX, self.scaleY(home_no_goals[:, 1])+self.fieldStartY, s=home_no_goals[:, 3]*400, c=home_color, alpha=0.8, marker='o', zorder=2)
+        plt.scatter(self.fieldWidth-self.scaleX(home_goals[:, 0])+self.fieldStartX,    self.scaleY(home_goals[:, 1])+self.fieldStartY,    s=home_goals[:, 3]*400,    c=home_color, alpha=0.8, marker='h', zorder=2)
+        plt.scatter(self.scaleX(away_no_goals[:, 0])+self.fieldStartX,                 self.scaleY(away_no_goals[:, 1])+self.fieldStartY, s=away_no_goals[:, 3]*400, c=away_color, alpha=0.8, marker='o', zorder=2)
+        plt.scatter(self.scaleX(away_goals[:, 0])+self.fieldStartX,                    self.scaleY(away_goals[:, 1])+self.fieldStartY,    s=away_goals[:, 3]*400,    c=away_color, alpha=0.8, marker='h', zorder=2)
 
 
     """

@@ -1,6 +1,8 @@
 SELECT
     g.id,
     g.kickoff,
+    ht.id AS home_team_id,
+    at.id AS away_team_id,
     ht.short_name AS home_team,
     at.short_name AS away_team,
     ht.team_color AS home_color,
@@ -28,7 +30,7 @@ AND
 AND
     ((gaea.start_x >= 88.4 AND gaea.start_x <= 88.6) AND (gaea.start_y >= 49.8 AND gaea.start_y <= 50.4))
 GROUP BY
-    g.id, ht.short_name, at.short_name, ht.team_color, at.team_color
+    g.id, ht.id, at.id, ht.short_name, at.short_name, ht.team_color, at.team_color
 ORDER BY
     g.kickoff DESC
 LIMIT
