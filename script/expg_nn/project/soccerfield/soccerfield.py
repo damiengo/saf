@@ -161,8 +161,8 @@ class Soccerfield:
         ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+7, str(away_shots[:, 2].size), color='white', family='monospace', size=font_size, horizontalalignment='left')
         # ExpG
         ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+2, 'expG', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+2, str(np.sum(home_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='right')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(np.sum(away_shots[:, 2])), color='white', family='monospace', size=font_size, horizontalalignment='left')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+2, str(round(np.sum(home_shots[:, 3]), 2)), color='white', family='monospace', size=font_size, horizontalalignment='right')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(round(np.sum(away_shots[:, 3]), 2)), color='white', family='monospace', size=font_size, horizontalalignment='left')
         # Points
         # Create two arrays: one for shots and one for goals
         home_no_goals = home_shots[home_shots[:, 2] == 0]

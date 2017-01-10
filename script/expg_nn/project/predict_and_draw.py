@@ -33,6 +33,8 @@ for row_game in rows_games:
     home_p_goals = row_game[10]
     away_p_goals = row_game[11]
 
+    log.info(kickoff.strftime('%Y%m%d')+' '+home_team+' - '+away_team+': '+str(home_goals)+'-'+str(away_goals))
+
     # home shots
     cur.execute(open('queries/expg_by_game.sql').read(), [game_id, home_team_id])
     home_rows_shots   = cur.fetchall()
@@ -54,9 +56,6 @@ for row_game in rows_games:
     home_expg = network.predict(home_match_shots_setted)
     away_match_shots_setted = network.set_data(away_match_shots)
     away_expg = network.predict(away_match_shots_setted)
-
-    log.debug(home_expg)
-    log.debug(away_expg)
 
     home_shots = np.array(np.c_[home_rows_shots[:, [7, 8, 6]], home_expg], dtype='f')
     away_shots = np.array(np.c_[away_rows_shots[:, [7, 8, 6]], away_expg], dtype='f')
