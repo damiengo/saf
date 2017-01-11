@@ -5,8 +5,8 @@ SELECT
     at.id AS away_team_id,
     ht.short_name AS home_team,
     at.short_name AS away_team,
-    ht.team_color AS home_color,
-    at.team_color AS away_color,
+    htn.color1 AS home_color,
+    atn.color1 AS away_color,
     g.home_goals,
     g.away_goals,
     COUNT(gaeh.*) AS home_p_goals,
@@ -17,6 +17,10 @@ INNER JOIN
     sqw_teams ht ON g.sqw_home_team_id = ht.id
 INNER JOIN
     sqw_teams at ON g.sqw_away_team_id = at.id
+LEFT JOIN
+    team_names htn ON ht.short_name = htn.sqw
+LEFT JOIN
+    team_names atn ON at.short_name = atn.sqw
 LEFT JOIN
     sqw_goals_attempts_events gaeh ON g.id = gaeh.sqw_game_id
 AND
@@ -30,7 +34,7 @@ AND
 AND
     ((gaea.start_x >= 88.4 AND gaea.start_x <= 88.6) AND (gaea.start_y >= 49.8 AND gaea.start_y <= 50.4))
 GROUP BY
-    g.id, ht.id, at.id, ht.short_name, at.short_name, ht.team_color, at.team_color
+    g.id, ht.id, at.id, ht.short_name, at.short_name, htn.color1, atn.color1
 ORDER BY
     g.kickoff DESC
 LIMIT

@@ -45,15 +45,51 @@ class Soccerfield:
         ax.set_ylim(ymin=0, ymax=100)
         plt.subplots_adjust(left=0, bottom=0, top=0.95, right=1)
 
-        fieldLinesColor = 'white'
-        fieldLinesWitdh = 1
-
         # Field size
         self.fieldStartX = 10
         self.fieldStartY = 10
         self.fieldWidth  = 100
         self.fieldHeight = 70
 
+        self.drawField(ax)
+
+        font_size = 16
+        font_small_size = 12
+        # Score
+        home_goals = str(home_np_goals)
+        if(home_p_goals > 0):
+            home_goals = home_goals + ' (+' + str(home_p_goals) + ' pen)'
+        away_goals = str(away_np_goals)
+        if(away_p_goals > 0):
+            away_goals = away_goals + ' (+' + str(away_p_goals) + ' pen)'
+        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+12, ' ', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+12, home_team+' '+home_goals, color='white', family='monospace', size=font_size, horizontalalignment='right')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+12, away_goals+' '+away_team, color='white', family='monospace', size=font_size, horizontalalignment='left')
+        # Shots
+        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+7, 'Tirs', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+7, str(home_shots[:, 2].size), color='white', family='monospace', size=font_size, horizontalalignment='right')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+7, str(away_shots[:, 2].size), color='white', family='monospace', size=font_size, horizontalalignment='left')
+        # ExpG
+        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+2, 'expG', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+2, str(round(np.sum(home_shots[:, 3]), 2)), color='white', family='monospace', size=font_size, horizontalalignment='right')
+        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(round(np.sum(away_shots[:, 3]), 2)), color='white', family='monospace', size=font_size, horizontalalignment='left')
+        # Points
+        # Create two arrays: one for shots and one for goals
+        home_no_goals = home_shots[home_shots[:, 2] == 0]
+        home_goals    = home_shots[home_shots[:, 2] == 1]
+        away_no_goals = away_shots[away_shots[:, 2] == 0]
+        away_goals    = away_shots[away_shots[:, 2] == 1]
+        plt.scatter(self.fieldWidth-self.scaleX(home_no_goals[:, 0])+self.fieldStartX, self.scaleY(home_no_goals[:, 1])+self.fieldStartY, s=home_no_goals[:, 3]*600, c=home_color, alpha=1, marker='h', zorder=2)
+        plt.scatter(self.fieldWidth-self.scaleX(home_goals[:, 0])+self.fieldStartX,    self.scaleY(home_goals[:, 1])+self.fieldStartY,    s=home_goals[:, 3]*600,    c=home_color, alpha=1, marker='o', zorder=2)
+        plt.scatter(self.scaleX(away_no_goals[:, 0])+self.fieldStartX,                 self.scaleY(away_no_goals[:, 1])+self.fieldStartY, s=away_no_goals[:, 3]*600, c=away_color, alpha=1, marker='h', zorder=2)
+        plt.scatter(self.scaleX(away_goals[:, 0])+self.fieldStartX,                    self.scaleY(away_goals[:, 1])+self.fieldStartY,    s=away_goals[:, 3]*600,    c=away_color, alpha=1, marker='o', zorder=2)
+
+    """
+    Draw the field.
+    """
+    def drawField(self, ax):
+        fieldLinesColor = 'white'
+        fieldLinesWitdh = 1
         # Field lines
         self.drawLine(ax, self.fieldStartX, self.fieldStartY, self.fieldStartX+self.fieldWidth, self.fieldStartY, fieldLinesWitdh, fieldLinesColor)
         self.drawLine(ax, self.fieldStartX, self.fieldStartY+self.fieldHeight, self.fieldStartX+self.fieldWidth, self.fieldStartY+self.fieldHeight, fieldLinesWitdh, fieldLinesColor)
@@ -142,38 +178,6 @@ class Soccerfield:
                 color='#333333'
             )
         )
-
-        font_size = 16
-        font_small_size = 12
-        # Score
-        home_goals = str(home_np_goals)
-        if(home_p_goals > 0):
-            home_goals = home_goals + ' (+' + str(home_p_goals) + ' pen)'
-        away_goals = str(away_np_goals)
-        if(away_p_goals > 0):
-            away_goals = away_goals + ' (+' + str(away_p_goals) + ' pen)'
-        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+12, ' ', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+12, home_team+' '+home_goals, color='white', family='monospace', size=font_size, horizontalalignment='right')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+12, away_goals+' '+away_team, color='white', family='monospace', size=font_size, horizontalalignment='left')
-        # Shots
-        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+7, 'Tirs', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+7, str(home_shots[:, 2].size), color='white', family='monospace', size=font_size, horizontalalignment='right')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+7, str(away_shots[:, 2].size), color='white', family='monospace', size=font_size, horizontalalignment='left')
-        # ExpG
-        ax.text(self.fieldStartX+(self.fieldWidth/2), self.fieldStartY+self.fieldHeight+2, 'expG', color='white', family='monospace', size=font_small_size, horizontalalignment='center')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)-7, self.fieldStartY+self.fieldHeight+2, str(round(np.sum(home_shots[:, 3]), 2)), color='white', family='monospace', size=font_size, horizontalalignment='right')
-        ax.text(self.fieldStartX+(self.fieldWidth/2)+7, self.fieldStartY+self.fieldHeight+2, str(round(np.sum(away_shots[:, 3]), 2)), color='white', family='monospace', size=font_size, horizontalalignment='left')
-        # Points
-        # Create two arrays: one for shots and one for goals
-        home_no_goals = home_shots[home_shots[:, 2] == 0]
-        home_goals    = home_shots[home_shots[:, 2] == 1]
-        away_no_goals = away_shots[away_shots[:, 2] == 0]
-        away_goals    = away_shots[away_shots[:, 2] == 1]
-        plt.scatter(self.fieldWidth-self.scaleX(home_no_goals[:, 0])+self.fieldStartX, self.scaleY(home_no_goals[:, 1])+self.fieldStartY, s=home_no_goals[:, 3]*400, c=home_color, alpha=0.8, marker='o', zorder=2)
-        plt.scatter(self.fieldWidth-self.scaleX(home_goals[:, 0])+self.fieldStartX,    self.scaleY(home_goals[:, 1])+self.fieldStartY,    s=home_goals[:, 3]*400,    c=home_color, alpha=0.8, marker='h', zorder=2)
-        plt.scatter(self.scaleX(away_no_goals[:, 0])+self.fieldStartX,                 self.scaleY(away_no_goals[:, 1])+self.fieldStartY, s=away_no_goals[:, 3]*400, c=away_color, alpha=0.8, marker='o', zorder=2)
-        plt.scatter(self.scaleX(away_goals[:, 0])+self.fieldStartX,                    self.scaleY(away_goals[:, 1])+self.fieldStartY,    s=away_goals[:, 3]*400,    c=away_color, alpha=0.8, marker='h', zorder=2)
-
 
     """
     Scale X point.
