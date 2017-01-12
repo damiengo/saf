@@ -17,14 +17,14 @@ from soccerfield import *
 #        http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/
 #        http://neuralnetworksanddeeplearning.com/chap3.html
 class Network:
-    def __init__(self):
+    def __init__(self, hidden_size=2, alpha=0.0001, iter=2000, reg_lambda=0.001):
         np.random.seed(8)
         np.set_printoptions(precision=5, suppress=True, threshold='nan')
         log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
-        self.hiddenSize = 2
-        self.alpha      = 0.0001
-        self.iter       = 2000
-        self.reg_lambda = 0.001
+        self.hiddenSize = hidden_size
+        self.alpha      = alpha
+        self.iter       = iter
+        self.reg_lambda = reg_lambda
 
     def set_data(self, input):
         input  = preprocessing.scale(input)
@@ -63,9 +63,6 @@ class Network:
 
                 self.s2_weights += self.alpha * dW2
                 self.s1_weights += self.alpha * dW1
-
-                if (j% (self.iter/10)) == 0:
-                    log.debug(str(j)+' : '+str(np.mean(np.abs(layer2_error))))
 
         return layer2_out
 
