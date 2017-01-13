@@ -33,6 +33,8 @@ for hidden_size in hidden_sizes:
             for reg_lambda in reg_lambdas:
                 #log.info("hidden_size: "+str(hidden_size)+", alpha: "+str(alpha)+", itera: "+str(itera)+", reg_lambda: "+str(reg_lambda))
                 total_acc = 0
+                total_expg = 0
+                total_goals = 0
                 for train_index, test_index in kf.split(features):
                     X_train, X_test = features[train_index], features[test_index]
                     y_train, y_test = targets[train_index],  targets[test_index]
@@ -42,9 +44,13 @@ for hidden_size in hidden_sizes:
                     X_test_setted = network.set_data(X_test)
                     y_test_predict = network.predict(X_test_setted)
                     acc = np.abs(np.mean(y_test - y_test_predict))
+                    expg = np.sum(y_test_predict)
+                    goals = np.sum(y_test)
                     total_acc += acc
+                    total_expg += expg
+                    total_goals += goals
                     #log.info("Accuracy: %f" % (acc,))
                     #network.save_weights('save/5_regularization')
-                log.info("Total accuracy for hidden_size: "+str(hidden_size)+", alpha: "+str(alpha)+", itera: "+str(itera)+", reg_lambda: "+str(reg_lambda)+" -> "+str(total_acc/nb_folds))
+                log.info("Total accuracy for hidden_size: "+str(hidden_size)+", alpha: "+str(alpha)+", itera: "+str(itera)+", reg_lambda: "+str(reg_lambda)+" -> "+str(total_acc/nb_folds)+" ("+str(total_goals/nb_folds)+" goals/"+str(total_expg/nb_folds)+" expg)")
 
 log.info("END")
