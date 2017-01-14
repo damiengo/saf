@@ -79,8 +79,8 @@ class Soccerfield:
         home_goals    = home_shots[home_shots[:, 2] == 1]
         away_no_goals = away_shots[away_shots[:, 2] == 0]
         away_goals    = away_shots[away_shots[:, 2] == 1]
-        plt.scatter(self.fieldWidth-self.scaleX(home_no_goals[:, 0])+self.fieldStartX, self.scaleY(home_no_goals[:, 1])+self.fieldStartY, s=home_no_goals[:, 3]*600, c=home_color, alpha=1, marker='h', zorder=2)
-        plt.scatter(self.fieldWidth-self.scaleX(home_goals[:, 0])+self.fieldStartX,    self.scaleY(home_goals[:, 1])+self.fieldStartY,    s=home_goals[:, 3]*600,    c=home_color, alpha=1, marker='o', zorder=2)
+        plt.scatter(self.fieldWidth-self.scaleX(home_no_goals[:, 0])+self.fieldStartX, self.fieldHeight-self.scaleY(home_no_goals[:, 1])+self.fieldStartY, s=home_no_goals[:, 3]*600, c=home_color, alpha=1, marker='h', zorder=2)
+        plt.scatter(self.fieldWidth-self.scaleX(home_goals[:, 0])+self.fieldStartX,    self.fieldHeight-self.scaleY(home_goals[:, 1])+self.fieldStartY,    s=home_goals[:, 3]*600,    c=home_color, alpha=1, marker='o', zorder=2)
         plt.scatter(self.scaleX(away_no_goals[:, 0])+self.fieldStartX,                 self.scaleY(away_no_goals[:, 1])+self.fieldStartY, s=away_no_goals[:, 3]*600, c=away_color, alpha=1, marker='h', zorder=2)
         plt.scatter(self.scaleX(away_goals[:, 0])+self.fieldStartX,                    self.scaleY(away_goals[:, 1])+self.fieldStartY,    s=away_goals[:, 3]*600,    c=away_color, alpha=1, marker='o', zorder=2)
 

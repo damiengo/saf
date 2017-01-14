@@ -27,6 +27,7 @@ iters = [100, 500, 1000, 2000, 4000]
 reg_lambdas = [1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
 kf = KFold(n_splits=nb_folds, shuffle=True)
 
+"""
 for hidden_size in hidden_sizes:
     for alpha in alphas:
         for itera in iters:
@@ -52,5 +53,9 @@ for hidden_size in hidden_sizes:
                     #log.info("Accuracy: %f" % (acc,))
                     #network.save_weights('save/5_regularization')
                 log.info("Total accuracy for hidden_size: "+str(hidden_size)+", alpha: "+str(alpha)+", itera: "+str(itera)+", reg_lambda: "+str(reg_lambda)+" -> "+str(total_acc/nb_folds)+" ("+str(total_goals/nb_folds)+" goals/"+str(total_expg/nb_folds)+" expg)")
+"""
+network = regularization_5.Network(hidden_size=1, alpha=0.001, iter=100, reg_lambda=0.1)
+network.fit(features, targets)
+network.save_weights('save/5_regularization')
 
 log.info("END")
