@@ -186,3 +186,7 @@ project/nn_5_train.py:46: RuntimeWarning: invalid value encountered in absolute
 2017-01-13 20:21:47,793 - INFO    - Total accuracy for hidden_size: 1, alpha: 1e-05, itera: 4000, reg_lambda: 0.0001 -> 0.00946664658369 (445.0 goals/489.251912253 expg)
 2017-01-13 20:22:52,339 - INFO    - Total accuracy for hidden_size: 1, alpha: 1e-05, itera: 4000, reg_lambda: 1e-05 -> 0.00946681396194 (445.0 goals/489.252694646 expg)
 
+=====================================
+BEST
+2017-01-13 19:35:38,488 - INFO    - Total accuracy for hidden_size: 1, alpha: 0.001, itera: 100, reg_lambda: 0.1 -> 0.00236529895934 (445.0 goals/446.696127253 expg)
+2017-01-13 19:55:47,759 - INFO    - Total accuracy for hidden_size: 1, alpha: 0.0001, itera: 1000, reg_lambda: 0.1 -> 0.00241489765891 (445.0 goals/447.825648888 expg)
