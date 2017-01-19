@@ -21,7 +21,17 @@ targets  = all_shots[:, 0]
 
 np.random.seed(8)
 
-network = regularization_5.Network(hidden_size=1, alpha=0.001, iter=100, reg_lambda=0.1)
+"""
+hidden_size: 1, alpha: 0.001, itera: 100, reg_lambda: 0.1 -> 0.00236529895934 (445.0 goals/446.696127253 expg)
+hidden_size: 1, alpha: 0.0001, itera: 1000, reg_lambda: 0.1 -> 0.00241489765891 (445.0 goals/447.825648888 expg)
+
+hidden_size: 2, alpha: 0.0001, itera: 1000, reg_lambda: 0.01 -> 0.00208179836908 (445.0 goals/443.852741287 expg)
+hidden_size: 2, alpha: 0.0001, itera: 1000, reg_lambda: 0.001 -> 0.00207708215199 (445.0 goals/443.960384219 expg)
+hidden_size: 2, alpha: 0.0001, itera: 1000, reg_lambda: 0.0001 -> 0.00207661068657 (445.0 goals/443.971145078 expg)
+hidden_size: 2, alpha: 0.0001, itera: 1000, reg_lambda: 1e-05 -> 0.00207656354159 (445.0 goals/443.97222113 expg)
+"""
+
+network = regularization_5.Network(hidden_size=2, alpha=0.0001, iter=1000, reg_lambda=0.00001)
 network.fit(features, targets)
 network.save_weights('save/5_regularization')
 
