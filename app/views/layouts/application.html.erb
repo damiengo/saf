@@ -8,7 +8,12 @@
 </head>
 <body>
 
-<%= yield %>
+  <ul>
+    <li><%= link_to "Index", root_path %></li>
+    <li><%= link_to "Bet"  , bet_path %></li>
+  </ul>
+
+  <%= yield %>
 
 </body>
 </html>

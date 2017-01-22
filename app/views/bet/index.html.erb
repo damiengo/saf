@@ -1,0 +1,53 @@
+<ul>
+  <li><%= link_to "538 Ligue 1", "https://projects.fivethirtyeight.com/soccer-predictions/ligue-1/", :target => '_blank' %></li>
+  <li><%= link_to "FDJ Ligue 1", "https://www.parionssport.fr/parisouverts/football/%5B241%5D", :target => '_blank' %></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ligue</th>
+      <th>End</th>
+      <th>Match</th>
+      <th>1</th>
+      <th>N</th>
+      <th>2</th>
+      <th>p 1</th>
+      <th>p N</th>
+      <th>p 2</th>
+      <th>p Sum</th>
+      <th>adj p 1</th>
+      <th>adj p N</th>
+      <th>adj p 2</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @odds.each do |odd| %>
+    <% @b1 = odd["outcomes"][0]["cote"] %>
+    <% @bN = odd["outcomes"][1]["cote"] %>
+    <% @b2 = odd["outcomes"][2]["cote"] %>
+    <% @p1 = (1/@b1.gsub(',', '.').to_f).round(2) %>
+    <% @pN = (1/@bN.gsub(',', '.').to_f).round(2) %>
+    <% @p2 = (1/@b2.gsub(',', '.').to_f).round(2) %>
+    <% @pS = (@p1 + @pN + @p2).round(2) %>
+    <% @ap1 = (@p1/@pS).round(2) %>
+    <% @apN = (@pN/@pS).round(2) %>
+    <% @ap2 = (@p2/@pS).round(2) %>
+    <tr>
+      <td><%= odd["competition"] %></td>
+      <td><%= DateTime.parse(odd["end"]).strftime("%Y-%m-%d %H:%M") %></td>
+      <td><%= link_to odd["label"], odd["urlStats"], :target => '_blank' %></ltd>
+      <td><%= @b1 %></ltd>
+      <td><%= @bN %></ltd>
+      <td><%= @b2 %></ltd>
+      <td><%= @p1 %></ltd>
+      <td><%= @pN %></ltd>
+      <td><%= @p2 %></ltd>
+      <td><%= @pS %></ltd>
+      <td><%= @ap1 %></ltd>
+      <td><%= @apN %></ltd>
+      <td><%= @ap2 %></ltd>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
