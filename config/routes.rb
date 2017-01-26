@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   get 'queries/list'
   get 'queries/show_script'
 
-  get 'bet' => 'bet#index'
+  get 'bet'      => 'bet#index'
+  get 'bet_odds' => 'bet#odds'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

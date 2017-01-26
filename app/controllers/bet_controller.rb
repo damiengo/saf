@@ -1,6 +1,10 @@
 class BetController < ApplicationController
 
   def index
+  end
+
+  # Get JSON odds
+  def odds
 
     # Predictions
     f538_datas = []
@@ -35,15 +39,17 @@ class BetController < ApplicationController
     @final_data = []
     @odds.each do |odd|
       odd_data = {}
+      competition   = odd["competition"]
       odd_home_team = odd["label"].split('-')[0].strip
       odd_away_team = odd["label"].split('-')[1].strip
-      odd_home_prob = odd["outcomes"][0]["cote"]
-      odd_tie_prob  = odd["outcomes"][1]["cote"]
-      odd_away_prob = odd["outcomes"][2]["cote"]
-      odd_prob_home = (1/odd_home_prob.gsub(',', '.').to_f).round(2)
-      odd_prob_tie  = (1/odd_tie_prob.gsub(',', '.').to_f).round(2)
-      odd_prob_away = (1/odd_away_prob.gsub(',', '.').to_f).round(2)
+      odd_home_prob = odd["outcomes"][0]["cote"].gsub(',', '.').to_f
+      odd_tie_prob  = odd["outcomes"][1]["cote"].gsub(',', '.').to_f
+      odd_away_prob = odd["outcomes"][2]["cote"].gsub(',', '.').to_f
+      odd_prob_home = (1/odd_home_prob).round(2)
+      odd_prob_tie  = (1/odd_tie_prob).round(2)
+      odd_prob_away = (1/odd_away_prob).round(2)
 
+      odd_data['competition']    = competition
       odd_data['home_team']      = odd_home_team
       odd_data['away_team']      = odd_away_team
       odd_data['home_odd']       = odd_home_prob
@@ -60,10 +66,11 @@ class BetController < ApplicationController
       }
 
       odd_data.merge!(Hash[*f538_data])
-      puts odd_data
 
       @final_data << odd_data
     end
+
+    render json: {:odds=> @final_data}, status: 200
   end
 
   def get538TeamName(name)
