@@ -4,8 +4,7 @@ $(document).ready(function() {
       type: "GET",
       url: "bet_odds",
       dataType: "JSON"
-  }).success(function(json){
-    console.log('ok');
+  }).success(function(json) {
     showTable(json.odds);
   });
 });
@@ -16,7 +15,6 @@ $(document).ready(function() {
  * @param data
  */
 var showTable = function(data) {
-  console.log('show results');
   var element = '#odds';
   $(element).empty();
   var table = d3.select(element).append("table");
