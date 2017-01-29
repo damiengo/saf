@@ -12,6 +12,7 @@ class BetController < ApplicationController
     f538_datas = f538_datas + get538Ligue("https://projects.fivethirtyeight.com/soccer-predictions/bundesliga/")
     f538_datas = f538_datas + get538Ligue("https://projects.fivethirtyeight.com/soccer-predictions/la-liga/")
     f538_datas = f538_datas + get538Ligue("https://projects.fivethirtyeight.com/soccer-predictions/serie-a/")
+    f538_datas = f538_datas + get538Ligue("https://projects.fivethirtyeight.com/soccer-predictions/")
 
 
     # Odds
@@ -33,7 +34,7 @@ class BetController < ApplicationController
       odd_prob_home = (1/odd_home_prob).round(2)
       odd_prob_tie  = (1/odd_tie_prob).round(2)
       odd_prob_away = (1/odd_away_prob).round(2)
-      odd_sum       = odd_prob_home + odd_prob_tie + odd_prob_away
+      odd_sum       = (odd_prob_home + odd_prob_tie + odd_prob_away).round(2)
       odd_home_prob_adj = (odd_prob_home/odd_sum).round(2)
       odd_tie_prob_adj  = (odd_prob_tie/odd_sum).round(2)
       odd_away_prob_adj = (odd_prob_away/odd_sum).round(2)
@@ -48,6 +49,7 @@ class BetController < ApplicationController
       odd_data['home_odd_prob']     = odd_prob_home
       odd_data['tie_odd_prob']      = odd_prob_tie
       odd_data['away_odd_prob']     = odd_prob_away
+      odd_data['odd_sum']           = odd_sum
       odd_data['home_odd_prob_adj'] = odd_home_prob_adj
       odd_data['tie_odd_prob_adj']  = odd_tie_prob_adj
       odd_data['away_odd_prob_adj'] = odd_away_prob_adj
@@ -59,6 +61,14 @@ class BetController < ApplicationController
       }
 
       odd_data.merge!(Hash[*f538_data_selected])
+
+      odd_data['diff_home_prob'] = (odd_data['home_538_prob'] - odd_data['home_odd_prob']).round(2)
+      odd_data['diff_tie_prob']  = (odd_data['tie_538_prob'] - odd_data['tie_odd_prob']).round(2)
+      odd_data['diff_away_prob'] = (odd_data['away_538_prob'] - odd_data['away_odd_prob']).round(2)
+
+      odd_data['diff_home_prob_adj'] = (odd_data['home_538_prob'] - odd_data['home_odd_prob_adj']).round(2)
+      odd_data['diff_tie_prob_adj']  = (odd_data['tie_538_prob'] - odd_data['tie_odd_prob_adj']).round(2)
+      odd_data['diff_away_prob_adj'] = (odd_data['away_538_prob'] - odd_data['away_odd_prob_adj']).round(2)
 
       @final_data << odd_data
     end
@@ -175,7 +185,28 @@ class BetController < ApplicationController
       'Crotone'         => 'Crotone',
       'Empoli'          => 'Empoli',
       'Napoli'          => 'Naples',
-      'Palermo'         => 'Palerme'
+      'Palermo'         => 'Palerme',
+
+      'Middlesbrough'   => 'Middlesbrough',
+      'West Brom'       => 'West Bromwich',
+      'Sunderland'      => 'Sunderland',
+      'Tottenham'       => 'Tottenham',
+      'Arsenal'         => 'Arsenal',
+      'Watford'         => 'Watford',
+      'Burnley'         => 'Burnley',
+      'Leicester City'  => 'Leicester',
+      'Swansea City'    => 'Swansea',
+      'Southampton'     => 'Southampton',
+      'Bournemouth'     => 'Bournemouth',
+      'Crystal Palace'  => 'Crystal Palace',
+      'Liverpool'       => 'Liverpool',
+      'Chelsea'         => 'Chelsea',
+      'West Ham'        => 'West Ham',
+      'Man. City'       => 'ManchesterCity',
+      'Man. United'     => 'Manchester Utd',
+      'Hull City'       => 'Hull City',
+      'Stoke City'      => 'Stoke City',
+      'Everton'         => 'Everton'
     }
 
     return names[name]
