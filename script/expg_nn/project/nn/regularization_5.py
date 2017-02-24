@@ -49,9 +49,10 @@ class Network:
                 # Gradient is the derivative of the layer2 out
                 layer2_gradient = self.sigmoid_grad(layer2_out)
                 # Delta is the derivate multiplicated by the error to get the force
-                layer2_delta    = layer2_error.T * layer2_gradient
+                layer2_delta    = layer2_error * layer2_gradient
 
-                layer1_error    = layer2_delta.dot(self.s2_weights.T)
+                # How much layer 1 weights contributes to layer 2 error?
+                layer1_error    = layer2_delta.dot(self.s1_weights.T)
                 layer1_gradient = self.sigmoid_grad(layer1_out)
                 layer1_delta    = layer1_error * layer1_gradient
 
