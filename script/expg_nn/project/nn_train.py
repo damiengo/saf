@@ -3,7 +3,7 @@ import sys
 import numpy as np
 
 from sklearn.model_selection import KFold
-from nn import regularization_5
+from nn import regularization_6
 import logging as log
 
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
@@ -52,7 +52,7 @@ hidden_size: 5, alpha: 0.0001, itera: 1000, reg_lambda: 1e-05 -> 0.0016958475271
 
 """
 
-network = regularization_5.Network(hidden_size=3, alpha=0.00001, iter=2000, reg_lambda=0.1)
+network = regularization_6.Network(hidden_size=1, alpha=0.0001, iter=100, reg_lambda=1)
 network.fit(features, targets)
 network.save_weights('save/5_regularization')
 
