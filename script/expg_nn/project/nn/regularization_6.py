@@ -47,9 +47,10 @@ class Network:
                 # Reshape target to make each element as an array
                 target = target.reshape((target.shape[0], 1))
                 # Error is the difference between expected and calculated values
-                layer2_error    = layer2_out - target
+                layer2_error    = self.cost_function(target, layer2_out)
                 # Gradient is the derivative of the layer2 out
-                layer2_gradient = self.activation_grad(layer2_out)
+                #layer2_gradient = self.activation_grad(layer2_out)
+                layer2_gradient = layer2_out - target
                 # Delta is the derivate multiplicated by the error to get the force
                 layer2_delta    = layer2_error * layer2_gradient
 
@@ -108,10 +109,10 @@ class Network:
     Activation function.
     """
     def activation(self, values):
-        return self.identity(values)
+        return self.sigmoid(values)
 
     def activation_grad(self, values):
-        return self.identity_grad(values)
+        return self.sigmoid_grad(values)
 
     # The sigmoid function
     def sigmoid(self, values):
@@ -128,6 +129,24 @@ class Network:
     # The gradient identity function
     def identity_grad(self, values):
         return 1
+
+    # Softmax
+    def softmax(self, values):
+        return np.exp(values) / np.sum(np.exp(values))
+
+    # The softmax derivative
+    def softmax_grad(self, values):
+        print 1
+
+    # The cost function used
+    def cost_function(self, target, predicted):
+        return self.cross_entropy(target, predicted)
+
+    # The cross-entropy cost function
+    # http://neuralnetworksanddeeplearning.com/chap3.html#the_cross-entropy_cost_function
+    # https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/src/network2.py
+    def cross_entropy(self, target, predicted):
+        return np.sum(np.nan_to_num(-target*np.log(predicted)-(1-target)*np.log(1-predicted)))
 
     # Generate random weights
     def randomWeights(self, inputSize, outputSize):

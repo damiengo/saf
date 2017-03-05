@@ -21,7 +21,7 @@ targets  = all_shots[:, 0]
 
 np.random.seed(8)
 nb_folds = 5
-hidden_sizes = [2] # 1, 2, 3, 4, 5
+hidden_sizes = [1] # 1, 2, 3, 4, 5
 alphas = [1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
 iters = [100, 500, 1000, 2000, 4000]
 reg_lambdas = [1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
