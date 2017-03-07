@@ -146,7 +146,7 @@ class Network:
     # http://neuralnetworksanddeeplearning.com/chap3.html#the_cross-entropy_cost_function
     # https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/src/network2.py
     def cross_entropy(self, target, predicted):
-        return np.sum(np.nan_to_num(-target*np.log(predicted)-(1-target)*np.log(1-predicted)))
+        return np.sum(np.nan_to_num(target*np.log(predicted)+(1-target)*np.log(1-predicted)))/len(target)
 
     # Generate random weights
     def randomWeights(self, inputSize, outputSize):
