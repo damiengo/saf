@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-from nn import regularization_5
+from nn import tf_7
 from soccerfield import soccerfield
 import psycopg2
 import logging as log
 import numpy as np
 from datetime import datetime
 from slugify import slugify
+import sys
 
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
 log.info("START")
@@ -15,6 +16,10 @@ try:
     conn = psycopg2.connect("dbname='saf' user='saf' host='localhost' password='saf'")
 except:
     print "Error while connecting to database"
+
+# Load network
+network = tf_7.Network(learning_rate=0.1)
+network.load_weights('save/tf_7')
 
 cur = conn.cursor()
 cur.execute(open('queries/last_n_games.sql').read(), [20])
@@ -49,12 +54,11 @@ for row_game in rows_games:
     away_match_shots  = away_rows_shots[:, [11, 12, 13]]
     away_match_shots  = away_match_shots.astype(np.float)
 
-    network = regularization_5.Network()
-    network.load_weights('save/5_regularization')
-
-    home_match_shots_setted = network.set_data(home_match_shots)
+    #home_match_shots_setted = network.set_data(home_match_shots)
+    home_match_shots_setted = home_match_shots
     home_expg = network.predict(home_match_shots_setted)
-    away_match_shots_setted = network.set_data(away_match_shots)
+    #away_match_shots_setted = network.set_data(away_match_shots)
+    away_match_shots_setted = away_match_shots
     away_expg = network.predict(away_match_shots_setted)
 
     home_shots = np.array(np.c_[home_rows_shots[:, [7, 8, 6]], home_expg], dtype='f')

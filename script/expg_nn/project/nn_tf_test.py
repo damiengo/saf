@@ -13,12 +13,12 @@ all_shots = np.genfromtxt(data_file, delimiter=';', skip_header=1)
 features = all_shots[:, [1, 2, 5]]
 targets  = all_shots[:, 0]
 
+# Add non goal
+targets = np.column_stack(((1-targets), targets))
+
 # Reshape target
-targets = targets.reshape((targets.shape[0], 1))
+#targets = targets.reshape((targets.shape[0], 1))
 
-batch_size = 100
-
-for i in xrange(0, 20000, batch_size):
-    batch_X = features[i:i+batch_size, :]
-    batch_Y =  targets[i:i+batch_size, :]
-    tf_7.training_step(batch_X, batch_Y)
+network = tf_7.Network()
+network.fit(features, targets)
+network.predict(features)
