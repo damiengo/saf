@@ -28,8 +28,8 @@ class Network:
         # A multi-neuron logistic network.
         ##################################
 
-        layer1_size = 10
-        layer2_size = 5
+        layer1_size = 3
+        layer2_size = 3
 
         # Weights and Biases for layer 1
         W1 = tf.Variable(tf.truncated_normal([nb_features, layer1_size]), name='weights_layer1')

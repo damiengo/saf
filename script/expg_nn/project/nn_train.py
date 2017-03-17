@@ -21,7 +21,7 @@ targets  = all_shots[:, 0]
 
 np.random.seed(8)
 
-network = tf_7.Network(learning_rate=0.001)
+network = tf_7.Network(learning_rate=0.00001, iter=100)
 network.fit(features, targets)
 network.save_weights('save/tf_7')
 
