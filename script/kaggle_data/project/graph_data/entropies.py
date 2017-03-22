@@ -15,21 +15,20 @@ class Entropies:
         grouped_means = self.df.groupby(['league', 'season'])[providers].mean()
 
         datas = grouped_means['sum_proba_b365']
-        datas = datas.reset_index().pivot(index='season', columns='league')
+        datas = datas.reset_index().pivot(index='season', columns='league', values='sum_proba_b365')
 
         #plot graph
-        ax = datas.plot(figsize=(12,8), style=["-","--","-.",":"], marker='o')
+        ax = datas.plot(figsize=(12,8), style=["-","--","-.",":","-","--","-.",":","-","--","-.",":"], marker='o', linewidth=2.0)
+        fig = ax.get_figure()
+        fig.patch.set_facecolor('white')
 
         #set title
-        plt.title('Probability mean sums', fontsize=16)
+        hfont = {'fontname':'Helvetica'}
+        plt.title('PROBABILITY MEAN SUMS', fontsize=20, color='#444444', **hfont)
+
+        ax.set_xlabel('')
 
         #set ticks roatation
         plt.xticks(rotation=50)
-
-        #keep colors for next graph
-        #colors = [x.get_color() for x in ax.get_lines()]
-
-        #remove x label
-        #ax.set_xlabel('')
 
         plt.show()
