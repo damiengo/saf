@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from nn import tf_7
+from sklearn_ import logistic
 from soccerfield import soccerfield
 import psycopg2
 import logging as log
@@ -18,8 +19,9 @@ except:
     print "Error while connecting to database"
 
 # Load network
-network = tf_7.Network(learning_rate=0.1)
-network.load_weights('save/tf_7')
+#model = tf_7.Network(learning_rate=0.1)
+model = logistic.Model()
+model.load('save/sklearn')
 
 cur = conn.cursor()
 cur.execute(open('queries/last_n_games.sql').read(), [20])
@@ -56,10 +58,10 @@ for row_game in rows_games:
 
     #home_match_shots_setted = network.set_data(home_match_shots)
     home_match_shots_setted = home_match_shots
-    home_expg = network.predict(home_match_shots_setted)
+    home_expg = model.predict(home_match_shots_setted)
     #away_match_shots_setted = network.set_data(away_match_shots)
     away_match_shots_setted = away_match_shots
-    away_expg = network.predict(away_match_shots_setted)
+    away_expg = model.predict(away_match_shots_setted)
 
     home_shots = np.array(np.c_[home_rows_shots[:, [7, 8, 6]], home_expg], dtype='f')
     away_shots = np.array(np.c_[away_rows_shots[:, [7, 8, 6]], away_expg], dtype='f')

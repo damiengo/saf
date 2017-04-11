@@ -4,6 +4,7 @@ import numpy as np
 
 from sklearn.model_selection import KFold
 from nn import tf_7
+from sklearn_ import logistic
 import logging as log
 
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
@@ -23,8 +24,8 @@ np.random.seed(8)
 nb_folds = 5
 hidden_sizes = [1] # 1, 2, 3, 4, 5
 alphas = [1] # [1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
-iters = [100, 500, 1000, 2000, 4000]
-reg_lambdas = [1, 0.1, 0.2, 0.5, 0.01, 0.001, 0.0001, 0.00001]
+iters = [1] # [100, 500, 1000, 2000, 4000]
+reg_lambdas = [1] # [1, 0.1, 0.2, 0.5, 0.01, 0.001, 0.0001, 0.00001]
 kf = KFold(n_splits=nb_folds, shuffle=True)
 
 for hidden_size in hidden_sizes:
@@ -41,12 +42,13 @@ for hidden_size in hidden_sizes:
                     X_train, X_test = features[train_index], features[test_index]
                     y_train, y_test = targets[train_index],  targets[test_index]
                     # Train network
-                    #network = regularization_6.Network(hidden_size=hidden_size, alpha=alpha, iter=itera, reg_lambda=reg_lambda)
-                    network = tf_7.Network(learning_rate=reg_lambda, iter=itera)
-                    network.fit(X_train, y_train)
+                    #model = regularization_6.Network(hidden_size=hidden_size, alpha=alpha, iter=itera, reg_lambda=reg_lambda)
+                    #model = tf_7.Network(learning_rate=reg_lambda, iter=itera)
+                    model = logistic.Model()
+                    model.fit(X_train, y_train)
                     #X_test_setted = network.set_data(X_test)
                     X_test_setted = X_test
-                    y_test_predict = network.predict(X_test_setted)
+                    y_test_predict = model.predict(X_test_setted)
                     acc = np.abs(np.mean(y_test - y_test_predict))
                     expg = np.sum(y_test_predict)
                     goals = np.sum(y_test)

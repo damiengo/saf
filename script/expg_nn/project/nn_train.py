@@ -4,6 +4,7 @@ import numpy as np
 
 from sklearn.model_selection import KFold
 from nn import tf_7
+from sklearn_ import logistic
 import logging as log
 
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
@@ -21,8 +22,9 @@ targets  = all_shots[:, 0]
 
 np.random.seed(8)
 
-network = tf_7.Network(learning_rate=0.00001, iter=100)
-network.fit(features, targets)
-network.save_weights('save/tf_7')
+#model = tf_7.Network(learning_rate=0.00001, iter=100)
+model = logistic.Model()
+model.fit(features, targets)
+model.save('save/sklearn')
 
 log.info("END")
