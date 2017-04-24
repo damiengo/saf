@@ -1,4 +1,9 @@
-﻿SELECT CASE WHEN gae.event_type = 'goal' THEN 1 ELSE 0 END AS goal,
+﻿/**
+ * 2017/04/24
+ * ----------
+ * Seconds before events is now 5.
+ */
+SELECT CASE WHEN gae.event_type = 'goal' THEN 1 ELSE 0 END AS goal,
        atan2(100-gae.start_x, 50-gae.start_y) * (180 / pi()) AS degree, 
        sqrt((100-gae.start_x)^2+(50-gae.start_y)^2) AS distance, 
        gae.start_x AS start_x, 
@@ -18,14 +23,14 @@ LEFT JOIN LATERAL (SELECT *
            FROM sqw_crosses_events c
            WHERE c.sqw_game_id = g.id
            AND c.minsec <= gae.minsec
-           AND (gae.minsec - c.minsec) < 15
+           AND (gae.minsec - c.minsec) < 5
            ORDER BY c.created_at DESC
            LIMIT 1) crosses ON true
 LEFT JOIN LATERAL (SELECT * 
            FROM sqw_corners_events c
            WHERE c.sqw_game_id = g.id
            AND c.minsec <= gae.minsec
-           AND (gae.minsec - c.minsec) < 15
+           AND (gae.minsec - c.minsec) < 5
            ORDER BY c.created_at DESC
            LIMIT 1) corners ON true
 LEFT JOIN LATERAL (SELECT * 
