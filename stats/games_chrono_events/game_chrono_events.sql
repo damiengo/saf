@@ -2,10 +2,15 @@
  * 2017/04/24
  * ----------
  * All passes + corners + crosses
+ *
+ * 2017/04/25
+ * ----------
+ * Added shots + gk + headed duals
  */
 
 SELECT 
-  * 
+  p.name, 
+  events.*
 FROM 
   sqw_games g 
 INNER JOIN 
@@ -23,24 +28,55 @@ INNER JOIN
     SELECT 
       'pass' AS event_type, 
       pa.sqw_game_id, 
-      pa.minsec
+      pa.minsec, 
+      pa.sqw_player_id
     FROM
       sqw_all_passes_events pa
     UNION
     SELECT 
       'corner' AS event_type, 
       co.sqw_game_id, 
-      co.minsec
+      co.minsec, 
+      co.sqw_player_id
     FROM
       sqw_corners_events co
     UNION
     SELECT 
       'cross' AS event_type, 
       cr.sqw_game_id, 
-      cr.minsec
+      cr.minsec, 
+      cr.sqw_player_id
     FROM
       sqw_crosses_events cr
+    UNION
+    SELECT
+      'shot' AS event_type, 
+      sh.sqw_game_id, 
+      sh.minsec, 
+      sh.sqw_player_id
+    FROM
+      sqw_goals_attempts_events sh
+    UNION
+    SELECT
+      'gk' AS event_type, 
+      gk.sqw_game_id, 
+      gk.minsec, 
+      gk.sqw_player_id
+    FROM
+      sqw_goal_keeping_events gk
+    UNION
+    SELECT
+      'head_dual' AS event_type, 
+      hd.sqw_game_id, 
+      hd.minsec, 
+      hd.sqw_player_id
+    FROM
+      sqw_headed_duals_events hd
   ) events
   ON g.id = events.sqw_game_id
+INNER JOIN 
+  sqw_players p 
+  ON
+    events.sqw_player_id = p.id
 ORDER BY
   events.minsec ASC
