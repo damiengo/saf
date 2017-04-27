@@ -27,6 +27,7 @@ INNER JOIN
   (
     SELECT 
       'pass' AS event_type, 
+      pa.pass_type AS event_type2, 
       pa.sqw_game_id, 
       pa.minsec, 
       pa.sqw_player_id
@@ -35,6 +36,7 @@ INNER JOIN
     UNION
     SELECT 
       'corner' AS event_type, 
+      co.event_type AS event_type2, 
       co.sqw_game_id, 
       co.minsec, 
       co.sqw_player_id
@@ -43,6 +45,7 @@ INNER JOIN
     UNION
     SELECT 
       'cross' AS event_type, 
+      cr.event_type AS event_type2, 
       cr.sqw_game_id, 
       cr.minsec, 
       cr.sqw_player_id
@@ -51,6 +54,7 @@ INNER JOIN
     UNION
     SELECT
       'shot' AS event_type, 
+      sh.event_type AS event_type2, 
       sh.sqw_game_id, 
       sh.minsec, 
       sh.sqw_player_id
@@ -59,6 +63,7 @@ INNER JOIN
     UNION
     SELECT
       'gk' AS event_type, 
+      gk.event_type AS event_type2, 
       gk.sqw_game_id, 
       gk.minsec, 
       gk.sqw_player_id
@@ -67,6 +72,7 @@ INNER JOIN
     UNION
     SELECT
       'head_dual' AS event_type, 
+      hd.action_type AS event_type2, 
       hd.sqw_game_id, 
       hd.minsec, 
       hd.sqw_player_id
