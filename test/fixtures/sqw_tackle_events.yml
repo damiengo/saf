@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SqwPlayer_id: 
+  SqwGame_id: 
+  SqwTeam_id: 
+  mins: 1
+  secs: 1
+  minsec: 1
+  action_type: MyString
+  event_type: MyString
+  loc_x: 1
+  loc_y: 1
+  sqw_player_tackled_id: 1
+
+two:
+  SqwPlayer_id: 
+  SqwGame_id: 
+  SqwTeam_id: 
+  mins: 1
+  secs: 1
+  minsec: 1
+  action_type: MyString
+  event_type: MyString
+  loc_x: 1
+  loc_y: 1
+  sqw_player_tackled_id: 1

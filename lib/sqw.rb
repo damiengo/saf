@@ -44,6 +44,9 @@ class Sqw
           SqwAllPassesEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwCrossesEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwCornersEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwInterceptionsEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwTacklesEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwTakeonsEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwGoalPasslink.joins(:sqw_goals_attempts_event).where("sqw_goals_attempts_events.sqw_game_id = ?", one_game.id).destroy_all
           one_game.destroy
       end
@@ -303,14 +306,82 @@ class Sqw
           sqw_c_event.save
       end
 
-      #puts doc.css("data_panel filters interceptions")
+      # Interceptions
+      doc.css("data_panel filters interceptions event").each do |xml_c_event|
+          c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
+          c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team_id"])
+
+          loc = xml_c_event.css("loc")[0].text.strip.match(/^(.*),(.*)$/)
+
+          sqw_i_event               = SqwInterceptionsEvent.new
+          sqw_i_event.sqw_game_id   = game.id
+          sqw_i_event.sqw_player_id = ( not c_player.nil?)? c_player.id : nil
+          sqw_i_event.sqw_team_id   = ( not c_team.nil?)? c_team.id : nil
+          sqw_i_event.loc_x         = loc[1]
+          sqw_i_event.loc_y         = loc[2]
+          sqw_i_event.mins          = xml_c_event["mins"]
+          sqw_i_event.secs          = xml_c_event["secs"]
+          sqw_i_event.minsec        = xml_c_event["minsec"]
+          sqw_i_event.action_type    = xml_c_event["action_type"]
+
+          sqw_i_event.save
+      end
+
+      # Tackles
+      doc.css("data_panel filters tackles event").each do |xml_c_event|
+          c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event.css("tackler")[0].text.strip)
+          c_player_tackled          = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
+          c_team                    = SqwTeam.find_by(sqw_id: xml_c_event.css("tackler_team")[0].text.strip)
+
+          loc = xml_c_event.css("loc")[0].text.strip.match(/^(.*),(.*)$/)
+
+          sqw_i_event               = SqwTacklesEvent.new
+          sqw_i_event.sqw_game_id   = game.id
+          sqw_i_event.sqw_player_id = ( not c_player.nil?)? c_player.id : nil
+          sqw_i_event.sqw_player_tackled_id = ( not c_player_tackled.nil?)? c_player_tackled.id : nil
+          sqw_i_event.sqw_team_id   = ( not c_team.nil?)? c_team.id : nil
+          sqw_i_event.loc_x         = loc[1]
+          sqw_i_event.loc_y         = loc[2]
+          sqw_i_event.mins          = xml_c_event["mins"]
+          sqw_i_event.secs          = xml_c_event["secs"]
+          sqw_i_event.minsec        = xml_c_event["minsec"]
+          sqw_i_event.action_type   = xml_c_event["action_type"]
+          sqw_i_event.event_type    = xml_c_event["type"]
+
+          sqw_i_event.save
+      end
+
+      # Takeons
+      doc.css("data_panel filters takeons event").each do |xml_c_event|
+          c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
+          c_other_player            = SqwPlayer.find_by(sqw_id: xml_c_event["other_player"])
+          c_team                    = SqwTeam.find_by(sqw_id: xml_c_event.css("team_id")[0].text.strip)
+          c_other_team              = SqwTeam.find_by(sqw_id: xml_c_event["other_team"])
+
+          loc = xml_c_event.css("loc")[0].text.strip.match(/^(.*),(.*)$/)
+
+          sqw_i_event               = SqwTakeonsEvent.new
+          sqw_i_event.sqw_game_id   = game.id
+          sqw_i_event.sqw_player_id = ( not c_player.nil?)? c_player.id : nil
+          sqw_i_event.sqw_other_player_id = ( not c_other_player.nil?)? c_other_player.id : nil
+          sqw_i_event.sqw_team_id   = ( not c_team.nil?)? c_team.id : nil
+          sqw_i_event.sqw_other_team_id   = ( not c_other_team.nil?)? c_other_team.id : nil
+          sqw_i_event.loc_x         = loc[1]
+          sqw_i_event.loc_y         = loc[2]
+          sqw_i_event.mins          = xml_c_event["mins"]
+          sqw_i_event.secs          = xml_c_event["secs"]
+          sqw_i_event.minsec        = xml_c_event["minsec"]
+          sqw_i_event.action_type   = xml_c_event["action_type"]
+          sqw_i_event.event_type    = xml_c_event["type"]
+
+          sqw_i_event.save
+      end
+
       #puts doc.css("data_panel filters clearances")
-      #puts doc.css("data_panel filters tackles")
       #puts doc.css("data_panel filters offside")
       #puts doc.css("data_panel filters keepersweeper")
       #puts doc.css("data_panel filters oneonones")
       #puts doc.css("data_panel filters setpieces")
-      #puts doc.css("data_panel filters takeons")
       #puts doc.css("data_panel filters fouls")
       #puts doc.css("data_panel filters cards")
       #puts doc.css("data_panel filters blocked_events")

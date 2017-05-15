@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170111210505) do
+ActiveRecord::Schema.define(version: 20170515195511) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,6 +100,7 @@ ActiveRecord::Schema.define(version: 20170111210505) do
   end
 
   add_index "sqw_all_passes_events", ["minsec"], name: "index_sqw_all_passes_events_on_minsec", using: :btree
+  add_index "sqw_all_passes_events", ["sqw_game_id"], name: "index_sqw_all_passes_events_on_sqw_game_id", using: :btree
   add_index "sqw_all_passes_events", ["sqw_player_id"], name: "index_sqw_all_passes_events_on_sqw_player_id", using: :btree
   add_index "sqw_all_passes_events", ["sqw_team_id"], name: "index_sqw_all_passes_events_on_sqw_team_id", using: :btree
 
@@ -236,6 +237,7 @@ ActiveRecord::Schema.define(version: 20170111210505) do
 
   add_index "sqw_goals_attempts_events", ["sqw_game_id"], name: "index_sqw_goals_attempts_events_on_sqw_game_id", using: :btree
   add_index "sqw_goals_attempts_events", ["sqw_player_id"], name: "index_sqw_goals_attempts_events_on_sqw_player_id", using: :btree
+  add_index "sqw_goals_attempts_events", ["sqw_team_id"], name: "index_sqw_goals_attempts_events_on_sqw_team_id", using: :btree
 
   create_table "sqw_headed_duals_events", force: true do |t|
     t.integer  "sqw_player_id"
@@ -255,6 +257,24 @@ ActiveRecord::Schema.define(version: 20170111210505) do
   add_index "sqw_headed_duals_events", ["otherplayer_id"], name: "index_sqw_headed_duals_events_on_otherplayer_id", using: :btree
   add_index "sqw_headed_duals_events", ["sqw_game_id"], name: "index_sqw_headed_duals_events_on_sqw_game_id", using: :btree
   add_index "sqw_headed_duals_events", ["sqw_player_id"], name: "index_sqw_headed_duals_events_on_sqw_player_id", using: :btree
+
+  create_table "sqw_interceptions_events", force: true do |t|
+    t.integer  "sqw_player_id"
+    t.integer  "sqw_game_id"
+    t.integer  "mins"
+    t.integer  "secs"
+    t.integer  "minsec"
+    t.string   "action_type"
+    t.integer  "loc_x"
+    t.integer  "loc_y"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "sqw_team_id"
+  end
+
+  add_index "sqw_interceptions_events", ["sqw_game_id"], name: "index_sqw_interceptions_events_on_sqw_game_id", using: :btree
+  add_index "sqw_interceptions_events", ["sqw_player_id"], name: "index_sqw_interceptions_events_on_sqw_player_id", using: :btree
+  add_index "sqw_interceptions_events", ["sqw_team_id"], name: "index_sqw_interceptions_events_on_sqw_team_id", using: :btree
 
   create_table "sqw_player_games", force: true do |t|
     t.integer  "sqw_game_id"
@@ -312,6 +332,50 @@ ActiveRecord::Schema.define(version: 20170111210505) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "sqw_tackles_events", force: true do |t|
+    t.integer  "sqw_player_id"
+    t.integer  "sqw_game_id"
+    t.integer  "sqw_team_id"
+    t.integer  "mins"
+    t.integer  "secs"
+    t.integer  "minsec"
+    t.string   "action_type"
+    t.string   "event_type"
+    t.integer  "loc_x"
+    t.integer  "loc_y"
+    t.integer  "sqw_player_tackled_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sqw_tackles_events", ["sqw_game_id"], name: "index_sqw_tackles_events_on_sqw_game_id", using: :btree
+  add_index "sqw_tackles_events", ["sqw_player_id"], name: "index_sqw_tackles_events_on_sqw_player_id", using: :btree
+  add_index "sqw_tackles_events", ["sqw_player_tackled_id"], name: "index_sqw_tackles_events_on_sqw_player_tackled_id", using: :btree
+  add_index "sqw_tackles_events", ["sqw_team_id"], name: "index_sqw_tackles_events_on_sqw_team_id", using: :btree
+
+  create_table "sqw_takeons_events", force: true do |t|
+    t.integer  "sqw_player_id"
+    t.integer  "sqw_game_id"
+    t.integer  "sqw_team_id"
+    t.integer  "mins"
+    t.integer  "secs"
+    t.integer  "minsec"
+    t.string   "action_type"
+    t.string   "event_type"
+    t.integer  "loc_x"
+    t.integer  "loc_y"
+    t.integer  "sqw_other_player_id"
+    t.integer  "sqw_other_team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sqw_takeons_events", ["sqw_game_id"], name: "index_sqw_takeons_events_on_sqw_game_id", using: :btree
+  add_index "sqw_takeons_events", ["sqw_other_player_id"], name: "index_sqw_takeons_events_on_sqw_other_player_id", using: :btree
+  add_index "sqw_takeons_events", ["sqw_other_team_id"], name: "index_sqw_takeons_events_on_sqw_other_team_id", using: :btree
+  add_index "sqw_takeons_events", ["sqw_player_id"], name: "index_sqw_takeons_events_on_sqw_player_id", using: :btree
+  add_index "sqw_takeons_events", ["sqw_team_id"], name: "index_sqw_takeons_events_on_sqw_team_id", using: :btree
 
   create_table "sqw_teams", force: true do |t|
     t.integer  "sqw_id"
