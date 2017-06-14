@@ -119,11 +119,13 @@ class Sqw
       # Goal keeping event
       doc.css("data_panel filters goal_keeping event").each do |xml_gk_event|
           gk_player                  = SqwPlayer.find_by(sqw_id: xml_gk_event["player_id"])
+          gk_team                    = SqwTeam.find_by(sqw_id: xml_gk_event["team_id"])
           locs                       = xml_gk_event.text.strip.match(/^(.*),(.*)$/)
 
           sqw_gk_event               = SqwGoalKeepingEvent.new
           sqw_gk_event.sqw_game_id   = game.id
           sqw_gk_event.sqw_player_id = gk_player.id
+          sqw_gk_event.sqw_team_id   = gk_team.id
           sqw_gk_event.event_type    = xml_gk_event["type"]
           sqw_gk_event.action_type   = xml_gk_event["action_type"]
           sqw_gk_event.mins          = xml_gk_event["mins"]
@@ -206,6 +208,7 @@ class Sqw
       # Headed dual event
       doc.css("data_panel filters headed_duals event").each do |xml_hd_event|
           hd_player                   = SqwPlayer.find_by(sqw_id: xml_hd_event["player_id"])
+          hd_team                     = SqwTeam.find_by(sqw_id: xml_hd_event["team_id"])
           hd_other_player             = SqwPlayer.find_by(sqw_id: xml_hd_event.css("otherplayer")[0].text.strip)
           locs                        = xml_hd_event.css("loc")[0].text.strip.match(/^(.*),(.*)$/)
 
@@ -217,6 +220,7 @@ class Sqw
           if not hd_other_player.nil?
               sqw_hd_event.otherplayer_id = hd_other_player.id
           end
+          sqw_hd_event.sqw_team_id   = (not hd_team.nil?)? hd_team.id : nil
           sqw_hd_event.event_type    = xml_hd_event["type"]
           sqw_hd_event.action_type   = xml_hd_event["action_type"]
           sqw_hd_event.mins          = xml_hd_event["mins"]

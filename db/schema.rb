@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170515195511) do
+ActiveRecord::Schema.define(version: 20170520211722) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -176,6 +176,7 @@ ActiveRecord::Schema.define(version: 20170515195511) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "sqw_game_id"
+    t.integer  "sqw_team_id"
   end
 
   add_index "sqw_goal_keeping_events", ["sqw_game_id"], name: "index_sqw_goal_keeping_events_on_sqw_game_id", using: :btree
@@ -252,6 +253,7 @@ ActiveRecord::Schema.define(version: 20170515195511) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "minsec"
+    t.integer  "sqw_team_id"
   end
 
   add_index "sqw_headed_duals_events", ["otherplayer_id"], name: "index_sqw_headed_duals_events_on_otherplayer_id", using: :btree
