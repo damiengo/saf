@@ -20,13 +20,17 @@ INNER JOIN
   ON
     g.sqw_season_id = s.id
   AND
-    s.start = 2016
+    s.start < 2016
 INNER JOIN
   (
     SELECT
       'pass' AS event_type,
       3 as orderby,
       pa.pass_type AS event_type2,
+      pa.assist AS assist,
+      pa.long_ball AS long_ball,
+      pa.through_ball AS through_ball,
+      pa.headed AS headed,
       pa.sqw_game_id,
       pa.minsec,
       pa.sqw_player_id,
@@ -40,6 +44,10 @@ INNER JOIN
       'corner' AS event_type,
       1 as orderby,
       co.event_type AS event_type2,
+      CASE WHEN co.event_type = 'Assist' THEN true ELSE false END AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
       co.sqw_game_id,
       co.minsec,
       co.sqw_player_id,
@@ -53,6 +61,10 @@ INNER JOIN
       'cross' AS event_type,
       2 as orderby,
       cr.event_type AS event_type2,
+      CASE WHEN cr.event_type = 'Assist' THEN true ELSE false END AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
       cr.sqw_game_id,
       cr.minsec,
       cr.sqw_player_id,
@@ -66,6 +78,10 @@ INNER JOIN
       'shot' AS event_type,
       4 as orderby,
       sh.event_type AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
       sh.sqw_game_id,
       sh.minsec,
       sh.sqw_player_id,
@@ -79,6 +95,10 @@ INNER JOIN
       'gk' AS event_type,
       5 as orderby,
       gk.event_type AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
       gk.sqw_game_id,
       gk.minsec,
       gk.sqw_player_id,
@@ -92,6 +112,10 @@ INNER JOIN
       'head_dual' AS event_type,
       99 as orderby,
       hd.action_type AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
       hd.sqw_game_id,
       hd.minsec,
       hd.sqw_player_id,
@@ -105,6 +129,10 @@ INNER JOIN
       'tackle' AS event_type,
       99 as orderby,
       ta.action_type AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
       ta.sqw_game_id,
       ta.minsec,
       ta.sqw_player_id,
@@ -118,6 +146,10 @@ INNER JOIN
       'interception' AS event_type,
       99 as orderby,
       i.action_type AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
       i.sqw_game_id,
       i.minsec,
       i.sqw_player_id,
@@ -128,6 +160,8 @@ INNER JOIN
       sqw_interceptions_events i
   ) events
   ON g.id = events.sqw_game_id
+  AND
+    events.start_x >= 50
 INNER JOIN
   sqw_players p
   ON
