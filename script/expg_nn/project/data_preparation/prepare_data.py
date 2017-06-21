@@ -7,6 +7,7 @@
 import psycopg2
 import pandas as pd
 import logging as log
+import math
 
 # Prepare the data
 class Preparation:
@@ -19,15 +20,9 @@ class Preparation:
             log.error("I am unable to connect to the database")
 
     # Realize the preparation
-    def prepare(self):
-        df = self.getData()
+    def prepare(self, df):
         df = self.getShots(df)
         log.info(df.head())
-
-    # Read from database
-    def getData(self):
-        log.info('Read from database')
-        return pd.read_sql_query(open('queries/games_chrono.sql').read(), con=self.conn)
 
     # Get shots
     def getShots(self, df):
@@ -70,3 +65,10 @@ class Preparation:
         shots['penalty'] = shots.apply(lambda shot: shot.start_x >= 88.4 and shot.start_x <= 88.6 and shot.start_y >= 49.8 and shot.start_y <= 50.4, axis=1)
         shots.to_csv('/tmp/shots.csv')
         return shots
+
+
+    # Reduce data for expg
+    def reduce(self, df):
+        log.info('Reduce shots')
+        df['distance'] = math.sqrt(math.pow(100-df.start_x, 2)+math.pow(50-df.start_y, 2))
+        df = df['start_x', 'start_y']

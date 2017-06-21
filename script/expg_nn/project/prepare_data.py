@@ -1,11 +1,18 @@
 # -*- coding: utf-8 -*-
 import logging as log
-from data_preparation import prepare_from_db
+from data_preparation import prepare_data
+from get_data import db_reader
 
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
 log.info("START")
 
-prep = prepare_from_db.Preparation()
-prep.prepare()
+# Read data
+reader = db_reader.DBReader()
+histo_data = reader.get('queries/games_chrono.sql')
+# Prepare data
+prep = prepare_data.Preparation()
+shots = prep.prepare(histo_data)
+# Reduce data
+shots_prep = prep.reduce(shots)
 
 log.info("END")
