@@ -12,7 +12,7 @@ histo_data = reader.get('queries/games_chrono.sql')
 # Prepare data
 prep = prepare_data.Preparation()
 shots = prep.prepare(histo_data)
-# Reduce data
-shots_prep = prep.reduce(shots)
+
+log.info(shots.head())
 
 log.info("END")

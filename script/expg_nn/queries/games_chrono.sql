@@ -9,6 +9,9 @@
  */
 
 SELECT
+  s.start,
+  ht.short_name AS home_team_name,
+  at.short_name AS away_team_name,
   t.short_name AS event_team_name,
   p.name AS event_player_name,
   events.*,
@@ -21,6 +24,14 @@ INNER JOIN
     g.sqw_season_id = s.id
   AND
     s.start < 2016
+INNER JOIN
+  sqw_teams ht
+  ON
+    g.sqw_home_team_id = ht.id
+INNER JOIN
+  sqw_teams at
+  ON
+    g.sqw_away_team_id = at.id
 INNER JOIN
   (
     SELECT
@@ -162,6 +173,8 @@ INNER JOIN
   ON g.id = events.sqw_game_id
   AND
     events.start_x >= 50
+  AND
+    minsec IS NOT NULL
 INNER JOIN
   sqw_players p
   ON
@@ -172,3 +185,4 @@ ORDER BY
   g.id ASC,
   events.minsec ASC,
   events.orderby ASC
+-- LIMIT 500
