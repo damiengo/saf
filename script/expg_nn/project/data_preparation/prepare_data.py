@@ -59,10 +59,11 @@ class Preparation:
             df['n'+str(i)+'_zone_16']           = df.shift(i)['zone_16']
             df['n'+str(i)+'_zone_17']           = df.shift(i)['zone_17']
             df['n'+str(i)+'_zone_18']           = df.shift(i)['zone_18']
+        # Delete goals from n-1 (residual errors)
         shots = df[df.event_type == 'shot']
+        shots = shots[shots.n1_event_type2 != 'goal']
         shots = shots.copy()
         shots = self.calc_events(shots)
-        shots.to_csv('/tmp/shots.csv')
         return shots
 
     # Reduce data for expg

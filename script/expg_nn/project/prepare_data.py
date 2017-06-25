@@ -13,6 +13,8 @@ histo_data = reader.get('queries/games_chrono.sql')
 prep = prepare_data.Preparation()
 shots = prep.prepare(histo_data)
 
+shots.to_csv('save/expg_prepared_data/shots.csv')
+
 log.info(shots.head())
 
 log.info("END")
