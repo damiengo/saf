@@ -183,4 +183,3 @@ ORDER BY
   g.id ASC,
   events.minsec ASC,
   events.orderby ASC
--- LIMIT 500

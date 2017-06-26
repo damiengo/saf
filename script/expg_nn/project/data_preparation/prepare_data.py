@@ -83,6 +83,9 @@ class Preparation:
         df['on_shot_block'] = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'blocked', axis=1)
         df['on_shot_ww']    = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'wood_work', axis=1)
         df['pass_distance'] = df.apply(lambda item: math.sqrt(math.pow(item.n1_start_x-item.start_x, 2)+math.pow(item.n1_start_y-item.start_y, 2)), axis=1)
+        # tackle
+        # interception
+        # same team?
         """
         df = df[['goal', 'start_x', 'start_y', 'distance', 'degree', 'event_type', 'event_type2',
                  'on_corner', 'on_cross', 'on_pass', 'on_back_pass', 'headed', 'n1_headed', 'n1_long_ball', 'n1_through_ball',
