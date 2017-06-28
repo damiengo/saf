@@ -172,7 +172,7 @@ INNER JOIN
   ) events
   ON g.id = events.sqw_game_id
   AND
-    events.start_x >= 50
+    events.minsec IS NOT NULL
 INNER JOIN
   sqw_players p
   ON
