@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SqwPlayer_id: 
+  SqwTeam_id: 
+  sqw_other_player_id: 1
+  sqw_other_team_id: 1
+  mins: 1
+  secs: 1
+  loc_x: 1.5
+  loc_y: 1.5
+
+two:
+  SqwPlayer_id: 
+  SqwTeam_id: 
+  sqw_other_player_id: 1
+  sqw_other_team_id: 1
+  mins: 1
+  secs: 1
+  loc_x: 1.5
+  loc_y: 1.5

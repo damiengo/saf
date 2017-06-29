@@ -169,6 +169,40 @@ INNER JOIN
       i.loc_y AS start_y
     FROM
       sqw_interceptions_events i
+    UNION
+    SELECT
+      'foul' AS event_type,
+      99 as orderby,
+      '' AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
+      e.sqw_game_id,
+      e.minsec,
+      e.sqw_player_id,
+      e.sqw_team_id,
+      e.loc_x AS start_x,
+      e.loc_y AS start_y
+    FROM
+      sqw_fouls_events e
+    UNION
+    SELECT
+      'offside' AS event_type,
+      99 as orderby,
+      '' AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
+      e.sqw_game_id,
+      e.minsec,
+      e.sqw_player_id,
+      e.sqw_team_id,
+      NULL AS start_x,
+      NULL AS start_y
+    FROM
+      sqw_offsides_events e
   ) events
   ON g.id = events.sqw_game_id
   AND
