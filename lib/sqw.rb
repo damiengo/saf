@@ -1,6 +1,7 @@
 class Sqw
 
   def self.parse_xml_file(xml_file, season, tournament)
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - START'
       f = File.open(xml_file)
       doc = Nokogiri::XML(f)
       f.close
@@ -8,6 +9,7 @@ class Sqw
       # Teams
       home_team = nil
       away_team = nil
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Teams'
       doc.css("data_panel game team").each do |xml_team|
           sqw_id = xml_team["id"]
           team = SqwTeam.find_by(sqw_id: sqw_id)
@@ -35,6 +37,7 @@ class Sqw
       matched_result = full_result.match(/.*([0-9]+)\ -\ ([0-9]+).*/)
 
       # Deleting existing game
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Deleting datas'
       SqwGame.where(sqw_season_id: season.id, sqw_tournament_id: tournament.id, sqw_home_team_id: home_team.id, sqw_away_team_id: away_team.id).each do |one_game|
           SqwPlayerGame.where(sqw_game_id: one_game.id).destroy_all
           SqwPlayerSwap.where(sqw_game_id: one_game.id).destroy_all
@@ -52,6 +55,7 @@ class Sqw
           SqwGoalPasslink.joins(:sqw_goals_attempts_event).where("sqw_goals_attempts_events.sqw_game_id = ?", one_game.id).destroy_all
           one_game.destroy
       end
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Game'
       game                = SqwGame.new
       game.sqw_season     = season
       game.sqw_tournament = tournament
@@ -64,6 +68,7 @@ class Sqw
       game.save
 
       # Players
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Players'
       doc.css("data_panel players player").each do |xml_player|
           p_team = SqwTeam.find_by(sqw_id: xml_player["team_id"])
           # Base player
@@ -98,6 +103,7 @@ class Sqw
       end
 
       # Substitution
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Substitution'
       doc.css("data_panel possession period time_slice swap_players").each do |xml_swap|
           swap_team          = SqwTeam.find_by(sqw_id: xml_swap["team_id"])
           swap_sub_to_player = SqwPlayer.find_by(sqw_id: xml_swap.css("sub_to_player")[0]["player_id"])
@@ -119,6 +125,7 @@ class Sqw
       end
 
       # Goal keeping event
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - GK'
       doc.css("data_panel filters goal_keeping event").each do |xml_gk_event|
           gk_player                  = SqwPlayer.find_by(sqw_id: xml_gk_event["player_id"])
           gk_team                    = SqwTeam.find_by(sqw_id: xml_gk_event["team_id"])
@@ -141,6 +148,7 @@ class Sqw
       end
 
       # Goal attempts event
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Shots'
       doc.css("data_panel filters goals_attempts event").each do |xml_ga_event|
           ga_player                  = SqwPlayer.find_by(sqw_id: xml_ga_event["player_id"])
           ga_team                    = SqwTeam.find_by(sqw_id: xml_ga_event["team_id"])
@@ -208,6 +216,7 @@ class Sqw
       end
 
       # Headed dual event
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Headed'
       doc.css("data_panel filters headed_duals event").each do |xml_hd_event|
           hd_player                   = SqwPlayer.find_by(sqw_id: xml_hd_event["player_id"])
           hd_team                     = SqwTeam.find_by(sqw_id: xml_hd_event["team_id"])
@@ -235,6 +244,7 @@ class Sqw
       end
 
       # All passes events
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Passes'
       doc.css("data_panel filters all_passes event").each do |xml_ap_event|
           ga_player                  = SqwPlayer.find_by(sqw_id: xml_ap_event["player_id"])
           ga_team                    = SqwTeam.find_by(sqw_id: xml_ap_event["team_id"])
@@ -244,8 +254,8 @@ class Sqw
 
           sqw_ap_event               = SqwAllPassesEvent.new
           sqw_ap_event.sqw_game_id   = game.id
-          sqw_ap_event.sqw_player_id = ( not ga_player.nil?)? ga_player.id : nil
-          sqw_ap_event.sqw_team_id   = ( not ga_team.nil?)? ga_team.id : nil
+          sqw_ap_event.sqw_player_id = (not ga_player.nil?)? ga_player.id : nil
+          sqw_ap_event.sqw_team_id   = (not ga_team.nil?)? ga_team.id : nil
           sqw_ap_event.start_x       = start_pos[1]
           sqw_ap_event.start_y       = start_pos[2]
           sqw_ap_event.end_x         = end_pos[1]
@@ -264,6 +274,7 @@ class Sqw
       end
 
       # Crosses events
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Crosses'
       doc.css("data_panel filters crosses event").each do |xml_c_event|
           c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
           c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
@@ -288,6 +299,7 @@ class Sqw
       end
 
       # Corners events
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Corners'
       doc.css("data_panel filters corners event").each do |xml_c_event|
           c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
           c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
@@ -313,6 +325,7 @@ class Sqw
       end
 
       # Interceptions
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Interceptions'
       doc.css("data_panel filters interceptions event").each do |xml_c_event|
           c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
           c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team_id"])
@@ -334,6 +347,7 @@ class Sqw
       end
 
       # Tackles
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Tackles'
       doc.css("data_panel filters tackles event").each do |xml_c_event|
           c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event.css("tackler")[0].text.strip)
           c_player_tackled          = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
@@ -358,6 +372,7 @@ class Sqw
       end
 
       # Takeons
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Takeons'
       doc.css("data_panel filters takeons event").each do |xml_c_event|
           c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
           c_other_player            = SqwPlayer.find_by(sqw_id: xml_c_event["other_player"])
@@ -384,6 +399,7 @@ class Sqw
       end
 
       # Fouls
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Fouls'
       doc.css("data_panel filters fouls event").each do |xml_c_event|
           c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
           c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
@@ -408,6 +424,7 @@ class Sqw
       end
 
       # Offside
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Offsides'
       doc.css("data_panel filters offside event").each do |xml_c_event|
           c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
           c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
@@ -422,6 +439,8 @@ class Sqw
 
           sqw_i_event.save
       end
+
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - END'
 
       #puts doc.css("data_panel filters clearances")
       #puts doc.css("data_panel filters keepersweeper")

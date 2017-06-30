@@ -10,6 +10,8 @@
 
 SELECT
   s.start,
+  tn.country,
+  tn.name,
   ht.short_name AS home_team_name,
   at.short_name AS away_team_name,
   t.short_name AS event_team_name,
@@ -32,6 +34,10 @@ INNER JOIN
   sqw_teams at
   ON
     g.sqw_away_team_id = at.id
+INNER JOIN
+  sqw_tournaments tn
+  ON
+    g.sqw_tournament_id = tn.id
 INNER JOIN
   (
     SELECT

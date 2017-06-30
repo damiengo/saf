@@ -214,8 +214,8 @@ namespace :saf do
   task analyse_sqw: :environment do
 
       # Season
-      season_start = 2016
-      season_end   = 2017
+      season_start = 2012
+      season_end   = 2013
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
         season = SqwSeason.new
@@ -240,10 +240,21 @@ namespace :saf do
 
       files = Dir.glob("data/squawka/ligue-1/#{season_start}/*").sort
       files.each do |xml_file|
-          puts xml_file
+          puts DateTime.now.strftime('%H:%M:%S') + ' - ' + xml_file
           Sqw::parse_xml_file(xml_file, season, tournament)
       end
 
+  end
+
+  desc "Test analyse Sqwka"
+  task test_analyse_sqw: :environment do
+
+    season = SqwSeason.find_by(start: 2014, end: 2015)
+    tournament = SqwTournament.find_by(name: "Ligue 1")
+
+    xml_file = "data/squawka/ligue-1/2014/ligue1-7729.xml"
+    puts DateTime.now.strftime('%H:%M:%S') + ' - ' + xml_file
+    Sqw::parse_xml_file(xml_file, season, tournament)
   end
 
   desc "Update ELO"

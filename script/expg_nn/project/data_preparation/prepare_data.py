@@ -62,7 +62,6 @@ class Preparation:
         shots = df[df.event_type == 'shot']
         # Delete goals from n-1 (residual errors)
         shots = shots[shots.n1_event_type2 != 'goal']
-        shots = shots[shots.start_x > 50]
         shots = shots.copy()
         shots = self.calc_events(shots)
         return shots
@@ -94,7 +93,8 @@ class Preparation:
         df['same_team']             = df.apply(lambda item: item.event_team_name == item.n1_event_team_name, axis=1)
         df['pass_distance']         = df.apply(lambda item: math.sqrt(math.pow(item.n1_start_x-item.start_x, 2)+math.pow(item.n1_start_y-item.start_y, 2)), axis=1)
         df['minsec_diff']           = df.apply(lambda item: item.minsec - item.n1_minsec, axis=1)
-        df['set_piece']             = df.apply(lambda item: item.minsec_diff > 20 and item.penalty == False, axis=1)
+        df['set_piece']             = df.apply(lambda item: item.n1_event_type == 'foul' and item.penalty == False, axis=1)
+        df['own_goal']              = df.apply(lambda item: item.start_x < 20, axis=1)
         """
         df = df[['goal', 'start_x', 'start_y', 'distance', 'degree', 'event_type', 'event_type2',
                  'on_corner', 'on_cross', 'on_pass', 'on_back_pass', 'headed', 'n1_headed', 'n1_long_ball', 'n1_through_ball',
