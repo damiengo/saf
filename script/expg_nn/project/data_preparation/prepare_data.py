@@ -95,9 +95,4 @@ class Preparation:
         df['minsec_diff']           = df.apply(lambda item: item.minsec - item.n1_minsec, axis=1)
         df['set_piece']             = df.apply(lambda item: item.n1_event_type == 'foul' and item.penalty == False, axis=1)
         df['own_goal']              = df.apply(lambda item: item.start_x < 20, axis=1)
-        """
-        df = df[['goal', 'start_x', 'start_y', 'distance', 'degree', 'event_type', 'event_type2',
-                 'on_corner', 'on_cross', 'on_pass', 'on_back_pass', 'headed', 'n1_headed', 'n1_long_ball', 'n1_through_ball',
-                 'zone_10', 'zone_11', 'zone_12', 'zone_13', 'zone_14', 'zone_15', 'zone_16', 'zone_17', 'zone_18']]
-        """
         return df

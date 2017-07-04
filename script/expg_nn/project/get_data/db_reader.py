@@ -20,6 +20,8 @@ class DBReader:
             log.error("I am unable to connect to the database")
 
     # Read from database
-    def get(self, query):
+    def get(self, query, seasons):
         log.info('Read from database')
-        return pd.read_sql_query(open(query).read(), con=self.conn)
+        sql = open(query).read()
+        sql = sql.format(seasons=seasons)
+        return pd.read_sql_query(sql, con=self.conn)

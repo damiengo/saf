@@ -25,7 +25,7 @@ INNER JOIN
   ON
     g.sqw_season_id = s.id
   AND
-    s.start < 2016
+    s.start IN ({seasons})
 INNER JOIN
   sqw_teams ht
   ON
