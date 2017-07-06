@@ -13,3 +13,4 @@ class ModelChooser:
                                             random_state=42, verbosity=2)
         pipeline_optimizer.fit(X_train, y_train)
         log.info(pipeline_optimizer.score(X_test, y_test))
+        pipeline_optimizer.export('save/tpot/expg.py')
