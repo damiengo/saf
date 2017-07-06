@@ -3,8 +3,10 @@ import sys
 import numpy as np
 import pandas as pd
 import logging as log
-from sklearn import preprocessing
+from sklearn.model_selection import train_test_split
+from sklearn_ import tpot_
 
+# Data normalization
 def normalize(df, column):
     return (df[column] - df[column].min())/(df[column].max() - df[column].min())
 
@@ -41,6 +43,14 @@ all_shots['degree']        = normalize(all_shots, 'degree')
 all_shots['pass_distance'] = normalize(all_shots, 'pass_distance')
 all_shots['minsec_diff']   = normalize(all_shots, 'minsec_diff')
 
-log.debug(all_shots.head())
+# Train/test splitting
+y = all_shots['goal'].as_matrix()
+X = all_shots.drop('goal', axis=1, inplace=False).as_matrix()
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+
+# Choose model
+model_chooser = tpot_.ModelChooser()
+model_chooser.run(X_train, y_train, X_test, y_test)
 
 log.info("END")
