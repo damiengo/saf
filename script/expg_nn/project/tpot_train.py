@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import sys
-import numpy as np
 import pandas as pd
 import logging as log
 from sklearn.model_selection import train_test_split
 from sklearn_ import tpot_
+from data_preparation import clean_data
+from data_preparation import target_features
 
 # Data normalization
 def normalize(df, column):
@@ -21,36 +22,24 @@ train_file = sys.argv[1]
 
 all_shots = pd.read_csv(train_file)
 
-#print(all_shots.columns.values)
-
-# Filter shots
-all_shots = all_shots[all_shots.penalty == False]
-all_shots = all_shots[all_shots.own_goal == False]
-
-# Reduce columns
-all_shots = all_shots[['goal', 'distance', 'degree', 'long_ball', 'through_ball', 'headed',
-                       'on_corner', 'on_cross', 'on_pass', 'on_back_pass', 'on_back_cross', 'on_shot_save',
-                       'on_shot_off', 'on_shot_block', 'on_shot_ww', 'on_interception', 'on_tackle', 'on_gk_failedcatch',
-                       'on_gk_punch', 'on_gk_save', 'on_gk_failedclearance', 'on_gk_clearance', 'on_gk_catch', 'same_team',
-                       'pass_distance', 'minsec_diff', 'n1_headed', 'n1_long_ball', 'n1_through_ball',
-                       'zone_10', 'zone_11', 'zone_12', 'zone_13', 'zone_14', 'zone_15', 'zone_16', 'zone_17', 'zone_18',
-                       'n1_zone_10', 'n1_zone_11', 'n1_zone_12', 'n1_zone_13', 'n1_zone_14',
-                       'n1_zone_15', 'n1_zone_16', 'n1_zone_17', 'n1_zone_18']]
-
-# Normalize values
-all_shots['distance']      = normalize(all_shots, 'distance')
-all_shots['degree']        = normalize(all_shots, 'degree')
-all_shots['pass_distance'] = normalize(all_shots, 'pass_distance')
-all_shots['minsec_diff']   = normalize(all_shots, 'minsec_diff')
+# Cleaning
+cd = clean_data.CleanData()
+all_shots = cd.run(all_shots)
 
 # Train/test splitting
-y = all_shots['goal'].as_matrix()
-X = all_shots.drop('goal', axis=1, inplace=False).as_matrix()
+tf = target_features.TargetFeatures()
+X, y = tf.run(all_shots)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 
 # Choose model
 model_chooser = tpot_.ModelChooser()
 model_chooser.run(X_train, y_train, X_test, y_test)
+
+"""
+Results:
+Normalized: 0.902096291177 - XGBClassifier(max_depth=3, n_estimators=100, nthread=1, subsample=0.45)
+No-Normalized: 0.902787376181 - XGBClassifier(max_depth=2, min_child_weight=9, n_estimators=100, nthread=1, subsample=0.65)
+"""
 
 log.info("END")
