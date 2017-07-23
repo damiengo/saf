@@ -11,7 +11,7 @@ class TargetFeatures:
            'zone_10', 'zone_11', 'zone_12', 'zone_13', 'zone_14', 'zone_15', 'zone_16', 'zone_17', 'zone_18',
            'n1_zone_10', 'n1_zone_11', 'n1_zone_12', 'n1_zone_13', 'n1_zone_14',
            'n1_zone_15', 'n1_zone_16', 'n1_zone_17', 'n1_zone_18']
-    y = ['goal']
+    y = 'goal'
 
     def __init__(self):
         log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')

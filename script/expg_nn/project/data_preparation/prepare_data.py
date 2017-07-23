@@ -71,7 +71,7 @@ class Preparation:
         log.info('Calc events')
         df['penalty']               = df.apply(lambda item: item.start_x >= 88.4 and item.start_x <= 88.6 and item.start_y >= 49.8 and item.start_y <= 50.4, axis=1)
         df['distance']              = df.apply(lambda item: math.sqrt(math.pow(100-item.start_x, 2)+math.pow(50-item.start_y, 2)), axis=1)
-        df['degree']                = df.apply(lambda item: math.atan2(100-item.start_x, 50-item.start_y) * (180 / math.pi), axis=1)
+        df['degree']                = df.apply(lambda item: math.fabs(math.atan2(item.start_x-100, item.start_y-50) * (180 / math.pi)), axis=1)
         df['goal']                  = df.apply(lambda item: item.event_type2 == 'goal', axis=1)
         df['on_corner']             = df.apply(lambda item: item.n1_event_type == 'corner' or item.n2_event_type == 'corner', axis=1)
         df['on_cross']              = df.apply(lambda item: item.n1_event_type == 'cross' and item.n2_event_type != 'corner', axis=1)
