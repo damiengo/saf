@@ -98,7 +98,7 @@ INNER JOIN
       false AS assist,
       false AS long_ball,
       false AS through_ball,
-      false AS headed,
+      sh.headed AS headed,
       sh.sqw_game_id,
       sh.minsec,
       sh.sqw_player_id,

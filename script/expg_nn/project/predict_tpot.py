@@ -5,6 +5,7 @@ import pandas as pd
 from data_preparation import clean_data
 from data_preparation import target_features
 from xgboost import XGBClassifier
+from sklearn.linear_model import LogisticRegression
 
 log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
 log.info("START")
@@ -29,10 +30,7 @@ predict_shots_cl = cd.run(predict_shots)
 tf = target_features.TargetFeatures()
 
 # Predict
-#clf = XGBClassifier(max_depth=2, min_child_weight=9, n_estimators=100, nthread=1, subsample=0.65)
-clf = XGBClassifier(XGBClassifier__max_depth=2, XGBClassifier__min_child_weight=9,
-                    XGBClassifier__n_estimators=100, XGBClassifier__nthread=1,
-                    XGBClassifier__subsample=0.65)
+clf = LogisticRegression(C=10.0, penalty="l2")
 clf.fit(test_shots_cl[tf.X], test_shots_cl[tf.y])
 predicted = clf.predict_proba(predict_shots_cl[tf.X])
 

@@ -9,8 +9,8 @@ class ModelChooser:
 
     def run(self, X_train, y_train, X_test, y_test, save_file):
         log.info("Run tPot")
-        pipeline_optimizer = tp.TPOTClassifier(generations=5, population_size=20, cv=5,
-                                            random_state=42, verbosity=2)
+        pipeline_optimizer = tp.TPOTClassifier(generations=100, population_size=100, cv=5,
+                                               random_state=42, verbosity=2, n_jobs=-1)
         pipeline_optimizer.fit(X_train, y_train)
         log.info(pipeline_optimizer.score(X_test, y_test))
         pipeline_optimizer.export(save_file)

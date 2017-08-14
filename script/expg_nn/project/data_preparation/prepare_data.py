@@ -91,8 +91,9 @@ class Preparation:
         df['on_gk_clearance']       = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'clearance', axis=1)
         df['on_gk_catch']           = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'catch', axis=1)
         df['same_team']             = df.apply(lambda item: item.event_team_name == item.n1_event_team_name, axis=1)
-        df['pass_distance']         = df.apply(lambda item: math.sqrt(math.pow(item.n1_start_x-item.start_x, 2)+math.pow(item.n1_start_y-item.start_y, 2)), axis=1)
         df['minsec_diff']           = df.apply(lambda item: item.minsec - item.n1_minsec, axis=1)
         df['set_piece']             = df.apply(lambda item: item.n1_event_type == 'foul' and item.penalty == False, axis=1)
         df['own_goal']              = df.apply(lambda item: item.start_x < 20, axis=1)
+        df['pass_distance']         = df.apply(lambda item: math.sqrt(math.pow(item.n1_start_x-item.start_x, 2)+math.pow(item.n1_start_y-item.start_y, 2)), axis=1)
+        df['pass_distance']         = df.apply(lambda item: item.pass_distance if item.on_corner or item.on_cross or item.on_pass or item.set_piece else 0, axis=1)
         return df

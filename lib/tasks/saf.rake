@@ -130,9 +130,10 @@ namespace :saf do
   desc "Parse Sqwka"
   task parse_sqw: :environment do
 
-      # 24 => Ligue 1, 8 => EPL, 22 => Bundesliga, 21 => Serie A, 23 => Liga, 9 => Eredivise
-      tournament = "24"
-      season = "2016"
+      # 24 => Ligue 1, 8 => EPL, 22 => Bundesliga, 21 => Serie A, 23 => Liga, 9 => Eredivise, 99 => Portugal
+      # 5 => Champions League, 6 => Europa League
+      tournament = "5"
+      season = "2015"
       nb_page = 1
 
       url = "http://www.squawka.com/match-results"
@@ -176,13 +177,16 @@ namespace :saf do
               season_dir = "#{championship_dir}/#{season}"
               Dir.mkdir(season_dir) unless File.exists?(season_dir)
               # Opening game
+              puts href
               game_page = Nokogiri::HTML(open(href), nil, "utf-8")
               game_page.inner_html.each_line do |line|
                   if /chatClient.roomID/.match(line)
                       id = line.match(/parseInt\(\'(.*)\'\)/)[1]
-                      data_xml = "http://s3-irl-#{championship_name_cleaned}.squawka.com/dp/ingame/#{id}"
+                      #data_xml = "http://s3-irl-#{championship_name_cleaned}.squawka.com/dp/ingame/#{id}"
+                      data_xml = "http://s3-irl-#{championship_name}.squawka.com/dp/ingame/#{id}"
                       dest_file = "#{season_dir}/#{championship_name_cleaned}-#{id}.xml"
                       puts dest_file
+                      puts data_xml
                       if not File.exists?(dest_file)
                           open(dest_file, 'wb') do |file|
                               begin
