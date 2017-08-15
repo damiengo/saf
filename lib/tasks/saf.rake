@@ -132,8 +132,9 @@ namespace :saf do
 
       # 24 => Ligue 1, 8 => EPL, 22 => Bundesliga, 21 => Serie A, 23 => Liga, 9 => Eredivise, 99 => Portugal
       # 5 => Champions League, 6 => Europa League
-      tournament = "5"
-      season = "2015"
+      # 3 => Euro 2016, 4 => World Cup
+      tournament = "8"
+      season = "2017"
       nb_page = 1
 
       url = "http://www.squawka.com/match-results"
@@ -214,12 +215,19 @@ namespace :saf do
 
   end
 
-  desc "Analyse Sqwka"
+  desc "Analyse Sqawka"
   task analyse_sqw: :environment do
 
+      tournament_id = 1
+
+      tournaments = [
+                      ['Ligue 1',        'ligue-1', 'France'],
+                      ['Premier League', 'epl',     'Angleterre']
+                    ]
+
       # Season
-      season_start = 2012
-      season_end   = 2013
+      season_start = 2017
+      season_end   = season_start+1
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
         season = SqwSeason.new
@@ -229,8 +237,8 @@ namespace :saf do
       end
 
       # Tournament
-      tournament_name    = "Ligue 1"
-      tournament_country = "France"
+      tournament_name    = tournaments[tournament_id][0]
+      tournament_country = tournaments[tournament_id][2]
       tournament = SqwTournament.find_by(name: tournament_name)
       if tournament.nil?
         tournament = SqwTournament.new
@@ -242,7 +250,7 @@ namespace :saf do
       #xml_file = "data/squawka/ligue-1/2014/ligue1-7729.xml"
       #Sqw::parse_xml_file(xml_file, season, tournament)
 
-      files = Dir.glob("data/squawka/ligue-1/#{season_start}/*").sort
+      files = Dir.glob("data/squawka/#{tournaments[tournament_id][1]}/#{season_start}/*").sort
       files.each do |xml_file|
           puts DateTime.now.strftime('%H:%M:%S') + ' - ' + xml_file
           Sqw::parse_xml_file(xml_file, season, tournament)
