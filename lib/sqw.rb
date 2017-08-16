@@ -131,20 +131,22 @@ class Sqw
           gk_team                    = SqwTeam.find_by(sqw_id: xml_gk_event["team_id"])
           locs                       = xml_gk_event.text.strip.match(/^(.*),(.*)$/)
 
-          sqw_gk_event               = SqwGoalKeepingEvent.new
-          sqw_gk_event.sqw_game_id   = game.id
-          sqw_gk_event.sqw_player_id = gk_player.id
-          sqw_gk_event.sqw_team_id   = gk_team.id
-          sqw_gk_event.event_type    = xml_gk_event["type"]
-          sqw_gk_event.action_type   = xml_gk_event["action_type"]
-          sqw_gk_event.mins          = xml_gk_event["mins"]
-          sqw_gk_event.secs          = xml_gk_event["secs"]
-          sqw_gk_event.minsec        = xml_gk_event["minsec"]
-          sqw_gk_event.headed        = xml_gk_event["headed"]
-          sqw_gk_event.loc_x         = locs[1]
-          sqw_gk_event.loc_y         = locs[2]
+          unless gk_player.nil?
+              sqw_gk_event               = SqwGoalKeepingEvent.new
+              sqw_gk_event.sqw_game_id   = game.id
+              sqw_gk_event.sqw_player_id = gk_player.id
+              sqw_gk_event.sqw_team_id   = gk_team.id
+              sqw_gk_event.event_type    = xml_gk_event["type"]
+              sqw_gk_event.action_type   = xml_gk_event["action_type"]
+              sqw_gk_event.mins          = xml_gk_event["mins"]
+              sqw_gk_event.secs          = xml_gk_event["secs"]
+              sqw_gk_event.minsec        = xml_gk_event["minsec"]
+              sqw_gk_event.headed        = xml_gk_event["headed"]
+              sqw_gk_event.loc_x         = locs[1]
+              sqw_gk_event.loc_y         = locs[2]
 
-          sqw_gk_event.save
+              sqw_gk_event.save
+          end
       end
 
       # Goal attempts event
@@ -189,11 +191,11 @@ class Sqw
                   sqw_goal_passlink.period =               (pass["period"].nil?)?               0  : pass["period"].to_i
                   sqw_goal_passlink.player_id =            (pass["player_id"].nil?)?            0  : pass["player_id"].to_i
                   sqw_goal_passlink.goal_min =             (pass["goal_min"].nil?)?             0  : pass["goal_min"].to_i
-                  sqw_goal_passlink.start_x =              (pass["start_x"].nil?)?              0  : pass["start_x"].to_f
-                  sqw_goal_passlink.start_y =              (pass["start_y"].nil?)?              0  : pass["start_y"].to_f
+                  sqw_goal_passlink.start_x =              (pass["start_x"].nil? || !pass["start_x"])?              0  : pass["start_x"].to_f
+                  sqw_goal_passlink.start_y =              (pass["start_y"].nil? || !pass["start_y"])?              0  : pass["start_y"].to_f
                   sqw_goal_passlink.is_own =               (pass["is_own"].nil?)?               false : pass["is_own"].to_i
-                  sqw_goal_passlink.end_x =                (pass["end_x"].nil?)?                0  : pass["end_x"].to_f
-                  sqw_goal_passlink.end_y =                (pass["end_y"].nil?)?                0  : pass["end_y"].to_f
+                  sqw_goal_passlink.end_x =                (pass["end_x"].nil? || !pass["end_x"])?                0  : pass["end_x"].to_f
+                  sqw_goal_passlink.end_y =                (pass["end_y"].nil? || !pass["end_y"])?                0  : pass["end_y"].to_f
                   #sqw_goal_passlink.gmouth_x =             (pass["gmouth_x"].nil?)?             0  : pass["gmouth_x"].to_f
                   #sqw_goal_passlink.gmouth_y =             (pass["gmouth_y"].nil?)?             0  : pass["gmouth_y"].to_f
                   #sqw_goal_passlink.gmouth_z =             (pass["gmouth_z"].nil?)?             0  : pass["gmouth_z"].to_f

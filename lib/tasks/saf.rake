@@ -216,9 +216,11 @@ namespace :saf do
   end
 
   desc "Analyse Sqawka"
-  task analyse_sqw: :environment do
+  task :analyse_sqw, [:tournament_id,:season_start] => :environment do |t, args|
 
-      tournament_id = 1
+      args.with_defaults(:tournament_id => 1, :season_start => 2017)
+
+      tournament_id = args.tournament_id
 
       tournaments = [
                       ['Ligue 1',        'ligue-1', 'France'],
@@ -226,7 +228,7 @@ namespace :saf do
                     ]
 
       # Season
-      season_start = 2017
+      season_start = args.season_start.to_i
       season_end   = season_start+1
       season = SqwSeason.find_by(start: season_start, end: season_end)
       if season.nil?
@@ -237,8 +239,8 @@ namespace :saf do
       end
 
       # Tournament
-      tournament_name    = tournaments[tournament_id][0]
-      tournament_country = tournaments[tournament_id][2]
+      tournament_name    = tournaments[tournament_id.to_i][0]
+      tournament_country = tournaments[tournament_id.to_i][2]
       tournament = SqwTournament.find_by(name: tournament_name)
       if tournament.nil?
         tournament = SqwTournament.new
@@ -250,7 +252,7 @@ namespace :saf do
       #xml_file = "data/squawka/ligue-1/2014/ligue1-7729.xml"
       #Sqw::parse_xml_file(xml_file, season, tournament)
 
-      files = Dir.glob("data/squawka/#{tournaments[tournament_id][1]}/#{season_start}/*").sort
+      files = Dir.glob("data/squawka/#{tournaments[tournament_id.to_i][1]}/#{season_start}/*").sort
       files.each do |xml_file|
           puts DateTime.now.strftime('%H:%M:%S') + ' - ' + xml_file
           Sqw::parse_xml_file(xml_file, season, tournament)
@@ -261,10 +263,10 @@ namespace :saf do
   desc "Test analyse Sqwka"
   task test_analyse_sqw: :environment do
 
-    season = SqwSeason.find_by(start: 2014, end: 2015)
-    tournament = SqwTournament.find_by(name: "Ligue 1")
+    season = SqwSeason.find_by(start: 2012, end: 2013)
+    tournament = SqwTournament.find_by(name: "Premier League")
 
-    xml_file = "data/squawka/ligue-1/2014/ligue1-7729.xml"
+    xml_file = "data/squawka/epl/2012/epl-83.xml"
     puts DateTime.now.strftime('%H:%M:%S') + ' - ' + xml_file
     Sqw::parse_xml_file(xml_file, season, tournament)
   end
