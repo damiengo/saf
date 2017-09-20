@@ -4,7 +4,6 @@
 # 2017/05/21
 #
 
-import psycopg2
 import pandas as pd
 import logging as log
 import math
@@ -13,11 +12,6 @@ import math
 class Preparation:
     def __init__(self):
         log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
-        try:
-            self.conn = psycopg2.connect("dbname='saf' user='saf' host='localhost' password='saf'")
-            self.cur = self.conn.cursor()
-        except:
-            log.error("I am unable to connect to the database")
 
     # Realize the preparation
     def prepare(self, df):
@@ -38,7 +32,8 @@ class Preparation:
         df['zone_17'] = df.apply(lambda e: e.start_x > 83.34 and e.start_x <= 100 and e.start_y > 33.33 and e.start_y <= 66.66, axis=1)
         df['zone_18'] = df.apply(lambda e: e.start_x > 83.34 and e.start_x <= 100 and e.start_y > 66.66 and e.start_y <= 100, axis=1)
         # Previous events
-        for i in range(1, 3):
+        for i in range(1, 9):
+            log.info('  Range '+str(i))
             df['n'+str(i)+'_event_type']        = df.shift(i)['event_type']
             df['n'+str(i)+'_event_type2']       = df.shift(i)['event_type2']
             df['n'+str(i)+'_assist']            = df.shift(i)['assist']
@@ -50,6 +45,8 @@ class Preparation:
             df['n'+str(i)+'_minsec']            = df.shift(i)['minsec']
             df['n'+str(i)+'_start_x']           = df.shift(i)['start_x']
             df['n'+str(i)+'_start_y']           = df.shift(i)['start_y']
+            df['n'+str(i)+'_end_x']             = df.shift(i)['end_x']
+            df['n'+str(i)+'_end_y']             = df.shift(i)['end_y']
             df['n'+str(i)+'_zone_10']           = df.shift(i)['zone_10']
             df['n'+str(i)+'_zone_11']           = df.shift(i)['zone_11']
             df['n'+str(i)+'_zone_12']           = df.shift(i)['zone_12']
@@ -62,8 +59,8 @@ class Preparation:
         shots = df[df.event_type == 'shot']
         # Delete goals from n-1 (residual errors)
         shots = shots[shots.n1_event_type2 != 'goal']
-        shots = shots.copy()
-        shots = self.calc_events(shots)
+        #shots = shots.copy()
+        #shots = self.calc_events(shots)
         return shots
 
     # Reduce data for expg
@@ -96,4 +93,17 @@ class Preparation:
         df['own_goal']              = df.apply(lambda item: item.start_x < 20, axis=1)
         df['pass_distance']         = df.apply(lambda item: math.sqrt(math.pow(item.n1_start_x-item.start_x, 2)+math.pow(item.n1_start_y-item.start_y, 2)), axis=1)
         df['pass_distance']         = df.apply(lambda item: item.pass_distance if item.on_corner or item.on_cross or item.on_pass or item.set_piece else 0, axis=1)
+
+        # To add:
+        #  - How many successful tackles in last 10 events (from team and other team) if possession
+        #  - How many successful passes in last 10 events (from team and other team) if possession
+        #  - Last other team defense position
+        #  - If possession speed of the attack
+        #  - Mean of expg by shots of the team in the last 10 games
+        #  - Game state
+        #  - If passe, distance run between pass reception and shot
+        #    * If run is in goal direction directly, other team is not in well position
+        #  - Number of passes of the team in last 5 minutes
+        #  - Number of passes of the team in last 25 meters in the last 5 minutes
+
         return df

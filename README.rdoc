@@ -1,3 +1,7 @@
 == README
 
  * Opta data parsing example: https://www.reddit.com/r/SoccerBetting/comments/47jjis/opta_and_how_to_get_the_data/
+
+== Playlist
+
+ * https://www.youtube.com/watch?v=8LHXgZKqR7s&list=PLEVD8p0j1ViEcNbHE92SpEEkjSwrU9j7y&index=14

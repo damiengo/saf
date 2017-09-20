@@ -53,7 +53,9 @@ INNER JOIN
       pa.sqw_player_id,
       pa.sqw_team_id,
       pa.start_x,
-      pa.start_y
+      pa.start_y ,
+      pa.end_x,
+      pa.end_y
     FROM
       sqw_all_passes_events pa
     UNION
@@ -70,7 +72,9 @@ INNER JOIN
       co.sqw_player_id,
       co.sqw_team_id,
       co.start_x,
-      co.start_y
+      co.start_y,
+      co.end_x,
+      co.end_y
     FROM
       sqw_corners_events co
     UNION
@@ -87,7 +91,9 @@ INNER JOIN
       cr.sqw_player_id,
       cr.sqw_team_id,
       cr.start_x,
-      cr.start_y
+      cr.start_y,
+      cr.end_x,
+      cr.end_y
     FROM
       sqw_crosses_events cr
     UNION
@@ -104,7 +110,9 @@ INNER JOIN
       sh.sqw_player_id,
       sh.sqw_team_id,
       sh.start_x,
-      sh.start_y
+      sh.start_y,
+      sh.end_x,
+      sh.end_y
     FROM
       sqw_goals_attempts_events sh
     UNION
@@ -121,7 +129,9 @@ INNER JOIN
       gk.sqw_player_id,
       gk.sqw_team_id,
       gk.loc_x AS start_x,
-      gk.loc_y AS start_y
+      gk.loc_y AS start_y,
+      NULL AS end_x,
+      NULL AS end_y
     FROM
       sqw_goal_keeping_events gk
     /*UNION
@@ -138,13 +148,15 @@ INNER JOIN
       hd.sqw_player_id,
       hd.sqw_team_id,
       hd.loc_x AS start_x,
-      hd.loc_y AS start_y
+      hd.loc_y AS start_y,
+      NULL AS end_x,
+      NULL AS end_y
     FROM
       sqw_headed_duals_events hd*/
     UNION
     SELECT
       'tackle' AS event_type,
-      99 as orderby,
+      10 as orderby,
       ta.action_type AS event_type2,
       false AS assist,
       false AS long_ball,
@@ -155,13 +167,15 @@ INNER JOIN
       ta.sqw_player_id,
       ta.sqw_team_id,
       ta.loc_x AS start_x,
-      ta.loc_y AS start_y
+      ta.loc_y AS start_y,
+      NULL AS end_x,
+      NULL AS end_y
     FROM
       sqw_tackles_events ta
     UNION
     SELECT
       'interception' AS event_type,
-      99 as orderby,
+      11 as orderby,
       i.action_type AS event_type2,
       false AS assist,
       false AS long_ball,
@@ -172,13 +186,15 @@ INNER JOIN
       i.sqw_player_id,
       i.sqw_team_id,
       i.loc_x AS start_x,
-      i.loc_y AS start_y
+      i.loc_y AS start_y,
+      NULL AS end_x,
+      NULL AS end_y
     FROM
       sqw_interceptions_events i
     UNION
     SELECT
       'foul' AS event_type,
-      99 as orderby,
+      20 as orderby,
       '' AS event_type2,
       false AS assist,
       false AS long_ball,
@@ -189,13 +205,15 @@ INNER JOIN
       e.sqw_player_id,
       e.sqw_team_id,
       e.loc_x AS start_x,
-      e.loc_y AS start_y
+      e.loc_y AS start_y,
+      NULL AS end_x,
+      NULL AS end_y
     FROM
       sqw_fouls_events e
     UNION
     SELECT
       'offside' AS event_type,
-      99 as orderby,
+      30 as orderby,
       '' AS event_type2,
       false AS assist,
       false AS long_ball,
@@ -206,7 +224,9 @@ INNER JOIN
       e.sqw_player_id,
       e.sqw_team_id,
       NULL AS start_x,
-      NULL AS start_y
+      NULL AS start_y,
+      NULL AS end_x,
+      NULL AS end_y
     FROM
       sqw_offsides_events e
   ) events

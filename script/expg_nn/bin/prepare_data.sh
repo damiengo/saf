@@ -1,3 +1,7 @@
 #!/bin/bash
 
-python project/prepare_data.py save/expg_prepared_data/shots_train.csv save/expg_prepared_data/shots_to_predict.csv
+script=`realpath -s $0`
+scriptpath=`dirname $script`
+datapath=${scriptpath}/../../../data/stats/expg/expg_prepared_data
+
+python project/prepare_data.py ${datapath}/extracted ${datapath}/prepared

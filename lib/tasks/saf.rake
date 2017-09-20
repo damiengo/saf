@@ -128,13 +128,15 @@ namespace :saf do
   end
 
   desc "Parse Sqwka"
-  task parse_sqw: :environment do
+  task :parse_sqw, [:tournament_id,:season_start] => :environment do |t, args|
+
+      args.with_defaults(:tournament_id => 24, :season_start => 2017)
 
       # 24 => Ligue 1, 8 => EPL, 22 => Bundesliga, 21 => Serie A, 23 => Liga, 9 => Eredivise, 99 => Portugal
       # 5 => Champions League, 6 => Europa League
       # 3 => Euro 2016, 4 => World Cup
-      tournament = "8"
-      season = "2017"
+      tournament = args.tournament_id
+      season = args.season_start
       nb_page = 1
 
       url = "http://www.squawka.com/match-results"
@@ -183,8 +185,8 @@ namespace :saf do
               game_page.inner_html.each_line do |line|
                   if /chatClient.roomID/.match(line)
                       id = line.match(/parseInt\(\'(.*)\'\)/)[1]
-                      #data_xml = "http://s3-irl-#{championship_name_cleaned}.squawka.com/dp/ingame/#{id}"
-                      data_xml = "http://s3-irl-#{championship_name}.squawka.com/dp/ingame/#{id}"
+                      data_xml = "http://s3-irl-#{championship_name_cleaned}.squawka.com/dp/ingame/#{id}"
+                      #data_xml = "http://s3-irl-#{championship_name}.squawka.com/dp/ingame/#{id}"
                       dest_file = "#{season_dir}/#{championship_name_cleaned}-#{id}.xml"
                       puts dest_file
                       puts data_xml
@@ -218,13 +220,18 @@ namespace :saf do
   desc "Analyse Sqawka"
   task :analyse_sqw, [:tournament_id,:season_start] => :environment do |t, args|
 
-      args.with_defaults(:tournament_id => 1, :season_start => 2017)
+      args.with_defaults(:tournament_id => 0, :season_start => 2017)
 
       tournament_id = args.tournament_id
 
       tournaments = [
-                      ['Ligue 1',        'ligue-1', 'France'],
-                      ['Premier League', 'epl',     'Angleterre']
+                      ['Ligue 1',          'ligue-1',       'France'],
+                      ['Premier League',   'epl',           'Angleterre'],
+                      ['Serie A',          'serie-a',       'Italie'],
+                      ['Bundesliga',       'b-liga',        'Allemagne'],
+                      ['Liga',             'la-liga',       'Espagne'],
+                      ['Europa League',    'europa-league', 'Europe'],
+                      ['Champions League', 'champions-league', 'Europe']
                     ]
 
       # Season

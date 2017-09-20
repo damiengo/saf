@@ -14,9 +14,8 @@ class BetController < ApplicationController
     f538_datas = f538_datas + get538Ligue("https://projects.fivethirtyeight.com/soccer-predictions/serie-a/")
     f538_datas = f538_datas + get538Ligue("https://projects.fivethirtyeight.com/soccer-predictions/")
 
-
     # Odds
-    source = 'https://www.parionssport.fr/api/1n2/offre?competition=[241,315,317,322,325]&sport=100'
+    source = 'https://www.pointdevente.parionssport.fdj.fr/api/1n2/offre?competition=[241,315,317,322,325]&sport=100'
     resp = Net::HTTP.get_response(URI.parse(source))
     data = resp.body
     @odds = JSON.parse(data)
@@ -62,6 +61,7 @@ class BetController < ApplicationController
 
       odd_data.merge!(Hash[*f538_data_selected])
 
+      puts odd_data['home_538_prob']
       odd_data['diff_home_prob'] = (odd_data['home_538_prob'] - odd_data['home_odd_prob']).round(2)
       odd_data['diff_tie_prob']  = (odd_data['tie_538_prob'] - odd_data['tie_odd_prob']).round(2)
       odd_data['diff_away_prob'] = (odd_data['away_538_prob'] - odd_data['away_odd_prob']).round(2)
