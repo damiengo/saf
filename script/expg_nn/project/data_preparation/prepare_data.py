@@ -12,6 +12,8 @@ import math
 class Preparation:
     def __init__(self):
         log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
+        self.field_x_size = 105
+        self.field_y_size = 68
 
     # Realize the preparation
     def prepare(self, df):
@@ -21,6 +23,10 @@ class Preparation:
     # Get shots
     def getShots(self, df):
         log.info('Get only shots')
+        df['adj_start_x'] = df.apply(self.adjustCoordStartX, axis=1)
+        df['adj_start_y'] = df.apply(self.adjustCoordStartY, axis=1)
+        df['adj_end_x']   = df.apply(self.adjustCoordEndX, axis=1)
+        df['adj_end_y']   = df.apply(self.adjustCoordEndY, axis=1)
         # https://lukehussey.wordpress.com/2012/04/18/zone-14/
         df['zone_10'] = df.apply(lambda e: e.start_x > 50 and e.start_x <= 66.66 and e.start_y >= 0 and e.start_y <= 33.33, axis=1)
         df['zone_11'] = df.apply(lambda e: e.start_x > 50 and e.start_x <= 66.66 and e.start_y > 33.33 and e.start_y <= 66.66, axis=1)
@@ -45,8 +51,12 @@ class Preparation:
             df['n'+str(i)+'_minsec']            = df.shift(i)['minsec']
             df['n'+str(i)+'_start_x']           = df.shift(i)['start_x']
             df['n'+str(i)+'_start_y']           = df.shift(i)['start_y']
+            df['n'+str(i)+'_adj_start_x']       = df.shift(i)['adj_start_x']
+            df['n'+str(i)+'_adj_start_y']       = df.shift(i)['adj_start_y']
             df['n'+str(i)+'_end_x']             = df.shift(i)['end_x']
             df['n'+str(i)+'_end_y']             = df.shift(i)['end_y']
+            df['n'+str(i)+'_adj_end_x']         = df.shift(i)['adj_end_x']
+            df['n'+str(i)+'_adj_end_y']         = df.shift(i)['adj_end_y']
             df['n'+str(i)+'_zone_10']           = df.shift(i)['zone_10']
             df['n'+str(i)+'_zone_11']           = df.shift(i)['zone_11']
             df['n'+str(i)+'_zone_12']           = df.shift(i)['zone_12']
@@ -59,51 +69,28 @@ class Preparation:
         shots = df[df.event_type == 'shot']
         # Delete goals from n-1 (residual errors)
         shots = shots[shots.n1_event_type2 != 'goal']
-        #shots = shots.copy()
-        #shots = self.calc_events(shots)
         return shots
 
-    # Reduce data for expg
-    def calc_events(self, df):
-        log.info('Calc events')
-        df['penalty']               = df.apply(lambda item: item.start_x >= 88.4 and item.start_x <= 88.6 and item.start_y >= 49.8 and item.start_y <= 50.4, axis=1)
-        df['distance']              = df.apply(lambda item: math.sqrt(math.pow(100-item.start_x, 2)+math.pow(50-item.start_y, 2)), axis=1)
-        df['degree']                = df.apply(lambda item: math.fabs(math.atan2(item.start_x-100, item.start_y-50) * (180 / math.pi)), axis=1)
-        df['goal']                  = df.apply(lambda item: item.event_type2 == 'goal', axis=1)
-        df['on_corner']             = df.apply(lambda item: item.n1_event_type == 'corner' or item.n2_event_type == 'corner', axis=1)
-        df['on_cross']              = df.apply(lambda item: item.n1_event_type == 'cross' and item.n2_event_type != 'corner', axis=1)
-        df['on_pass']               = df.apply(lambda item: item.n1_event_type == 'pass', axis=1)
-        df['on_back_pass']          = df.apply(lambda item: item.n1_event_type == 'pass' and item.start_y < item.n1_start_y, axis=1)
-        df['on_back_cross']         = df.apply(lambda item: item.n1_event_type == 'cross' and item.n2_event_type != 'corner' and item.start_y < item.n1_start_y, axis=1)
-        df['on_shot_save']          = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'save', axis=1)
-        df['on_shot_off']           = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'off_target', axis=1)
-        df['on_shot_block']         = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'blocked', axis=1)
-        df['on_shot_ww']            = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'wood_work', axis=1)
-        df['on_interception']       = df.apply(lambda item: item.n1_event_type == 'interception', axis=1)
-        df['on_tackle']             = df.apply(lambda item: item.n1_event_type == 'tackle', axis=1)
-        df['on_gk_failedcatch']     = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'failedcatch', axis=1)
-        df['on_gk_punch']           = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'punch', axis=1)
-        df['on_gk_save']            = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'save', axis=1)
-        df['on_gk_failedclearance'] = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'failedclearance', axis=1)
-        df['on_gk_clearance']       = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'clearance', axis=1)
-        df['on_gk_catch']           = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'catch', axis=1)
-        df['same_team']             = df.apply(lambda item: item.event_team_name == item.n1_event_team_name, axis=1)
-        df['minsec_diff']           = df.apply(lambda item: item.minsec - item.n1_minsec, axis=1)
-        df['set_piece']             = df.apply(lambda item: item.n1_event_type == 'foul' and item.penalty == False, axis=1)
-        df['own_goal']              = df.apply(lambda item: item.start_x < 20, axis=1)
-        df['pass_distance']         = df.apply(lambda item: math.sqrt(math.pow(item.n1_start_x-item.start_x, 2)+math.pow(item.n1_start_y-item.start_y, 2)), axis=1)
-        df['pass_distance']         = df.apply(lambda item: item.pass_distance if item.on_corner or item.on_cross or item.on_pass or item.set_piece else 0, axis=1)
+    #
+    # Adjust coordinates to 105m (x) x 68m (y)
+    #
+    def adjustCoordStartX(self, df):
+        return df.start_x * self.field_x_size/100
 
-        # To add:
-        #  - How many successful tackles in last 10 events (from team and other team) if possession
-        #  - How many successful passes in last 10 events (from team and other team) if possession
-        #  - Last other team defense position
-        #  - If possession speed of the attack
-        #  - Mean of expg by shots of the team in the last 10 games
-        #  - Game state
-        #  - If passe, distance run between pass reception and shot
-        #    * If run is in goal direction directly, other team is not in well position
-        #  - Number of passes of the team in last 5 minutes
-        #  - Number of passes of the team in last 25 meters in the last 5 minutes
+    #
+    # Adjust coordinates to 105m (x) x 68m (y)
+    #
+    def adjustCoordStartY(self, df):
+        return df.start_y * self.field_y_size/100
 
-        return df
+    #
+    # Adjust coordinates to 105m (x) x 68m (y)
+    #
+    def adjustCoordEndX(self, df):
+        return df.end_x * self.field_x_size/100
+
+    #
+    # Adjust coordinates to 105m (x) x 68m (y)
+    #
+    def adjustCoordEndY(self, df):
+        return df.end_y * self.field_y_size/100

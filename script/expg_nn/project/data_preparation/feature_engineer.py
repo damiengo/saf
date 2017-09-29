@@ -13,13 +13,17 @@ import math
 class Engineer:
     def __init__(self):
         log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
+        # Field in meters
+        self.field_x_size = 105
+        self.field_y_size = 68
+        self.goal_y1 = self.field_y_size/2 - 7.32/2
+        self.goal_y2 = self.field_y_size/2 + 7.32/2
 
     # Reduce data for expg
     def process(self, df):
         log.info('Engineer features')
         df['penalty']               = df.apply(lambda item: item.start_x >= 88.4 and item.start_x <= 88.6 and item.start_y >= 49.8 and item.start_y <= 50.4, axis=1)
-        df['distance']              = df.apply(lambda item: math.sqrt(math.pow(100-item.start_x, 2)+math.pow(50-item.start_y, 2)), axis=1)
-        #df['degree']                = df.apply(lambda item: math.fabs(math.atan2(item.start_x-100, item.start_y-50) * (180 / math.pi)), axis=1)
+        df['distance']              = df.apply(self.distance, axis=1)
         df['degree']                = df.apply(self.degree, axis=1)
         df['goal']                  = df.apply(lambda item: item.event_type2 == 'goal', axis=1)
         df['on_corner']             = df.apply(lambda item: item.n1_event_type == 'corner' or item.n2_event_type == 'corner', axis=1)
@@ -79,12 +83,18 @@ class Engineer:
         return 0
 
     #
+    # Distance from goal.
+    #
+    def distance(self, df):
+        return math.sqrt(math.pow(100-df.adj_start_x, 2)+math.pow(50-df.adj_start_y, 2))
+
+    #
     # Degree visibilty for the kicker.
     #
     def degree(self, df):
-        a = math.sqrt(math.pow(df.start_x-100, 2)+math.pow(df.start_y-54, 2))
-        b = math.sqrt(math.pow(df.start_x-100, 2)+math.pow(df.start_y-46, 2))
-        c = math.sqrt(math.pow(100-100, 2)+math.pow(54-46, 2))
+        a = math.sqrt(math.pow(df.adj_start_x-self.field_x_size, 2)+math.pow(df.adj_start_y-self.goal_y1, 2))
+        b = math.sqrt(math.pow(df.adj_start_x-self.field_x_size, 2)+math.pow(df.adj_start_y-self.goal_y2, 2))
+        c = math.sqrt(math.pow(100-100, 2)+math.pow(self.goal_y1-self.goal_y2, 2))
 
         return math.degrees((math.acos((a*a+b*b-c*c)/(2*a*b))))
 
@@ -123,13 +133,13 @@ class Engineer:
         if(first_pass == 0):
             return None
 
-        end_x    = df['start_x']
-        end_y    = df['start_y']
+        end_x    = df['adj_start_x']
+        end_y    = df['adj_start_y']
         end_time = df['minsec']
 
-        start_x =  df['n'+str(first_pass)+'_start_x']
-        start_y =  df['n'+str(first_pass)+'_start_y']
-        start_time =  df['n'+str(first_pass)+'_minsec']
+        start_x    = df['n'+str(first_pass)+'_adj_start_x']
+        start_y    = df['n'+str(first_pass)+'_adj_start_y']
+        start_time = df['n'+str(first_pass)+'_minsec']
 
         distance = math.sqrt(math.pow(end_x-start_x, 2)+math.pow(end_y-start_y, 2))
         delta_time = end_time - start_time
