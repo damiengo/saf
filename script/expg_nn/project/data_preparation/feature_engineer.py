@@ -80,7 +80,7 @@ class Engineer:
            (df.n1_event_team_name == df.event_team_name):
             return math.sqrt(math.pow(df.n1_start_x-df.start_x, 2)+math.pow(df.n1_start_y-df.start_y, 2))
 
-        return 0
+        return None
 
     #
     # Distance from goal.
