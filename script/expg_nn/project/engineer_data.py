@@ -17,7 +17,7 @@ engineered_folder = sys.argv[2]
 
 eng = feature_engineer.Engineer()
 
-start = 2017
+start = 2012
 end = 2018
 for year in xrange(start, end, 1):
     log.info("  -> Year "+str(year))

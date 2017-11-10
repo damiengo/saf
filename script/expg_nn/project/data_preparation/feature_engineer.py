@@ -78,7 +78,7 @@ class Engineer:
            df.on_pass or \
            df.set_piece) and \
            (df.n1_event_team_name == df.event_team_name):
-            return math.sqrt(math.pow(df.n1_start_x-df.start_x, 2)+math.pow(df.n1_start_y-df.start_y, 2))
+            return math.sqrt(math.pow(df.n1_adj_start_x-df.adj_start_x, 2)+math.pow(df.n1_adj_start_y-df.adj_start_y, 2))
 
         return None
 
@@ -86,23 +86,29 @@ class Engineer:
     # Distance from goal.
     #
     def distance(self, df):
-        return math.sqrt(math.pow(100-df.adj_start_x, 2)+math.pow(50-df.adj_start_y, 2))
+        return math.sqrt(math.pow(self.field_x_size-df.adj_start_x, 2)+math.pow(self.field_y_size/2-df.adj_start_y, 2))
 
     #
     # Degree visibilty for the kicker.
     #
     def degree(self, df):
+        """
         a = math.sqrt(math.pow(df.adj_start_x-self.field_x_size, 2)+math.pow(df.adj_start_y-self.goal_y1, 2))
         b = math.sqrt(math.pow(df.adj_start_x-self.field_x_size, 2)+math.pow(df.adj_start_y-self.goal_y2, 2))
         c = math.sqrt(math.pow(100-100, 2)+math.pow(self.goal_y1-self.goal_y2, 2))
 
         return math.degrees((math.acos((a*a+b*b-c*c)/(2*a*b))))
+        """
+        deltaY = df.adj_start_y - self.field_y_size/2
+        deltaX = df.adj_start_x - self.field_x_size
+
+        return np.arctan(deltaY / deltaX) * 180 / math.pi + 90
 
     #
     # Is the attacking passed the ball a lot.
     #
     def isStrongPossession(self, df):
-        for i in range(1, 9):
+        for i in range(1, 7):
             if df['event_team_name'] != df['n'+str(i)+'_event_team_name'] or \
                (df['n'+str(i)+'_event_type'] != 'pass' and df['n'+str(i)+'_event_type'] != 'cross'):
                 return False
@@ -114,7 +120,7 @@ class Engineer:
     #
     def isReverseAttack(self, df):
         shot_time = df['minsec']
-        for i in range(1, 9):
+        for i in range(1, 7):
             if df['event_team_name'] != df['n'+str(i)+'_event_team_name'] and \
                df['n'+str(i)+'_event_type'] == 'pass':
                 if(shot_time - df['n'+str(i)+'_minsec'] < 10):
@@ -161,7 +167,7 @@ class Engineer:
     #
     def nbPasses(self, df):
         nb = 0
-        for i in range(1, 9):
+        for i in range(1, 7):
             if df['event_team_name'] == df['n'+str(i)+'_event_team_name'] and \
                (df['n'+str(i)+'_event_type'] == 'pass' or \
                df['n'+str(i)+'_event_type'] == 'cross'):

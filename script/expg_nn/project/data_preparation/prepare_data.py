@@ -38,7 +38,7 @@ class Preparation:
         df['zone_17'] = df.apply(lambda e: e.start_x > 83.34 and e.start_x <= 100 and e.start_y > 33.33 and e.start_y <= 66.66, axis=1)
         df['zone_18'] = df.apply(lambda e: e.start_x > 83.34 and e.start_x <= 100 and e.start_y > 66.66 and e.start_y <= 100, axis=1)
         # Previous events
-        for i in range(1, 8):
+        for i in range(1, 7):
             log.info('  Range '+str(i))
             df['n'+str(i)+'_event_type']        = df.shift(i)['event_type']
             df['n'+str(i)+'_event_type2']       = df.shift(i)['event_type2']
