@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pass_player_id: 1
+  pass_team_id: 1
+  pass_minsec: 1
+  pass_start_x: 1.5
+  pass_start_y: 1.5
+  pass_end_x: 1.5
+  pass_end_y: 1.5
+  shot_start_x: 1.5
+  shot_start_y: 1.5
+  shot_minsec: 1
+  shot_team: 1
+  event_type: MyString
+
+two:
+  pass_player_id: 1
+  pass_team_id: 1
+  pass_minsec: 1
+  pass_start_x: 1.5
+  pass_start_y: 1.5
+  pass_end_x: 1.5
+  pass_end_y: 1.5
+  shot_start_x: 1.5
+  shot_start_y: 1.5
+  shot_minsec: 1
+  shot_team: 1
+  event_type: MyString

@@ -27,10 +27,10 @@ class Engineer:
         df['degree']                = df.apply(self.degree, axis=1)
         df['goal']                  = df.apply(lambda item: item.event_type2 == 'goal', axis=1)
         df['on_corner']             = df.apply(lambda item: item.n1_event_type == 'corner' or item.n2_event_type == 'corner', axis=1)
-        df['on_cross']              = df.apply(lambda item: item.n1_event_type == 'cross' and item.n2_event_type != 'corner', axis=1)
+        df['on_cross']              = df.apply(self.onCross, axis=1)
         df['on_pass']               = df.apply(lambda item: item.n1_event_type == 'pass', axis=1)
-        df['on_back_pass']          = df.apply(lambda item: item.n1_event_type == 'pass' and item.start_y < item.n1_start_y, axis=1)
-        df['on_back_cross']         = df.apply(lambda item: item.n1_event_type == 'cross' and item.n2_event_type != 'corner' and item.start_y < item.n1_start_y, axis=1)
+        df['on_back_pass']          = df.apply(lambda item: item.n1_event_type == 'pass' and item.start_x < item.n1_start_x, axis=1)
+        df['on_back_cross']         = df.apply(self.onBackCross, axis=1)
         df['on_shot_save']          = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'save', axis=1)
         df['on_shot_off']           = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'off_target', axis=1)
         df['on_shot_block']         = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'blocked', axis=1)
@@ -102,7 +102,7 @@ class Engineer:
         deltaY = df.adj_start_y - self.field_y_size/2
         deltaX = df.adj_start_x - self.field_x_size
 
-        return np.arctan(deltaY / deltaX) * 180 / math.pi + 90
+        return 90 - np.absolute(np.arctan(deltaY / deltaX) * 180 / math.pi)
 
     #
     # Is the attacking passed the ball a lot.
@@ -176,3 +176,18 @@ class Engineer:
                 return nb
 
         return nb
+
+    #
+    # Is the shot on cross
+    #
+    def onCross(self, df):
+        return df.n1_event_type == 'cross' and \
+               df.n1_event_type2 == 'Completed' and \
+               df.n2_event_type != 'corner'
+
+    #
+    # Is the shot on back cross
+    #
+    def onBackCross(self, df):
+        return df.on_cross == True and \
+               df.start_x < df.n1_start_x

@@ -442,6 +442,23 @@ class Sqw
           sqw_i_event.save
       end
 
+      # Set piece
+      #puts DateTime.now.strftime('%H:%M:%S') + ' - Set pieces'
+      doc.css("data_panel filters setpieces event").each do |xml_c_event|
+          c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
+          c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
+
+          sqw_i_event                     = SqwOffsidesEvent.new
+          sqw_i_event.sqw_game_id         = game.id
+          sqw_i_event.sqw_player_id       = ( not c_player.nil?)? c_player.id : nil
+          sqw_i_event.sqw_team_id         = ( not c_team.nil?)? c_team.id : nil
+          sqw_i_event.mins                = xml_c_event["mins"]
+          sqw_i_event.secs                = xml_c_event["secs"]
+          sqw_i_event.minsec              = xml_c_event["minsec"]
+
+          sqw_i_event.save
+      end
+
       #puts DateTime.now.strftime('%H:%M:%S') + ' - END'
 
       #puts doc.css("data_panel filters clearances")
