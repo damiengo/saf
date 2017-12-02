@@ -270,10 +270,10 @@ namespace :saf do
   desc "Test analyse Sqwka"
   task test_analyse_sqw: :environment do
 
-    season = SqwSeason.find_by(start: 2012, end: 2013)
-    tournament = SqwTournament.find_by(name: "Premier League")
+    season = SqwSeason.find_by(start: 2013, end: 2014)
+    tournament = SqwTournament.find_by(name: "Champions League")
 
-    xml_file = "data/squawka/epl/2012/epl-83.xml"
+    xml_file = "data/squawka/champions-league/2016/championsleague-32877.xml"
     puts DateTime.now.strftime('%H:%M:%S') + ' - ' + xml_file
     Sqw::parse_xml_file(xml_file, season, tournament)
   end

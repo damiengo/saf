@@ -17,8 +17,8 @@ prepared_folder  = sys.argv[2]
 
 prep = prepare_data.Preparation()
 
-start = 2017
-end = 2018
+start = 2013
+end = 2017
 for year in xrange(start, end, 1):
     log.info("  -> Year "+str(year))
     data = pd.read_csv(extracted_folder+'/'+str(year)+'.csv')

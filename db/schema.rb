@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121205653) do
+ActiveRecord::Schema.define(version: 20171122184206) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -369,8 +369,8 @@ ActiveRecord::Schema.define(version: 20171121205653) do
   end
 
   create_table "sqw_setpieces_events", force: true do |t|
-    t.integer  "pass_player_id"
-    t.integer  "pass_team_id"
+    t.integer  "sqw_pass_player_id"
+    t.integer  "sqw_pass_team_id"
     t.integer  "pass_minsec"
     t.float    "pass_start_x"
     t.float    "pass_start_y"
@@ -379,10 +379,12 @@ ActiveRecord::Schema.define(version: 20171121205653) do
     t.float    "shot_start_x"
     t.float    "shot_start_y"
     t.integer  "shot_minsec"
-    t.integer  "shot_team"
+    t.integer  "sqw_shot_team_id"
     t.string   "event_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sqw_shot_player_id"
+    t.integer  "sqw_game_id"
   end
 
   create_table "sqw_tackles_events", force: true do |t|

@@ -15,7 +15,7 @@ save_folder = sys.argv[1]
 
 reader = db_reader.DBReader()
 
-start = 2017
+start = 2012
 end = 2018
 for year in xrange(start, end, 1):
     log.info("  -> Year "+str(year))

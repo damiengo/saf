@@ -52,6 +52,7 @@ class Sqw
           SqwTakeonsEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwFoulsEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwOffsidesEvent.where(sqw_game_id: one_game.id).destroy_all
+          SqwSetpiecesEvent.where(sqw_game_id: one_game.id).destroy_all
           SqwGoalPasslink.joins(:sqw_goals_attempts_event).where("sqw_goals_attempts_events.sqw_game_id = ?", one_game.id).destroy_all
           one_game.destroy
       end
@@ -444,19 +445,36 @@ class Sqw
 
       # Set piece
       #puts DateTime.now.strftime('%H:%M:%S') + ' - Set pieces'
-      doc.css("data_panel filters setpieces event").each do |xml_c_event|
-          c_player                  = SqwPlayer.find_by(sqw_id: xml_c_event["player_id"])
-          c_team                    = SqwTeam.find_by(sqw_id: xml_c_event["team"])
+      doc.css("data_panel filters setpieces event").each do |xml_event|
+          has_pass = xml_event.css("pass").length > 0
+          shot_player                  = SqwPlayer.find_by(sqw_id: xml_event["player_id"])
+          shot_team                    = SqwTeam.find_by(sqw_id: xml_event["team"])
+          if has_pass
+            pass_player                  = SqwPlayer.find_by(sqw_id: xml_event.css("pass")[0]["player_id"])
+            pass_team                    = SqwTeam.find_by(sqw_id: xml_event.css("pass")[0]["team"])
+          end
 
-          sqw_i_event                     = SqwOffsidesEvent.new
-          sqw_i_event.sqw_game_id         = game.id
-          sqw_i_event.sqw_player_id       = ( not c_player.nil?)? c_player.id : nil
-          sqw_i_event.sqw_team_id         = ( not c_team.nil?)? c_team.id : nil
-          sqw_i_event.mins                = xml_c_event["mins"]
-          sqw_i_event.secs                = xml_c_event["secs"]
-          sqw_i_event.minsec              = xml_c_event["minsec"]
+          loc = xml_event.css("loc")[0].text.strip.match(/^(.*),(.*)$/)
 
-          sqw_i_event.save
+          sqw_event                     = SqwSetpiecesEvent.new
+          sqw_event.sqw_game_id         = game.id
+          sqw_event.sqw_pass_player_id  = ( not pass_player.nil?)? pass_player.id : nil
+          sqw_event.sqw_pass_team_id    = ( not pass_team.nil?)? pass_team.id : nil
+          if has_pass
+            sqw_event.pass_minsec         = xml_event.css("pass")[0]["minsec"]
+            sqw_event.pass_start_x        = xml_event.css("pass")[0]["sx"]
+            sqw_event.pass_start_y        = xml_event.css("pass")[0]["sy"]
+            sqw_event.pass_end_x          = xml_event.css("pass")[0]["ex"]
+            sqw_event.pass_end_y          = xml_event.css("pass")[0]["ey"]
+          end
+          sqw_event.shot_start_x        = loc[1]
+          sqw_event.shot_start_y        = loc[2]
+          sqw_event.shot_minsec         = xml_event["minsec"]
+          sqw_event.sqw_shot_player_id  = ( not shot_player.nil?)? shot_player.id : nil
+          sqw_event.sqw_shot_team_id    = ( not shot_team.nil?)? shot_team.id : nil
+          sqw_event.event_type          = xml_event["type"]
+
+          sqw_event.save
       end
 
       #puts DateTime.now.strftime('%H:%M:%S') + ' - END'
@@ -464,7 +482,6 @@ class Sqw
       #puts doc.css("data_panel filters clearances")
       #puts doc.css("data_panel filters keepersweeper")
       #puts doc.css("data_panel filters oneonones")
-      #puts doc.css("data_panel filters setpieces")
       #puts doc.css("data_panel filters cards")
       #puts doc.css("data_panel filters blocked_events")
       #puts doc.css("data_panel filters balls_out")

@@ -42,7 +42,7 @@ INNER JOIN
   (
     SELECT
       'pass' AS event_type,
-      3 as orderby,
+      4 as orderby,
       pa.pass_type AS event_type2,
       pa.assist AS assist,
       pa.long_ball AS long_ball,
@@ -61,7 +61,7 @@ INNER JOIN
     UNION
     SELECT
       'corner' AS event_type,
-      1 as orderby,
+      3 as orderby,
       co.event_type AS event_type2,
       CASE WHEN co.event_type = 'Assist' THEN true ELSE false END AS assist,
       false AS long_ball,
@@ -98,8 +98,27 @@ INNER JOIN
       sqw_crosses_events cr
     UNION
     SELECT
+      'set_piece' AS event_type,
+      5 as orderby,
+      e.event_type AS event_type2,
+      false AS assist,
+      false AS long_ball,
+      false AS through_ball,
+      false AS headed,
+      e.sqw_game_id,
+      e.pass_minsec,
+      e.sqw_pass_player_id,
+      e.sqw_pass_team_id,
+      e.pass_start_x,
+      e.pass_start_y,
+      e.pass_end_x,
+      e.pass_end_y
+    FROM
+      sqw_setpieces_events e
+    UNION
+    SELECT
       'shot' AS event_type,
-      4 as orderby,
+      6 as orderby,
       sh.event_type AS event_type2,
       false AS assist,
       false AS long_ball,
@@ -118,7 +137,7 @@ INNER JOIN
     UNION
     SELECT
       'gk' AS event_type,
-      5 as orderby,
+      7 as orderby,
       gk.event_type AS event_type2,
       false AS assist,
       false AS long_ball,
