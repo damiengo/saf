@@ -66,7 +66,7 @@ class Preparation:
         df['zone_18'] = df.apply(lambda e: e.start_x > 83.34 and e.start_x <= 100 and e.start_y > 66.66 and e.start_y <= 100, axis=1)
         shots = df[df.event_type == 'shot']
         # Previous events
-        for i in range(1, 21):
+        for i in range(1, 31):
             log.info('  Range '+str(i))
             for attr in self.attr_to_replicate:
                 log.info('    Attr '+attr)

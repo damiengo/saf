@@ -13,6 +13,7 @@ import math
 class Engineer:
     def __init__(self):
         log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(levelname)-7s - %(message)s')
+        self.max_history = 30
         # Field in meters
         self.field_x_size = 105
         self.field_y_size = 68
@@ -22,11 +23,11 @@ class Engineer:
     # Reduce data for expg
     def process(self, df):
         log.info('Engineer features')
-        df['penalty']               = df.apply(lambda item: item.start_x >= 88.4 and item.start_x <= 88.6 and item.start_y >= 49.8 and item.start_y <= 50.4, axis=1)
+        df['penalty']               = df.apply(lambda item: item.start_x >= 88.4 and item.start_x <= 88.8 and item.start_y >= 49.8 and item.start_y <= 50.4, axis=1)
         df['distance']              = df.apply(self.distance, axis=1)
         df['degree']                = df.apply(self.degree, axis=1)
         df['goal']                  = df.apply(lambda item: item.event_type2 == 'goal', axis=1)
-        df['on_corner']             = df.apply(lambda item: item.n1_event_type == 'corner' or item.n2_event_type == 'corner', axis=1)
+        df['on_corner']             = df.apply(self.onCorner, axis=1)
         df['on_cross']              = df.apply(self.onCross, axis=1)
         df['on_pass']               = df.apply(lambda item: item.n1_event_type == 'pass', axis=1)
         df['on_back_pass']          = df.apply(lambda item: item.n1_event_type == 'pass' and item.start_x < item.n1_start_x, axis=1)
@@ -45,7 +46,8 @@ class Engineer:
         df['on_gk_catch']           = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'catch', axis=1)
         df['same_team']             = df.apply(lambda item: item.event_team_name == item.n1_event_team_name, axis=1)
         df['minsec_diff']           = df.apply(lambda item: item.minsec - item.n1_minsec, axis=1)
-        df['set_piece']             = df.apply(lambda item: item.n1_event_type == 'foul' and item.penalty == False, axis=1)
+        df['direct_set_piece']      = df.apply(self.directSetPiece, axis=1)
+        df['indirect_set_piece']    = df.apply(self.indirectSetPiece, axis=1)
         df['own_goal']              = df.apply(lambda item: item.start_x < 20, axis=1)
         df['pass_distance']         = df.apply(self.passDistance, axis=1)
         df['nb_passes']             = df.apply(self.nbPasses, axis=1)
@@ -76,7 +78,7 @@ class Engineer:
         if (df.on_corner or \
            df.on_cross or \
            df.on_pass or \
-           df.set_piece) and \
+           df.indirect_set_piece) and \
            (df.n1_event_team_name == df.event_team_name):
             return math.sqrt(math.pow(df.n1_adj_start_x-df.adj_start_x, 2)+math.pow(df.n1_adj_start_y-df.adj_start_y, 2))
 
@@ -92,13 +94,6 @@ class Engineer:
     # Degree visibilty for the kicker.
     #
     def degree(self, df):
-        """
-        a = math.sqrt(math.pow(df.adj_start_x-self.field_x_size, 2)+math.pow(df.adj_start_y-self.goal_y1, 2))
-        b = math.sqrt(math.pow(df.adj_start_x-self.field_x_size, 2)+math.pow(df.adj_start_y-self.goal_y2, 2))
-        c = math.sqrt(math.pow(100-100, 2)+math.pow(self.goal_y1-self.goal_y2, 2))
-
-        return math.degrees((math.acos((a*a+b*b-c*c)/(2*a*b))))
-        """
         deltaY = df.adj_start_y - self.field_y_size/2
         deltaX = df.adj_start_x - self.field_x_size
 
@@ -108,7 +103,7 @@ class Engineer:
     # Is the attacking passed the ball a lot.
     #
     def isStrongPossession(self, df):
-        for i in range(1, 7):
+        for i in range(1, self.max_history):
             if df['event_team_name'] != df['n'+str(i)+'_event_team_name'] or \
                (df['n'+str(i)+'_event_type'] != 'pass' and df['n'+str(i)+'_event_type'] != 'cross'):
                 return False
@@ -120,7 +115,7 @@ class Engineer:
     #
     def isReverseAttack(self, df):
         shot_time = df['minsec']
-        for i in range(1, 7):
+        for i in range(1, self.max_history):
             if df['event_team_name'] != df['n'+str(i)+'_event_team_name'] and \
                df['n'+str(i)+'_event_type'] == 'pass':
                 if(shot_time - df['n'+str(i)+'_minsec'] < 10):
@@ -167,7 +162,7 @@ class Engineer:
     #
     def nbPasses(self, df):
         nb = 0
-        for i in range(1, 7):
+        for i in range(1, self.max_history):
             if df['event_team_name'] == df['n'+str(i)+'_event_team_name'] and \
                (df['n'+str(i)+'_event_type'] == 'pass' or \
                df['n'+str(i)+'_event_type'] == 'cross'):
@@ -191,3 +186,27 @@ class Engineer:
     def onBackCross(self, df):
         return df.on_cross == True and \
                df.start_x < df.n1_start_x
+
+    #
+    # Is the shot on corner
+    #
+    def onCorner(self, df):
+        return (df.n1_event_type == 'corner' or df.n2_event_type == 'corner') \
+               or \
+               (df.n1_event_type == 'set_piece' and df.n1_event_type2 == 'corner')
+
+    #
+    # Is the shot on indirect set piece
+    #
+    def indirectSetPiece(self, df):
+        return (df.n2_event_type == 'foul' and df.n1_event_type != 'shot') \
+               or \
+               (df.n1_event_type == 'set_piece' and df.n1_event_type2 == 'crossed')
+
+    #
+    # Is the shot on direct set piece
+    #
+    def directSetPiece(self, df):
+        return (df.n1_event_type == 'foul' and df.penalty == False) \
+               or \
+               (df.n1_event_type == 'set_piece' and df.n1_event_type2 == 'direct')
