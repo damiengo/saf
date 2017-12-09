@@ -23,7 +23,7 @@ class Engineer:
     # Reduce data for expg
     def process(self, df):
         log.info('Engineer features')
-        df['penalty']               = df.apply(lambda item: item.start_x >= 88.4 and item.start_x <= 88.8 and item.start_y >= 49.8 and item.start_y <= 50.4, axis=1)
+        df['penalty']               = df.apply(self.penalty, axis=1)
         df['distance']              = df.apply(self.distance, axis=1)
         df['degree']                = df.apply(self.degree, axis=1)
         df['goal']                  = df.apply(lambda item: item.event_type2 == 'goal', axis=1)
@@ -37,7 +37,7 @@ class Engineer:
         df['on_shot_block']         = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'blocked', axis=1)
         df['on_shot_ww']            = df.apply(lambda item: item.n1_event_type == 'shot' and item.n1_event_type2 == 'wood_work', axis=1)
         df['on_interception']       = df.apply(lambda item: item.n1_event_type == 'interception', axis=1)
-        df['on_tackle']             = df.apply(lambda item: item.n1_event_type == 'tackle', axis=1)
+        df['on_tackle']             = df.apply(lambda item: item.n1_event_type == 'tackle', axis=1) # Same team or other team
         df['on_gk_failedcatch']     = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'failedcatch', axis=1)
         df['on_gk_punch']           = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'punch', axis=1)
         df['on_gk_save']            = df.apply(lambda item: item.n1_event_type == 'gk' and item.n1_event_type2 == 'save', axis=1)
@@ -68,8 +68,17 @@ class Engineer:
         #  - Number of passes of the team in last 5 minutes
         #  - Number of passes of the team in last 25 meters in the last 5 minutes
         #  -|- Is headed pass
+        #  - Add goals + wood work as goals when generating expg
 
         return df
+
+    #
+    # Is the shot a penalty.
+    #
+    def penalty(self, df):
+        return df.start_x >= 88.2 and df.start_x <= 88.8 and \
+               df.start_y >= 49.6 and df.start_y <= 50.6 and \
+               (df.n1_event_type == 'foul' or df.n1_event_type2 == 'penalty')
 
     #
     # Pass distance.
@@ -201,12 +210,16 @@ class Engineer:
     def indirectSetPiece(self, df):
         return (df.n2_event_type == 'foul' and df.n1_event_type != 'shot') \
                or \
-               (df.n1_event_type == 'set_piece' and df.n1_event_type2 == 'crossed')
+               (df.n1_event_type == 'set_piece' and df.n1_event_type2 == 'crossed') \
+               or \
+               (df.n1_event_type == 'foul' and df.penalty == False and \
+               math.sqrt(math.pow(df.n1_adj_start_x-df.adj_start_x, 2)+math.pow(df.n1_adj_start_y-df.adj_start_y, 2)) > 5)
 
     #
     # Is the shot on direct set piece
     #
     def directSetPiece(self, df):
-        return (df.n1_event_type == 'foul' and df.penalty == False) \
+        return (df.n1_event_type == 'foul' and df.penalty == False and \
+               math.sqrt(math.pow(df.n1_adj_start_x-df.adj_start_x, 2)+math.pow(df.n1_adj_start_y-df.adj_start_y, 2)) < 5) \
                or \
                (df.n1_event_type == 'set_piece' and df.n1_event_type2 == 'direct')
